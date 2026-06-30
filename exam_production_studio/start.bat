@@ -58,14 +58,33 @@ taskkill /F /FI "WINDOWTITLE eq EPS Frontend*" >nul 2>&1
 REM give the OS a moment to release sockets
 powershell -NoProfile -Command "Start-Sleep -Milliseconds 1500" >nul 2>&1
 
+REM ---- choose backend mode ----
+REM 1 = hot reload (--reload): backend auto-restarts when you edit code under backend\.
+REM 2 = no reload: stable mode, you re-run start.bat after editing backend code.
+REM NOTE on Windows: --reload makes WatchFiles re-spawn python workers on every save. If the
+REM interactive desktop heap is small/exhausted, a respawned worker can die at startup with
+REM 0xc0000142 (STATUS_DLL_INIT_FAILED). The desktop heap has been enlarged (SharedSection
+REM 2nd value 20480 -> 40960) so reload should be stable; if 0xc0000142 ever returns, use mode 2.
+echo.
+echo ============================================
+echo  Select backend mode:
+echo    [1] hot reload  (--reload, auto-restart on code change)
+echo    [2] no reload   (stable; re-run start.bat after editing backend code)
+echo ============================================
+set "EPS_RELOAD="
+set "MODE="
+set /p "MODE=Enter 1 or 2 (default 2): "
+if "%MODE%"=="1" (
+  set "EPS_RELOAD=--reload"
+  echo [mode] hot reload ENABLED
+) else (
+  echo [mode] hot reload DISABLED ^(stable mode^)
+)
+
 echo [run] backend http://127.0.0.1:8000  frontend http://localhost:5173
 REM backend: powershell -NoExit keeps the window open after a crash so the traceback stays visible;
 REM Tee-Object also streams output into backend\backend.log for post-mortem.
-REM NOTE: --reload is intentionally OFF on Windows. WatchFiles keeps re-spawning python
-REM workers and eventually exhausts the desktop heap, which makes new workers die at
-REM startup with 0xc0000142 (STATUS_DLL_INIT_FAILED). After editing backend code, just
-REM re-run start.bat (its cleanup step kills the old backend and starts a fresh one).
-start "EPS Backend" powershell -NoProfile -NoExit -Command "& '.venv\Scripts\python.exe' -m uvicorn main:app --app-dir backend --port 8000 2>&1 | Out-String -Stream | Tee-Object -FilePath 'backend\backend.log'"
+start "EPS Backend" powershell -NoProfile -NoExit -Command "& '.venv\Scripts\python.exe' -m uvicorn main:app --app-dir backend --port 8000 %EPS_RELOAD% 2>&1 | Out-String -Stream | Tee-Object -FilePath 'backend\backend.log'"
 start "EPS Frontend" cmd /c "cd frontend && npm run dev"
 
 echo.
