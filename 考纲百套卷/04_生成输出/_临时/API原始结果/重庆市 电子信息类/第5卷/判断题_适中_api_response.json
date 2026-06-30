@@ -1,0 +1,206 @@
+{
+  "试卷": "第5卷",
+  "题型": "判断题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000202
+  ],
+  "计划补题数": 2,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 11,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87678
+    ],
+    "typeIds": [
+      1000202
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 2,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3643215778045952",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3641755199406080",
+          "source": "专题一 认识电路（专项练习）-山东省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律，若电阻一定，电压增加一倍，则电流也增加一倍。</span><span class=\"qml-bk\" index=\"1\" size=\"3\" type=\"bracket\">（　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律</span><span style=\"font-family: 'Times New Roman';\"> ( I = </span><math latex=\"$\\frac{U}{R}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>U</mi><mi>R</mi></mfrac></math><span style=\"font-family: 'Times New Roman';\">)</span><span style=\"font-family: 宋体;\">，当电阻</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">一定时，电流</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 宋体;\">与电压</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 宋体;\">成正比。因此，当电压增加一倍时，电流也增加一倍。</span></p></div></div>",
+          "catalogIds": [
+            237968,
+            237906
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 30,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T17:24:23",
+          "updateDate": "2026-04-20T04:01:44",
+          "publishDate": "2025-04-18T19:03:08",
+          "qmlUpdateDate": "2025-10-21T11:23:35",
+          "stemText": "根据欧姆定律，若电阻一定，电压增加一倍，则电流也增加一倍。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:31:49"
+        },
+        {
+          "questionId": "3644764325773312",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642274813779968",
+          "source": "专题一 认识电路（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如果一个电源为</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">伏特，通过一个电阻为</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">欧姆的电路，电流为</span><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">安。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">错误。根据欧姆定律，电流等于电压除以电阻，所以电流为</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">伏特除以</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">欧姆，即</span><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">安。</span></p></div></div>",
+          "catalogIds": [
+            237968,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "5101"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 72,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-09T21:54:55",
+          "updateDate": "2026-04-20T04:06:34",
+          "publishDate": "2025-04-25T22:49:14",
+          "qmlUpdateDate": "2025-10-21T11:24:16",
+          "stemText": "如果一个电源为10伏特，通过一个电阻为2欧姆的电路，电流为5安。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:40:11"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

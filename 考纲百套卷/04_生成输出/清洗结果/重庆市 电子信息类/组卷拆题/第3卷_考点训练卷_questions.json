@@ -1,0 +1,2290 @@
+{
+  "paper": {
+    "paper_no": 3,
+    "paper_label": "第3卷",
+    "paper_type": "考点训练卷",
+    "module": "电工技术基础与技能",
+    "topic": "电路基本概念与定律",
+    "point_name": "电功、电功率与电路状态"
+  },
+  "loaded_paper": {
+    "path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+    "paper_label": "第3卷",
+    "title": "A. 6 W B. 10 W",
+    "questions": [
+      {
+        "question_no": 1,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "某电阻接在12 V直流电源两端，通过电流为2 A，则该电阻消耗的电功率为（ ）",
+        "options": [
+          "A. 6 W",
+          "B. 10 W",
+          "C. 24 W",
+          "D. 48 W"
+        ],
+        "answer": "C",
+        "analysis": "电功率可用公式P=UI计算。代入电压12 V、电流2 A，得P=12×2=24 W，因此该电阻消耗的电功率为24 W，选C。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "1. 某电阻接在12 V直流电源两端，通过电流为2 A，则该电阻消耗的电功率为（ ）\nA. 6 W B. 10 W\nC. 24 W D. 48 W\n【答案】C\n【解析】电功率可用公式P=UI计算。代入电压12 V、电流2 A，得P=12×2=24 W，因此该电阻消耗的电功率为24 W，选C。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "stem_paragraph_indices": [
+          2,
+          3,
+          4
+        ],
+        "answer_paragraph_indices": [
+          5
+        ],
+        "analysis_paragraph_indices": [
+          6
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 1,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 2,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "如图所示电路，发出功率的电源是（ ）\n[图片]",
+        "options": [],
+        "answer": "B",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "failed",
+        "issues": [
+          "选项缺失"
+        ],
+        "raw_text": "2．如图所示电路，发出功率的电源是（ ）\n[图片]\n【答案】B",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          8,
+          9,
+          10
+        ],
+        "stem_paragraph_indices": [
+          8,
+          9
+        ],
+        "answer_paragraph_indices": [
+          10
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 9,
+              "rel_id": "rId9",
+              "target_ref": "/word/media/image1.png",
+              "sha256": "11dd0d5577d2cdde0c9c405b98a91d6fac000ab84928ed84c9693c55e63c05ba",
+              "byte_size": 75396,
+              "width_emu": 2228850,
+              "height_emu": 1628775
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 9,
+            "rel_id": "rId9",
+            "target_ref": "/word/media/image1.png",
+            "sha256": "11dd0d5577d2cdde0c9c405b98a91d6fac000ab84928ed84c9693c55e63c05ba",
+            "byte_size": 75396,
+            "width_emu": 2228850,
+            "height_emu": 1628775
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 2,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "missing_options",
+            "name": "选项缺失",
+            "severity": "failed",
+            "message": "第2题选择题缺少选项：A, B, C, D。"
+          }
+        ]
+      },
+      {
+        "question_no": 3,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "电路闭合且有电流通过时，电源的端电压______电源电动势减去电源内阻上的电压降。（ ）",
+        "options": [
+          "A. 高于",
+          "B. 等于",
+          "C. 低于",
+          "D. 无关"
+        ],
+        "answer": "B",
+        "analysis": "闭合电路中，电源内部存在内阻，电流通过内阻时会产生内阻压降。电源对外输出的端电压不是电动势本身，而是电源电动势扣除内阻压降后的电压，因此应选B。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "3. 电路闭合且有电流通过时，电源的端电压______电源电动势减去电源内阻上的电压降。（ ）\nA. 高于 B. 等于 C. 低于 D. 无关\n【答案】B\n【解析】闭合电路中，电源内部存在内阻，电流通过内阻时会产生内阻压降。电源对外输出的端电压不是电动势本身，而是电源电动势扣除内阻压降后的电压，因此应选B。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "stem_paragraph_indices": [
+          11,
+          12
+        ],
+        "answer_paragraph_indices": [
+          13
+        ],
+        "analysis_paragraph_indices": [
+          14
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 3,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 4,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "某电路中，电源两端被导线直接相连，负载几乎未接入，此时电流很大且可能烧毁电源，这种状态属于（ ）",
+        "options": [
+          "A. 开路状态",
+          "B. 通路状态",
+          "C. 短路状态",
+          "D. 额定状态"
+        ],
+        "answer": "C",
+        "analysis": "电源两端被导线直接相连时，回路电阻很小，会产生很大的电流，容易造成电源或导线损坏，这符合短路状态的特点。开路状态是回路断开无电流，通路状态是电路正常闭合并有负载工作，因此选C。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "4. 某电路中，电源两端被导线直接相连，负载几乎未接入，此时电流很大且可能烧毁电源，这种状态属于（ ）\nA. 开路状态 B. 通路状态\nC. 短路状态 D. 额定状态\n【答案】C\n【解析】电源两端被导线直接相连时，回路电阻很小，会产生很大的电流，容易造成电源或导线损坏，这符合短路状态的特点。开路状态是回路断开无电流，通路状态是电路正常闭合并有负载工作，因此选C。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "stem_paragraph_indices": [
+          16,
+          17,
+          18
+        ],
+        "answer_paragraph_indices": [
+          19
+        ],
+        "analysis_paragraph_indices": [
+          20
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 4,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 5,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "某直流电路中，负载两端电压为12 V，通过电流为2 A，该负载消耗的功率为（ ）",
+        "options": [
+          "A. 6 W",
+          "B. 10 W",
+          "C. 14 W",
+          "D. 24 W"
+        ],
+        "answer": "D",
+        "analysis": "电功率按电压与电流的乘积计算。将题中电压12 V和电流2 A相乘，得到负载消耗功率为24 W，因此选D。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "5. 某直流电路中，负载两端电压为12 V，通过电流为2 A，该负载消耗的功率为（ ）\nA. 6 W B. 10 W\nC. 14 W D. 24 W\n【答案】D\n【解析】电功率按电压与电流的乘积计算。将题中电压12 V和电流2 A相乘，得到负载消耗功率为24 W，因此选D。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "stem_paragraph_indices": [
+          22,
+          23,
+          24
+        ],
+        "answer_paragraph_indices": [
+          25
+        ],
+        "analysis_paragraph_indices": [
+          26
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 5,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 6,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "当外加电阻R上的电压为U时，其消耗的功率为1 W；若电阻不变，电压增大为原来的2倍，其消耗的功率变为（ ）。",
+        "options": [
+          "A. 1 W",
+          "B. 2 W",
+          "C. 3 W",
+          "D. 4 W"
+        ],
+        "answer": "D",
+        "analysis": "对同一电阻而言，电功率可用公式P=U²/R计算，电阻R不变时，功率与电压的平方成正比。原来功率为1 W，电压变为原来的2倍后，功率变为原来的4倍，即4 W，因此选D。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "6. 当外加电阻R上的电压为U时，其消耗的功率为1 W；若电阻不变，电压增大为原来的2倍，其消耗的功率变为（ ）。\nA. 1 W B. 2 W\nC. 3 W D. 4 W\n【答案】D\n【解析】对同一电阻而言，电功率可用公式P=U²/R计算，电阻R不变时，功率与电压的平方成正比。原来功率为1 W，电压变为原来的2倍后，功率变为原来的4倍，即4 W，因此选D。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "stem_paragraph_indices": [
+          28,
+          29,
+          30
+        ],
+        "answer_paragraph_indices": [
+          31
+        ],
+        "analysis_paragraph_indices": [
+          32
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 6,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 7,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "测定电源电动势和内阻时，若外电路发生短路，电路中的电流是（ ）",
+        "options": [
+          "A. 接近零的电流",
+          "B. 达到最大的电流",
+          "C. 保持额定的电流",
+          "D. 逐渐减小的电流"
+        ],
+        "answer": "B",
+        "analysis": "外电路发生短路时，外电阻近似为零，回路总电阻主要由电源内阻决定。根据全电路欧姆定律，总电阻越小，电流越大，因此此时电路电流达到最大值，并可能造成电源和导线过热损坏。故选B。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "7. 测定电源电动势和内阻时，若外电路发生短路，电路中的电流是（ ）\nA. 接近零的电流 B. 达到最大的电流\nC. 保持额定的电流 D. 逐渐减小的电流\n【答案】B\n【解析】外电路发生短路时，外电阻近似为零，回路总电阻主要由电源内阻决定。根据全电路欧姆定律，总电阻越小，电流越大，因此此时电路电流达到最大值，并可能造成电源和导线过热损坏。故选B。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "stem_paragraph_indices": [
+          34,
+          35,
+          36
+        ],
+        "answer_paragraph_indices": [
+          37
+        ],
+        "analysis_paragraph_indices": [
+          38
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 7,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 8,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "一个电动势为12 V、内阻为0.5 Ω的电源，外接5.5 Ω电阻时，电路中的电流为（ ）",
+        "options": [
+          "A. 2 A",
+          "B. 3 A",
+          "C. 4 A",
+          "D. 6 A"
+        ],
+        "answer": "A",
+        "analysis": "电源接入外电阻后，电路总电阻由外电阻和电源内阻共同组成，为5.5 Ω与0.5 Ω之和，即6 Ω。根据闭合电路欧姆定律，电流为电动势除以电路总电阻，12 V除以6 Ω得2 A，因此选A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "8. 一个电动势为12 V、内阻为0.5 Ω的电源，外接5.5 Ω电阻时，电路中的电流为（ ）\nA. 2 A B. 3 A\nC. 4 A D. 6 A\n【答案】A\n【解析】电源接入外电阻后，电路总电阻由外电阻和电源内阻共同组成，为5.5 Ω与0.5 Ω之和，即6 Ω。根据闭合电路欧姆定律，电流为电动势除以电路总电阻，12 V除以6 Ω得2 A，因此选A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "stem_paragraph_indices": [
+          40,
+          41,
+          42
+        ],
+        "answer_paragraph_indices": [
+          43
+        ],
+        "analysis_paragraph_indices": [
+          44
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 8,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 9,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "实际电压源的电动势为10 V，内阻为1 Ω，当输出功率最大时，外接电阻为（ ）",
+        "options": [
+          "A. 0.5 Ω",
+          "B. 1 Ω",
+          "C. 5 Ω",
+          "D. 10 Ω"
+        ],
+        "answer": "B",
+        "analysis": "实际电压源接外电阻R时，输出功率可表示为P=I²R，其中I=E/(R+r)，所以P=E²R/(R+r)²。最大功率传输条件为外接电阻R等于电源内阻r，代入本题r=1 Ω，可得R=1 Ω。因此选B。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "9. 实际电压源的电动势为10 V，内阻为1 Ω，当输出功率最大时，外接电阻为（ ）\nA. 0.5 Ω B. 1 Ω\nC. 5 Ω D. 10 Ω\n【答案】B\n【解析】实际电压源接外电阻R时，输出功率可表示为P=I²R，其中I=E/(R+r)，所以P=E²R/(R+r)²。最大功率传输条件为外接电阻R等于电源内阻r，代入本题r=1 Ω，可得R=1 Ω。因此选B。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ],
+        "stem_paragraph_indices": [
+          46,
+          47,
+          48
+        ],
+        "answer_paragraph_indices": [
+          49
+        ],
+        "analysis_paragraph_indices": [
+          50
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 9,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 10,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "若用电压表测得电源端电压等于电源电动势，这说明（ ）",
+        "options": [
+          "A. 负载发生短路故障",
+          "B. 电路处于通路状态",
+          "C. 电路处于开路状态",
+          "D. 电源内阻完全消失"
+        ],
+        "answer": "C",
+        "analysis": "电源接入负载形成通路时，电源内部有电流通过，内阻上会产生电压降，所以端电压小于电动势。电路开路时外电路电流近似为零，电源内阻上没有明显电压降，因此端电压等于电源电动势，故选A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "10. 若用电压表测得电源端电压等于电源电动势，这说明（ ）\nA. 负载发生短路故障 B. 电路处于通路状态\nC. 电路处于开路状态 D. 电源内阻完全消失\n【答案】C\n【解析】电源接入负载形成通路时，电源内部有电流通过，内阻上会产生电压降，所以端电压小于电动势。电路开路时外电路电流近似为零，电源内阻上没有明显电压降，因此端电压等于电源电动势，故选A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          52,
+          53,
+          54,
+          55,
+          56
+        ],
+        "stem_paragraph_indices": [
+          52,
+          53,
+          54
+        ],
+        "answer_paragraph_indices": [
+          55
+        ],
+        "analysis_paragraph_indices": [
+          56
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 10,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 11,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "把“，”的白炽灯分别接到的交流和直流电源上，有关白炽灯发光情况，说法正确的是（ ）\n[图片]",
+        "options": [],
+        "answer": "A",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "failed",
+        "issues": [
+          "选项缺失"
+        ],
+        "raw_text": "11．把“，”的白炽灯分别接到的交流和直流电源上，有关白炽灯发光情况，说法正确的是（ ）\n[图片]\n【答案】A",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          58,
+          59
+        ],
+        "stem_paragraph_indices": [
+          58
+        ],
+        "answer_paragraph_indices": [
+          59
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 11,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "missing_options",
+            "name": "选项缺失",
+            "severity": "failed",
+            "message": "第11题选择题缺少选项：A, B, C, D。"
+          }
+        ]
+      },
+      {
+        "question_no": 12,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "一个电源接8 Ω电阻时，通过的电流为0.15 A；接4 Ω电阻时，通过的电流为0.25 A，则电源的电动势和内阻分别为（ ）",
+        "options": [
+          "A. 1.5 V，2 Ω",
+          "B. 1.2 V，2 Ω",
+          "C. 1.5 V，4 Ω",
+          "D. 2.0 V，4 Ω"
+        ],
+        "answer": "A",
+        "analysis": "设电源电动势为E、内阻为r，闭合电路满足E=I(R+r)。接8 Ω电阻时有E=0.15×(8+r)，接4 Ω电阻时有E=0.25×(4+r)。两式相等得1.2+0.15r=1.0+0.25r，解得r=2 Ω，代入E=0.15×(8+2)=1.5 V，因此选A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "12. 一个电源接8 Ω电阻时，通过的电流为0.15 A；接4 Ω电阻时，通过的电流为0.25 A，则电源的电动势和内阻分别为（ ）\nA. 1.5 V，2 Ω B. 1.2 V，2 Ω\nC. 1.5 V，4 Ω D. 2.0 V，4 Ω\n【答案】A\n【解析】设电源电动势为E、内阻为r，闭合电路满足E=I(R+r)。接8 Ω电阻时有E=0.15×(8+r)，接4 Ω电阻时有E=0.25×(4+r)。两式相等得1.2+0.15r=1.0+0.25r，解得r=2 Ω，代入E=0.15×(8+2)=1.5 V，因此选A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        "stem_paragraph_indices": [
+          60,
+          61,
+          62
+        ],
+        "answer_paragraph_indices": [
+          63
+        ],
+        "analysis_paragraph_indices": [
+          64
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 12,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 13,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "如图所示的电路中，当RP滑片向上移动时，灯亮暗变化情况正确的是（ ）\n[图片]",
+        "options": [],
+        "answer": "B",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "failed",
+        "issues": [
+          "选项缺失"
+        ],
+        "raw_text": "13．如图所示的电路中，当RP滑片向上移动时，灯亮暗变化情况正确的是（ ）\n[图片]\n【答案】B",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          66,
+          67,
+          68
+        ],
+        "stem_paragraph_indices": [
+          66,
+          67
+        ],
+        "answer_paragraph_indices": [
+          68
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 67,
+              "rel_id": "rId10",
+              "target_ref": "/word/media/image2.png",
+              "sha256": "01a1d46ac12f6b3f2e73477b2d832de4a3597ebacad00e51ccd27093c99087b8",
+              "byte_size": 27624,
+              "width_emu": 1781175,
+              "height_emu": 971550
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 67,
+            "rel_id": "rId10",
+            "target_ref": "/word/media/image2.png",
+            "sha256": "01a1d46ac12f6b3f2e73477b2d832de4a3597ebacad00e51ccd27093c99087b8",
+            "byte_size": 27624,
+            "width_emu": 1781175,
+            "height_emu": 971550
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 13,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "missing_options",
+            "name": "选项缺失",
+            "severity": "failed",
+            "message": "第13题选择题缺少选项：A, B, C, D。"
+          }
+        ]
+      },
+      {
+        "question_no": 14,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "一个用电器标有“220 V，1100 W”字样，则在正常工作时电阻为（ ）",
+        "options": [
+          "A. 44 Ω",
+          "B. 22 Ω",
+          "C. 88 Ω",
+          "D. 220 Ω"
+        ],
+        "answer": "A",
+        "analysis": "用电器正常工作时，其两端电压为额定电压220 V，消耗功率为额定功率1100 W。根据电功率关系，电阻可用电压的平方除以功率来求，计算为220×220再除以1100，结果为44 Ω，因此选A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "14. 一个用电器标有“220 V，1100 W”字样，则在正常工作时电阻为（ ）\nA. 44 Ω B. 22 Ω\nC. 88 Ω D. 220 Ω\n【答案】A\n【解析】用电器正常工作时，其两端电压为额定电压220 V，消耗功率为额定功率1100 W。根据电功率关系，电阻可用电压的平方除以功率来求，计算为220×220再除以1100，结果为44 Ω，因此选A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          69,
+          70,
+          71,
+          72,
+          73
+        ],
+        "stem_paragraph_indices": [
+          69,
+          70,
+          71
+        ],
+        "answer_paragraph_indices": [
+          72
+        ],
+        "analysis_paragraph_indices": [
+          73
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 14,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 15,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "一块太阳能电池板，测得它的开路电压为800mV，短路电流为40mA，若将该电池板与一个阻值为20Ω的电阻器连成一闭合电路，则它的端电压是（ ）",
+        "options": [],
+        "answer": "D",
+        "analysis": "【详解】因电路的开路电压等于电源电动势，即，短路电流，则。若将该电池板与一个阻值为的电阻器连成一闭合电路，则电路中的电流为，则它的端电压。故D正确。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "failed",
+        "issues": [
+          "选项缺失"
+        ],
+        "raw_text": "15．一块太阳能电池板，测得它的开路电压为800mV，短路电流为40mA，若将该电池板与一个阻值为20Ω的电阻器连成一闭合电路，则它的端电压是（ ）\n【答案】D\n【详解】【详解】因电路的开路电压等于电源电动势，即，短路电流，则。若将该电池板与一个阻值为的电阻器连成一闭合电路，则电路中的电流为，则它的端电压。故D正确。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          75,
+          76,
+          77
+        ],
+        "stem_paragraph_indices": [
+          75
+        ],
+        "answer_paragraph_indices": [
+          76
+        ],
+        "analysis_paragraph_indices": [
+          77
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "analysis_visual_object",
+        "_question_no": 15,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "missing_options",
+            "name": "选项缺失",
+            "severity": "failed",
+            "message": "第15题选择题缺少选项：A, B, C, D。"
+          }
+        ]
+      },
+      {
+        "question_no": 16,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题（本大题共16小题，每题3分，共48分）",
+        "stem": "如图所示是某供电线路的电路图，代表输电线的总电阻，电源电压始终是220V。设灯泡工作时电阻不随温度变化。先闭合S1后闭合S2。则S2闭合后与S2闭合前相比较说法不正确的是（ ）\n[图片]",
+        "options": [],
+        "answer": "D",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "failed",
+        "issues": [
+          "选项缺失"
+        ],
+        "raw_text": "16．如图所示是某供电线路的电路图，代表输电线的总电阻，电源电压始终是220V。设灯泡工作时电阻不随温度变化。先闭合S1后闭合S2。则S2闭合后与S2闭合前相比较说法不正确的是（ ）\n[图片]\n【答案】D",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          78,
+          79,
+          80
+        ],
+        "stem_paragraph_indices": [
+          78,
+          79
+        ],
+        "answer_paragraph_indices": [
+          80
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 79,
+              "rel_id": "rId11",
+              "target_ref": "/word/media/image3.png",
+              "sha256": "f1d43e2138be072777489db9a0b38ccff26c0d5ca7222e306f05b8032135bdff",
+              "byte_size": 3776,
+              "width_emu": 1819275,
+              "height_emu": 904875
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 79,
+            "rel_id": "rId11",
+            "target_ref": "/word/media/image3.png",
+            "sha256": "f1d43e2138be072777489db9a0b38ccff26c0d5ca7222e306f05b8032135bdff",
+            "byte_size": 3776,
+            "width_emu": 1819275,
+            "height_emu": 904875
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 16,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "missing_options",
+            "name": "选项缺失",
+            "severity": "failed",
+            "message": "第16题选择题缺少选项：A, B, C, D。"
+          }
+        ]
+      },
+      {
+        "question_no": 17,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "如果电源被短路，输出的电流最大，那么此时电源输出的功率也最大。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "当电源被短路时，外电路电阻接近为零，根据欧姆定律I=U/R，此时输出电流最大。虽然短路时电流很大，但由于电源有内阻，此时路端电压U=E-Ir，短路时I很大，内阻上的分压就接近电动势，导致路端电压趋近于零。故表述错误。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "17. 如果电源被短路，输出的电流最大，那么此时电源输出的功率也最大。（ ）\n【答案】×\n【解析】当电源被短路时，外电路电阻接近为零，根据欧姆定律I=U/R，此时输出电流最大。虽然短路时电流很大，但由于电源有内阻，此时路端电压U=E-Ir，短路时I很大，内阻上的分压就接近电动势，导致路端电压趋近于零。故表述错误。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          84,
+          85,
+          86
+        ],
+        "stem_paragraph_indices": [
+          84
+        ],
+        "answer_paragraph_indices": [
+          85
+        ],
+        "analysis_paragraph_indices": [
+          86
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 17,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 18,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "闭合电路欧姆定律中，电源的电动势等于内外电路电压之和。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "闭合电路中，电源电动势用于克服外电路电阻和电源内阻对电流的阻碍作用。外电路两端电压与内电路电压降相加，正好对应电源提供的电动势，因此题干表述正确。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "18. 闭合电路欧姆定律中，电源的电动势等于内外电路电压之和。（ ）\n【答案】√\n【解析】闭合电路中，电源电动势用于克服外电路电阻和电源内阻对电流的阻碍作用。外电路两端电压与内电路电压降相加，正好对应电源提供的电动势，因此题干表述正确。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          88,
+          89,
+          90
+        ],
+        "stem_paragraph_indices": [
+          88
+        ],
+        "answer_paragraph_indices": [
+          89
+        ],
+        "analysis_paragraph_indices": [
+          90
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 18,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 19,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "在含有内阻的全电路中，负载电阻越大，它从电源处获得的功率就一定越大。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "负载获得的功率不仅取决于负载电阻，还与电源内阻和电路电流有关。负载电阻增大时，电路电流会减小，负载功率并不会一直增大；当负载电阻等于电源内阻时，负载获得的功率最大，继续增大负载电阻时功率反而减小。因此该说法错误。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "19. 在含有内阻的全电路中，负载电阻越大，它从电源处获得的功率就一定越大。（ ）\n【答案】×\n【解析】负载获得的功率不仅取决于负载电阻，还与电源内阻和电路电流有关。负载电阻增大时，电路电流会减小，负载功率并不会一直增大；当负载电阻等于电源内阻时，负载获得的功率最大，继续增大负载电阻时功率反而减小。因此该说法错误。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          92,
+          93,
+          94
+        ],
+        "stem_paragraph_indices": [
+          92
+        ],
+        "answer_paragraph_indices": [
+          93
+        ],
+        "analysis_paragraph_indices": [
+          94
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 19,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 20,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "电路处于短路状态下，电源内阻的压降为零。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "短路时外电路电阻近似为零，回路电流会显著增大。电源内阻上仍有电流通过，其压降由内阻和电流共同决定，通常不为零；接近为零的是电源输出端的端电压。因此该说法错误。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "20. 电路处于短路状态下，电源内阻的压降为零。（ ）\n【答案】×\n【解析】短路时外电路电阻近似为零，回路电流会显著增大。电源内阻上仍有电流通过，其压降由内阻和电流共同决定，通常不为零；接近为零的是电源输出端的端电压。因此该说法错误。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          96,
+          97,
+          98
+        ],
+        "stem_paragraph_indices": [
+          96
+        ],
+        "answer_paragraph_indices": [
+          97
+        ],
+        "analysis_paragraph_indices": [
+          98
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 20,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 21,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "当电源外接负载电阻阻值增加时，电源的输出电流减小，相应的电源输出功率也减小。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "外接负载电阻增大时，电路总电阻增大，输出电流会减小；但电源输出功率与端电压和电流共同有关，也可用负载获得的功率判断。对含内阻的实际电源，负载功率随负载电阻变化并不是单调减小，而是在负载电阻等于电源内阻时达到最大，因此题干把电流减小直接推出功率一定减小是不正确的。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "21. 当电源外接负载电阻阻值增加时，电源的输出电流减小，相应的电源输出功率也减小。（ ）\n【答案】×\n【解析】外接负载电阻增大时，电路总电阻增大，输出电流会减小；但电源输出功率与端电压和电流共同有关，也可用负载获得的功率判断。对含内阻的实际电源，负载功率随负载电阻变化并不是单调减小，而是在负载电阻等于电源内阻时达到最大，因此题干把电流减小直接推出功率一定减小是不正确的。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          100,
+          101,
+          102
+        ],
+        "stem_paragraph_indices": [
+          100
+        ],
+        "answer_paragraph_indices": [
+          101
+        ],
+        "analysis_paragraph_indices": [
+          102
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 21,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 22,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "在闭合电路中，外电阻越大，端电压越大。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "【详解】在闭合电路中，端电压，可知外电阻越大，端电压越大，故正确。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "22．在闭合电路中，外电阻越大，端电压越大。（ ）\n【答案】正确\n【详解】【详解】在闭合电路中，端电压，可知外电阻越大，端电压越大，故正确。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          104,
+          105,
+          106
+        ],
+        "stem_paragraph_indices": [
+          104
+        ],
+        "answer_paragraph_indices": [
+          105
+        ],
+        "analysis_paragraph_indices": [
+          106
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "analysis_visual_object",
+        "_question_no": 22,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 23,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "闭合电路中，电源的电压等于负载的电压。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "电源的电压等于负载的电压加上电压降。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "23. 闭合电路中，电源的电压等于负载的电压。（ ）\n【答案】×\n【解析】电源的电压等于负载的电压加上电压降。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          107,
+          108,
+          109
+        ],
+        "stem_paragraph_indices": [
+          107
+        ],
+        "answer_paragraph_indices": [
+          108
+        ],
+        "analysis_paragraph_indices": [
+          109
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 23,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 24,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "在通路状态下，负载电阻变小，端电压变小。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "【详解】根据，当R增大时，U增大。故表述正确。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "24．在通路状态下，负载电阻变小，端电压变小。（ ）\n【答案】正确\n【详解】【详解】根据，当R增大时，U增大。故表述正确。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          111,
+          112,
+          113
+        ],
+        "stem_paragraph_indices": [
+          111
+        ],
+        "answer_paragraph_indices": [
+          112
+        ],
+        "analysis_paragraph_indices": [
+          113
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "analysis_visual_object",
+        "_question_no": 24,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 25,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "在闭合电路中，当干路开关断开时，开关两端电压等于电源电压；当干路开关闭合时，开关两端电压为0。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "【详解】在闭合电路中，当干路开关断开时，开关两端的电压等于电源电压，即电源电动势；当干路开关闭合时，开关两端电压，因开关为导体，其自身电阻极小，故，即开关两端电压为0。故正确。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "25．在闭合电路中，当干路开关断开时，开关两端电压等于电源电压；当干路开关闭合时，开关两端电压为0。（ ）\n【答案】正确\n【详解】【详解】在闭合电路中，当干路开关断开时，开关两端的电压等于电源电压，即电源电动势；当干路开关闭合时，开关两端电压，因开关为导体，其自身电阻极小，故，即开关两端电压为0。故正确。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          114,
+          115,
+          116
+        ],
+        "stem_paragraph_indices": [
+          114
+        ],
+        "answer_paragraph_indices": [
+          115
+        ],
+        "analysis_paragraph_indices": [
+          116
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "analysis_visual_object",
+        "_question_no": 25,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 26,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "特高压输电可以降低输电过程中的能量损耗。 （ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "特高压输电能够减少输电过程中的能量损耗，提高输电效率。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "26. 特高压输电可以降低输电过程中的能量损耗。 （ ）\n【答案】√\n【解析】特高压输电能够减少输电过程中的能量损耗，提高输电效率。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          117,
+          118,
+          119
+        ],
+        "stem_paragraph_indices": [
+          117
+        ],
+        "answer_paragraph_indices": [
+          118
+        ],
+        "analysis_paragraph_indices": [
+          119
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 26,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 27,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "电源的内阻为r接入负载后，负载获得最大功率的条件是。（ ）\n[图片]",
+        "options": [],
+        "answer": "×",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "27．电源的内阻为r接入负载后，负载获得最大功率的条件是。（ ）\n[图片]\n【答案】错误",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          121,
+          122
+        ],
+        "stem_paragraph_indices": [
+          121
+        ],
+        "answer_paragraph_indices": [
+          122
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 27,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 28,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "电路中的功率可以通过公式 P=UI计算，其中P代表功率，V 代表电压，I代表电流。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "功率可以通过电压乘以电流计算得到。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "28. 电路中的功率可以通过公式 P=UI计算，其中P代表功率，V 代表电压，I代表电流。（ ）\n【答案】√\n【解析】功率可以通过电压乘以电流计算得到。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          123,
+          124,
+          125
+        ],
+        "stem_paragraph_indices": [
+          123
+        ],
+        "answer_paragraph_indices": [
+          124
+        ],
+        "analysis_paragraph_indices": [
+          125
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 28,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 29,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "在外电路电阻大于电源内阻的条件下，外电路中串联的电阻越多，从电源获取的功率越少。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "电源有内阻时，外电路获得的功率与外电路总电阻和电源内阻有关。当外电路电阻已经大于电源内阻后，继续串联电阻会使总电流减小，外电路从电源获得的功率随之减小，因此该说法正确。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "29. 在外电路电阻大于电源内阻的条件下，外电路中串联的电阻越多，从电源获取的功率越少。（ ）\n【答案】√\n【解析】电源有内阻时，外电路获得的功率与外电路总电阻和电源内阻有关。当外电路电阻已经大于电源内阻后，继续串联电阻会使总电流减小，外电路从电源获得的功率随之减小，因此该说法正确。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          127,
+          128,
+          129
+        ],
+        "stem_paragraph_indices": [
+          127
+        ],
+        "answer_paragraph_indices": [
+          128
+        ],
+        "analysis_paragraph_indices": [
+          129
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 29,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 30,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "当外电路开路时，电源端电压等于零。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "E=U+Ir当外电路开路时，电路中电流I=0电源端电压U=E。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "30. 当外电路开路时，电源端电压等于零。（ ）\n【答案】×\n【解析】E=U+Ir当外电路开路时，电路中电流I=0电源端电压U=E。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          131,
+          132,
+          133
+        ],
+        "stem_paragraph_indices": [
+          131
+        ],
+        "answer_paragraph_indices": [
+          132
+        ],
+        "analysis_paragraph_indices": [
+          133
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 30,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 31,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "一个电路中的电压为18伏特，电流为3安培，那么电路的功率为72瓦特。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "根据功率公式 P = V * I，计算得到功率为 18V * 3A = 72W。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "31. 一个电路中的电压为18伏特，电流为3安培，那么电路的功率为72瓦特。（ ）\n【答案】√\n【解析】根据功率公式 P = V * I，计算得到功率为 18V * 3A = 72W。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          135,
+          136,
+          137
+        ],
+        "stem_paragraph_indices": [
+          135
+        ],
+        "answer_paragraph_indices": [
+          136
+        ],
+        "analysis_paragraph_indices": [
+          137
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 31,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 32,
+        "question_type": "判断题",
+        "heading": "二、判断题（本大题共16小题，每题1分，共16分）",
+        "stem": "判断：在直流电路中，开路时回路电流为零，负载实际消耗的电功率为零；短路时外电路电阻很小，电流可能很大，容易使电源或导线发热损坏。（ ）",
+        "options": [
+          "A. 正确",
+          "B. 错误"
+        ],
+        "answer": "√",
+        "analysis": "开路时电路没有形成闭合回路，虽然电源两端可能有电压，但没有电流通过负载，负载不消耗电功率。短路时电流不经过正常负载而直接形成回路，电阻很小，电流可能过大，具有明显危险性。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "32. 判断：在直流电路中，开路时回路电流为零，负载实际消耗的电功率为零；短路时外电路电阻很小，电流可能很大，容易使电源或导线发热损坏。（ ）\nA. 正确 B. 错误\n【答案】√\n【解析】开路时电路没有形成闭合回路，虽然电源两端可能有电压，但没有电流通过负载，负载不消耗电功率。短路时电流不经过正常负载而直接形成回路，电阻很小，电流可能过大，具有明显危险性。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          139,
+          140,
+          141,
+          142
+        ],
+        "stem_paragraph_indices": [
+          139,
+          140
+        ],
+        "answer_paragraph_indices": [
+          141
+        ],
+        "analysis_paragraph_indices": [
+          142
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 32,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 33,
+        "question_type": "填空题",
+        "heading": "三、填空题（本大题共6小题，每题2分，共12分）",
+        "stem": "如图所示电路，U=______。\n[图片]",
+        "options": [],
+        "answer": "3V",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "33．如图所示电路，U=______。\n[图片]\n【答案】3V",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          147,
+          148,
+          149
+        ],
+        "stem_paragraph_indices": [
+          147,
+          148
+        ],
+        "answer_paragraph_indices": [
+          149
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 148,
+              "rel_id": "rId12",
+              "target_ref": "/word/media/image4.png",
+              "sha256": "e71a41465ce815067f130141dd2a324e4d9eb25cfdaeeb356e3485926b234fdb",
+              "byte_size": 8366,
+              "width_emu": 1114425,
+              "height_emu": 800100
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 148,
+            "rel_id": "rId12",
+            "target_ref": "/word/media/image4.png",
+            "sha256": "e71a41465ce815067f130141dd2a324e4d9eb25cfdaeeb356e3485926b234fdb",
+            "byte_size": 8366,
+            "width_emu": 1114425,
+            "height_emu": 800100
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 33,
+        "_question_type": "填空题",
+        "issue_details": []
+      },
+      {
+        "question_no": 34,
+        "question_type": "填空题",
+        "heading": "三、填空题（本大题共6小题，每题2分，共12分）",
+        "stem": "全电路欧姆定律中，路端电压 U=______；当外电阻 R→∞时，U=______。",
+        "options": [],
+        "answer": "① E-Ir ② E",
+        "analysis": "在含内阻的电源电路中，电源电动势一部分降落在内阻上，内阻上的电压降为Ir，所以路端电压应为电源电动势减去内阻电压降，即第一空填E-Ir。当外电阻趋于无穷大时，电路处于开路状态，回路电流为零，内阻上没有电压降，因此路端电压等于电源电动势，第二空填E。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "34. 全电路欧姆定律中，路端电压 U=______；当外电阻 R→∞时，U=______。\n【答案】① E-Ir ② E\n【解析】在含内阻的电源电路中，电源电动势一部分降落在内阻上，内阻上的电压降为Ir，所以路端电压应为电源电动势减去内阻电压降，即第一空填E-Ir。当外电阻趋于无穷大时，电路处于开路状态，回路电流为零，内阻上没有电压降，因此路端电压等于电源电动势，第二空填E。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          150,
+          151,
+          152
+        ],
+        "stem_paragraph_indices": [
+          150
+        ],
+        "answer_paragraph_indices": [
+          151
+        ],
+        "analysis_paragraph_indices": [
+          152
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 34,
+        "_question_type": "填空题",
+        "issue_details": []
+      },
+      {
+        "question_no": 35,
+        "question_type": "填空题",
+        "heading": "三、填空题（本大题共6小题，每题2分，共12分）",
+        "stem": "已知某电阻的阻值为R，通过它的电流为I，则该电阻消耗的电功率P=______。",
+        "options": [],
+        "answer": "I²R",
+        "analysis": "电功率的基本公式为P=UI，欧姆定律为U=IR。将U=IR代入P=UI，得P=IR×I=I²R，因此该电阻消耗的电功率为I²R。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "35. 已知某电阻的阻值为R，通过它的电流为I，则该电阻消耗的电功率P=______。\n【答案】I²R\n【解析】电功率的基本公式为P=UI，欧姆定律为U=IR。将U=IR代入P=UI，得P=IR×I=I²R，因此该电阻消耗的电功率为I²R。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          154,
+          155,
+          156
+        ],
+        "stem_paragraph_indices": [
+          154
+        ],
+        "answer_paragraph_indices": [
+          155
+        ],
+        "analysis_paragraph_indices": [
+          156
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 35,
+        "_question_type": "填空题",
+        "issue_details": []
+      },
+      {
+        "question_no": 36,
+        "question_type": "填空题",
+        "heading": "三、填空题（本大题共6小题，每题2分，共12分）",
+        "stem": "电路和各元件参数如图所示，______V，1A恒流源的功率______W。\n[图片]\n[图片]",
+        "options": [],
+        "answer": "① 16 ② 4",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题"
+        ],
+        "raw_text": "36．电路和各元件参数如图所示，______V，1A恒流源的功率______W。\n[图片]\n[图片]\n【答案】① 16 ② 4\n【详解】略",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          158,
+          159,
+          160,
+          161
+        ],
+        "stem_paragraph_indices": [
+          158,
+          159
+        ],
+        "answer_paragraph_indices": [
+          160
+        ],
+        "analysis_paragraph_indices": [
+          161
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 159,
+              "rel_id": "rId13",
+              "target_ref": "/word/media/image5.png",
+              "sha256": "e2a1cf9addca6718a34648db63adecb5e283fc7bfb330654c06078812a946335",
+              "byte_size": 37288,
+              "width_emu": 2971800,
+              "height_emu": 1352550
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 159,
+            "rel_id": "rId13",
+            "target_ref": "/word/media/image5.png",
+            "sha256": "e2a1cf9addca6718a34648db63adecb5e283fc7bfb330654c06078812a946335",
+            "byte_size": 37288,
+            "width_emu": 2971800,
+            "height_emu": 1352550
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 36,
+        "_question_type": "填空题",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第36题与第37题题干疑似重复（去模板后题干高度相似，相似度=92%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 37,
+        "question_type": "填空题",
+        "heading": "三、填空题（本大题共6小题，每题2分，共12分）",
+        "stem": "如图所示部分电路中，断点处的电位为－3V，流过电阻器2Ω的电流是2A，其余各元件的参数已标注，则未知电阻器R的阻值是______Ω，恒压源2V产生的功率为______W，恒流源3A产生的功率为______W。\n[图片]",
+        "options": [],
+        "answer": "① 3 ② 2 ③ 3",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题"
+        ],
+        "raw_text": "37．如图所示部分电路中，断点处的电位为－3V，流过电阻器2Ω的电流是2A，其余各元件的参数已标注，则未知电阻器R的阻值是______Ω，恒压源2V产生的功率为______W，恒流源3A产生的功率为______W。\n[图片]\n【答案】① 3 ② 2 ③ 3\n【详解】略",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          162,
+          163,
+          164,
+          165
+        ],
+        "stem_paragraph_indices": [
+          162,
+          163
+        ],
+        "answer_paragraph_indices": [
+          164
+        ],
+        "analysis_paragraph_indices": [
+          165
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 163,
+              "rel_id": "rId14",
+              "target_ref": "/word/media/image6.png",
+              "sha256": "f7379be45cf58df43f30e120288cb466e0ac0b2e87d0b45d3ba5c7b7e63502e5",
+              "byte_size": 26387,
+              "width_emu": 2524124,
+              "height_emu": 1295400
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 163,
+            "rel_id": "rId14",
+            "target_ref": "/word/media/image6.png",
+            "sha256": "f7379be45cf58df43f30e120288cb466e0ac0b2e87d0b45d3ba5c7b7e63502e5",
+            "byte_size": 26387,
+            "width_emu": 2524124,
+            "height_emu": 1295400
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 37,
+        "_question_type": "填空题",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第37题与第36题题干疑似重复（去模板后题干高度相似，相似度=92%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 38,
+        "question_type": "填空题",
+        "heading": "三、填空题（本大题共6小题，每题2分，共12分）",
+        "stem": "电源向负载输出的功率等于负载上的______乘以电流。",
+        "options": [],
+        "answer": "电压",
+        "analysis": "功率等于电压与电流的乘积，即P=VI。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "38. 电源向负载输出的功率等于负载上的______乘以电流。\n【答案】电压\n【解析】功率等于电压与电流的乘积，即P=VI。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          166,
+          167,
+          168
+        ],
+        "stem_paragraph_indices": [
+          166
+        ],
+        "answer_paragraph_indices": [
+          167
+        ],
+        "analysis_paragraph_indices": [
+          168
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 38,
+        "_question_type": "填空题",
+        "issue_details": []
+      },
+      {
+        "question_no": 39,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题（本大题共4小题，每题7分，共28分）",
+        "stem": "如下图所示的直流稳压电源的焊接电路图。试：（1）将未接入的元件补画完整；（2）元器件安装正确无误后，在变压器一次侧接220V交流电、测量AB、负载两端的电压应将万用表分别置于何档？若将可调电阻置于480，则AB、两端的电压是多少？（3）说明电解电容、的最小耐压值；（4）说明电容的作用；（5）若用万用表测得AB两端的电压只有20V，说明电路中各元件是否正常，若不正常，请找出故障元件，此时负载两端的电压怎样变化？\n[图片]\n[图片]",
+        "options": [],
+        "answer": "（1） （2）直流电压档，24V，6.25V。 （3）28.28V，16.5V。 （4）可消除上的纹波电压，使取样电压稳定。 （5）一只二极管或对臂的两只二极管开路。\n[图片]",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "39．如下图所示的直流稳压电源的焊接电路图。试：（1）将未接入的元件补画完整；（2）元器件安装正确无误后，在变压器一次侧接220V交流电、测量AB、负载两端的电压应将万用表分别置于何档？若将可调电阻置于480，则AB、两端的电压是多少？（3）说明电解电容、的最小耐压值；（4）说明电容的作用；（5）若用万用表测得AB两端的电压只有20V，说明电路中各元件是否正常，若不正常，请找出故障元件，此时负载两端的电压怎样变化？\n[图片]\n[图片]\n【答案】（1） （2）直流电压档，24V，6.25V。 （3）28.28V，16.5V。 （4）可消除上的纹波电压，使取样电压稳定。 （5）一只二极管或对臂的两只二极管开路。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          173,
+          174,
+          175
+        ],
+        "stem_paragraph_indices": [
+          173,
+          174
+        ],
+        "answer_paragraph_indices": [
+          175
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": true,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 174,
+              "rel_id": "rId15",
+              "target_ref": "/word/media/image7.png",
+              "sha256": "63f79c44908ecdb6eb6c29ff644120f8ccc41298100b4beac3c27a21db625705",
+              "byte_size": 30217,
+              "width_emu": 4181475,
+              "height_emu": 1257300
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 174,
+            "rel_id": "rId15",
+            "target_ref": "/word/media/image7.png",
+            "sha256": "63f79c44908ecdb6eb6c29ff644120f8ccc41298100b4beac3c27a21db625705",
+            "byte_size": 30217,
+            "width_emu": 4181475,
+            "height_emu": 1257300
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object,answer_visual_object",
+        "_question_no": 39,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      },
+      {
+        "question_no": 40,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题（本大题共4小题，每题7分，共28分）",
+        "stem": "某电热丝接在12 V直流电源上，工作时通过的电流为2 A，连续通电10 s。求该电热丝的电功率和在这段时间内消耗的电功。",
+        "options": [],
+        "answer": "电功率为24 W；电功为240 J。",
+        "analysis": "电功率等于电压与电流的乘积，代入12 V和2 A，可得电功率为24 W。电功等于电功率与通电时间的乘积，代入24 W和10 s，可得电功为240 J。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "40. 某电热丝接在12 V直流电源上，工作时通过的电流为2 A，连续通电10 s。求该电热丝的电功率和在这段时间内消耗的电功。\n【答案】电功率为24 W；电功为240 J。\n【解析】电功率等于电压与电流的乘积，代入12 V和2 A，可得电功率为24 W。电功等于电功率与通电时间的乘积，代入24 W和10 s，可得电功为240 J。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          176,
+          177,
+          178
+        ],
+        "stem_paragraph_indices": [
+          176
+        ],
+        "answer_paragraph_indices": [
+          177
+        ],
+        "analysis_paragraph_indices": [
+          178
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 40,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      },
+      {
+        "question_no": 41,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题（本大题共4小题，每题7分，共28分）",
+        "stem": "一只标有“220 V 40 W”的白炽灯在额定电压下正常工作0.5 h。求该灯消耗的电能，分别用kW·h和J表示。",
+        "options": [],
+        "answer": "消耗的电能为0.02 kW·h；合72000 J。",
+        "analysis": "40 W换算为0.04 kW，电能等于电功率与时间的乘积，代入0.04 kW和0.5 h，可得0.02 kW·h。由于1 kW·h为3600000 J，所以0.02 kW·h合72000 J。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "41. 一只标有“220 V 40 W”的白炽灯在额定电压下正常工作0.5 h。求该灯消耗的电能，分别用kW·h和J表示。\n【答案】消耗的电能为0.02 kW·h；合72000 J。\n【解析】40 W换算为0.04 kW，电能等于电功率与时间的乘积，代入0.04 kW和0.5 h，可得0.02 kW·h。由于1 kW·h为3600000 J，所以0.02 kW·h合72000 J。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          180,
+          181,
+          182
+        ],
+        "stem_paragraph_indices": [
+          180
+        ],
+        "answer_paragraph_indices": [
+          181
+        ],
+        "analysis_paragraph_indices": [
+          182
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 41,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      },
+      {
+        "question_no": 42,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题（本大题共4小题，每题7分，共28分）",
+        "stem": "某实验电路由电源、开关和小灯泡串联组成。开关断开时小灯泡不亮；开关闭合且连接良好时小灯泡发光；若用导线直接接在电源两端而绕过小灯泡。分别判断三种情况下电路所处的状态，并说明主要特点。",
+        "options": [],
+        "answer": "开关断开时为开路，特点是回路不通，电流为零；开关闭合且连接良好时为通路，特点是形成闭合回路，负载正常工作；导线直接接在电源两端而绕过小灯泡时为短路，特点是电阻很小，电流可能过大。",
+        "analysis": "开路是电路某处断开，不能形成闭合回路，所以小灯泡不亮。通路是电源、导线、开关和负载形成完整回路，电流能正常通过负载。短路是电流绕过负载直接形成回路，容易产生过大电流，应避免发生。\nA. 、和\nB. 和\nC. 和\nD. 、和\nA. 亮度相同，功率相等\nB. 亮度不同，功率也不相等\nC. 亮度相同，但有功功率不同\nD. 无法确定\nA. A灯变亮.B灯变暗 B. A灯变亮.B灯变亮\nC. A灯变暗.B灯变亮 D. A灯变暗.B灯变暗\nA. 0.1V B. 0.2V\nC. 0.3V D. 0.4V\nA. ab间的总电阻变小\nB. 通过R电流变大\nC. L1灯两端的电压变小\nD. L1灯的电流变大",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "42. 某实验电路由电源、开关和小灯泡串联组成。开关断开时小灯泡不亮；开关闭合且连接良好时小灯泡发光；若用导线直接接在电源两端而绕过小灯泡。分别判断三种情况下电路所处的状态，并说明主要特点。\n【答案】开关断开时为开路，特点是回路不通，电流为零；开关闭合且连接良好时为通路，特点是形成闭合回路，负载正常工作；导线直接接在电源两端而绕过小灯泡时为短路，特点是电阻很小，电流可能过大。\n【解析】开路是电路某处断开，不能形成闭合回路，所以小灯泡不亮。通路是电源、导线、开关和负载形成完整回路，电流能正常通过负载。短路是电流绕过负载直接形成回路，容易产生过大电流，应避免发生。\nA. 、和\nB. 和\nC. 和\nD. 、和\nA. 亮度相同，功率相等\nB. 亮度不同，功率也不相等\nC. 亮度相同，但有功功率不同\nD. 无法确定\nA. A灯变亮.B灯变暗 B. A灯变亮.B灯变亮\nC. A灯变暗.B灯变亮 D. A灯变暗.B灯变暗\nA. 0.1V B. 0.2V\nC. 0.3V D. 0.4V\nA. ab间的总电阻变小\nB. 通过R电流变大\nC. L1灯两端的电压变小\nD. L1灯的电流变大\nA. 、和\nB. 和\nC. 和\nD. 、和\nA. 亮度相同，功率相等\nB. 亮度不同，功率也不相等\nC. 亮度相同，但有功功率不同\nD. 无法确定\nA. A灯变亮.B灯变暗 B. A灯变亮.B灯变亮\nC. A灯变暗.B灯变亮 D. A灯变暗.B灯变暗\nA. 0.1V B. 0.2V\nC. 0.3V D. 0.4V\nA. ab间的总电阻变小\nB. 通过R电流变大\nC. L1灯两端的电压变小\nD. L1灯的电流变大",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第3卷_repaired.docx",
+        "source_paragraph_indices": [
+          184,
+          185,
+          186
+        ],
+        "stem_paragraph_indices": [
+          184
+        ],
+        "answer_paragraph_indices": [
+          185
+        ],
+        "analysis_paragraph_indices": [
+          186
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 42,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      }
+    ],
+    "warnings": []
+  }
+}

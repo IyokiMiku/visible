@@ -1,0 +1,255 @@
+{
+  "试卷": "第1卷",
+  "题型": "判断题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 2,
+  "typeIds": [
+    1000202
+  ],
+  "计划补题数": 2,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 11,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87645,
+      87646
+    ],
+    "typeIds": [
+      1000202
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 3,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3643352887738368",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3641713388838912",
+          "source": "专题一 电路的基本概念（练习）原卷版+-《电工技术基础与技能》二轮专题复习讲练测",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">负载可以把电能转化成其他形式的能。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 16,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T22:03:20",
+          "updateDate": "2026-04-20T04:02:35",
+          "publishDate": "2025-04-22T22:33:49",
+          "qmlUpdateDate": "2025-10-21T11:23:39",
+          "stemText": "负载可以把电能转化成其他形式的能。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:32:53"
+        },
+        {
+          "questionId": "3648009415901184",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642311969611776",
+          "source": "模块三 负责直流电路（测验）-中职高考《电工基础》一轮复习讲练测（高教版·第2版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">所谓复杂电路，是指电路中的元件个数较多，因此元件个数较少的电路可称为简单电路。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span style=\"\"><span>复杂电路</span><span>则是指不能直接用串并联电路的基本规律来求解的电路，比如含有多个电源、多个节点、多条支路，并且存在复杂的连接方式（如桥式电路）或需要运用复杂的电路定理（如基尔霍夫定律等）来分析和计算的电路。即使元件个数不多，但如果电路结构复杂，不能用常规简单方法分析，也属于复杂电路；而有些电路虽然元件个数多，但如果是简单的串并联组合，也可以认为是简单电路。</span></span></p></div></div>",
+          "catalogIds": [
+            237957,
+            237903
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87645
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 23,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-14T11:57:04",
+          "updateDate": "2026-04-20T04:14:36",
+          "publishDate": "2025-04-26T16:58:18",
+          "qmlUpdateDate": "2025-10-21T11:26:08",
+          "stemText": "所谓复杂电路，是指电路中的元件个数较多，因此元件个数较少的电路可称为简单电路。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:57:37"
+        },
+        {
+          "questionId": "3643352887541760",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3641713388838912",
+          "source": "专题一 电路的基本概念（练习）原卷版+-《电工技术基础与技能》二轮专题复习讲练测",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电路就是电压通过的路径。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路是由电源、用电器、开关、导线组成的能通过电流的路径，它跟是否有电流无关。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 46,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T22:03:20",
+          "updateDate": "2026-04-20T04:02:35",
+          "publishDate": "2025-04-22T22:32:12",
+          "qmlUpdateDate": "2025-10-21T11:23:39",
+          "stemText": "电路就是电压通过的路径。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:32:53"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "试卷": "第3卷",
+  "题型": "判断题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000202
+  ],
+  "计划补题数": 2,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 11,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87681
+    ],
+    "typeIds": [
+      1000202
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 5,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3644834184675328",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642274471321600",
+          "source": "模块二 简单直流电路（测验）-中职高考《电工基础》一轮复习讲练测（高教版·第2版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">当外电路开路时，电源端电压等于零。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span>E=U+Ir</span></p><p style=\"\"><span style=\"\">当外电路开路时，电路中电流I=0</span></p><p style=\"\"><span>电源端电压U=E。</span></p></div></div>",
+          "catalogIds": [
+            237974
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 30,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-10T00:17:03",
+          "updateDate": "2026-04-20T04:06:50",
+          "publishDate": "2025-02-26T09:22:29",
+          "qmlUpdateDate": "2025-10-21T11:24:17",
+          "stemText": "当外电路开路时，电源端电压等于零。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:40:46"
+        },
+        {
+          "questionId": "3641914844971008",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3641712859979776",
+          "source": "专题四 复杂直流电流（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">一个电路中的电压为</span><span style=\"font-family: 'Times New Roman';\">18</span><span style=\"font-family: 宋体;\">伏特，电流为</span><span style=\"font-family: 'Times New Roman';\">3</span><span style=\"font-family: 宋体;\">安培，那么电路的功率为</span><span style=\"font-family: 'Times New Roman';\">72</span><span style=\"font-family: 宋体;\">瓦特。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据功率公式 P = V * I，计算得到功率为 18V * 3A = 72W。</span></p></div></div>",
+          "catalogIds": [
+            237907
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87657,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003
+          ],
+          "textBookIds": [
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 72,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-05T21:17:38",
+          "updateDate": "2026-04-20T03:57:42",
+          "publishDate": "2025-01-20T20:25:43",
+          "qmlUpdateDate": "2025-10-21T11:23:05",
+          "stemText": "一个电路中的电压为18伏特，电流为3安培，那么电路的功率为72瓦特。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:24:54"
+        },
+        {
+          "questionId": "3645992436400128",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642274617524224",
+          "source": "2.1闭合电路的欧姆定律（同步练习）-高一《电工技术基础》同步精品课堂 （高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">在通路状态下，负载电阻变大，端电压就变大。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><math latex=\"$I=\\frac{E}{R+r}\\newline U=IR=\\frac{ER}{R+r}=\\frac{E}{1+\\frac{r}{R}}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac><mspace linebreak=\"newline\"></mspace><mi>U</mi><mo>=</mo><mi>I</mi><mi>R</mi><mo>=</mo><mfrac><mrow><mi>E</mi><mi>R</mi></mrow><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mi>E</mi><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle=\"true\"><mfrac><mi>r</mi><mi>R</mi></mfrac></mstyle></mrow></mfrac></math></p><p style=\"\"><span>R变大，U变大。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 38,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T15:33:31",
+          "updateDate": "2026-04-20T04:09:07",
+          "publishDate": "2025-02-11T10:18:49",
+          "qmlUpdateDate": "2025-10-21T11:24:58",
+          "stemText": "在通路状态下，负载电阻变大，端电压就变大。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:45:56"
+        },
+        {
+          "questionId": "3648843675181056",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642337619976192",
+          "source": "【对口高考】河北省-冲刺模拟卷（五）-（电工技术基础与技能）（高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">将“</span><span style=\"font-family: 'Times New Roman';\">220V/60W</span><span style=\"font-family: 宋体;\">”的用电器接在</span><span style=\"font-family: 'Times New Roman';\">110V</span><span style=\"font-family: 宋体;\">的电源上，其实际功率为</span><span style=\"font-family: 'Times New Roman';\">30W</span><span style=\"font-family: 宋体;\">。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237975,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87657,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 50,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-15T16:14:22",
+          "updateDate": "2025-10-21T11:26:42",
+          "publishDate": "2025-04-27T10:25:20",
+          "qmlUpdateDate": "2025-10-21T11:26:42",
+          "stemText": "将“220V/60W”的用电器接在110V的电源上，其实际功率为30W。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:01:36"
+        },
+        {
+          "questionId": "3649755318697984",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642398799241216",
+          "source": "《电工技术基础与技能》第二章  课题三 电动势和欧姆定律 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">外电路断开时，电流为零，则路端电压等于电源电压。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路处于断路时，电路中电流为</span><span style=\"font-family: 'Times New Roman';\">0</span><span style=\"font-family: 宋体;\">，根据</span><span style=\"font-family: 'Times New Roman';\">U=E-Ir</span><span style=\"font-family: 宋体;\">可知路端电压等于电源电压，故表述正确。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 39,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-16T23:09:07",
+          "updateDate": "2026-04-20T04:19:05",
+          "publishDate": "2025-04-28T22:04:35",
+          "qmlUpdateDate": "2025-10-21T11:27:24",
+          "stemText": "外电路断开时，电流为零，则路端电压等于电源电压。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:08:02"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

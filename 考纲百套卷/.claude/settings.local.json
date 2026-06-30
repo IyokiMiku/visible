@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(PYTHONIOENCODING=utf-8 python *)",
+      "Bash(apply_patch *)",
+      "Bash(pytest *)",
+      "Bash(git *)",
+      "Bash(PYTHONPATH=\"C:/Users/zxxk/Desktop/wyy/考纲百套卷/01_工具脚本\" PYTHONIOENCODING=utf-8 python *)",
+      "Bash(PYTHONPATH=\"C:/Users/zxxk/Desktop/wyy/考纲百套卷/01_工具脚本/核心脚本;C:/Users/zxxk/Desktop/wyy/考纲百套卷/01_工具脚本\" PYTHONIOENCODING=utf-8 python -)"
+    ]
+  }
+}

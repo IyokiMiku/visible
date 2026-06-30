@@ -1,0 +1,316 @@
+{
+  "试卷": "第5卷",
+  "题型": "单项选择题",
+  "难度": "困难",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000201
+  ],
+  "计划补题数": 1,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 8,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87678
+    ],
+    "typeIds": [
+      1000201
+    ],
+    "difficultyLowLimit": 0.0,
+    "difficultyUpLimit": 0.49,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 4,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3927600947167232",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3926966974472192",
+          "source": "《电工技能基础》简单直流电路 知识点训练卷2026 江苏省职教高考《机电类考纲百套卷》第16卷 入库版",
+          "year": 2025,
+          "difficulty": 0.4,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如图所示，直线</span><span style=\"font-family: 'Times New Roman';\">A</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';\">B</span><span style=\"font-family: 宋体;\">分别为电源</span><span style=\"font-family: 'Times New Roman';\">a</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';\">b</span><span style=\"font-family: 宋体;\">的外特性图形，设两个电源的内阻分别为</span><math latex=\"$r_{a}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 宋体;\">和</span><math latex=\"$r_{b}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，若将一定值电阻</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">分别接到</span><span style=\"font-family: 'Times New Roman';\">a</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';\">b</span><span style=\"font-family: 宋体;\">两电源上，通过</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">的电流分别为</span><math latex=\"$I_{a}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 宋体;\">和</span><math latex=\"$I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，则（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><p style=\"text-align: left;\"><img  src=\"https://img.xkw.com/dksih/QBM/2026/1/12/3926966974472192/3927600947167232/STEM/832a951b44bd403d8ee0b97feeb1ca5c.png\" width=\"147\" height=\"117\" /></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><math latex=\"$r_{a}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 'Times New Roman';\">=</span><math latex=\"$r_{b}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$I_{a}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 'Times New Roman';\">=</span><math latex=\"$I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math></span></td><td>B.&nbsp;<span class=\"qml-op\"><math latex=\"$r_{a}&gt; r_{b}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>a</mi></mrow></msub><mo>&gt;</mo><msub><mrow><mi>r</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$I_{a}&gt; I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub><mo>&gt;</mo><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math></span></td></tr><tr><td>C.&nbsp;<span class=\"qml-op\"><math latex=\"$r_{a}&gt; r_{b}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>a</mi></mrow></msub><mo>&gt;</mo><msub><mrow><mi>r</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$I_{a}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 'Times New Roman';\">=</span><math latex=\"$I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><math latex=\"$I_{a}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 'Times New Roman';\">=</span><math latex=\"$I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$I_{a}&lt; I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub><mo>&lt;</mo><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237969
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 19,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-13T12:27:30",
+          "updateDate": "2026-04-15T15:56:43",
+          "publishDate": "2026-04-15T15:56:43",
+          "qmlUpdateDate": "2026-01-13T12:27:30",
+          "stemText": "如图所示，直线A、B分别为电源a、b的外特性图形，设两个电源的内阻分别为ra和rb，若将一定值电阻R分别接到a、b两电源上，通过R的电流分别为Ia和Ib，则（   ）ra=rb，Ia=Ibra>rb，Ia>Ibra>rb，Ia=IbIa=Ib，Ia<Ib",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T01:04:48"
+        },
+        {
+          "questionId": "3927245797785600",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3926966235357184",
+          "source": "《电工技能基础》简单直流电路 知识点训练卷 2026江苏省职教高考《机电类考纲百套卷》第14卷 入库版",
+          "year": 2025,
+          "difficulty": 0.4,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">额定值分别为“</span><span style=\"font-family: 'Times New Roman';\">220 V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">100 W</span><span style=\"font-family: 宋体;\">”和“</span><span style=\"font-family: 'Times New Roman';\">220 V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">40 W</span><span style=\"font-family: 宋体;\">”的两个灯泡</span><span style=\"font-family: 'Times New Roman';\">L</span><span style=\"font-family: 'Times New Roman';\"><sub>1</sub></span><span style=\"font-family: 'Times New Roman';\">L</span><span style=\"font-family: 'Times New Roman';\"><sub>2</sub></span><span style=\"font-family: 宋体;\">，串联后接入</span><span style=\"font-family: 'Times New Roman';\"> 220V</span><span style=\"font-family: 宋体;\">电源，若不考虑温度的变化对灯泡电阻的影响，则、，消耗的功率之比是（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">25</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">2</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">25</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">2</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">5</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">D</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237977,
+            237910
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87684,
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 65,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-13T00:24:56",
+          "updateDate": "2026-04-13T15:24:15",
+          "publishDate": "2026-04-13T15:24:15",
+          "qmlUpdateDate": "2026-01-13T00:24:57",
+          "stemText": "额定值分别为“220 V，100 W”和“220 V，40 W”的两个灯泡L1L2，串联后接入 220V电源，若不考虑温度的变化对灯泡电阻的影响，则、，消耗的功率之比是（   ）25：24：255：22：5",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T01:02:57"
+        },
+        {
+          "questionId": "3927533672259584",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3926966478209024",
+          "source": "《电工技能基础》简单直流电路 知识点训练卷 2026江苏省职教高考《机电类考纲百套卷》第15卷 入库版",
+          "year": 2025,
+          "difficulty": 0.4,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">用内接法测量电阻时，电压表的读数为</span><span style=\"font-family: 'Times New Roman';\">10V</span><span style=\"font-family: 宋体;\">，电流表的读数为</span><span style=\"font-family: 'Times New Roman';\">1A</span><span style=\"font-family: 宋体;\">，则实际电阻</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">等于</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">Ω</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">大于</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">Ω</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">小于</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">Ω</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">不能确定</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">C</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237969
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 33,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-13T10:10:37",
+          "updateDate": "2026-04-15T15:54:05",
+          "publishDate": "2026-04-15T15:54:05",
+          "qmlUpdateDate": "2026-01-13T10:10:38",
+          "stemText": "用内接法测量电阻时，电压表的读数为10V，电流表的读数为1A，则实际电阻R（   ）等于10Ω大于10Ω小于10Ω不能确定",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T01:03:56"
+        },
+        {
+          "questionId": "3915845132967936",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3914054784466944",
+          "source": "《电工技术基础》直流电路的分析-知识点训练卷 2026版山东省机电技术类专业 考纲百套卷 第46卷（入库版）",
+          "year": 2025,
+          "difficulty": 0.4,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">如图所示，</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">的阻值为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><p style=\"text-align:justify;word-break:break-word;\"><img  src=\"https://img.xkw.com/dksih/QBM/2025/12/25/3914054784466944/3915845132967936/STEM/1ccffcd8bd874e6aab887a21aa94e2c1.png\" width=\"100\" height=\"64\" /></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">30</span><span style=\"font-family: 宋体;\">Ω</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">40</span><span style=\"font-family: 宋体;\">Ω</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">70</span><span style=\"font-family: 宋体;\">Ω</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">Ω</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">D</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237969,
+            237973
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 50,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-12-27T21:50:14",
+          "updateDate": "2026-03-24T16:37:22",
+          "publishDate": "2026-03-24T16:37:22",
+          "qmlUpdateDate": "2025-12-27T21:50:14",
+          "stemText": "如图所示，R的阻值为（   ）30Ω40Ω70Ω10Ω",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T23:45:07"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

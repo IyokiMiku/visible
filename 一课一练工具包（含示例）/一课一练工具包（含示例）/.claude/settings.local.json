@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(PYTHONIOENCODING=utf-8 python *)",
+      "Bash(python -m py_compile \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/规划表/generate_plan.py\" \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/规划表/plan_modules/config.py\" \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/规划表/plan_modules/outline_parser.py\" \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/规划表/plan_modules/topic_generator.py\" \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/规划表/plan_modules/ai_client.py\" \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/规划表/plan_modules/textbook_toc.py\" \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/规划表/plan_modules/toc_matcher.py\" \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/规划表/plan_modules/excel_writer.py\")",
+      "Bash(python \"C:/Users/zxxk/Desktop/wyy/generate_plan.py\" --help)",
+      "Bash('/c/Program Files/Tesseract-OCR/tesseract.exe' --version)",
+      "Bash(/c/Program Files/Tesseract-OCR/tesseract.exe *)",
+      "Skill(claude-api)",
+      "Skill(update-config)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"C:/Users/zxxk/Desktop/wyy/01_工具脚本/生成器/sync_claude_code_usage.py\" 2>/dev/null || true",
+            "timeout": 30,
+            "statusMessage": "同步 Claude Code 对话 token 用量"
+          }
+        ]
+      }
+    ]
+  }
+}

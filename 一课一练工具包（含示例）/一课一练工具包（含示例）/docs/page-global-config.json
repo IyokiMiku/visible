@@ -1,0 +1,14 @@
+{
+  "slideStyle": "business",
+  "colorScheme": "Professional Blue",
+  "primaryColor": "#1a73e8",
+  "accentColor1": "#0d9488",
+  "accentColor2": "#f59e0b",
+  "neutralColor": "#64748b",
+  "background": {
+    "type": "color",
+    "value": "#FFFFFF"
+  },
+  "fontTitle": "'Montserrat', 'Noto Sans SC', sans-serif",
+  "fontBody": "'Inter', 'Noto Sans SC', sans-serif"
+}

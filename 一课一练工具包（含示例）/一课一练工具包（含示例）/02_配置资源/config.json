@@ -1,0 +1,20 @@
+{
+  "api_key": "sk-RpGdTM8Jz4ZnPAOB387fNKwGKh0KkpfjlngcjI9Y5eCOV7iZ",
+  "base_url": "https://coding-api.xkw.cn/v1",
+  "model": "gpt-5.5",
+  "max_tokens": 8000,
+  "temperature": 0.7,
+  "input_price_per_1m_tokens": 0.45,
+  "output_price_per_1m_tokens": 2.7,
+  "claude_code_input_price_per_1m_tokens": 0.45,
+  "claude_code_output_price_per_1m_tokens": 2.7,
+  "claude_code_cache_creation_price_per_1m_tokens": 0.45,
+  "claude_code_cache_read_price_per_1m_tokens": 0.045,
+  "token_price_currency": "美元",
+  "output_dir": "生成结果",
+  "_说明": "请将 api_key 替换为你的服务商密钥。base_url 根据服务商选择：",
+  "_OpenRouter": "https://openrouter.ai/api/v1 → 模型名: anthropic/claude-sonnet-4-20250514",
+  "_Anthropic官方": "https://api.anthropic.com/v1 → 模型名: claude-sonnet-4-20250514",
+  "_SiliconFlow": "https://api.siliconflow.cn/v1 → 模型名: Qwen/Qwen2.5-72B-Instruct (不支持Claude)",
+  "_模型备选": "claude-sonnet-4-20250514, claude-3-5-sonnet-20241022, claude-3-haiku-20240307, deepseek-chat, Qwen/Qwen2.5-72B-Instruct"
+}

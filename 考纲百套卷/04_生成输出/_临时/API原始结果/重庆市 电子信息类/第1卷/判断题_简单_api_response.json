@@ -1,0 +1,829 @@
+{
+  "试卷": "第1卷",
+  "题型": "判断题",
+  "难度": "简单",
+  "courseId": 10002,
+  "kpointIds数量": 2,
+  "typeIds": [
+    1000202
+  ],
+  "计划补题数": 13,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 44,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87645,
+      87646
+    ],
+    "typeIds": [
+      1000202
+    ],
+    "difficultyLowLimit": 0.8,
+    "difficultyUpLimit": 1.0,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 13,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3897953239105536",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3875305838190592",
+          "source": "《电工基础》直流电路-知识点训练卷 2026版吉林省装备制造类专业 考纲百套卷 第23卷",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源的作用是将其他形式的能转化为电能。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">如电池将化学能转化为电能，发电机将机械能转化为电能。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 44,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-12-02T15:09:05",
+          "updateDate": "2026-03-19T14:44:00",
+          "publishDate": "2026-03-19T14:44:00",
+          "qmlUpdateDate": "2026-03-18T22:22:47",
+          "stemText": "电源的作用是将其他形式的能转化为电能。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-03-29T18:45:25"
+        },
+        {
+          "questionId": "3698274651537408",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812055003136",
+          "source": "《电工基础》项目一：课题1 电路和电路图  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源只能将化学能转化为电能。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电源可将多种形式能转化为电能，如太阳能电池将光能、风力发电机将风能转化为电能。</span></p></div></div>",
+          "catalogIds": [
+            237958,
+            237903
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 29,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-23T12:21:57",
+          "updateDate": "2026-04-20T05:51:25",
+          "publishDate": "2025-08-06T23:00:41",
+          "qmlUpdateDate": "2025-10-21T11:44:55",
+          "stemText": "电源只能将化学能转化为电能。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T03:43:35"
+        },
+        {
+          "questionId": "3927072537182208",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3926964805566464",
+          "source": "《电工技能基础》电路的基本概念 知识点训练卷 2026江苏省职教高考《机电类考纲百套卷》第12卷 入库版",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电路中的电源是提供电能的装置，而负载则是消耗电能的装置。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 31,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-12T18:32:26",
+          "updateDate": "2026-04-11T15:30:53",
+          "publishDate": "2026-04-11T15:30:53",
+          "qmlUpdateDate": "2026-04-10T15:29:57",
+          "stemText": "电路中的电源是提供电能的装置，而负载则是消耗电能的装置。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-04-11T15:32:09"
+        },
+        {
+          "questionId": "3649025402257408",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642337743773696",
+          "source": "专题一 认识电路（专项练习）-四川省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电路的组成包括电源和电器。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路的基本组成包括能源供应端（电源）和能量消耗端（电器）</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 57,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-15T22:24:06",
+          "updateDate": "2026-04-20T04:16:55",
+          "publishDate": "2025-04-17T09:30:08",
+          "qmlUpdateDate": "2025-10-21T11:26:57",
+          "stemText": "电路的组成包括电源和电器。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:02:57"
+        },
+        {
+          "questionId": "3643957589778432",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642274401312768",
+          "source": "专题一 认识电路（专项练习）-浙江省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路的组成一般包括电源、负载和连接线这三个基本部分。</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"2\">&nbsp;&nbsp;&nbsp;</span></span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路的组成主要包括电源、负载和连接线。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [
+            87646
+          ],
+          "tagIds": [
+            "4801"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 43,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-08T18:33:36",
+          "updateDate": "2026-04-20T04:04:35",
+          "publishDate": "2025-03-07T11:37:49",
+          "qmlUpdateDate": "2025-10-21T11:23:50",
+          "stemText": "电路的组成一般包括电源、负载和连接线这三个基本部分。  ",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:35:47"
+        },
+        {
+          "questionId": "3687247132196864",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3651004924354560",
+          "source": "《电工技术基础》电路基本概念和基本定律-知识点训练 广东省《电工技术基础综合课程考纲训练卷》 第1卷（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路由开关、灯泡、电池组成。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [
+            87646
+          ],
+          "tagIds": [
+            "4801"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 27,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-07T22:26:24",
+          "updateDate": "2026-04-20T05:30:35",
+          "publishDate": "2025-03-01T17:52:56",
+          "qmlUpdateDate": "2025-10-21T11:41:51",
+          "stemText": "电路由开关、灯泡、电池组成。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:52:44"
+        },
+        {
+          "questionId": "3644437959737344",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3641755341553664",
+          "source": "《电工技术基础与技能》第二章   课题二 电路基础—电流、电压与电位 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">负载就是所有用电设备，即是把电能转换成其它形式能量的设备。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 37,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-09T10:50:55",
+          "updateDate": "2026-04-20T04:05:29",
+          "publishDate": "2025-04-25T07:47:58",
+          "qmlUpdateDate": "2025-10-21T11:23:59",
+          "stemText": "负载就是所有用电设备，即是把电能转换成其它形式能量的设备。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:37:46"
+        },
+        {
+          "questionId": "3643215777742848",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3641755199406080",
+          "source": "专题一 认识电路（专项练习）-山东省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">在一个完整的电路中，电源是不能缺少的部分。</span><span class=\"qml-bk\" index=\"1\" size=\"3\" type=\"bracket\">（　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电源是提供电能的设备，没有电源，电路中无法形成电流，所以电源是完整电路中不可缺少的部分。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 32,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T17:24:23",
+          "updateDate": "2026-04-20T04:01:44",
+          "publishDate": "2025-04-18T19:00:18",
+          "qmlUpdateDate": "2025-10-21T11:23:35",
+          "stemText": "在一个完整的电路中，电源是不能缺少的部分。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:31:49"
+        },
+        {
+          "questionId": "3643957590695936",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642274401312768",
+          "source": "专题一 认识电路（专项练习）-浙江省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">导线是一种良好的绝缘材料，可以有效阻止电流的流动。</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"2\">&nbsp;&nbsp;&nbsp;</span></span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">导线是用于传导电流的材料，而不是阻止电流流动的材料。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 19,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-08T18:33:36",
+          "updateDate": "2026-04-20T04:04:35",
+          "publishDate": "2025-04-24T18:09:55",
+          "qmlUpdateDate": "2025-10-21T11:23:50",
+          "stemText": "导线是一种良好的绝缘材料，可以有效阻止电流的流动。  ",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:35:48"
+        },
+        {
+          "questionId": "3927793967120384",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3926976717963264",
+          "source": "《电工技术基础》常考题训练卷 2026版江苏省职教高考《机电类考纲百套卷》第80卷 入库版",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电路是由导线和电气设备组成的闭合路径，用于传输和分配电能。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 30,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-13T19:00:12",
+          "updateDate": "2026-04-17T16:05:03",
+          "publishDate": "2026-04-17T16:05:03",
+          "qmlUpdateDate": "2026-04-17T16:02:46",
+          "stemText": "电路是由导线和电气设备组成的闭合路径，用于传输和分配电能。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-04-17T16:06:16"
+        },
+        {
+          "questionId": "3667934999494656",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3667284556357632",
+          "source": "周测2  电路、部分电路欧姆定律",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电路中电源和负载，起传输和控制电能作用的部分称为导线。</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"bracket\">（　　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 18,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 22,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-11T15:35:46",
+          "updateDate": "2026-04-20T05:00:34",
+          "publishDate": "2025-05-25T09:30:36",
+          "qmlUpdateDate": "2025-10-21T11:38:41",
+          "stemText": "电路中电源和负载，起传输和控制电能作用的部分称为导线。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:44:31"
+        },
+        {
+          "questionId": "3698274651635712",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812055003136",
+          "source": "《电工基础》项目一：课题1 电路和电路图  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">负载的作用就是把电能转化为热能散发掉。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">负载作用是将电能转化为多种形式能，如电动机转化为机械能、扬声器转化为声能，不只是热能。</span></p></div></div>",
+          "catalogIds": [
+            237958,
+            237903
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 29,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-23T12:21:57",
+          "updateDate": "2026-04-20T05:51:25",
+          "publishDate": "2025-08-06T23:01:20",
+          "qmlUpdateDate": "2025-10-21T11:44:55",
+          "stemText": "负载的作用就是把电能转化为热能散发掉。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T03:43:35"
+        },
+        {
+          "questionId": "3698274651439104",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812055003136",
+          "source": "《电工基础》项目一：课题1 电路和电路图  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">任何电路都必须包含电源、负载、导线和开关这四个部分。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">不是所有电路都必须有开关，如简单的手电筒电路，通过按压等方式接通电路，没有传统机械开关也可行。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 29,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-23T12:21:57",
+          "updateDate": "2026-04-20T05:51:25",
+          "publishDate": "2025-08-06T22:59:17",
+          "qmlUpdateDate": "2025-10-21T11:44:55",
+          "stemText": "任何电路都必须包含电源、负载、导线和开关这四个部分。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T03:43:35"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

@@ -1,0 +1,1314 @@
+{
+  "试卷": "第4卷",
+  "题型": "填空题",
+  "难度": "简单",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000203
+  ],
+  "计划补题数": 5,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 20,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87671
+    ],
+    "typeIds": [
+      1000203
+    ],
+    "difficultyLowLimit": 0.8,
+    "difficultyUpLimit": 1.0,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 36,
+      "totalPages": 2,
+      "list": [
+        {
+          "questionId": "3932152036171776",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3875284512956416",
+          "source": "《电工技术模块》电路基础知识-常考题训练卷 2026版湖南省电工电子类专业 考纲百套卷 第69卷",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻定律中，同种材料的导体电阻与长度成</span><span class=\"qml-bk\" index=\"1\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">比，与横截面积成</span><span class=\"qml-bk\" index=\"2\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">比。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">正</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">反</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 59,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-19T22:46:43",
+          "updateDate": "2026-04-17T21:27:17",
+          "publishDate": "2026-04-17T21:27:17",
+          "qmlUpdateDate": "2026-01-19T22:46:43",
+          "stemText": "电阻定律中，同种材料的导体电阻与长度成比，与横截面积成比。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T01:39:43"
+        },
+        {
+          "questionId": "3698300843040768",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3651004946259968",
+          "source": "《电工技术基础与技能》第一章 课题二 电阻与欧姆定律 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">超导体的应用可分为三类：</span><span class=\"qml-bk\" index=\"1\" size=\"11\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　　</span><span style=\"font-family: 宋体;\">、</span><span class=\"qml-bk\" index=\"2\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">和抗磁性应用。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">强电应用</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">弱电应用</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">在国际单位制中，电功率的单位是瓦特（</span><span style=\"font-family: 'Times New Roman';\">W</span><span style=\"font-family: 宋体;\">）</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 21,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-23T13:15:14",
+          "updateDate": "2026-04-20T05:51:30",
+          "publishDate": "2025-08-21T22:49:34",
+          "qmlUpdateDate": "2025-02-23T13:15:14",
+          "stemText": "超导体的应用可分为三类：、和抗磁性应用。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T03:43:43"
+        },
+        {
+          "questionId": "3650889329213440",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642399136366592",
+          "source": "1.2电阻与部分电路欧姆定律（同步练习）-高一《电工技术基础》同步精品课堂 （高教版）",
+          "year": 2023,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">均匀导体的电阻与导体的长度成</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">比，与导体的横截面积成</span><span class=\"qml-bk\" index=\"2\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">比，与材料性质有关，而且还与</span><span class=\"qml-bk\" index=\"3\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">有关。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">正</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">反</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">环境温度</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 32,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-18T13:36:16",
+          "updateDate": "2026-04-20T04:21:57",
+          "publishDate": "2025-05-11T14:51:51",
+          "qmlUpdateDate": "2024-12-18T13:36:16",
+          "stemText": "均匀导体的电阻与导体的长度成比，与导体的横截面积成比，与材料性质有关，而且还与有关。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:14:47"
+        },
+        {
+          "questionId": "3711643132665856",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3674811977433088",
+          "source": "1.3 电阻（同步练习）-《电工技术基础》 同步精品课堂（劳动版.第六版）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电阻率的倒数称为</span><span class=\"qml-bk\" index=\"1\" size=\"7\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　</span><span style=\"font-family: 宋体;\">，用符号＿表示，单位是</span><span class=\"qml-bk\" index=\"2\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">。它表示电流通过的难易程度，其数值越大，表示电流越</span><span class=\"qml-bk\" index=\"3\" size=\"7\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　</span><span style=\"font-family: 宋体;\">通过。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">电导率</span><span style=\"font-family: 'Times New Roman';\"></span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">σ S/m</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">容易</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 18,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-03-14T09:40:12",
+          "updateDate": "2026-04-20T06:16:46",
+          "publishDate": "2025-10-12T21:45:29",
+          "qmlUpdateDate": "2025-03-14T09:40:12",
+          "stemText": "电阻率的倒数称为，用符号＿表示，单位是。它表示电流通过的难易程度，其数值越大，表示电流越通过。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T04:42:06"
+        },
+        {
+          "questionId": "3670914958196736",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669918021353472",
+          "source": "电路的基本概念同步检测卷",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">有一根长</span><span style=\"font-family: 'Times New Roman';\">1000 m</span><span style=\"font-family: 宋体;\">、截面积为</span><span style=\"font-family: 'Times New Roman';\">3mm</span><span style=\"font-family: 'Times New Roman';\"><sup>2</sup></span><span style=\"font-family: 宋体;\">的铜导线，</span><span style=\"font-family: 'Times New Roman';\">20</span><span style=\"font-family: 宋体;\">℃时它的电阻为</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 'Times New Roman';\">Ω</span><span style=\"font-family: 宋体;\">。（已知</span><span style=\"font-family: 'Times New Roman';\">20</span><span style=\"font-family: 宋体;\">℃时铜的电阻率为</span><math latex=\"$1.7\\times 10^{-8}\\Upomega \\cdot \\mathrm{m}$\"><mrow><mn>1.7</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup><mi mathvariant=\"normal\">Ω</mi><mo>⋅</mo><mtext>m</mtext></mrow></math><span style=\"font-family: 宋体;\">）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">5.67</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 45,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T20:38:31",
+          "updateDate": "2026-04-20T05:07:40",
+          "publishDate": "2025-07-07T19:52:44",
+          "qmlUpdateDate": "2025-01-15T20:38:31",
+          "stemText": "有一根长1000 m、截面积为3mm2的铜导线，20℃时它的电阻为Ω。（已知20℃时铜的电阻率为1.7×10−8Ω⋅m）",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:00:47"
+        },
+        {
+          "questionId": "3667934998528000",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3667284556357632",
+          "source": "周测2  电路、部分电路欧姆定律",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻定律的表达式是</span><span class=\"qml-bk\" index=\"1\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">。金属电阻一般随温度升高而</span><span class=\"qml-bk\" index=\"2\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">；电解液电阻一般随温度升高而</span><span class=\"qml-bk\" index=\"3\" size=\"16\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><math latex=\"$\\mathrm{R}=\\uprho \\frac{\\mathrm{L}}{\\mathrm{S}}$\"><mrow><mtext>R</mtext><mo>=</mo><mtext>ρ</mtext><mfrac><mtext>L</mtext><mtext>S</mtext></mfrac></mrow></math><span style=\"font-family: 'Times New Roman';\"></span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">升高</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">降低</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237964,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 18,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 28,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-11T15:35:46",
+          "updateDate": "2026-04-20T05:00:34",
+          "publishDate": "2025-05-25T09:29:53",
+          "qmlUpdateDate": "2025-01-11T15:35:46",
+          "stemText": "电阻定律的表达式是。金属电阻一般随温度升高而；电解液电阻一般随温度升高而。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:44:31"
+        },
+        {
+          "questionId": "3897953236828160",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3875305838190592",
+          "source": "《电工基础》直流电路-知识点训练卷 2026版吉林省装备制造类专业 考纲百套卷 第23卷",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 'Times New Roman';\">1</span><span style=\"font-family: 宋体;\">兆欧（</span><span style=\"font-family: 'Times New Roman';\">M</span><span style=\"font-family: 宋体;\">Ω）等于</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">欧姆，</span><span style=\"font-family: 'Times New Roman';\">1</span><span style=\"font-family: 宋体;\">千欧（</span><span style=\"font-family: 'Times New Roman';\">k</span><span style=\"font-family: 宋体;\">Ω）等于</span><span class=\"qml-bk\" index=\"2\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">欧姆。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">10⁶</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">10³</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span>考查电阻符合的转换</span></p></div></div>",
+          "catalogIds": [
+            237965
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 19,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-12-02T15:09:04",
+          "updateDate": "2026-03-19T14:41:10",
+          "publishDate": "2026-03-19T14:41:10",
+          "qmlUpdateDate": "2026-03-18T22:09:30",
+          "stemText": "1兆欧（MΩ）等于欧姆，1千欧（kΩ）等于欧姆。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T21:17:07"
+        },
+        {
+          "questionId": "3916453442428928",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3914111454355456",
+          "source": "《电工电子技术模块》电路基础知识-知识点训练卷 2026版湖南省机电类专业考纲百套卷 第1卷（入库版）",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">在一定温度下，导体的电阻与它的长度成</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">，与其两端的电压和流过的电流无关。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">正比</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 42,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-12-28T18:27:50",
+          "updateDate": "2026-03-28T16:23:35",
+          "publishDate": "2026-03-28T16:23:35",
+          "qmlUpdateDate": "2025-12-28T18:27:50",
+          "stemText": "在一定温度下，导体的电阻与它的长度成，与其两端的电压和流过的电流无关。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T23:48:12"
+        },
+        {
+          "questionId": "3932163623313408",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3875284523458560",
+          "source": "《电工技术模块》电路基础知识-常考题训练卷 2026版湖南省电工电子类专业 考纲百套卷 第70卷",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻定律公式</span><span style=\"font-family: 'Times New Roman';\"> R=</span><span style=\"font-family: 宋体;\">ρ</span><span style=\"font-family: 'Times New Roman';\">L/S </span><span style=\"font-family: 宋体;\">中，ρ</span><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">表示导体的</span><span class=\"qml-bk\" index=\"1\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">，其大小与导体的</span><span class=\"qml-bk\" index=\"2\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">有关（选填</span><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">“材料”</span><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">或</span><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">“形状”）。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">电阻率</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">材料</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237964
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 31,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-19T23:10:17",
+          "updateDate": "2026-04-20T23:19:31",
+          "publishDate": "2026-04-20T23:19:31",
+          "qmlUpdateDate": "2026-01-19T23:10:17",
+          "stemText": "电阻定律公式 R=ρL/S 中，ρ 表示导体的，其大小与导体的有关（选填 “材料” 或 “形状”）。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T01:40:00"
+        },
+        {
+          "questionId": "3649017967542272",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642337733525504",
+          "source": "1.6 电阻和电阻定律（同步练习）-高一《电工基础》同步精品课堂（高教版·第2版）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">两种同种材料的电阻丝，长度之比为</span><span style=\"font-family: 'Times New Roman';\">1:5</span><span style=\"font-family: 宋体;\">，横截面积之比为</span><span style=\"font-family: 'Times New Roman';\">2:3</span><span style=\"font-family: 宋体;\">，它们的电阻之比为</span><span class=\"qml-bk\" index=\"1\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">。将它们串联时，它们的电压之比为</span><span class=\"qml-bk\" index=\"2\" size=\"7\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　</span><span style=\"font-family: 宋体;\">，电流之比为</span><span class=\"qml-bk\" index=\"3\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">；并联时，它们的电压之比为</span><span class=\"qml-bk\" index=\"4\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">，电流之比为</span><span class=\"qml-bk\" index=\"5\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">3:10</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">3:10</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1:1</span></span>&nbsp;&nbsp;&nbsp;&nbsp;④ <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1:1</span></span>&nbsp;&nbsp;&nbsp;&nbsp;⑤ <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">10:3</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [
+            87671
+          ],
+          "tagIds": [
+            "4801"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 36,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-15T22:08:58",
+          "updateDate": "2026-04-20T04:16:54",
+          "publishDate": "2025-04-17T09:25:59",
+          "qmlUpdateDate": "2024-12-15T22:08:58",
+          "stemText": "两种同种材料的电阻丝，长度之比为1:5，横截面积之比为2:3，它们的电阻之比为。将它们串联时，它们的电压之比为，电流之比为；并联时，它们的电压之比为，电流之比为。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:02:55"
+        },
+        {
+          "questionId": "3649017967648768",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642337733525504",
+          "source": "1.6 电阻和电阻定律（同步练习）-高一《电工基础》同步精品课堂（高教版·第2版）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">一根长</span><span style=\"font-family: 'Times New Roman';\">10m</span><span style=\"font-family: 宋体;\">，横截面积为</span><span style=\"font-family: 'Times New Roman';\">10mm</span><span style=\"font-family: 'Times New Roman';\"><sup>2</sup></span><span style=\"font-family: 宋体;\">的铜导线，它的电阻是</span><span class=\"qml-bk\" index=\"1\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 'Times New Roman';\">Ω</span><span style=\"font-family: 宋体;\">，若将它均匀拉长为原来的</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">倍，拉长后的阻值是</span><span class=\"qml-bk\" index=\"2\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 'Times New Roman';\">Ω</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1.7</span><span style=\"font-family: 宋体;\">×</span><span style=\"font-family: 'Times New Roman';\">10-2</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">6.8</span><span style=\"font-family: 宋体;\">×</span><span style=\"font-family: 'Times New Roman';\">10-2</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [
+            87671
+          ],
+          "tagIds": [
+            "4801"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 31,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-15T22:08:58",
+          "updateDate": "2026-04-20T04:16:54",
+          "publishDate": "2025-04-17T09:25:53",
+          "qmlUpdateDate": "2024-12-15T22:08:58",
+          "stemText": "一根长10m，横截面积为10mm2的铜导线，它的电阻是Ω，若将它均匀拉长为原来的2倍，拉长后的阻值是Ω。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:02:55"
+        },
+        {
+          "questionId": "3667879399759872",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3667280084541440",
+          "source": "月考2  简单电路（二）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">两根同种材料的电阻丝，长度之比为</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">6</span><span style=\"font-family: 宋体;\">，截面积之比为</span><span style=\"font-family: 'Times New Roman';\">12</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">，则它们的电阻之比为</span><span class=\"qml-bk\" index=\"1\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">，若将它们串联时，它们的电压之比是</span><span class=\"qml-bk\" index=\"2\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">18</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">18</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 3,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 69,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-11T13:42:39",
+          "updateDate": "2026-04-20T05:00:28",
+          "publishDate": "2025-05-31T22:33:18",
+          "qmlUpdateDate": "2025-01-11T13:42:39",
+          "stemText": "两根同种材料的电阻丝，长度之比为2∶6，截面积之比为12∶2，则它们的电阻之比为，若将它们串联时，它们的电压之比是。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:44:16"
+        },
+        {
+          "questionId": "3670644496785408",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669386528800768",
+          "source": "第一章 第一节  电路  基本物理量和基本定律",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">两根同种材料的电阻丝，其长度之比为</span><span style=\"font-family: 'Times New Roman';\">1</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">4</span><span style=\"font-family: 宋体;\">，横截面积之比为</span><span style=\"font-family: 'Times New Roman';\">3</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">，则它们的电阻之比为</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">6</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">由</span><math latex=\"$R=\\rho \\frac{l}{S}$\"><mrow><mi>R</mi><mo>=</mo><mi>ρ</mi><mfrac><mi>l</mi><mi>S</mi></mfrac></mrow></math><span style=\"font-family: 宋体;\">，且两根电阻丝的材料相同，即</span><math latex=\"$\\rho$\"><mi>ρ</mi></math><span style=\"font-family: 宋体;\">相同，则它们的电阻之比</span><math latex=\"$\\frac{R_{1}}{R_{2}}=\\frac{l_{1}S_{2}}{l_{2}S_{1}}=1\\colon 6$\"><mrow><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow><mrow><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>l</mi><mn>1</mn></msub><msub><mi>S</mi><mn>2</mn></msub></mrow><mrow><msub><mi>l</mi><mn>2</mn></msub><msub><mi>S</mi><mn>1</mn></msub></mrow></mfrac><mo>=</mo><mn>1</mn><mo>:</mo><mn>6</mn></mrow></math><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 68,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T11:28:15",
+          "updateDate": "2026-04-20T05:06:50",
+          "publishDate": "2025-06-28T21:10:43",
+          "qmlUpdateDate": "2025-01-15T11:28:16",
+          "stemText": "两根同种材料的电阻丝，其长度之比为1∶4，横截面积之比为3∶2，则它们的电阻之比为。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:48"
+        },
+        {
+          "questionId": "3670595396059136",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669953046822912",
+          "source": "㉕《电工基础》综合检测试题（二）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">某理想直流电源的两端接一均匀金属电阻丝，</span><span style=\"font-family: 'Times New Roman';\">0.1s</span><span style=\"font-family: 宋体;\">内通过该电阻丝横截面的电荷是</span><span style=\"font-family: 'Times New Roman';\">1C</span><span style=\"font-family: 宋体;\">；现将金属电阻丝均匀拉长为原来的</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">倍后再接到该理想直流电源两端时，则拉长后流过金属电阻丝的电流是</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 'Times New Roman';\">A</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">．</span><span style=\"font-family: 'Times New Roman';\">5</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 14,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T09:48:22",
+          "updateDate": "2026-04-20T05:06:39",
+          "publishDate": "2025-06-25T14:20:29",
+          "qmlUpdateDate": "2025-01-15T09:48:22",
+          "stemText": "某理想直流电源的两端接一均匀金属电阻丝，0.1s内通过该电阻丝横截面的电荷是1C；现将金属电阻丝均匀拉长为原来的2倍后再接到该理想直流电源两端时，则拉长后流过金属电阻丝的电流是A。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:28"
+        },
+        {
+          "questionId": "3698300842860544",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3651004946259968",
+          "source": "《电工技术基础与技能》第一章 课题二 电阻与欧姆定律 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻器可以作为</span><span class=\"qml-bk\" index=\"1\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">、</span><span class=\"qml-bk\" index=\"2\" size=\"7\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　</span><span style=\"font-family: 宋体;\">和负载使用。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">分流器</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">分压器</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电阻器的主要用途是稳定和调节电路中的电流和电压，作为分流器、分压器和负载使用。</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 29,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-23T13:15:14",
+          "updateDate": "2026-04-20T05:51:30",
+          "publishDate": "2025-08-15T21:39:39",
+          "qmlUpdateDate": "2025-02-23T13:15:14",
+          "stemText": "电阻器可以作为、和负载使用。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T03:43:43"
+        },
+        {
+          "questionId": "3698300843139072",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3651004946259968",
+          "source": "《电工技术基础与技能》第一章 课题二 电阻与欧姆定律 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻器是由各种不同</span><span class=\"qml-bk\" index=\"1\" size=\"7\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　</span><span style=\"font-family: 宋体;\">的材料制成的。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">电阻率</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电阻器是由各种不同电阻率的材料制成的。</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 33,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-23T13:15:14",
+          "updateDate": "2026-04-20T05:51:30",
+          "publishDate": "2025-08-21T22:52:02",
+          "qmlUpdateDate": "2025-02-23T13:15:14",
+          "stemText": "电阻器是由各种不同的材料制成的。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T03:43:43"
+        },
+        {
+          "questionId": "3711643132452864",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3674811977433088",
+          "source": "1.3 电阻（同步练习）-《电工技术基础》 同步精品课堂（劳动版.第六版）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">均匀导体的电阻与导体的长度成</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">比，与导体的横截面积成</span><span class=\"qml-bk\" index=\"2\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">比。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">正</span><span style=\"font-family: 'Times New Roman';\"></span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">反</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 57,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-03-14T09:40:12",
+          "updateDate": "2026-04-20T06:16:46",
+          "publishDate": "2025-10-12T21:45:55",
+          "qmlUpdateDate": "2025-03-14T09:40:12",
+          "stemText": "均匀导体的电阻与导体的长度成比，与导体的横截面积成比。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T04:42:06"
+        },
+        {
+          "questionId": "3897953236729856",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3875305838190592",
+          "source": "《电工基础》直流电路-知识点训练卷 2026版吉林省装备制造类专业 考纲百套卷 第23卷",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻的单位是</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">，简称</span><span class=\"qml-bk\" index=\"2\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">，符号为Ω。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">欧姆</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">欧</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span>考查</span><span style=\"\">电阻的单位</span></p></div></div>",
+          "catalogIds": [
+            237965
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 66,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-12-02T15:09:04",
+          "updateDate": "2026-03-19T14:45:25",
+          "publishDate": "2026-03-19T14:45:25",
+          "qmlUpdateDate": "2026-03-18T22:26:59",
+          "stemText": "电阻的单位是，简称，符号为Ω。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T21:17:07"
+        },
+        {
+          "questionId": "3650364453076992",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642398977859584",
+          "source": "1.2 电阻与部分电路欧姆定律（同步练习）-《电工技术基础与技能》同步精品课堂（高教版）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电阻率越大，导电性能越</span><span class=\"qml-bk\" index=\"1\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">差</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 30,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-17T19:48:24",
+          "updateDate": "2026-04-20T04:20:34",
+          "publishDate": "2025-05-08T16:51:04",
+          "qmlUpdateDate": "2024-12-17T19:48:24",
+          "stemText": "电阻率越大，导电性能越。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:11:32"
+        },
+        {
+          "questionId": "3667270284468224",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3667226105143296",
+          "source": "中职生对口升学考试全真模拟卷（二）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">甲、乙两导体由同种材料制成，其长度之比为</span><math latex=\"$4\\colon 5$\"><mrow><mn>4</mn><mo>:</mo><mn>5</mn></mrow></math><span style=\"font-family: 宋体;\">，直径之比为</span><math latex=\"$2\\colon 1$\"><mrow><mn>2</mn><mo>:</mo><mn>1</mn></mrow></math><span style=\"font-family: 宋体;\">，则甲、乙两导体的电阻之比为</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">；将它们并联后接入电路，甲、乙两导体消耗的功率之比为</span><span class=\"qml-bk\" index=\"2\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">2.</span><math latex=\"$1\\colon 5$\"><mrow><mn>1</mn><mo>:</mo><mn>5</mn></mrow></math></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><math latex=\"$5\\colon 1$\"><mrow><mn>5</mn><mo>:</mo><mn>1</mn></mrow></math></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据题意及电阻定律可知</span><math latex=\"$R=\\rho \\frac{l}{A}=\\rho \\frac{4l}{\\uppi d^{2}}$\"><mrow><mi>R</mi><mo>=</mo><mi>ρ</mi><mfrac><mi>l</mi><mi>A</mi></mfrac><mo>=</mo><mi>ρ</mi><mfrac><mrow><mn>4</mn><mi>l</mi></mrow><mrow><mtext>π</mtext><msup><mi>d</mi><mn>2</mn></msup></mrow></mfrac></mrow></math><span style=\"font-family: 宋体;\">，代入数据计算可得甲、乙两导体的电阻之比为</span><math latex=\"$R_{1}\\colon R_{2}=1\\colon 5$\"><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>:</mo><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>:</mo><mn>5</mn></mrow></math><span style=\"font-family: 宋体;\">。将这两导体并联后接入电路中，其两端电压相等，根据</span><math latex=\"$P=\\frac{U^{2}}{R}$\"><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><msup><mi>U</mi><mn>2</mn></msup></mrow><mi>R</mi></mfrac></mrow></math><span style=\"font-family: 宋体;\">可得</span><math latex=\"$P_{1}\\colon P_{2}=R_{2}\\colon R_{1}=5\\colon 1$\"><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>:</mo><msub><mi>P</mi><mn>2</mn></msub><mo>=</mo><msub><mi>R</mi><mn>2</mn></msub><mo>:</mo><msub><mi>R</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn><mo>:</mo><mn>1</mn></mrow></math><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 42,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-10T17:03:24",
+          "updateDate": "2025-05-20T00:27:34",
+          "publishDate": "2025-05-20T00:27:34",
+          "qmlUpdateDate": "2025-01-10T17:03:25",
+          "stemText": "甲、乙两导体由同种材料制成，其长度之比为4:5，直径之比为2:1，则甲、乙两导体的电阻之比为；将它们并联后接入电路，甲、乙两导体消耗的功率之比为。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:41:34"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

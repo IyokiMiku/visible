@@ -1,0 +1,59 @@
+{
+  "images": [
+    {
+      "url": "https://img.xkw.com/dksih/QBM/2024/12/18/3651004899426304/3698289064132608/STEM/0b4879b08834479992072bfa11d5d4a0.png",
+      "display_w": 94,
+      "display_h": 56,
+      "download_status": "cached",
+      "local_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第4卷\\images\\d23f2db46fc6b73e_d89887a0b1782ecd.png",
+      "sha256": "d89887a0b1782ecd0a45b81101886ea314cf9fb68dbdde05fb2b7d9e8fa4013d",
+      "byte_size": 2476,
+      "url_hash": "d23f2db46fc6b73e60ffe91a174dff267f98d911bd7a5176d9146c437f96c684",
+      "question_id": "3698289064132608",
+      "field": "stem",
+      "image_index": 0
+    },
+    {
+      "url": "https://img.xkw.com/dksih/QBM/2026/1/12/3926966478209024/3927533671342080/STEM/08e3a749ff56439bae09c32904522b78.png",
+      "display_w": 444,
+      "display_h": 119,
+      "download_status": "cached",
+      "local_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第4卷\\images\\ff2558549cbdf515_7e89d24eb9a2177c.png",
+      "sha256": "7e89d24eb9a2177c0dcb38803166f34ee32426c2b09bbf4cb48f587e45c92f36",
+      "byte_size": 84481,
+      "url_hash": "ff2558549cbdf515d980ad8b768a7b3bdd06f3e5cee3ae417cbca322ec020573",
+      "question_id": "3927533671342080",
+      "field": "stem",
+      "image_index": 0
+    },
+    {
+      "url": "https://img.xkw.com/dksih/QBM/2025/1/14/3670026667139072/3688636510289920/STEM/c86689fdb8b64cefbaec1ec6be95ca7b.png",
+      "display_w": 186,
+      "display_h": 156,
+      "download_status": "cached",
+      "local_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第4卷\\images\\ff2f6b042b31f3d1_93dc19ea6d842a01.png",
+      "sha256": "93dc19ea6d842a0128b00f648ec5e3b356e1b2c8141bb30294217e77e1195182",
+      "byte_size": 16231,
+      "url_hash": "ff2f6b042b31f3d17c2c3a435874b604329aa67217817f74187dbbccca51575a",
+      "question_id": "3688636510289920",
+      "field": "stem",
+      "image_index": 0
+    },
+    {
+      "url": "https://img.xkw.com/dksih/QBM/2024/12/6/3642398799241216/3649755317485568/STEM/3c7f2a0276274a219c3af025335ed096.png",
+      "display_w": 221,
+      "display_h": 59,
+      "download_status": "downloaded",
+      "local_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第4卷\\images\\00164278bddd4597_6c91cd1f2fd0d258.png",
+      "sha256": "6c91cd1f2fd0d2585d964c352deb9af51dc9175cd9724f3cf3528a5668ded7e1",
+      "byte_size": 2136,
+      "content_type": "image/png",
+      "url_hash": "00164278bddd459748a6df1dcabb1a599a15b49c740588989b65ad3f2d47e6b2",
+      "question_id": "3649755317485568",
+      "field": "stem",
+      "image_index": 0
+    }
+  ],
+  "paper_label": "第4卷",
+  "updated_at": "2026-06-30 14:36:05"
+}

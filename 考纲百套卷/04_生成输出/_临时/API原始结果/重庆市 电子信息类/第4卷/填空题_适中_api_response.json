@@ -1,0 +1,566 @@
+{
+  "试卷": "第4卷",
+  "题型": "填空题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000203
+  ],
+  "计划补题数": 1,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 8,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87671
+    ],
+    "typeIds": [
+      1000203
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 12,
+      "totalPages": 2,
+      "list": [
+        {
+          "questionId": "3649723100020736",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642398744985600",
+          "source": "【对口高考】河北省-冲刺模拟卷（九）-（电工技术基础与技能）（高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">在修理电炉丝时，切除了整个炉丝长度的</span><span style=\"font-family: 'Times New Roman';\">1/3</span><span style=\"font-family: 宋体;\">，则电炉的电功率变为原来的</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">倍。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><math latex=\"$\\frac{3}{2}$\"><mfrac><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237907,
+            281141
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87657,
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 14,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-16T22:03:34",
+          "updateDate": "2025-04-28T14:45:30",
+          "publishDate": "2025-04-28T14:45:30",
+          "qmlUpdateDate": "2024-12-16T22:03:34",
+          "stemText": "在修理电炉丝时，切除了整个炉丝长度的1/3，则电炉的电功率变为原来的倍。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:07:34"
+        },
+        {
+          "questionId": "3667466077093888",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3667238486024192",
+          "source": "专题二  简单直流电路",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">有一个电流表，内阻为</span><span style=\"font-family: 'Times New Roman';\">100Ω</span><span style=\"font-family: 宋体;\">，满偏电流为</span><span style=\"font-family: 'Times New Roman';\">3mA</span><span style=\"font-family: 宋体;\">，要把它改装成量程为</span><span style=\"font-family: 'Times New Roman';\">6V</span><span style=\"font-family: 宋体;\">的电压表，需要</span><span class=\"qml-bk\" index=\"1\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 'Times New Roman';\">Ω</span><span style=\"font-family: 宋体;\">的分压电阻；若要把它改装成量程为</span><span style=\"font-family: 'Times New Roman';\">3A</span><span style=\"font-family: 宋体;\">的电流表，则需</span><span class=\"qml-bk\" index=\"2\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 'Times New Roman';\">Ω</span><span style=\"font-family: 宋体;\">的分流电阻。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1900</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">0.1</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span>改装成电压表<span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>根据串联电路分压原理，串联电阻R分担的电压U</span><sub><span>R</span></sub><span> = U - U</span><sub><span>g</span></sub><span>，其中U = 6V是改装后电压表的量程，Ug = IgRg是电流表满偏时的电压，Ig = 3mA = 0.003A，Rg = 100Ω，则Ug = 0.003A×100Ω=0.3V，所以U</span><sub><span>R</span></sub><span> = 6V - 0.3V = 5.7V。 </span></p><p style=\"\"><span>由Ig=U</span><sub><span>R</span></sub><span>/R可得，R=5.7/0.003=1900Ω。<span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p><p style=\"\"><span>改装成电流表<span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>根据并联电路分流原理，I = I</span><sub><span>g</span></sub><span> +I</span><sub><span>R</span></sub><span>，I = 3A是改装后电流表的量程，I</span><sub><span>R</span></sub><span>=Ug/R，Ug = 0.3V，I</span><sub><span>R</span></sub><span> = I - I</span><sub><span>g</span></sub><span> = 3A - 0.003A = 2.997A</span></p><p style=\"\"><span>R=U</span><sub><span>g</span></sub><span>/I</span><sub><span>R</span></sub><span>=0.3/2.997=0.1Ω。<span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p><p style=\"\"><span>故答案依次为：1900；0.1。</span></p></div></div>",
+          "catalogIds": [
+            237910,
+            281144
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671,
+            87682,
+            87685
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 62,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-10T23:41:45",
+          "updateDate": "2026-04-20T05:00:00",
+          "publishDate": "2025-02-06T16:19:01",
+          "qmlUpdateDate": "2025-02-05T17:05:56",
+          "stemText": "有一个电流表，内阻为100Ω，满偏电流为3mA，要把它改装成量程为6V的电压表，需要Ω的分压电阻；若要把它改装成量程为3A的电流表，则需Ω的分流电阻。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T20:00:36"
+        },
+        {
+          "questionId": "3670532263641088",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669951405056000",
+          "source": "⑮《电工基础》单元检测试题（二）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">两个长度相同且均由圆截面铜导线制成的电阻器，接在相同的电压上，已知一种铜导线的直径为另一种铜导线直径的</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">倍，则两个电阻器所消耗的功率比</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">4:1</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 19,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T07:39:55",
+          "updateDate": "2026-04-20T05:06:31",
+          "publishDate": "2025-06-17T13:55:10",
+          "qmlUpdateDate": "2025-01-15T07:39:55",
+          "stemText": "两个长度相同且均由圆截面铜导线制成的电阻器，接在相同的电压上，已知一种铜导线的直径为另一种铜导线直径的2倍，则两个电阻器所消耗的功率比。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:07"
+        },
+        {
+          "questionId": "3670184452382720",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669361550163968",
+          "source": "专题一 电路基础（7页）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">已知两根同种材料的电阻丝长度之比为</span><span style=\"font-family: 'Times New Roman';\">2:5</span><span style=\"font-family: 宋体;\">，截面积之比为</span><span style=\"font-family: 'Times New Roman';\">3:4</span><span style=\"font-family: 宋体;\">，则它们的电阻值之比为</span><span class=\"qml-bk\" index=\"1\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">8:15</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237964
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 66,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-14T19:52:18",
+          "updateDate": "2026-04-20T05:05:54",
+          "publishDate": "2025-06-10T13:48:24",
+          "qmlUpdateDate": "2025-01-14T19:52:18",
+          "stemText": "已知两根同种材料的电阻丝长度之比为2:5，截面积之比为3:4，则它们的电阻值之比为。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:56:43"
+        },
+        {
+          "questionId": "3670532263354368",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669951405056000",
+          "source": "⑮《电工基础》单元检测试题（二）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">一根铜导线长</span><math latex=\"$l=2000$\"><mrow><mi>l</mi><mo>=</mo><mn>2000</mn></mrow></math><span style=\"font-family: 'Times New Roman';\">m</span><span style=\"font-family: 宋体;\">，截面积</span><math latex=\"$S=2$\"><mrow><mi>S</mi><mo>=</mo><mn>2</mn></mrow></math><span style=\"font-family: 'Times New Roman';\">mm</span><span style=\"font-family: 'Times New Roman';\"><sup>2</sup></span><span style=\"font-family: 宋体;\">，导线的电阻是</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">Ω。（铜的电阻率</span><math latex=\"$\\rho =1.75\\times 10^{-8}$\"><mrow><mi>ρ</mi><mo>=</mo><mn>1.75</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math><span style=\"font-family: 'Times New Roman';\">Ω⋅m</span><span style=\"font-family: 宋体;\">）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">17.5</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 45,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T07:39:55",
+          "updateDate": "2026-04-20T05:06:31",
+          "publishDate": "2025-06-17T13:55:00",
+          "qmlUpdateDate": "2025-01-15T07:39:55",
+          "stemText": "一根铜导线长l=2000m，截面积S=2mm2，导线的电阻是Ω。（铜的电阻率ρ=1.75×10−8Ω⋅m）",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:07"
+        },
+        {
+          "questionId": "3670532263256064",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669951405056000",
+          "source": "⑮《电工基础》单元检测试题（二）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电阻率的大小反映了物质的导电能力强弱，电阻率越小说明物质导电能力越</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">强</span><span style=\"font-family: 'Times New Roman';\"></span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 50,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T07:39:55",
+          "updateDate": "2026-04-20T05:06:30",
+          "publishDate": "2025-06-17T13:55:06",
+          "qmlUpdateDate": "2025-01-15T07:39:55",
+          "stemText": "电阻率的大小反映了物质的导电能力强弱，电阻率越小说明物质导电能力越。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:07"
+        },
+        {
+          "questionId": "3670140539609088",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669326344675328",
+          "source": "《电工技术基础》综合检测题（一）（6页）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">将一根</span><math latex=\"$4\\Upomega$\"><mrow><mn>4</mn><mtext>Ω</mtext></mrow></math><span style=\"font-family: 宋体;\">，长</span><math latex=\"$5\\mathrm{m}$\"><mrow><mn>5</mn><mtext>m</mtext></mrow></math><span style=\"font-family: 宋体;\">的导体均匀拉长到</span><math latex=\"$20\\mathrm{m}$\"><mrow><mn>20</mn><mtext>m</mtext></mrow></math><span style=\"font-family: 宋体;\">，此时的电阻为</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><math latex=\"$\\Upomega$\"><mtext>Ω</mtext></math><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">64</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237964
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 30,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-14T18:22:57",
+          "updateDate": "2025-06-04T09:42:46",
+          "publishDate": "2025-06-04T09:42:46",
+          "qmlUpdateDate": "2025-01-14T18:22:58",
+          "stemText": "将一根4Ω，长5m的导体均匀拉长到20m，此时的电阻为Ω。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:56:16"
+        },
+        {
+          "questionId": "3670644496883712",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669386528800768",
+          "source": "第一章 第一节  电路  基本物理量和基本定律",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">某电阻两端加</span><span style=\"font-family: 'Times New Roman';\">3V</span><span style=\"font-family: 宋体;\">的电压时，通过的电流为</span><span style=\"font-family: 'Times New Roman';\">1A</span><span style=\"font-family: 宋体;\">，则该电阻的阻值为</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">；当电压改为</span><span style=\"font-family: 'Times New Roman';\">6V</span><span style=\"font-family: 宋体;\">时，该电阻的阻值为</span><span class=\"qml-bk\" index=\"2\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">3Ω</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">3Ω</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">由欧姆定律可得</span><math latex=\"$R=\\frac{U}{I}=\\frac{3\\mathrm{V}}{1\\mathrm{A}}=3\\Upomega$\"><mrow><mi>R</mi><mo>=</mo><mfrac><mi>U</mi><mi>I</mi></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mtext>V</mtext></mrow><mrow><mn>1</mn><mtext>A</mtext></mrow></mfrac><mo>=</mo><mn>3</mn><mi mathvariant=\"normal\">Ω</mi></mrow></math><span style=\"font-family: 宋体;\">。电阻是导体本身的一种性质，其大小只与它本身的物理条件（长度、横截面积、材料的性质、温度）有关，当电压改为</span><span style=\"font-family: 'Times New Roman';\">6V</span><span style=\"font-family: 宋体;\">时，该电阻的阻值不变，仍为</span><span style=\"font-family: 'Times New Roman';\">3Ω</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237964
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671,
+            87677
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 36,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T11:28:15",
+          "updateDate": "2026-04-20T05:06:50",
+          "publishDate": "2025-06-22T22:35:26",
+          "qmlUpdateDate": "2025-01-15T11:28:16",
+          "stemText": "某电阻两端加3V的电压时，通过的电流为1A，则该电阻的阻值为；当电压改为6V时，该电阻的阻值为。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:48"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

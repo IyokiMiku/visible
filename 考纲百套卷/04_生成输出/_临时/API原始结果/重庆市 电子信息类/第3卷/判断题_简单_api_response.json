@@ -1,0 +1,1668 @@
+{
+  "试卷": "第3卷",
+  "题型": "判断题",
+  "难度": "简单",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000202
+  ],
+  "计划补题数": 13,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 44,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87681
+    ],
+    "typeIds": [
+      1000202
+    ],
+    "difficultyLowLimit": 0.8,
+    "difficultyUpLimit": 1.0,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 26,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3689358014922752",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3670027486011392",
+          "source": "第三章  简单直流电路",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">在外电路电阻大于电源内阻的条件下，外电路中串联的电阻越多，从电源获取的功率越少。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 32,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-10T22:01:00",
+          "updateDate": "2026-04-20T05:34:12",
+          "publishDate": "2025-08-05T14:54:05",
+          "qmlUpdateDate": "2025-10-21T11:42:14",
+          "stemText": "在外电路电阻大于电源内阻的条件下，外电路中串联的电阻越多，从电源获取的功率越少。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T03:00:52"
+        },
+        {
+          "questionId": "3667879400448000",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3667280084541440",
+          "source": "月考2  简单电路（二）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源的内阻为</span><span style=\"font-family: 'Times New Roman';\">r</span><span style=\"font-family: 宋体;\">接入负载</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>L</sub></span><span style=\"font-family: 宋体;\">后，负载获得最大功率的条件是</span><math latex=\"$\\mathrm{R}_{\\mathrm{L}}\\gg \\mathrm{r}$\"><mrow><msub><mtext>R</mtext><mtext>L</mtext></msub><mo>≫</mo><mtext>r</mtext></mrow></math><span style=\"font-family: 宋体;\">。</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"bracket\">（　　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237975
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 3,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 27,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-11T13:42:39",
+          "updateDate": "2026-04-20T05:00:28",
+          "publishDate": "2025-05-31T22:37:29",
+          "qmlUpdateDate": "2025-10-21T11:38:39",
+          "stemText": "电源的内阻为r接入负载RL后，负载获得最大功率的条件是RL≫r。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:44:16"
+        },
+        {
+          "questionId": "3670550334504960",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3669951555018752",
+          "source": "⑯《电工基础》单元检测试题（三）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路处于短路状态下，电源内阻的压降为零。</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"bracket\">（　　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 39,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T08:16:41",
+          "updateDate": "2026-04-20T05:06:32",
+          "publishDate": "2025-06-21T20:20:34",
+          "qmlUpdateDate": "2025-10-21T11:39:45",
+          "stemText": "电路处于短路状态下，电源内阻的压降为零。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:11"
+        },
+        {
+          "questionId": "3687596692398080",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812010872832",
+          "source": "《电工基础》项目二：课题1 全电路欧姆定律  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源的内阻越小，电源的性能越好</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电源的内阻越小，在输出电流时，内电压越小，电源输出的电压就越接近电动势，电源性能越好，该说法正确。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 38,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T10:17:35",
+          "updateDate": "2026-04-20T05:30:44",
+          "publishDate": "2025-07-07T20:56:06",
+          "qmlUpdateDate": "2025-10-21T11:41:52",
+          "stemText": "电源的内阻越小，电源的性能越好",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:05"
+        },
+        {
+          "questionId": "3650932317511680",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642399161131008",
+          "source": "专题二 欧姆定律和电阻串联并联（专项练习）-浙江省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">闭合电路中，电源的电压等于负载的电压。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电源的电压等于负载的电压加上电压降。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 53,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-18T15:03:44",
+          "updateDate": "2026-04-20T04:22:08",
+          "publishDate": "2025-05-12T14:34:44",
+          "qmlUpdateDate": "2025-10-21T11:28:15",
+          "stemText": "闭合电路中，电源的电压等于负载的电压。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:15:13"
+        },
+        {
+          "questionId": "3650450867044352",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642399011520512",
+          "source": "《电工技术基础与技能》第二章 课题四 电能和电功率 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">当负载电阻等于电源内阻时，负载获得最大功率。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">这是负载获得最大功率的条件</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 26,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-17T22:44:13",
+          "updateDate": "2026-04-20T04:21:00",
+          "publishDate": "2025-05-10T08:47:01",
+          "qmlUpdateDate": "2025-10-21T11:27:57",
+          "stemText": "当负载电阻等于电源内阻时，负载获得最大功率。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:12:34"
+        },
+        {
+          "questionId": "3670603371544576",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3669386372194304",
+          "source": "第一章 第三节  闭合电路欧姆定律",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">当电源两端短路时，路端电压等于电源电动势。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">当电源两端短路时，外电路总电阻为</span><span style=\"font-family: 'Times New Roman';\">0</span><span style=\"font-family: 宋体;\">，由</span><math latex=\"$U=IR$\"><mrow><mi>U</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow></math><span style=\"font-family: 宋体;\">可知路端电压为</span><span style=\"font-family: 'Times New Roman';\">0</span><span style=\"font-family: 宋体;\">。故错误。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 55,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T10:04:35",
+          "updateDate": "2026-04-20T05:06:43",
+          "publishDate": "2025-06-30T22:23:38",
+          "qmlUpdateDate": "2025-10-21T11:39:48",
+          "stemText": "当电源两端短路时，路端电压等于电源电动势。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:33"
+        },
+        {
+          "questionId": "3689358014152704",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3670027486011392",
+          "source": "第三章  简单直流电路",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">当电源外接负载电阻阻值增加时，电源的输出电流减小，相应的电源输出功率也减小。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 46,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-10T22:01:00",
+          "updateDate": "2026-04-20T05:34:12",
+          "publishDate": "2025-08-05T14:58:44",
+          "qmlUpdateDate": "2025-10-21T11:42:14",
+          "stemText": "当电源外接负载电阻阻值增加时，电源的输出电流减小，相应的电源输出功率也减小。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T03:00:52"
+        },
+        {
+          "questionId": "3670603371823104",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3669386372194304",
+          "source": "第一章 第三节  闭合电路欧姆定律",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">当电路处于通路状态时，电源的端电压小于电源的电动势。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">当电路处于通路状态时，</span><math latex=\"$I\\neq 0$\"><mrow><mi>I</mi><mo>≠</mo><mn>0</mn></mrow></math><span style=\"font-family: 宋体;\">，由</span><math latex=\"$E=U+Ir$\"><mrow><mi>E</mi><mo>=</mo><mi>U</mi><mo>+</mo><mi>I</mi><mi>r</mi></mrow></math><span style=\"font-family: 宋体;\">可知，</span><math latex=\"$U$\"><mi>U</mi></math><span style=\"font-family: 宋体;\">小于</span><math latex=\"$E$\"><mi>E</mi></math><span style=\"font-family: 宋体;\">。故正确。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 63,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T10:04:35",
+          "updateDate": "2026-04-20T05:06:43",
+          "publishDate": "2025-06-30T22:30:28",
+          "qmlUpdateDate": "2025-10-21T11:39:48",
+          "stemText": "当电路处于通路状态时，电源的端电压小于电源的电动势。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:33"
+        },
+        {
+          "questionId": "3667879399948288",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3667280084541440",
+          "source": "月考2  简单电路（二）",
+          "year": 2025,
+          "difficulty": 0.85,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源的开路电压为</span><span style=\"font-family: 'Times New Roman';\">60V</span><span style=\"font-family: 宋体;\">，短路电流为</span><span style=\"font-family: 'Times New Roman';\">2A</span><span style=\"font-family: 宋体;\">。则负载从该电源获得的最大功率为</span><span style=\"font-family: 'Times New Roman';\">120W</span><span style=\"font-family: 宋体;\">。</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"bracket\">（　　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"分析\">【分析】<p style=\"text-align: left;\"><span style=\"\">电源内阻：r = 开路电压 / 短路电流 = 60 / 2 = 30Ω</span></p><p style=\"text-align: left;\"><span style=\"\">负载获得最大功率的条件：负载电阻 R = 电源内阻 r</span></p><p style=\"text-align: left;\"><span style=\"\">最大功率计算：Pmax = U² / (4r) = 60² / (4×30) = 3600 / 120 = 30W因此题目说法错误，正确的最大功率为 30W。</span></p><p style=\"\"><span></span></p></div><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span></span></p></div><div class=\"qml-seg\" seg-name=\"点睛\">【点睛】<p style=\"\"><span></span></p></div></div>",
+          "catalogIds": [
+            237975
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 3,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 49,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-11T13:42:39",
+          "updateDate": "2026-05-22T15:24:14",
+          "publishDate": "2025-05-31T22:37:03",
+          "qmlUpdateDate": "2026-05-22T15:24:13",
+          "stemText": "电源的开路电压为60V，短路电流为2A。则负载从该电源获得的最大功率为120W。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:44:16"
+        },
+        {
+          "questionId": "3670550334693376",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3669951555018752",
+          "source": "⑯《电工基础》单元检测试题（三）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">并联电路中各电阻上消耗的功率之和等于电路所消耗的总功率。</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"bracket\">（　　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237980,
+            237910
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681,
+            87687
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 52,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T08:16:41",
+          "updateDate": "2026-04-20T05:06:32",
+          "publishDate": "2025-06-17T20:38:32",
+          "qmlUpdateDate": "2025-10-21T11:39:45",
+          "stemText": "并联电路中各电阻上消耗的功率之和等于电路所消耗的总功率。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:11"
+        },
+        {
+          "questionId": "3670550335086592",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3669951555018752",
+          "source": "⑯《电工基础》单元检测试题（三）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">全电路电路中的负载电阻越大，它从电源处所获得的功率越大。</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"bracket\">（　　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237975
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 47,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T08:16:41",
+          "updateDate": "2026-04-20T05:06:32",
+          "publishDate": "2025-06-17T20:39:05",
+          "qmlUpdateDate": "2025-10-21T11:39:46",
+          "stemText": "全电路电路中的负载电阻越大，它从电源处所获得的功率越大。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:11"
+        },
+        {
+          "questionId": "3646919355359232",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642311600308224",
+          "source": "《电工技术基础与技能》综合练习（五）45分钟专题训练（原卷版+)",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如果电源被短路，输出的电流最大，那么此时电源输出的功率也最大。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">当电源被短路时，外电路电阻接近为零，根据欧姆定律</span><span style=\"font-family: 'Times New Roman';\">I=U/R</span><span style=\"font-family: 宋体;\">，此时输出电流最大。虽然短路时电流很大，但由于电源有内阻，此时路端电压</span><span style=\"font-family: 'Times New Roman';\">U=E-Ir</span><span style=\"font-family: 宋体;\">，短路时</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 宋体;\">很大，内阻上的分压就接近电动势，导致路端电压趋近于零。故表述错误。</span></p></div></div>",
+          "catalogIds": [
+            237975,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87653,
+            87680,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 25,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-12T22:59:20",
+          "updateDate": "2026-04-20T04:12:15",
+          "publishDate": "2025-01-16T19:07:58",
+          "qmlUpdateDate": "2025-10-21T11:25:41",
+          "stemText": "如果电源被短路，输出的电流最大，那么此时电源输出的功率也最大。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:52:18"
+        },
+        {
+          "questionId": "3649755319017472",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642398799241216",
+          "source": "《电工技术基础与技能》第二章  课题三 电动势和欧姆定律 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">在通路状态下，负载电阻变小，端电压变小。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据</span><math latex=\"$U=IR=\\frac{E}{R+r}R=\\frac{E}{1+\\frac{r}{R}}$\"><mrow><mi>U</mi><mo>=</mo><mi>I</mi><mi>R</mi><mo>=</mo><mfrac><mi>E</mi><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac><mi>R</mi><mo>=</mo><mfrac><mi>E</mi><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>R</mi></mfrac></mrow></mfrac></mrow></math><span style=\"font-family: 宋体;\">，当R增大时，U增大。故表述正确。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 69,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-16T23:09:07",
+          "updateDate": "2026-04-20T04:19:05",
+          "publishDate": "2025-04-28T15:48:51",
+          "qmlUpdateDate": "2025-10-21T11:27:24",
+          "stemText": "在通路状态下，负载电阻变小，端电压变小。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:08:02"
+        },
+        {
+          "questionId": "3641914844864512",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3641712859979776",
+          "source": "专题四 复杂直流电流（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.85,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路中的功率可以通过公式</span><span style=\"font-family: 'Times New Roman';\"> P=UI</span><span style=\"font-family: 宋体;\">计算，其中</span><span style=\"font-family: 'Times New Roman';\">P</span><span style=\"font-family: 宋体;\">代表功率，</span><span style=\"font-family: 'Times New Roman';\">V </span><span style=\"font-family: 宋体;\">代表电压，</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 宋体;\">代表电流。</span><span class=\"qml-bk\" index=\"1\" size=\"7\" type=\"bracket\">（　　　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">功率可以通过电压乘以电流计算得到。</span></p></div></div>",
+          "catalogIds": [
+            237907
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003
+          ],
+          "textBookIds": [
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 31,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-05T21:17:38",
+          "updateDate": "2026-05-22T15:24:56",
+          "publishDate": "2025-01-20T20:22:54",
+          "qmlUpdateDate": "2026-05-22T15:24:54",
+          "stemText": "电路中的功率可以通过公式 P=UI计算，其中P代表功率，V 代表电压，I代表电流。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:24:54"
+        },
+        {
+          "questionId": "3687596691685376",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812010872832",
+          "source": "《电工基础》项目二：课题1 全电路欧姆定律  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源的电动势等于电源开路时的端电压</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 55,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T10:17:35",
+          "updateDate": "2026-04-20T05:30:44",
+          "publishDate": "2025-07-07T20:58:03",
+          "qmlUpdateDate": "2025-10-21T11:41:52",
+          "stemText": "电源的电动势等于电源开路时的端电压",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:05"
+        },
+        {
+          "questionId": "3687596691808256",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812010872832",
+          "source": "《电工基础》项目二：课题1 全电路欧姆定律  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">外电路电阻增大时，电源的内电压增大</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">外电路电阻增大时，根据，电流减小，再根据，内电压减小，所以该说法错误。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 63,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T10:17:35",
+          "updateDate": "2026-04-20T05:30:44",
+          "publishDate": "2025-07-07T20:53:04",
+          "qmlUpdateDate": "2025-10-21T11:41:52",
+          "stemText": "外电路电阻增大时，电源的内电压增大",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:05"
+        },
+        {
+          "questionId": "3687596692201472",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812010872832",
+          "source": "《电工基础》项目二：课题1 全电路欧姆定律  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">全电路中，电流的大小与电源电动势成正比，与外电路电阻成反比</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 54,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T10:17:35",
+          "updateDate": "2026-04-20T05:30:44",
+          "publishDate": "2025-07-07T20:51:51",
+          "qmlUpdateDate": "2025-10-21T11:41:52",
+          "stemText": "全电路中，电流的大小与电源电动势成正比，与外电路电阻成反比",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:05"
+        },
+        {
+          "questionId": "3687596692004864",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812010872832",
+          "source": "《电工基础》项目二：课题1 全电路欧姆定律  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">当外电路短路时，电源的功率全部消耗在内阻上</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">当外电路短路时，外电阻，电流，此时电源的功率，全部消耗在内阻上，该说法正确。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87680,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 37,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T10:17:35",
+          "updateDate": "2026-04-20T05:30:44",
+          "publishDate": "2025-07-07T20:55:49",
+          "qmlUpdateDate": "2025-10-21T11:41:52",
+          "stemText": "当外电路短路时，电源的功率全部消耗在内阻上",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:05"
+        },
+        {
+          "questionId": "3645992436498432",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642274617524224",
+          "source": "2.1闭合电路的欧姆定律（同步练习）-高一《电工技术基础》同步精品课堂 （高教版）",
+          "year": 2023,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">在短路状态下，端电压等于零。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237974
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [
+            87681
+          ],
+          "tagIds": [
+            "4801"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 41,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T15:33:31",
+          "updateDate": "2026-04-20T04:09:07",
+          "publishDate": "2025-03-19T21:59:26",
+          "qmlUpdateDate": "2025-10-21T11:24:58",
+          "stemText": "在短路状态下，端电压等于零。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:45:56"
+        },
+        {
+          "questionId": "3643005226016768",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3641713089454080",
+          "source": "专题十四 安全用电与变压器（专项练习）-浙江省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">特高压输电可以降低输电过程中的能量损耗。</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"2\">&nbsp;&nbsp;&nbsp;</span></span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">特高压输电能够减少输电过程中的能量损耗，提高输电效率。</span></p></div></div>",
+          "catalogIds": [
+            237907
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87657,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003
+          ],
+          "textBookIds": [
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 22,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T10:16:01",
+          "updateDate": "2026-04-20T04:00:42",
+          "publishDate": "2025-04-19T22:51:25",
+          "qmlUpdateDate": "2025-10-21T11:23:26",
+          "stemText": "特高压输电可以降低输电过程中的能量损耗。  ",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:30:33"
+        },
+        {
+          "questionId": "3670603371921408",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3669386372194304",
+          "source": "第一章 第三节  闭合电路欧姆定律",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">在闭合电路中，外电阻越大，端电压越大。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">在闭合电路中，端电压</span><math latex=\"$U=\\frac{ER}{R+r}=\\frac{E}{1+\\frac{r}{R}}$\"><mrow><mi>U</mi><mo>=</mo><mfrac><mrow><mi>E</mi><mi>R</mi></mrow><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mi>E</mi><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>R</mi></mfrac></mrow></mfrac></mrow></math><span style=\"font-family: 宋体;\">，可知外电阻越大，端电压越大，故正确。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 46,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T10:04:35",
+          "updateDate": "2026-04-20T05:06:43",
+          "publishDate": "2025-06-30T22:22:56",
+          "qmlUpdateDate": "2025-10-21T11:39:48",
+          "stemText": "在闭合电路中，外电阻越大，端电压越大。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:33"
+        },
+        {
+          "questionId": "3670603371634688",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3669386372194304",
+          "source": "第一章 第三节  闭合电路欧姆定律",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">在闭合电路中，当干路开关断开时，开关两端电压等于电源电压；当干路开关闭合时，开关两端电压为</span><span style=\"font-family: 'Times New Roman';\">0</span><span style=\"font-family: 宋体;\">。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">在闭合电路中，当干路开关断开时，开关两端的电压等于电源电压，即电源电动势；当干路开关闭合时，开关两端电压</span><math latex=\"$U_{\\mathrm{开关}}=IR_{\\mathrm{开关}}$\"><mrow><msub><mi>U</mi><mrow><mi mathvariant=\"normal\">开</mi><mi mathvariant=\"normal\">关</mi></mrow></msub><mo>=</mo><mi>I</mi><msub><mi>R</mi><mrow><mi mathvariant=\"normal\">开</mi><mi mathvariant=\"normal\">关</mi></mrow></msub></mrow></math><span style=\"font-family: 宋体;\">，因开关为导体，其自身电阻极小，故</span><math latex=\"$U_{\\mathrm{开关}}\\approx 0$\"><mrow><msub><mi>U</mi><mrow><mi mathvariant=\"normal\">开</mi><mi mathvariant=\"normal\">关</mi></mrow></msub><mo>≈</mo><mn>0</mn></mrow></math><span style=\"font-family: 宋体;\">，即开关两端电压为</span><span style=\"font-family: 'Times New Roman';\">0</span><span style=\"font-family: 宋体;\">。故正确。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 27,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T10:04:35",
+          "updateDate": "2026-04-20T05:06:43",
+          "publishDate": "2025-06-30T22:23:14",
+          "qmlUpdateDate": "2025-10-21T11:39:48",
+          "stemText": "在闭合电路中，当干路开关断开时，开关两端电压等于电源电压；当干路开关闭合时，开关两端电压为0。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:33"
+        },
+        {
+          "questionId": "3687596691906560",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812010872832",
+          "source": "《电工基础》项目二：课题1 全电路欧姆定律  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">全电路中，电源的输出功率等于电源的总功率</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">全电路中，电源的总功率，输出功率</span><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">，，所以电源的输出功率小于电源的总功率，该说法错误。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 44,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T10:17:35",
+          "updateDate": "2026-04-20T05:30:44",
+          "publishDate": "2025-07-07T20:57:47",
+          "qmlUpdateDate": "2025-10-21T11:41:52",
+          "stemText": "全电路中，电源的输出功率等于电源的总功率",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:05"
+        },
+        {
+          "questionId": "3687596692307968",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812010872832",
+          "source": "《电工基础》项目二：课题1 全电路欧姆定律  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.8500000000000001,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">外电路电阻为零时，电源的端电压最大</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">外电路电阻为零时，即短路，此时电源的端电压，最小，所以该说法错误。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 63,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T10:17:35",
+          "updateDate": "2026-04-20T05:30:44",
+          "publishDate": "2025-07-07T20:50:37",
+          "qmlUpdateDate": "2025-10-21T11:41:52",
+          "stemText": "外电路电阻为零时，电源的端电压最大",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:05"
+        },
+        {
+          "questionId": "3957601727782912",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3926966046310400",
+          "source": "《电工技能基础》简单直流电路 知识点训练卷 2026江苏省职教高考《机电类考纲百套卷》第13卷 入库版",
+          "year": 2025,
+          "difficulty": 0.95,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">闭合电路欧姆定律中，电源的电动势等于内外电路电压之和。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237973
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 50,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-02-24T21:44:14",
+          "updateDate": "2026-04-25T07:25:50",
+          "publishDate": "2026-04-25T07:25:50",
+          "qmlUpdateDate": "2026-04-23T08:30:33",
+          "stemText": "闭合电路欧姆定律中，电源的电动势等于内外电路电压之和。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T05:10:56"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

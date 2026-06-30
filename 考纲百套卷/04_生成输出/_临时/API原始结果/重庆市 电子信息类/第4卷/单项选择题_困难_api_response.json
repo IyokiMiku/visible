@@ -1,0 +1,265 @@
+{
+  "试卷": "第4卷",
+  "题型": "单项选择题",
+  "难度": "困难",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000201
+  ],
+  "计划补题数": 1,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 8,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87671
+    ],
+    "typeIds": [
+      1000201
+    ],
+    "difficultyLowLimit": 0.0,
+    "difficultyUpLimit": 0.49,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 3,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3957274418733056",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3926965727518720",
+          "source": "《电工技能基础》复杂直流电路 知识点训练卷 2026版江苏省职教高考《机电类考纲百套卷》第17卷 入库版",
+          "year": 2025,
+          "difficulty": 0.4,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">将有一根阻值为</span><span style=\"font-family: 'Times New Roman';\">2Ω</span><span style=\"font-family: 宋体;\">的电阻丝均匀拉长为原来的</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">倍，则拉长后的电阻丝阻值为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">1Ω</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2Ω</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4Ω</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">8</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">D</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237964
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 58,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-02-24T10:38:20",
+          "updateDate": "2026-04-21T15:10:29",
+          "publishDate": "2026-04-21T15:10:29",
+          "qmlUpdateDate": "2026-02-24T10:38:20",
+          "stemText": "将有一根阻值为2Ω的电阻丝均匀拉长为原来的2倍，则拉长后的电阻丝阻值为（   ）1Ω2Ω4Ω8",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T05:07:24"
+        },
+        {
+          "questionId": "3927533671342080",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3926966478209024",
+          "source": "《电工技能基础》简单直流电路 知识点训练卷 2026江苏省职教高考《机电类考纲百套卷》第15卷 入库版",
+          "year": 2025,
+          "difficulty": 0.4,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">两粗细相同的同种金属电阻丝</span><span style=\"font-family: 'Times New Roman';\">R1</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';\">R2</span><span style=\"font-family: 宋体;\">的电流</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 宋体;\">和电压</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 宋体;\">的关系曲线如图所示，则下列说法正确的是（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><p style=\"text-align: left;\"><img  src=\"https://img.xkw.com/dksih/QBM/2026/1/12/3926966478209024/3927533671342080/STEM/08e3a749ff56439bae09c32904522b78.png\" width=\"444\" height=\"119\" /></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">两电阻的大小之比为</span><span style=\"font-family: 'Times New Roman';\">R1</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">R2=3</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">1</span></span></td></tr><tr><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">两电阻的大小之比为</span><span style=\"font-family: 'Times New Roman';\">R1</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">R2=1</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">3</span></span></td></tr><tr><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">两电阻丝长度之比为</span><span style=\"font-family: 'Times New Roman';\">L1</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">L2=</span><math latex=\"$\\sqrt{3}$\"><msqrt><mn>3</mn></msqrt></math><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">1</span></span></td></tr><tr><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">两电阻丝长度之比为</span><span style=\"font-family: 'Times New Roman';\">L1</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">L2=1</span><span style=\"font-family: 宋体;\">：</span><math latex=\"$\\sqrt{3}$\"><msqrt><mn>3</mn></msqrt></math></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 29,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-13T10:10:37",
+          "updateDate": "2026-04-14T14:28:31",
+          "publishDate": "2026-04-14T14:28:31",
+          "qmlUpdateDate": "2026-01-13T10:10:38",
+          "stemText": "两粗细相同的同种金属电阻丝R1、R2的电流I和电压U的关系曲线如图所示，则下列说法正确的是（   ）两电阻的大小之比为R1：R2=3：1两电阻的大小之比为R1：R2=1：3两电阻丝长度之比为L1：L2=3：1两电阻丝长度之比为L1：L2=1：3",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T01:03:56"
+        },
+        {
+          "questionId": "3646192404365312",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3642274757238784",
+          "source": "《电工技术基础与技能》第二章 课题一 电阻 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.4,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">两根同种材料的电阻丝，长度之比为</span><span style=\"font-family: 'Times New Roman';\">3:2</span><span style=\"font-family: 宋体;\">，横截面积之比为</span><span style=\"font-family: 'Times New Roman';\">1:2</span><span style=\"font-family: 宋体;\">，则它们的电阻之比为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">3:4</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">1:3</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">3:1</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4:3</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">C</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电阻的定义式为</span><math latex=\"$\\mathrm{R}=\\rho \\frac{\\mathrm{L}}{\\mathrm{S}}$\"><mrow><mtext>R</mtext><mo>=</mo><mi>ρ</mi><mfrac><mtext>L</mtext><mtext>S</mtext></mfrac></mrow></math><span style=\"font-family: 宋体;\">，将长度之比为</span><span style=\"font-family: 'Times New Roman';\">1:2</span><span style=\"font-family: 宋体;\">，横截面积之比为</span><span style=\"font-family: 'Times New Roman';\">3:2</span><span style=\"font-family: 宋体;\">带入定义式，可得两电阻之比为</span><span style=\"font-family: 'Times New Roman';\">3</span><span style=\"font-family: 宋体;\">：</span><span style=\"font-family: 'Times New Roman';\">1</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 62,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T22:20:21",
+          "updateDate": "2026-04-20T04:09:52",
+          "publishDate": "2025-04-26T10:35:20",
+          "qmlUpdateDate": "2024-12-11T22:20:21",
+          "stemText": "两根同种材料的电阻丝，长度之比为3:2，横截面积之比为1:2，则它们的电阻之比为（   ）3:41:33:14:3",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:47:41"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

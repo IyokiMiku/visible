@@ -1,0 +1,144 @@
+{
+  "course": "计算机组装与维修",
+  "qualityRules": {
+    "_通用规范": "完整规则见「编写规范/编写规范.md」，以下为关键规则摘要",
+    "选项长度比": "max(选项字数)/min(选项字数)≤2.0，严禁一长三短",
+    "选项实质性": "禁止'正常''无影响'等废选项，干扰项必须为同类硬件/技术中的易混概念",
+    "选项句式一致": "同题四选项必须采用相同语法结构",
+    "答案位置分散": "选择题中ABCD分布均匀，严禁集中在同一选项",
+    "难度强制执行": "每卷选择题必须含≥1适中题+≥1困难题（容量计算/故障排查/兼容性分析），不得全为概念回忆",
+    "计算题覆盖": "≥1题涉及数值（存储容量换算/总线带宽/分辨率计算/电源功率等）",
+    "情景化": "≥30%题目包含具体故障现象、组装操作场景或选购决策情境",
+    "干扰项陷阱": "每道选择题至少含1种陷阱类型",
+    "答案防自暴露": "题干不得含正确选项关键词≥3字；选项长度不得暴露答案",
+    "逐题自检": "每题自查10项：考纲对标→难度定位→情景化→选项长度比≤2.0→选项实质性→选项句式→答案位置→陷阱设计→无自暴露→答案正确",
+    "简答题模板": "简答题答案按“（1）”“（2）”“（3）”分条书写，每点为完整句或完整短句；解析说明答题思路或知识依据，不得只写“见答案”。",
+    "计算题模板": "计算题题干必须给出完整已知条件、求解目标和单位要求；答案带单位；解析按公式—代入—计算—结论书写，使用普通文本数学表达，禁止 {{math:...}} 和 LaTeX 命令。"
+  },
+  "difficulty": {
+    "ratio": {
+      "容易": 80,
+      "适中": 10,
+      "困难": 10
+    },
+    "enforcement": "每卷选择题必须包含适中和困难题各≥1道",
+    "levels": {
+      "容易": "单一硬件名称/功能/接口类型的直接回忆",
+      "适中": "需理解原理后判断兼容性或选型，或简单容量/带宽计算",
+      "困难": "多步故障排查推理链、硬件冲突综合分析、系统配置方案制定"
+    }
+  },
+  "questionTypes": [
+    {
+      "id": "single-choice",
+      "name": "单选题",
+      "defaultCount": 10,
+      "defaultScore": 2,
+      "format": {
+        "template": "{stem}（   ）\nA. {optionA}\nB. {optionB}\nC. {optionC}\nD. {optionD}\n【答案】{answer}\n【解析】{explanation}"
+      },
+      "example": {
+        "stem": "UEFI用于系统自动从预启动的操作环境，加载到一种操作系统，旨在代替______，从而使开机程序从繁化简，节省时间，提高开机后操作系统的启动速度。",
+        "options": {
+          "A": "BIOS",
+          "B": "CMOS",
+          "C": "MBR",
+          "D": "GPT"
+        },
+        "answer": "A",
+        "explanation": "UEFI（统一可扩展固件接口）是BIOS的替代方案，克服了传统BIOS的诸多限制，支持更大硬盘、更快启动。"
+      }
+    },
+    {
+      "id": "multi-choice",
+      "name": "多选题",
+      "defaultCount": 5,
+      "defaultScore": 3,
+      "format": {
+        "template": "{stem}（   ）\nA. {optionA}\nB. {optionB}\nC. {optionC}\nD. {optionD}\n【答案】{answers}\n【解析】{explanation}"
+      },
+      "example": {
+        "stem": "Windows操作系统的驱动程序通常是由一些______等类型的文件组成。",
+        "options": {
+          "A": ".386",
+          "B": ".drv",
+          "C": ".exe",
+          "D": ".sys"
+        },
+        "answer": "ABD",
+        "explanation": ".386（增强模式驱动程序）、.drv（设备驱动程序）和.sys（系统驱动程序）是驱动程序的常见文件类型。.exe是可执行程序文件，非驱动专用。"
+      }
+    },
+    {
+      "id": "true-false",
+      "name": "判断题",
+      "defaultCount": 10,
+      "defaultScore": 1,
+      "format": {
+        "template": "{stem}（   ）\n【答案】{answer}\n【解析】{explanation}"
+      },
+      "example": {
+        "stem": "TV输出接口将亮度信号和色度信号分开传输，避免了亮度和色度的互相干扰。",
+        "answer": "√",
+        "explanation": "TV输出接口采用S-Video（S端子）分离传输亮度(Y)和色度(C)信号，有效避免了二者相互干扰。"
+      }
+    },
+    {
+      "id": "fill-blank",
+      "name": "填空题",
+      "defaultCount": 5,
+      "defaultScore": 2,
+      "format": {
+        "template": "{stem}\n【答案】{answer}\n【解析】{explanation}"
+      },
+      "example": {
+        "stem": "计算机系统中的总线大致可以分为三类，即______、______及______。",
+        "answer": "内部总线，系统总线，多机系统总线",
+        "explanation": "内部总线用于CPU内部各部件连接；系统总线用于连接CPU、内存和I/O接口；多机系统总线用于多台计算机系统之间的互连。"
+      }
+    },
+    {
+      "id": "short-answer",
+      "name": "简答题",
+      "defaultCount": 3,
+      "defaultScore": 5,
+      "format": {
+        "template": "{stem}\n【答案】{answer}\n【解析】{explanation}"
+      },
+      "example": {
+        "stem": "驱动程序的安装原则是什么？",
+        "answer": "驱动程序的安装一般遵循“主板、各种板卡、外设”这样一个顺序来进行安装，以求尽可能保证软件间的兼容性。",
+        "explanation": "主板驱动是基础，板卡（显卡、声卡、网卡）其次，外设（打印机、扫描仪）最后。按此顺序可避免冲突。"
+      },
+      "formatNote": "答案按“（1）”“（2）”“（3）”分条书写，每点为完整句或完整短句；解析说明答题思路或知识依据。"
+    },
+    {
+      "id": "term-explanation",
+      "name": "名词解释题",
+      "defaultCount": 5,
+      "defaultScore": 3,
+      "format": {
+        "template": "{stem}\n【答案】{answer}\n【解析】{explanation}"
+      },
+      "example": {
+        "stem": "硬盘：",
+        "answer": "硬盘(Hard Disk Drive, HDD)是计算机主要的存储媒介之一。硬盘即机械硬盘，是高度复杂尖端的装置。",
+        "explanation": "硬盘由多个盘片叠放组成，通过磁头读写盘片上的数据。特点是容量大、成本低，但速度比SSD固态硬盘慢。"
+      }
+    },
+    {
+      "id": "comprehensive",
+      "name": "案例分析题",
+      "defaultCount": 2,
+      "defaultScore": 10,
+      "format": {
+        "template": "{stem}\n【答案】\n{answer}\n【解析】{explanation}"
+      },
+      "example": {
+        "stem": "小王在科技市场购买了一台计算机，请根据情况回答下列问题：(1)小王购买了一张显卡，请帮他描述显卡的安装步骤。(2)小王在启动计算机时发现系统崩溃，需重装系统，请阐述利用系统光盘重装系统的步骤。",
+        "answer": "(1)①操作前带上防静电手环，并保持接地良好；②在主板上找到相应的PCIe插槽，将显卡垂直插入插槽；③将显卡固定端紧固于机箱上，固定螺丝。(2)①在计算机启动过程中，按下DEL键，进入BIOS主界面；②将光标移动到Advanced BIOS Features项后回车；③将Virus Warning选项设置为Disabled；④将First Boot Device选项设置为CD-ROM；⑤按F10键保存并退出；⑥插入系统光盘后重启，按提示完成系统安装。",
+        "explanation": "本案例综合考查显卡安装操作和系统重装流程，涉及硬件安装规范和BIOS设置两方面知识。"
+      }
+    }
+  ]
+}

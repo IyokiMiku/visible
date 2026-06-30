@@ -1,0 +1,541 @@
+{
+  "试卷": "第1卷",
+  "题型": "填空题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 2,
+  "typeIds": [
+    1000203
+  ],
+  "计划补题数": 1,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 8,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87645,
+      87646
+    ],
+    "typeIds": [
+      1000203
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 11,
+      "totalPages": 2,
+      "list": [
+        {
+          "questionId": "3670644495032320",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669386528800768",
+          "source": "第一章 第一节  电路  基本物理量和基本定律",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电流流通的</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">称为电路。它基本上是由</span><span class=\"qml-bk\" index=\"2\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">、</span><span class=\"qml-bk\" index=\"3\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">、</span><span class=\"qml-bk\" index=\"4\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">、</span><span class=\"qml-bk\" index=\"5\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">四部分组成的。电路中提供电能的设备称为</span><span class=\"qml-bk\" index=\"6\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">，消耗电能的设备称为</span><span class=\"qml-bk\" index=\"7\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">闭合路径</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">电源</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">负载</span></span>&nbsp;&nbsp;&nbsp;&nbsp;④ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">连接导线</span></span>&nbsp;&nbsp;&nbsp;&nbsp;⑤ <span class=\"qml-an\"><span>控制和保护装置</span></span>&nbsp;&nbsp;&nbsp;&nbsp;⑥ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">电源</span></span>&nbsp;&nbsp;&nbsp;&nbsp;⑦ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">负载</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路是电流流通的闭合路径。电路基本上是由电源、负载、连接导线、控制和保护装置四部分组成的。其中电源是电路中提供电能的设备或装置；负载是消耗电能的设备或装置。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801"
+          ],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 32,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T11:28:15",
+          "updateDate": "2026-05-18T16:28:24",
+          "publishDate": "2025-06-22T22:35:54",
+          "qmlUpdateDate": "2026-05-18T16:28:22",
+          "stemText": "电流流通的称为电路。它基本上是由、、、四部分组成的。电路中提供电能的设备称为，消耗电能的设备称为。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:48"
+        },
+        {
+          "questionId": "3648025171034112",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642311984193536",
+          "source": "1.1 电路与电流（同步练习）-《电工技术基础与技能》同步精品课堂（高教版）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">一般来说，一个简单的电路由以下</span><span style=\"font-family: 'Times New Roman';\">4</span><span style=\"font-family: 宋体;\">部分组成</span><span style=\"font-family: 'Times New Roman';\">:</span><span class=\"qml-bk\" index=\"1\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">、</span><span class=\"qml-bk\" index=\"2\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">、</span><span class=\"qml-bk\" index=\"3\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">、</span><span class=\"qml-bk\" index=\"4\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">电源</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">负载</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">导线</span></span>&nbsp;&nbsp;&nbsp;&nbsp;④ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">开关</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 51,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-14T12:29:07",
+          "updateDate": "2026-04-20T04:14:38",
+          "publishDate": "2025-04-26T18:58:51",
+          "qmlUpdateDate": "2024-12-14T12:29:07",
+          "stemText": "一般来说，一个简单的电路由以下4部分组成:、、、。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:57:43"
+        },
+        {
+          "questionId": "3648099745062912",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642311958339584",
+          "source": "专题二 电动势、闭合电路的欧姆定律、电阻的串联、并联、混联（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">闭合电路是由电源、导体和</span><span class=\"qml-bk\" index=\"1\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">组成的。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">负载</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">闭合电路中除了电源和导体外，还需要负载来完成电流的闭合循环。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 31,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-14T15:00:51",
+          "updateDate": "2026-04-20T04:14:53",
+          "publishDate": "2025-04-26T20:23:32",
+          "qmlUpdateDate": "2024-12-14T15:00:51",
+          "stemText": "闭合电路是由电源、导体和组成的。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:58:15"
+        },
+        {
+          "questionId": "3670184452276224",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3669361550163968",
+          "source": "专题一 电路基础（7页）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">一只“</span><span style=\"font-family: 'Times New Roman';\">200Ω</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">2W</span><span style=\"font-family: 宋体;\">”的电阻器，使用时允许加的最高电压是</span><span class=\"qml-bk\" index=\"1\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 'Times New Roman';\">V</span><span style=\"font-family: 宋体;\">，允许通过的最大电流是</span><span class=\"qml-bk\" index=\"2\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 'Times New Roman';\">A</span><span style=\"font-family: 宋体;\">。若通过它的电流达到</span><span style=\"font-family: 'Times New Roman';\">1A</span><span style=\"font-family: 宋体;\">，则该电阻器会因</span><span class=\"qml-bk\" index=\"3\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 宋体;\">而</span><span class=\"qml-bk\" index=\"4\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 宋体;\">，这是由电流的</span><span class=\"qml-bk\" index=\"5\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 宋体;\">造成的。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">20</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">0.1</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">电流大</span></span>&nbsp;&nbsp;&nbsp;&nbsp;④ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">烧坏</span><span style=\"font-family: 'Times New Roman';\"></span></span>&nbsp;&nbsp;&nbsp;&nbsp;⑤ <span class=\"qml-an\"><span style=\"font-family: 宋体;\">热效应</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237960
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646,
+            87647
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 22,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-14T19:52:18",
+          "updateDate": "2026-04-20T05:05:54",
+          "publishDate": "2025-06-10T15:22:26",
+          "qmlUpdateDate": "2025-01-14T19:52:18",
+          "stemText": "一只“200Ω，2W”的电阻器，使用时允许加的最高电压是V，允许通过的最大电流是A。若通过它的电流达到1A，则该电阻器会因而，这是由电流的造成的。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:56:43"
+        },
+        {
+          "questionId": "3667335082901504",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3667228272033792",
+          "source": "中职生对口升学考试全真模拟卷（五）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电路通常有</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">、断路和</span><span class=\"qml-bk\" index=\"2\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">三种状态。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">通路</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">短路</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电路通常有通路、断路和短路三种状态。</span></p></div></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 67,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-10T19:15:14",
+          "updateDate": "2025-05-09T09:28:49",
+          "publishDate": "2025-05-09T09:28:49",
+          "qmlUpdateDate": "2025-01-10T19:15:15",
+          "stemText": "电路通常有、断路和三种状态。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:42:03"
+        },
+        {
+          "questionId": "3648975050416128",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642337713209344",
+          "source": "1.3 电能和电功率（同步练习）-《电工技术基础与技能》同步精品课堂（高教版）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">带绝缘保护层的导线是</span><span class=\"qml-bk\" index=\"1\" size=\"7\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">绝缘导线</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 19,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-15T20:41:39",
+          "updateDate": "2026-04-20T04:16:42",
+          "publishDate": "2025-04-27T15:39:10",
+          "qmlUpdateDate": "2024-12-15T20:41:39",
+          "stemText": "带绝缘保护层的导线是。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:02:31"
+        },
+        {
+          "questionId": "3648724159381504",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642337572962304",
+          "source": "6.2 电磁感应定律（同步练习）-《电工技术基础与技能》同步精品课堂（高教版）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">对电源来说，电流流出的一端为电源的</span><span class=\"qml-bk\" index=\"1\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">正极</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 24,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-15T12:11:13",
+          "updateDate": "2026-04-20T04:16:03",
+          "publishDate": "2025-04-26T20:29:12",
+          "qmlUpdateDate": "2024-12-15T12:11:13",
+          "stemText": "对电源来说，电流流出的一端为电源的。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:01:00"
+        },
+        {
+          "questionId": "3643352885911552",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3641713388838912",
+          "source": "专题一 电路的基本概念（练习）原卷版+-《电工技术基础与技能》二轮专题复习讲练测",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源的功能是将</span><span class=\"qml-bk\" index=\"1\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">能转换成</span><span class=\"qml-bk\" index=\"2\" size=\"12\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　　　</span><span style=\"font-family: 宋体;\">能。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">其他形式的</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">电</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237958
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87646
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 0,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T22:03:20",
+          "updateDate": "2026-04-20T04:02:34",
+          "publishDate": "2025-04-22T22:34:00",
+          "qmlUpdateDate": "2025-03-01T19:00:24",
+          "stemText": "电源的功能是将能转换成能。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:32:53"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

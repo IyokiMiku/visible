@@ -1,0 +1,2531 @@
+{
+  "试卷": "第5卷",
+  "说明": "这里记录本卷 API/AI 进入最终组卷前后的结构化信息，方便回溯缺题或转换问题。",
+  "计划题数": 42,
+  "目标题数": 42,
+  "分值倍率": 1,
+  "按题型统计": [
+    {
+      "题型": "单项选择题",
+      "typeId": [
+        1000201
+      ],
+      "计划题数": 16,
+      "库存量": 134,
+      "API返回题数": 48,
+      "API入选题数": 16,
+      "AI补题数": 0,
+      "缺题数": 0,
+      "按难度": {
+        "简单": {
+          "需题数": 13,
+          "API返回": 39,
+          "API入选": 13,
+          "仍缺": 0,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\单项选择题_简单_api_response.json"
+        },
+        "适中": {
+          "需题数": 2,
+          "API返回": 6,
+          "API入选": 2,
+          "仍缺": 0,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\单项选择题_适中_api_response.json"
+        },
+        "困难": {
+          "需题数": 1,
+          "API返回": 3,
+          "API入选": 1,
+          "仍缺": 0,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\单项选择题_困难_api_response.json"
+        }
+      },
+      "最终入选题数": 16,
+      "最终缺题数": 0
+    },
+    {
+      "题型": "判断题",
+      "typeId": [
+        1000202
+      ],
+      "计划题数": 16,
+      "库存量": 29,
+      "API返回题数": 29,
+      "API入选题数": 14,
+      "AI补题数": 2,
+      "缺题数": 2,
+      "按难度": {
+        "简单": {
+          "需题数": 13,
+          "API返回": 27,
+          "API入选": 13,
+          "仍缺": 0,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\判断题_简单_api_response.json"
+        },
+        "适中": {
+          "需题数": 2,
+          "API返回": 2,
+          "API入选": 1,
+          "仍缺": 1,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\判断题_适中_api_response.json"
+        },
+        "困难": {
+          "需题数": 1,
+          "API返回": 0,
+          "API入选": 0,
+          "仍缺": 1,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\判断题_困难_api_response.json"
+        }
+      },
+      "最终入选题数": 16,
+      "最终缺题数": 0
+    },
+    {
+      "题型": "填空题",
+      "typeId": [
+        1000203
+      ],
+      "计划题数": 6,
+      "库存量": 66,
+      "API返回题数": 18,
+      "API入选题数": 6,
+      "AI补题数": 0,
+      "缺题数": 0,
+      "按难度": {
+        "简单": {
+          "需题数": 5,
+          "API返回": 15,
+          "API入选": 5,
+          "仍缺": 0,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\填空题_简单_api_response.json"
+        },
+        "适中": {
+          "需题数": 1,
+          "API返回": 3,
+          "API入选": 1,
+          "仍缺": 0,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\填空题_适中_api_response.json"
+        }
+      },
+      "最终入选题数": 6,
+      "最终缺题数": 0
+    },
+    {
+      "题型": "综合应用题",
+      "typeId": [
+        1000206
+      ],
+      "计划题数": 4,
+      "库存量": 0,
+      "API返回题数": 0,
+      "API入选题数": 0,
+      "AI补题数": 4,
+      "缺题数": 4,
+      "按难度": {
+        "简单": {
+          "需题数": 3,
+          "API返回": 0,
+          "API入选": 0,
+          "仍缺": 3,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\综合应用题_简单_api_response.json"
+        },
+        "困难": {
+          "需题数": 1,
+          "API返回": 0,
+          "API入选": 0,
+          "仍缺": 1,
+          "API原始响应文件": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\综合应用题_困难_api_response.json"
+        }
+      },
+      "最终入选题数": 4,
+      "最终缺题数": 0
+    }
+  ],
+  "最终题数": 42,
+  "最终题目": [
+    {
+      "questionId": "3699303322927104",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3672162901909504",
+      "source": "《电路基础》项目一任务一 直流电路的基础知识（2） 45分钟专题训练（原卷版+）",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">把一个电阻为</span><span style=\"font-family: 'Times New Roman';\"> 10Ω</span><span style=\"font-family: 宋体;\">的导体接到电压为</span><span style=\"font-family: 'Times New Roman';\"> 5V </span><span style=\"font-family: 宋体;\">的电源上，通过导体的电流是（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.5A</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">5A</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2A</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10A</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">A</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律</span><span style=\"font-family: 'Times New Roman';\">I=U/R</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">I=5V/10Ω=0.5A</span><span style=\"font-family: 宋体;\">，所以选</span><span style=\"font-family: 'Times New Roman';\"> A</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 46,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-02-24T23:14:47",
+      "updateDate": "2026-04-20T05:53:58",
+      "publishDate": "2025-08-26T21:13:20",
+      "qmlUpdateDate": "2025-02-24T23:14:48",
+      "stemText": "把一个电阻为 10Ω的导体接到电压为 5V 的电源上，通过导体的电流是（   ）0.5A5A2A10A",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T03:49:25",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 1
+    },
+    {
+      "questionId": "3688636510388224",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3670026667139072",
+      "source": "第二章  电路的基本概念",
+      "year": 2025,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">下列说法中，正确的是（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">据</span><math latex=\"$R=\\frac{U}{I}$\"><mrow><mi>R</mi><mo>=</mo><mfrac><mi>U</mi><mi>I</mi></mfrac></mrow></math><span style=\"font-family: 宋体;\">可知，加在电阻两端的电压变为原来的</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">倍，导体的电阻也变为原来的</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">倍</span></span></td></tr><tr><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">不考虑温度对阻值的影响，通过导体的电流及加在两端的电压改变时导体的电阻不变</span></span></td></tr><tr><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">据</span><math latex=\"$\\rho =\\frac{RS}{l}$\"><mrow><mi>ρ</mi><mo>=</mo><mfrac><mrow><mi>R</mi><mi>S</mi></mrow><mi>l</mi></mfrac></mrow></math><span style=\"font-family: 宋体;\">可知，导体的电阻率与导体的电阻和横截面积的乘积</span><span style=\"font-family: 'Times New Roman';font-style: italic;\">RS</span><span style=\"font-family: 宋体;\">成正比，与导体的长度</span><span style=\"font-family: 'Times New Roman';font-style: italic;\">l</span><span style=\"font-family: 宋体;\">成反比</span></span></td></tr><tr><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">导体的电阻率</span><math latex=\"$\\rho$\"><mi>ρ</mi></math><span style=\"font-family: 宋体;\">与导体的长度</span><span style=\"font-family: 'Times New Roman';font-style: italic;\">l</span><span style=\"font-family: 宋体;\">、横截面积</span><span style=\"font-family: 'Times New Roman';font-style: italic;\">S</span><span style=\"font-family: 宋体;\">、导体的电阻</span><span style=\"font-family: 'Times New Roman';font-style: italic;\">R</span><span style=\"font-family: 宋体;\">皆有关</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87671,
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 25,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-02-09T21:33:06",
+      "updateDate": "2026-04-20T05:32:31",
+      "publishDate": "2025-07-15T18:34:23",
+      "qmlUpdateDate": "2025-02-09T21:33:07",
+      "stemText": "下列说法中，正确的是（   ）据R=UI可知，加在电阻两端的电压变为原来的2倍，导体的电阻也变为原来的2倍不考虑温度对阻值的影响，通过导体的电流及加在两端的电压改变时导体的电阻不变据ρ=RSl可知，导体的电阻率与导体的电阻和横截面积的乘积RS成正比，与导体的长度l成反比导体的电阻率ρ与导体的长度l、横截面积S、导体的电阻R皆有关",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T02:57:02",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 2
+    },
+    {
+      "questionId": "3644764327780352",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3642274813779968",
+      "source": "专题一 认识电路（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">在一个电路中，如果总电流为</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">安，总电压为</span><span style=\"font-family: 'Times New Roman';\">50</span><span style=\"font-family: 宋体;\">伏特，总电阻为多少欧姆？（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">欧姆</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">欧姆</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">40</span><span style=\"font-family: 宋体;\">欧姆</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">50</span><span style=\"font-family: 宋体;\">欧姆</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">A</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">总电阻等于总电压除以总电流，所以总电阻为</span><span style=\"font-family: 'Times New Roman';\">50</span><span style=\"font-family: 宋体;\">伏特除以</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">安，即</span><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">欧姆。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 66,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-09T21:54:55",
+      "updateDate": "2026-04-20T04:06:34",
+      "publishDate": "2025-04-25T22:44:33",
+      "qmlUpdateDate": "2024-12-09T21:54:55",
+      "stemText": "在一个电路中，如果总电流为10安，总电压为50伏特，总电阻为多少欧姆？（   ）5欧姆10欧姆40欧姆50欧姆",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:40:11",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 3
+    },
+    {
+      "questionId": "3643931654012928",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3641755465973760",
+      "source": "专题三 万用表、电阻的测量、电路中各点电位的计算（专项练习）-山东省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">如何计算电路中某一点的电压？（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电流乘以电阻</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电阻乘以电流</span></span></td></tr><tr><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电流除以电阻</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电流加上电阻</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律，电压等于电流乘以电阻。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 27,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-08T17:40:50",
+      "updateDate": "2026-04-20T04:04:29",
+      "publishDate": "2025-04-23T13:13:21",
+      "qmlUpdateDate": "2024-12-08T17:40:51",
+      "stemText": "如何计算电路中某一点的电压？（   ）电流乘以电阻电阻乘以电流电流除以电阻电流加上电阻",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:35:36",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 4
+    },
+    {
+      "questionId": "3916463803596800",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3914111611035648",
+      "source": "《电工电子技术模块》电路基础知识-知识点训练卷 湖南省机电类专业 考纲百套卷第2卷（入库版）",
+      "year": 2025,
+      "difficulty": 0.95,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">某电阻两端电压为</span><span style=\"font-family: 'Times New Roman';\"> 12V</span><span style=\"font-family: 宋体;\">，电阻值为</span><span style=\"font-family: 'Times New Roman';\"> 6</span><span style=\"font-family: 宋体;\">Ω，通过的电流是（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.5A</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2A</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">6A</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">12A</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"></div>",
+      "catalogIds": [
+        237969
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 46,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-12-28T18:48:55",
+      "updateDate": "2026-03-28T16:24:15",
+      "publishDate": "2026-03-28T16:24:15",
+      "qmlUpdateDate": "2025-12-28T18:48:55",
+      "stemText": "某电阻两端电压为 12V，电阻值为 6Ω，通过的电流是（   ）0.5A2A6A12A",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T23:48:16",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 5
+    },
+    {
+      "questionId": "3699250675531776",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3672162972262400",
+      "source": "《电路基础》项目一任务二 直流电路的基本定律（2） 45分钟专题训练（原卷版+）",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">一个电阻为</span><span style=\"font-family: 'Times New Roman';\">10Ω</span><span style=\"font-family: 宋体;\">的导体，若它两端的电压从</span><span style=\"font-family: 'Times New Roman';\">5V</span><span style=\"font-family: 宋体;\">增加到</span><span style=\"font-family: 'Times New Roman';\">10V</span><span style=\"font-family: 宋体;\">，则通过它的电流变化了（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.5A</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">1A</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">1.5A</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2A</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">A</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">原来电流</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 'Times New Roman';\"><sub>1</sub></span><span style=\"font-family: 'Times New Roman';\">=5V/10Ω=0.5A</span><span style=\"font-family: 宋体;\">，后来电流</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 'Times New Roman';\"><sub>2</sub></span><span style=\"font-family: 'Times New Roman';\">= 10V/10Ω=1A</span><span style=\"font-family: 宋体;\">，电流变化了</span><span style=\"font-family: 'Times New Roman';\">1A - 0.5A = 0.5A</span><span style=\"font-family: 宋体;\">，所以选</span><span style=\"font-family: 'Times New Roman';\"> A</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 44,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-02-24T21:27:41",
+      "updateDate": "2026-04-20T05:53:48",
+      "publishDate": "2025-08-21T23:05:59",
+      "qmlUpdateDate": "2025-02-24T21:27:41",
+      "stemText": "一个电阻为10Ω的导体，若它两端的电压从5V增加到10V，则通过它的电流变化了（   ）0.5A1A1.5A2A",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T03:49:01",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 6
+    },
+    {
+      "questionId": "3670644498038784",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3669386528800768",
+      "source": "第一章 第一节  电路  基本物理量和基本定律",
+      "year": 2025,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如图所示为两个电阻的伏安特性曲线，由此可确定（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><p style=\"text-align: left;\"><img  src=\"https://img.xkw.com/dksih/QBM/2025/1/13/3669386528800768/3670644498038784/STEM/4cf93396afb54785aff304831246d391.png\" width=\"123\" height=\"99\" /></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><math latex=\"$R_{a}&gt; R_{b}$\"><mrow><msub><mi>R</mi><mi>a</mi></msub><mo>&gt;</mo><msub><mi>R</mi><mi>b</mi></msub></mrow></math></span></td><td>B.&nbsp;<span class=\"qml-op\"><math latex=\"$R_{a}&lt; R_{b}$\"><mrow><msub><mi>R</mi><mi>a</mi></msub><mo>&lt;</mo><msub><mi>R</mi><mi>b</mi></msub></mrow></math></span></td><td>C.&nbsp;<span class=\"qml-op\"><math latex=\"$R_{a}=R_{b}$\"><mrow><msub><mi>R</mi><mi>a</mi></msub><mo>=</mo><msub><mi>R</mi><mi>b</mi></msub></mrow></math></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><math latex=\"$R_{a}=1\\Upomega$\"><mrow><msub><mi>R</mi><mi>a</mi></msub><mo>=</mo><mn>1</mn><mi mathvariant=\"normal\">Ω</mi></mrow></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$R_{b}=0\\Upomega$\"><mrow><msub><mi>R</mi><mi>b</mi></msub><mo>=</mo><mn>0</mn><mi mathvariant=\"normal\">Ω</mi></mrow></math></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">由欧姆定律</span><math latex=\"$R=\\frac{U}{I}$\"><mrow><mi>R</mi><mo>=</mo><mfrac><mi>U</mi><mi>I</mi></mfrac></mrow></math><span style=\"font-family: 宋体;\">可知</span><math latex=\"$R_{a}&lt; R_{b}$\"><mrow><msub><mi>R</mi><mi>a</mi></msub><mo>&lt;</mo><msub><mi>R</mi><mi>b</mi></msub></mrow></math><span style=\"font-family: 宋体;\">，故</span><span style=\"font-family: 'Times New Roman';\">B</span><span style=\"font-family: 宋体;\">正确。</span></p></div></div>",
+      "catalogIds": [
+        237969,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 63,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-01-15T11:28:16",
+      "updateDate": "2026-04-20T05:06:50",
+      "publishDate": "2025-06-28T21:10:10",
+      "qmlUpdateDate": "2025-01-15T11:28:16",
+      "stemText": "如图所示为两个电阻的伏安特性曲线，由此可确定（   ）Ra>RbRa<RbRa=RbRa=1Ω，Rb=0Ω",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T01:58:49",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 7
+    },
+    {
+      "questionId": "3699250674589696",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3672162972262400",
+      "source": "《电路基础》项目一任务二 直流电路的基本定律（2） 45分钟专题训练（原卷版+）",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">已知电阻</span><span style=\"font-family: 'Times New Roman';\">R = 5Ω</span><span style=\"font-family: 宋体;\">，通过的电流</span><span style=\"font-family: 'Times New Roman';\">I = 2A</span><span style=\"font-family: 宋体;\">，则电阻两端的电压</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 宋体;\">为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2.5V</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10V</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.4V</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">7V</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律</span><span style=\"font-family: 'Times New Roman';\">U = IR</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">U = 2A</span><span style=\"font-family: 宋体;\">错误</span><span style=\"font-family: 'Times New Roman';\">5Ω = 10V</span><span style=\"font-family: 宋体;\">，所以选</span><span style=\"font-family: 'Times New Roman';\"> B</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 46,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-02-24T21:27:41",
+      "updateDate": "2026-04-20T05:53:48",
+      "publishDate": "2025-08-21T23:00:39",
+      "qmlUpdateDate": "2025-02-24T21:27:41",
+      "stemText": "已知电阻R = 5Ω，通过的电流I = 2A，则电阻两端的电压U为（   ）2.5V10V0.4V7V",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T03:49:01",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 8
+    },
+    {
+      "questionId": "3648368023248896",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3642337495613440",
+      "source": "专题十 纯电阻电路（专项练习）河南省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">在一个串联电路中，如果总电流为</span><span style=\"font-family: 'Times New Roman';\">5A</span><span style=\"font-family: 宋体;\">，总电阻为</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">欧姆，则电路中的总电压是多少（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10V</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">15V</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">20V</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">25V</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">C</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">总电压等于总电流乘以总电阻，即</span><span style=\"font-family: 'Times New Roman';\"> ( V = IR = 5 \\ 10 = 50V )</span></p></div></div>",
+      "catalogIds": [
+        238063
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678,
+        87780
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [
+        "5101"
+      ],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 60,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-15T00:06:39",
+      "updateDate": "2026-04-20T04:15:40",
+      "publishDate": "2025-04-04T23:49:00",
+      "qmlUpdateDate": "2024-12-15T00:06:39",
+      "stemText": "在一个串联电路中，如果总电流为5A，总电阻为10欧姆，则电路中的总电压是多少（   ）10V15V20V25V",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T00:00:01",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 9
+    },
+    {
+      "questionId": "3644764327477248",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3642274813779968",
+      "source": "专题一 认识电路（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">在一个电路中，总电压为</span><span style=\"font-family: 'Times New Roman';\">30</span><span style=\"font-family: 宋体;\">伏特，总电流为</span><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">安，总电阻为多少欧姆？（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">3</span><span style=\"font-family: 宋体;\">欧姆</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">欧姆</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">6</span><span style=\"font-family: 宋体;\">欧姆</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">欧姆</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">C</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">总电阻等于总电压除以总电流，所以总电阻为</span><span style=\"font-family: 'Times New Roman';\">30</span><span style=\"font-family: 宋体;\">伏特除以</span><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">安，即</span><span style=\"font-family: 'Times New Roman';\">6</span><span style=\"font-family: 宋体;\">欧姆。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 59,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-09T21:54:55",
+      "updateDate": "2026-04-20T04:06:34",
+      "publishDate": "2025-04-25T22:50:42",
+      "qmlUpdateDate": "2024-12-09T21:54:55",
+      "stemText": "在一个电路中，总电压为30伏特，总电流为5安，总电阻为多少欧姆？（   ）3欧姆5欧姆6欧姆10欧姆",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:40:11",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 10
+    },
+    {
+      "questionId": "3643957591121920",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3642274401312768",
+      "source": "专题一 认识电路（专项练习）-浙江省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律表明电流与电压之间的关系是？（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电流与电压平方成正比</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电流与电阻成正比</span></span></td></tr><tr><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电流与电压成反比</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电流与电阻成反比</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律表示电流与电压成正比，与电阻成反比。</span></p></div></div>",
+      "catalogIds": [
+        237969,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 29,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-08T18:33:37",
+      "updateDate": "2026-04-20T04:04:35",
+      "publishDate": "2025-04-24T18:09:25",
+      "qmlUpdateDate": "2024-12-08T18:33:37",
+      "stemText": "欧姆定律表明电流与电压之间的关系是？（   ）电流与电压平方成正比电流与电阻成正比电流与电压成反比电流与电阻成反比",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:35:48",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 11
+    },
+    {
+      "questionId": "3648317104439296",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3642337466425344",
+      "source": "《电子与电工类基础》电路基础知识与直流电路-常考题训练 浙江省电子电工类专业 考纲百套卷 第39卷（原卷版+）",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如图所示为两个电阻的伏安特性曲线，由图可确定（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><p style=\"text-align: left;\"><img  src=\"https://img.xkw.com/dksih/QBM/2024/12/6/3642337466425344/3648317104439296/STEM/45e4de24ef374c61b7021d7ad4957d73.png\" width=\"147\" height=\"114\" /></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>a</sub></span><math latex=\"$&gt;$\"><mo>&gt;</mo></math><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>b</sub></span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>a</sub></span><math latex=\"$&lt;$\"><mo>&lt;</mo></math><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>b</sub></span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>a</sub></span><math latex=\"$=$\"><mo>=</mo></math><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>b</sub></span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">无法确定</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">A</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"></div>",
+      "catalogIds": [
+        237905,
+        237964,
+        281140
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87669,
+        87678
+      ],
+      "primaryKPointIds": [
+        87669
+      ],
+      "tagIds": [
+        "4801"
+      ],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 27,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-14T22:23:04",
+      "updateDate": "2025-06-10T16:51:28",
+      "publishDate": "2025-04-04T23:37:26",
+      "qmlUpdateDate": "2024-12-14T22:23:04",
+      "stemText": "如图所示为两个电阻的伏安特性曲线，由图可确定（   ）Ra>RbRa<RbRa=Rb无法确定",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:59:42",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 12
+    },
+    {
+      "questionId": "3641914845765632",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3641712859979776",
+      "source": "专题四 复杂直流电流（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">当电阻器两端的电压为</span><span style=\"font-family: 'Times New Roman';\">12</span><span style=\"font-family: 宋体;\">伏特，电阻为</span><span style=\"font-family: 'Times New Roman';\">4</span><span style=\"font-family: 宋体;\">欧姆时，通过电阻器的电流为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">安培</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">3</span><span style=\"font-family: 宋体;\">安培</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4</span><span style=\"font-family: 宋体;\">安培</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">6</span><span style=\"font-family: 宋体;\">安培</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律，电流等于电压除以电阻，即I=V/R=12V/4Ω=3A。</span></p></div></div>",
+      "catalogIds": [
+        237973,
+        237906
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [
+        "4801"
+      ],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003
+      ],
+      "textBookIds": [
+        6137,
+        6136
+      ],
+      "mergeTo": "",
+      "freshScore": 58,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-05T21:17:38",
+      "updateDate": "2026-04-20T03:57:42",
+      "publishDate": "2024-12-14T23:40:08",
+      "qmlUpdateDate": "2024-12-05T21:17:38",
+      "stemText": "当电阻器两端的电压为12伏特，电阻为4欧姆时，通过电阻器的电流为（   ）2安培3安培4安培6安培",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:24:54",
+      "_target_difficulty": "简单",
+      "_question_type": "单项选择题",
+      "_question_no": 13
+    },
+    {
+      "questionId": "3643215779577856",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3641755199406080",
+      "source": "专题一 认识电路（专项练习）-山东省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.65,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">某灯泡的电阻为</span><span style=\"font-family: 'Times New Roman';\">50Ω</span><span style=\"font-family: 宋体;\">，接在</span><span style=\"font-family: 'Times New Roman';\">220V</span><span style=\"font-family: 宋体;\">的电压下，其电流是多少？（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2.2A</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">3.2A</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4.4A</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">5.2A</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">A</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律</span><span style=\"font-family: 'Times New Roman';\">I = U / R</span><span style=\"font-family: 宋体;\">，电流</span><span style=\"font-family: 'Times New Roman';\">I = 220V / 50Ω = 4.4A</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+      "catalogIds": [
+        237968
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 21,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-07T17:24:23",
+      "updateDate": "2026-04-20T04:01:44",
+      "publishDate": "2025-04-18T19:07:19",
+      "qmlUpdateDate": "2024-12-07T17:24:24",
+      "stemText": "某灯泡的电阻为50Ω，接在220V的电压下，其电流是多少？（   ）2.2A3.2A4.4A5.2A",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:31:49",
+      "_target_difficulty": "适中",
+      "_question_type": "单项选择题",
+      "_question_no": 14
+    },
+    {
+      "questionId": "3648759728816128",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3642337596096512",
+      "source": "《电工技术基础与技能》第一章 课题一 电路的组成与作用 45分钟专题训练（原卷版+） ",
+      "year": 2024,
+      "difficulty": 0.65,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">若直流电路中的负载增加（即电阻增大），则电路中的电流会（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">增大</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">减小</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">保持不变</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">先增大后减小</span></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律，当电压不变时，电阻增大，则电流会减小。故选</span><span style=\"font-family: 'Times New Roman';\">B</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 40,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-15T13:23:35",
+      "updateDate": "2026-04-20T04:16:09",
+      "publishDate": "2025-04-27T07:38:24",
+      "qmlUpdateDate": "2024-12-15T13:23:35",
+      "stemText": "若直流电路中的负载增加（即电阻增大），则电路中的电流会（   ）增大减小保持不变先增大后减小",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T00:01:12",
+      "_target_difficulty": "适中",
+      "_question_type": "单项选择题",
+      "_question_no": 15
+    },
+    {
+      "questionId": "3927600947167232",
+      "courseId": 10002,
+      "typeId": "1000201",
+      "topTypeId": "1000201",
+      "typeFeatureIds": [],
+      "paperId": "3926966974472192",
+      "source": "《电工技能基础》简单直流电路 知识点训练卷2026 江苏省职教高考《机电类考纲百套卷》第16卷 入库版",
+      "year": 2025,
+      "difficulty": 0.4,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如图所示，直线</span><span style=\"font-family: 'Times New Roman';\">A</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';\">B</span><span style=\"font-family: 宋体;\">分别为电源</span><span style=\"font-family: 'Times New Roman';\">a</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';\">b</span><span style=\"font-family: 宋体;\">的外特性图形，设两个电源的内阻分别为</span><math latex=\"$r_{a}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 宋体;\">和</span><math latex=\"$r_{b}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，若将一定值电阻</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">分别接到</span><span style=\"font-family: 'Times New Roman';\">a</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';\">b</span><span style=\"font-family: 宋体;\">两电源上，通过</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">的电流分别为</span><math latex=\"$I_{a}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 宋体;\">和</span><math latex=\"$I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，则（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><p style=\"text-align: left;\"><img  src=\"https://img.xkw.com/dksih/QBM/2026/1/12/3926966974472192/3927600947167232/STEM/832a951b44bd403d8ee0b97feeb1ca5c.png\" width=\"147\" height=\"117\" /></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><math latex=\"$r_{a}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 'Times New Roman';\">=</span><math latex=\"$r_{b}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$I_{a}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 'Times New Roman';\">=</span><math latex=\"$I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math></span></td><td>B.&nbsp;<span class=\"qml-op\"><math latex=\"$r_{a}&gt; r_{b}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>a</mi></mrow></msub><mo>&gt;</mo><msub><mrow><mi>r</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$I_{a}&gt; I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub><mo>&gt;</mo><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math></span></td></tr><tr><td>C.&nbsp;<span class=\"qml-op\"><math latex=\"$r_{a}&gt; r_{b}$\"><msub><mrow><mi>r</mi></mrow><mrow><mi>a</mi></mrow></msub><mo>&gt;</mo><msub><mrow><mi>r</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$I_{a}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 'Times New Roman';\">=</span><math latex=\"$I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><math latex=\"$I_{a}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub></math><span style=\"font-family: 'Times New Roman';\">=</span><math latex=\"$I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math><span style=\"font-family: 宋体;\">，</span><math latex=\"$I_{a}&lt; I_{b}$\"><msub><mrow><mi>I</mi></mrow><mrow><mi>a</mi></mrow></msub><mo>&lt;</mo><msub><mrow><mi>I</mi></mrow><mrow><mi>b</mi></mrow></msub></math></span></td></tr></table></div></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"></div>",
+      "catalogIds": [
+        237969
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 19,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2026-01-13T12:27:30",
+      "updateDate": "2026-04-15T15:56:43",
+      "publishDate": "2026-04-15T15:56:43",
+      "qmlUpdateDate": "2026-01-13T12:27:30",
+      "stemText": "如图所示，直线A、B分别为电源a、b的外特性图形，设两个电源的内阻分别为ra和rb，若将一定值电阻R分别接到a、b两电源上，通过R的电流分别为Ia和Ib，则（   ）ra=rb，Ia=Ibra>rb，Ia>Ibra>rb，Ia=IbIa=Ib，Ia<Ib",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-30T01:04:48",
+      "_target_difficulty": "困难",
+      "_question_type": "单项选择题",
+      "_question_no": 16
+    },
+    {
+      "questionId": "3897953239605248",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3875305838190592",
+      "source": "《电工基础》直流电路-知识点训练卷 2026版吉林省装备制造类专业 考纲百套卷 第23卷",
+      "year": 2025,
+      "difficulty": 0.95,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律适用于所有直流电路。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律仅适用于线性元件（如电阻），不适用于含二极管等非线性元件的电路。</span></p></div></div>",
+      "catalogIds": [
+        237969
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 73,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-12-02T15:09:05",
+      "updateDate": "2026-03-19T14:39:26",
+      "publishDate": "2026-03-19T14:39:26",
+      "qmlUpdateDate": "2026-03-18T22:06:23",
+      "stemText": "欧姆定律适用于所有直流电路。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T21:17:08",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 17
+    },
+    {
+      "questionId": "3688636512141312",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3670026667139072",
+      "source": "第二章  电路的基本概念",
+      "year": 2025,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律表达式</span><math latex=\"$I=\\frac{U}{R}$\"><mrow><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac></mrow></math><span style=\"font-family: 宋体;\">中的</span><span style=\"font-family: 'Times New Roman';font-style: italic;\">I</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';font-style: italic;\">U</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';font-style: italic;\">R</span><span style=\"font-family: 宋体;\">三个量必须是对应同一导体在同种情况下的物理量。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+      "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+      "catalogIds": [
+        237969,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 20,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-02-09T21:33:06",
+      "updateDate": "2026-04-20T05:32:31",
+      "publishDate": "2025-07-12T21:02:00",
+      "qmlUpdateDate": "2025-10-21T11:41:59",
+      "stemText": "欧姆定律表达式I=UR中的I、U、R三个量必须是对应同一导体在同种情况下的物理量。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T02:57:02",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 18
+    },
+    {
+      "questionId": "3898189811605504",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3875306353541120",
+      "source": "《电工基础》常考题训练卷 2026版吉林省装备制造类专业 考纲百套卷  第78卷",
+      "year": 2025,
+      "difficulty": 0.85,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律适用于所有含有电阻的电路，包括含电容、电感的电路。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律仅适用于纯电阻电路，含电容、电感的非纯电阻电路中，电压与电流相位不同，不满足欧姆定律，故错误。</span></p></div></div>",
+      "catalogIds": [
+        237969
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 40,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-12-02T23:10:23",
+      "updateDate": "2026-03-23T10:36:22",
+      "publishDate": "2026-03-23T10:36:22",
+      "qmlUpdateDate": "2026-03-22T16:37:15",
+      "stemText": "欧姆定律适用于所有含有电阻的电路，包括含电容、电感的电路。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T21:20:33",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 19
+    },
+    {
+      "questionId": "3650370520932352",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3642398988869632",
+      "source": "2.1 电动势闭合电路欧姆定律（同步练习）-《电工技术基础与技能》同步精品课堂（高教版）",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">当外电路断开时，</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">趋向于</span><span style=\"font-family: 'Times New Roman';\">0</span><span style=\"font-family: 宋体;\">。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">当外电路断开时，</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">趋向于无穷大。当外电路短路时，</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">趋近于零。</span></p></div></div>",
+      "catalogIds": [
+        237973,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 1,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 35,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-17T20:00:45",
+      "updateDate": "2026-04-20T04:20:36",
+      "publishDate": "2025-05-08T16:55:45",
+      "qmlUpdateDate": "2025-10-21T11:27:51",
+      "stemText": "当外电路断开时，R趋向于0。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T00:11:36",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 20
+    },
+    {
+      "questionId": "3898474177437696",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3875306412105728",
+      "source": "《电工基础》常考题训练卷 2026版吉林省装备制造类专业 考纲百套卷  第75卷",
+      "year": 2025,
+      "difficulty": 0.95,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律适用于所有电路，包括含电容、电感的电路。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律仅适用于线性电路，含容感的交流电路需用阻抗分析，非线性电路不适用，表述错误。</span></p></div></div>",
+      "catalogIds": [
+        237968
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 78,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-12-03T08:48:56",
+      "updateDate": "2026-03-23T15:20:07",
+      "publishDate": "2026-03-23T15:20:07",
+      "qmlUpdateDate": "2026-03-22T17:19:18",
+      "stemText": "欧姆定律适用于所有电路，包括含电容、电感的电路。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T21:21:02",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 21
+    },
+    {
+      "questionId": "3898464513048576",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3875306396786688",
+      "source": "《电工基础》常考题训练卷 2026版吉林省装备制造类专业 考纲百套卷  第76卷",
+      "year": 2025,
+      "difficulty": 0.9,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律适用于所有类型的电路。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律仅适用于纯电阻电路和线性元件，不适用于含电容、电感的交流电路，故错误。</span></p></div></div>",
+      "catalogIds": [
+        237968
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 69,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-12-03T08:29:16",
+      "updateDate": "2026-03-23T15:28:41",
+      "publishDate": "2026-03-23T15:28:41",
+      "qmlUpdateDate": "2026-03-22T17:21:30",
+      "stemText": "欧姆定律适用于所有类型的电路。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T21:20:57",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 22
+    },
+    {
+      "questionId": "3644764325879808",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3642274813779968",
+      "source": "专题一 认识电路（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">一个电器接在</span><span style=\"font-family: 'Times New Roman';\">220</span><span style=\"font-family: 宋体;\">伏特的电源上，电阻为</span><span style=\"font-family: 'Times New Roman';\">50</span><span style=\"font-family: 宋体;\">欧姆，电流为</span><span style=\"font-family: 'Times New Roman';\">4.4</span><span style=\"font-family: 宋体;\">安。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">错误。根据欧姆定律，电流等于电压除以电阻，所以电流为</span><span style=\"font-family: 'Times New Roman';\">220</span><span style=\"font-family: 宋体;\">伏特除以</span><span style=\"font-family: 'Times New Roman';\">50</span><span style=\"font-family: 宋体;\">欧姆，即</span><span style=\"font-family: 'Times New Roman';\">4.4</span><span style=\"font-family: 宋体;\">安。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [
+        "5101"
+      ],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 50,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-09T21:54:55",
+      "updateDate": "2026-04-20T04:06:34",
+      "publishDate": "2025-04-25T22:51:12",
+      "qmlUpdateDate": "2025-10-21T11:24:16",
+      "stemText": "一个电器接在220伏特的电源上，电阻为50欧姆，电流为4.4安。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:40:11",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 23
+    },
+    {
+      "questionId": "3927827100712960",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3926977455276032",
+      "source": "《电工技术基础》电路的基本概念 知识点训练卷 2026江苏省职教高考《机电类考纲百套卷》第11卷 入库版",
+      "year": 2025,
+      "difficulty": 0.95,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律表明，通过导体的电流与导体两端的电压成正比，与导体的电阻成反比。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"></div>",
+      "catalogIds": [
+        237969
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 71,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2026-01-13T20:07:36",
+      "updateDate": "2026-04-20T23:17:19",
+      "publishDate": "2026-04-20T23:17:19",
+      "qmlUpdateDate": "2026-04-19T15:35:37",
+      "stemText": "欧姆定律表明，通过导体的电流与导体两端的电压成正比，与导体的电阻成反比。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-30T01:07:27",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 24
+    },
+    {
+      "questionId": "3643873198850048",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3641755408572416",
+      "source": "专题二  简单直流电路（专项练习）河南省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律指出了电流、电压和电阻之间的定量关系</span><span class=\"qml-bk\" index=\"1\" size=\"4\" type=\"bracket\">（　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律表明了电路中电压与电流的关系，即</span><span style=\"font-family: 'Times New Roman';\">V=IR</span><span style=\"font-family: 宋体;\">，其中</span><span style=\"font-family: 'Times New Roman';\">V</span><span style=\"font-family: 宋体;\">为电压，</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 宋体;\">为电流，</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">为电阻。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 36,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-08T15:41:55",
+      "updateDate": "2026-04-20T04:04:21",
+      "publishDate": "2025-04-23T09:09:37",
+      "qmlUpdateDate": "2025-10-21T11:23:46",
+      "stemText": "欧姆定律指出了电流、电压和电阻之间的定量关系",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:35:19",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 25
+    },
+    {
+      "questionId": "3698300843507712",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3651004946259968",
+      "source": "《电工技术基础与技能》第一章 课题二 电阻与欧姆定律 45分钟专题训练（原卷版+）",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">全电路欧姆定律适用于既有负载又有电源的电路。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">全电路包括内电路和外电路两部分，内电路指电源内部，所以全电路欧姆定律适用于既有负载又有电源的电路。表述正确。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 46,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-02-23T13:15:14",
+      "updateDate": "2026-04-20T05:51:30",
+      "publishDate": "2025-08-15T21:38:45",
+      "qmlUpdateDate": "2025-10-21T11:44:56",
+      "stemText": "全电路欧姆定律适用于既有负载又有电源的电路。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T03:43:43",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 26
+    },
+    {
+      "questionId": "3898450715230208",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3875306375323648",
+      "source": "《电工基础》常考题训练卷 2026版吉林省装备制造类专业 考纲百套卷  第77卷",
+      "year": 2025,
+      "difficulty": 0.9,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律适用于所有电路，包括含有电容和电感的电路。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律仅适用于线性纯电阻电路，含电容、电感的电路不适用，表述错误。</span></p></div></div>",
+      "catalogIds": [
+        237968
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 63,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-12-03T08:01:12",
+      "updateDate": "2026-03-23T15:11:06",
+      "publishDate": "2026-03-23T15:11:06",
+      "qmlUpdateDate": "2026-03-22T16:51:39",
+      "stemText": "欧姆定律适用于所有电路，包括含有电容和电感的电路。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T21:20:53",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 27
+    },
+    {
+      "questionId": "3689358014447616",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3670027486011392",
+      "source": "第三章  简单直流电路",
+      "year": 2025,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律具有普遍性，线性电路和非线性电路都适用。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+      "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 42,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-02-10T22:01:00",
+      "updateDate": "2026-04-20T05:34:12",
+      "publishDate": "2025-08-05T14:50:05",
+      "qmlUpdateDate": "2025-10-21T11:42:14",
+      "stemText": "欧姆定律具有普遍性，线性电路和非线性电路都适用。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T03:00:52",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 28
+    },
+    {
+      "questionId": "3667328109838336",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3667228076859392",
+      "source": "中职生对口升学考试全真模拟卷（四）",
+      "year": 2025,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">纯电阻单相正弦交流电路中的电压与电流，其瞬时值遵循欧姆定律。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span><span style=\"font-family: 'Times New Roman';\"></span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">纯电阻电路中电压与电流的瞬时值遵循欧姆定律，故正确。</span></p></div></div>",
+      "catalogIds": [
+        237973,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 37,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 36,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-01-10T19:01:03",
+      "updateDate": "2025-10-21T11:38:26",
+      "publishDate": "2025-05-14T17:06:32",
+      "qmlUpdateDate": "2025-10-21T11:38:26",
+      "stemText": "纯电阻单相正弦交流电路中的电压与电流，其瞬时值遵循欧姆定律。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T01:42:00",
+      "_target_difficulty": "简单",
+      "_question_type": "判断题",
+      "_question_no": 29
+    },
+    {
+      "questionId": "3643215778045952",
+      "courseId": 10002,
+      "typeId": "1000202",
+      "topTypeId": "1000202",
+      "typeFeatureIds": [],
+      "paperId": "3641755199406080",
+      "source": "专题一 认识电路（专项练习）-山东省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.65,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律，若电阻一定，电压增加一倍，则电流也增加一倍。</span><span class=\"qml-bk\" index=\"1\" size=\"3\" type=\"bracket\">（　　　）</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律</span><span style=\"font-family: 'Times New Roman';\"> ( I = </span><math latex=\"$\\frac{U}{R}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>U</mi><mi>R</mi></mfrac></math><span style=\"font-family: 'Times New Roman';\">)</span><span style=\"font-family: 宋体;\">，当电阻</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">一定时，电流</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 宋体;\">与电压</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 宋体;\">成正比。因此，当电压增加一倍时，电流也增加一倍。</span></p></div></div>",
+      "catalogIds": [
+        237968,
+        237906
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003
+      ],
+      "textBookIds": [
+        6137,
+        6136
+      ],
+      "mergeTo": "",
+      "freshScore": 30,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-07T17:24:23",
+      "updateDate": "2026-04-20T04:01:44",
+      "publishDate": "2025-04-18T19:03:08",
+      "qmlUpdateDate": "2025-10-21T11:23:35",
+      "stemText": "根据欧姆定律，若电阻一定，电压增加一倍，则电流也增加一倍。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:31:49",
+      "_target_difficulty": "适中",
+      "_question_type": "判断题",
+      "_question_no": 30
+    },
+    {
+      "questionId": "3667350030557184",
+      "courseId": 10002,
+      "typeId": "1000203",
+      "topTypeId": "1000203",
+      "typeFeatureIds": [],
+      "paperId": "3667229934313472",
+      "source": "中职生对口升学考试全真模拟卷（九）",
+      "year": 2025,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">一闭合回路由电源和外电路的电阻组成，当外电阻变为原来的</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">倍时，电路中的电流减小为原来的</span><math latex=\"$\\frac{2}{3}$\"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math><span style=\"font-family: 宋体;\">，则外电阻与电源内阻之比为</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><math latex=\"$1\\colon 1$\"><mrow><mn>1</mn><mo>:</mo><mn>1</mn></mrow></math></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据闭合电路欧姆定律，开始时有</span><math latex=\"$E=I\\times \\left(R+r\\right)$\"><mrow><mi>E</mi><mo>=</mo><mi>I</mi><mo>×</mo><mfenced open=\"(\" close=\")\"><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfenced></mrow></math><span style=\"font-family: 宋体;\">，外电阻变为原来的</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">倍后有</span><math latex=\"$E=\\frac{2}{3}I\\times \\left(2R+r\\right)$\"><mrow><mi>E</mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>I</mi><mo>×</mo><mfenced open=\"(\" close=\")\"><mrow><mn>2</mn><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfenced></mrow></math><span style=\"font-family: 宋体;\">，联立解得</span><math latex=\"$R\\colon r=1\\colon 1$\"><mrow><mi>R</mi><mo>:</mo><mi>r</mi><mo>=</mo><mn>1</mn><mo>:</mo><mn>1</mn></mrow></math><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+      "catalogIds": [
+        237973,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 37,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 49,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-01-10T19:45:39",
+      "updateDate": "2025-05-31T22:18:12",
+      "publishDate": "2025-05-31T22:18:12",
+      "qmlUpdateDate": "2025-01-10T19:45:39",
+      "stemText": "一闭合回路由电源和外电路的电阻组成，当外电阻变为原来的2倍时，电路中的电流减小为原来的23，则外电阻与电源内阻之比为。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T01:42:11",
+      "_target_difficulty": "简单",
+      "_question_type": "填空题",
+      "_question_no": 31
+    },
+    {
+      "questionId": "3699250676318208",
+      "courseId": 10002,
+      "typeId": "1000203",
+      "topTypeId": "1000203",
+      "typeFeatureIds": [],
+      "paperId": "3672162972262400",
+      "source": "《电路基础》项目一任务二 直流电路的基本定律（2） 45分钟专题训练（原卷版+）",
+      "year": 2024,
+      "difficulty": 0.8500000000000001,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">两个电阻</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>1</sub></span><span style=\"font-family: 'Times New Roman';\"> = 5Ω</span><span style=\"font-family: 宋体;\">、</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>2</sub></span><span style=\"font-family: 'Times New Roman';\"> = 10Ω</span><span style=\"font-family: 宋体;\">串联在电路中，总电压为</span><span style=\"font-family: 'Times New Roman';\"> 15V</span><span style=\"font-family: 宋体;\">，则通过</span><span style=\"font-family: 'Times New Roman';\">R_1</span><span style=\"font-family: 宋体;\">的电流是</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1A</span></span></span></div>",
+      "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+      "catalogIds": [
+        237977,
+        237910,
+        281144
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678,
+        87682
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 45,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-02-24T21:27:41",
+      "updateDate": "2026-04-20T05:53:48",
+      "publishDate": "2025-08-21T23:00:32",
+      "qmlUpdateDate": "2025-02-24T21:27:41",
+      "stemText": "两个电阻R1 = 5Ω、R2 = 10Ω串联在电路中，总电压为 15V，则通过R_1的电流是。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T03:49:02",
+      "_target_difficulty": "简单",
+      "_question_type": "填空题",
+      "_question_no": 32
+    },
+    {
+      "questionId": "3927072534831104",
+      "courseId": 10002,
+      "typeId": "1000203",
+      "topTypeId": "1000203",
+      "typeFeatureIds": [],
+      "paperId": "3926964805566464",
+      "source": "《电工技能基础》电路的基本概念 知识点训练卷 2026江苏省职教高考《机电类考纲百套卷》第12卷 入库版",
+      "year": 2025,
+      "difficulty": 0.95,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">根据欧姆定律，电阻是电压与</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">的比值，这一关系决定了导体中的电流强度。</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">电流</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"></div>",
+      "catalogIds": [
+        237968,
+        237906,
+        281143
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "jpcenter",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "41",
+        "4901",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003,
+        1553
+      ],
+      "textBookIds": [
+        6137,
+        6136,
+        7125
+      ],
+      "mergeTo": "",
+      "freshScore": 27,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2026-01-12T18:32:26",
+      "updateDate": "2026-04-11T15:18:20",
+      "publishDate": "2026-04-11T15:18:20",
+      "qmlUpdateDate": "2026-01-12T18:32:27",
+      "stemText": "根据欧姆定律，电阻是电压与的比值，这一关系决定了导体中的电流强度。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-30T01:00:59",
+      "_target_difficulty": "简单",
+      "_question_type": "填空题",
+      "_question_no": 33
+    },
+    {
+      "questionId": "3898189808910336",
+      "courseId": 10002,
+      "typeId": "1000203",
+      "topTypeId": "1000203",
+      "typeFeatureIds": [],
+      "paperId": "3875306353541120",
+      "source": "《电工基础》常考题训练卷 2026版吉林省装备制造类专业 考纲百套卷  第78卷",
+      "year": 2025,
+      "difficulty": 0.95,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律指出，在纯电阻电路中，导体中的电流与导体两端的电压成</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">，与导体的电阻成反比。</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">正比</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"></div>",
+      "catalogIds": [
+        237969
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 68,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-12-02T23:10:23",
+      "updateDate": "2026-03-23T07:46:36",
+      "publishDate": "2026-03-23T07:46:36",
+      "qmlUpdateDate": "2025-12-02T23:10:23",
+      "stemText": "欧姆定律指出，在纯电阻电路中，导体中的电流与导体两端的电压成，与导体的电阻成反比。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T21:20:33",
+      "_target_difficulty": "简单",
+      "_question_type": "填空题",
+      "_question_no": 34
+    },
+    {
+      "questionId": "3898474174562304",
+      "courseId": 10002,
+      "typeId": "1000203",
+      "topTypeId": "1000203",
+      "typeFeatureIds": [],
+      "paperId": "3875306412105728",
+      "source": "《电工基础》常考题训练卷 2026版吉林省装备制造类专业 考纲百套卷  第75卷",
+      "year": 2025,
+      "difficulty": 0.95,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律的基本公式为</span><span style=\"font-family: 'Times New Roman';\">I=</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">，其中</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 宋体;\">为电流、</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 宋体;\">为电压、</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 宋体;\">为电阻。</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">U/R</span></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"></div>",
+      "catalogIds": [
+        237968
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 40,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002
+      ],
+      "textBookIds": [
+        6137
+      ],
+      "mergeTo": "",
+      "freshScore": 72,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2025-12-03T08:48:55",
+      "updateDate": "2026-03-23T15:29:50",
+      "publishDate": "2026-03-23T15:29:50",
+      "qmlUpdateDate": "2025-12-03T08:48:56",
+      "stemText": "欧姆定律的基本公式为I=，其中I为电流、U为电压、R为电阻。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-29T21:21:01",
+      "_target_difficulty": "简单",
+      "_question_type": "填空题",
+      "_question_no": 35
+    },
+    {
+      "questionId": "3643957589164032",
+      "courseId": 10002,
+      "typeId": "1000203",
+      "topTypeId": "1000203",
+      "typeFeatureIds": [],
+      "paperId": "3642274401312768",
+      "source": "专题一 认识电路（专项练习）-浙江省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+      "year": 2024,
+      "difficulty": 0.65,
+      "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律表示为</span><span class=\"qml-bk\" index=\"1\" size=\"3\" type=\"underline\" style=\"text-decoration:underline\" >　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+      "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><math latex=\"$I=\\frac{U}{R}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac></math></span></span></div>",
+      "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律是指电流通过导体时，通过导体的电流和导体两端的电压成正比，即</span><math latex=\"$I=\\frac{U}{R}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac></math><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+      "catalogIds": [
+        237973,
+        237906
+      ],
+      "sourceCatalogIds": [],
+      "kpointIds": [
+        87678
+      ],
+      "primaryKPointIds": [],
+      "tagIds": [],
+      "status": 1,
+      "applicationId": "zxxk",
+      "sourceId": "",
+      "paperTypeId": 6,
+      "paperTagIds": [
+        "42",
+        "4902",
+        "63"
+      ],
+      "media": 0,
+      "subCourse": 0,
+      "trickIds": [],
+      "versionIds": [
+        1002,
+        1003
+      ],
+      "textBookIds": [
+        6137,
+        6136
+      ],
+      "mergeTo": "",
+      "freshScore": 46,
+      "subQuestionProps": [],
+      "multiExplanation": 0,
+      "createDate": "2024-12-08T18:33:36",
+      "updateDate": "2026-04-20T04:04:35",
+      "publishDate": "2024-12-12T17:12:01",
+      "qmlUpdateDate": "2024-12-12T11:25:29",
+      "stemText": "欧姆定律表示为。",
+      "operationTags": [],
+      "bankIds": [
+        15
+      ],
+      "variantQuestions": {},
+      "syncDate": "2026-06-28T23:35:47",
+      "_target_difficulty": "适中",
+      "_question_type": "填空题",
+      "_question_no": 36
+    },
+    {
+      "stem": "在一段金属导体温度基本不变时，若导体两端电压增大到原来的2倍，则通过导体的电流也增大到原来的2倍。（   ）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "A",
+      "explanation": "部分电路欧姆定律表明，在电阻不变时，电流与导体两端电压成正比。题干限定温度基本不变，可认为电阻不变，因此电压加倍时电流也加倍。",
+      "question_type": "判断题",
+      "difficulty": "适中",
+      "_ai_generated": true,
+      "_question_type": "判断题",
+      "_target_difficulty": "适中",
+      "_course_id": 10002,
+      "_kpoint_ids": [
+        87678
+      ],
+      "_question_no": 37
+    },
+    {
+      "stem": "某电源给外电路供电时，只要电源电动势保持不变，外电路电阻越小，路端电压就一定越接近电源电动势。（   ）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "B",
+      "explanation": "全电路欧姆定律表明，外电路电阻越小，电路电流越大，电源内阻上的电压损失越大。路端电压会小于电源电动势，并且通常会随外电路电阻减小而降低。",
+      "question_type": "判断题",
+      "difficulty": "困难",
+      "_ai_generated": true,
+      "_question_type": "判断题",
+      "_target_difficulty": "困难",
+      "_course_id": 10002,
+      "_kpoint_ids": [
+        87678
+      ],
+      "_question_no": 38
+    },
+    {
+      "stem": "一只电阻接在6 V直流电源两端，通过它的电流为0.3 A。求该电阻的阻值。",
+      "options": [],
+      "answer": "20 Ω",
+      "explanation": "根据部分电路欧姆定律，电阻为电压除以电流。代入数据得6除以0.3为20，因此该电阻的阻值为20 Ω。",
+      "question_type": "综合应用题",
+      "difficulty": "简单",
+      "_ai_generated": true,
+      "_question_type": "综合应用题",
+      "_target_difficulty": "简单",
+      "_course_id": 10002,
+      "_kpoint_ids": [
+        87678
+      ],
+      "_question_no": 39
+    },
+    {
+      "stem": "某照明小灯泡正常工作时电阻为12 Ω，通过灯泡的电流为0.5 A。求灯泡两端的电压。",
+      "options": [],
+      "answer": "6 V",
+      "explanation": "根据部分电路欧姆定律，电压为电流与电阻的乘积。代入数据得0.5乘以12为6，因此灯泡两端电压为6 V。",
+      "question_type": "综合应用题",
+      "difficulty": "简单",
+      "_ai_generated": true,
+      "_question_type": "综合应用题",
+      "_target_difficulty": "简单",
+      "_course_id": 10002,
+      "_kpoint_ids": [
+        87678
+      ],
+      "_question_no": 40
+    },
+    {
+      "stem": "一个电源的电动势为12 V，内阻为1 Ω，外接电阻为5 Ω。求电路中的电流。",
+      "options": [],
+      "answer": "2 A",
+      "explanation": "全电路中总电阻为外电阻与内阻之和，即5 Ω与1 Ω相加为6 Ω。电流为电动势除以总电阻，12除以6为2，因此电路中的电流为2 A。",
+      "question_type": "综合应用题",
+      "difficulty": "简单",
+      "_ai_generated": true,
+      "_question_type": "综合应用题",
+      "_target_difficulty": "简单",
+      "_course_id": 10002,
+      "_kpoint_ids": [
+        87678
+      ],
+      "_question_no": 41
+    },
+    {
+      "stem": "某直流电源电动势为24 V，内阻为2 Ω，先接入10 Ω外电阻工作。现要求路端电压不低于18 V。求：（1）接入10 Ω外电阻时电路电流和路端电压；（2）该状态是否满足要求；（3）若只允许更换外电阻，外电阻至少应为多少欧姆。",
+      "options": [],
+      "answer": "（1）电路电流为2 A，路端电压为20 V。\n（2）满足要求。\n（3）外电阻至少应为6 Ω。",
+      "explanation": "（1）总电阻为10 Ω与2 Ω相加，即12 Ω；电流为24除以12，得2 A。路端电压为电流与外电阻的乘积，2乘以10得20 V。\n（2）20 V高于18 V，所以接入10 Ω外电阻时满足路端电压不低于18 V的要求。\n（3）要求路端电压不低于18 V时，内阻上的电压损失最多为6 V，对应电流最多为3 A。外电阻应不小于18除以3，结果为6 Ω。",
+      "question_type": "综合应用题",
+      "difficulty": "困难",
+      "_ai_generated": true,
+      "_question_type": "综合应用题",
+      "_target_difficulty": "困难",
+      "_course_id": 10002,
+      "_kpoint_ids": [
+        87678
+      ],
+      "_question_no": 42
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "images": [
+    {
+      "url": "https://img.xkw.com/dksih/QBM/2025/1/13/3669386528800768/3670644498038784/STEM/4cf93396afb54785aff304831246d391.png",
+      "display_w": 123,
+      "display_h": 99,
+      "download_status": "downloaded",
+      "local_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\images\\98640ddabd768d0b_63f34fc238acf4f6.png",
+      "sha256": "63f34fc238acf4f6b65a031a23640bb3bd0d2140513be530a53c515635058394",
+      "byte_size": 6147,
+      "content_type": "image/png",
+      "url_hash": "98640ddabd768d0b9e0f7f87d20c4bbf41580d77e791214443b47df57d20f505",
+      "question_id": "3670644498038784",
+      "field": "stem",
+      "image_index": 0
+    },
+    {
+      "url": "https://img.xkw.com/dksih/QBM/2024/12/6/3642337466425344/3648317104439296/STEM/45e4de24ef374c61b7021d7ad4957d73.png",
+      "display_w": 147,
+      "display_h": 114,
+      "download_status": "downloaded",
+      "local_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\images\\6d39cebc243a295d_812b385fffb323a5.png",
+      "sha256": "812b385fffb323a5f0b5928bab9051f9fdd55b6fba582edc4f51396b52e9bd3a",
+      "byte_size": 13129,
+      "content_type": "image/png",
+      "url_hash": "6d39cebc243a295d45d336c280c678a4e98810746172457b65bbbf57423ea4d3",
+      "question_id": "3648317104439296",
+      "field": "stem",
+      "image_index": 0
+    },
+    {
+      "url": "https://img.xkw.com/dksih/QBM/2026/1/12/3926966974472192/3927600947167232/STEM/832a951b44bd403d8ee0b97feeb1ca5c.png",
+      "display_w": 147,
+      "display_h": 117,
+      "download_status": "downloaded",
+      "local_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\_临时\\API原始结果\\重庆市 电子信息类\\第5卷\\images\\3014509a8b4c9564_36a3c27508390d1c.png",
+      "sha256": "36a3c27508390d1cdcca8dc581c3de8595b93c678b3fe3e0226283bb84ccaac2",
+      "byte_size": 23023,
+      "content_type": "image/png",
+      "url_hash": "3014509a8b4c956453991e7d50c2d092679122875a51ffa1e61b8a6146d68cd8",
+      "question_id": "3927600947167232",
+      "field": "stem",
+      "image_index": 0
+    }
+  ],
+  "paper_label": "第5卷",
+  "updated_at": "2026-06-30 14:37:56"
+}

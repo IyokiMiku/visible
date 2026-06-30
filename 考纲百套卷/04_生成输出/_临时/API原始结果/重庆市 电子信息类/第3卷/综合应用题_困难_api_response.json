@@ -1,0 +1,321 @@
+{
+  "试卷": "第3卷",
+  "题型": "综合应用题",
+  "难度": "困难",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000206
+  ],
+  "计划补题数": 1,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 8,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87681
+    ],
+    "typeIds": [
+      1000206
+    ],
+    "difficultyLowLimit": 0.0,
+    "difficultyUpLimit": 0.49,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 2,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3667232590741504",
+          "courseId": 10002,
+          "typeId": "1000206",
+          "topTypeId": "1000206",
+          "typeFeatureIds": [],
+          "paperId": "3667080712544256",
+          "source": "第二部分  模块二  第四节 焊接技术及电路组装调试",
+          "year": 2025,
+          "difficulty": 0.4,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如下图所示的直流稳压电源的焊接电路图。试：</span></p><p style=\"text-align: left;\"><img  src=\"https://img.xkw.com/dksih/QBM/2025/1/10/3667080712544256/3667232590741504/STEM/abb58641605a47ea9fb38eda7fb01a53.png\" width=\"439\" height=\"132\" /></p><div class=\"qml-sq\" id-container=\"question\"><div class=\"qml-stem\"><span class=\"ques-no\">（1）</span><span style=\"font-family: 宋体;\">将未接入的元件补画完整；</span></div></div><div class=\"qml-sq\" id-container=\"question\"><div class=\"qml-stem\"><span class=\"ques-no\">（2）</span><span style=\"font-family: 宋体;\">元器件安装正确无误后，在变压器一次侧接</span><span style=\"font-family: 'Times New Roman';\">220V</span><span style=\"font-family: 宋体;\">交流电、测量</span><span style=\"font-family: 'Times New Roman';\">AB</span><span style=\"font-family: 宋体;\">、负载</span><math latex=\"$R_{\\mathrm{L}}$\"><mrow><msub><mi>R</mi><mtext>L</mtext></msub></mrow></math><span style=\"font-family: 宋体;\">两端的电压应将万用表分别置于何档？若将可调电阻</span><math latex=\"$R_{1}$\"><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow></math><span style=\"font-family: 宋体;\">置于</span><span style=\"font-family: 'Times New Roman';\">480</span><math latex=\"$\\Upomega$\"><mi mathvariant=\"normal\">Ω</mi></math><span style=\"font-family: 宋体;\">，则</span><span style=\"font-family: 'Times New Roman';\">AB</span><span style=\"font-family: 宋体;\">、</span><math latex=\"$R_{\\mathrm{L}}$\"><mrow><msub><mi>R</mi><mtext>L</mtext></msub></mrow></math><span style=\"font-family: 宋体;\">两端的电压是多少？</span></div></div><div class=\"qml-sq\" id-container=\"question\"><div class=\"qml-stem\"><span class=\"ques-no\">（3）</span><span style=\"font-family: 宋体;\">说明电解电容</span><math latex=\"$\\mathrm{C}_{1}$\"><mrow><msub><mtext>C</mtext><mn>1</mn></msub></mrow></math><span style=\"font-family: 宋体;\">、</span><math latex=\"$\\mathrm{C}_{3}$\"><mrow><msub><mtext>C</mtext><mn>3</mn></msub></mrow></math><span style=\"font-family: 宋体;\">的最小耐压值；</span></div></div><div class=\"qml-sq\" id-container=\"question\"><div class=\"qml-stem\"><span class=\"ques-no\">（4）</span><span style=\"font-family: 宋体;\">说明电容</span><math latex=\"$\\mathrm{C}_{2}$\"><mrow><msub><mtext>C</mtext><mn>2</mn></msub></mrow></math><span style=\"font-family: 宋体;\">的作用；</span></div></div><div class=\"qml-sq\" id-container=\"question\"><div class=\"qml-stem\"><span class=\"ques-no\">（5）</span><span style=\"font-family: 宋体;\">若用万用表测得</span><span style=\"font-family: 'Times New Roman';\">AB</span><span style=\"font-family: 宋体;\">两端的电压只有</span><span style=\"font-family: 'Times New Roman';\">20V</span><span style=\"font-family: 宋体;\">，说明电路中各元件是否正常，若不正常，请找出故障元件，此时负载</span><math latex=\"$R_{\\mathrm{L}}$\"><mrow><msub><mi>R</mi><mtext>L</mtext></msub></mrow></math><span style=\"font-family: 宋体;\">两端的电压怎样变化？</span></div></div></div>",
+          "answer": "<div class=\"qml-answer\">（1）<span class=\"qml-an-sq\" id-container=\"question\"><span class=\"qml-an\"><img  src=\"https://img.xkw.com/dksih/QBM/2025/1/10/3667080712544256/3667232590741504/ANSWER/0d7a5670628a4eae9e96732839f3bef8.png\" width=\"395\" height=\"112\" /></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）<span class=\"qml-an-sq\" id-container=\"question\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">直流电压档，</span><span style=\"font-family: 'Times New Roman';\">24V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">6.25V</span><span style=\"font-family: 宋体;\">。</span></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）<span class=\"qml-an-sq\" id-container=\"question\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">28.28V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">16.5V</span><span style=\"font-family: 宋体;\">。</span></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）<span class=\"qml-an-sq\" id-container=\"question\"><span class=\"qml-an\"><math latex=\"$\\mathrm{C}_{2}$\"><mrow><msub><mtext>C</mtext><mn>2</mn></msub></mrow></math><span style=\"font-family: 宋体;\">可消除</span><math latex=\"$R_{\\mathrm{P}}$\"><mrow><msub><mi>R</mi><mtext>P</mtext></msub></mrow></math><span style=\"font-family: 宋体;\">上的纹波电压，使取样电压稳定。</span></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（5）<span class=\"qml-an-sq\" id-container=\"question\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">一只二极管或对臂的两只二极管开路。</span></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237920,
+            238008,
+            281159
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87635,
+            87681,
+            87722
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 9,
+          "subQuestionProps": [
+            {
+              "id": 11115919,
+              "subQuestionIndex": 1,
+              "questionId": "3667232590741504",
+              "questionKPoints": [
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87714
+                }
+              ]
+            },
+            {
+              "id": 11115920,
+              "subQuestionIndex": 2,
+              "questionId": "3667232590741504",
+              "questionKPoints": [
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87635
+                },
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87722
+                }
+              ]
+            },
+            {
+              "id": 11115921,
+              "subQuestionIndex": 3,
+              "questionId": "3667232590741504",
+              "questionKPoints": [
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87722
+                }
+              ]
+            },
+            {
+              "id": 11115922,
+              "subQuestionIndex": 4,
+              "questionId": "3667232590741504",
+              "questionKPoints": [
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87714
+                }
+              ]
+            },
+            {
+              "id": 11115923,
+              "subQuestionIndex": 5,
+              "questionId": "3667232590741504",
+              "questionKPoints": [
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87681
+                }
+              ]
+            }
+          ],
+          "multiExplanation": 0,
+          "createDate": "2025-01-10T15:46:43",
+          "updateDate": "2026-04-20T04:59:08",
+          "publishDate": "2025-05-13T07:36:41",
+          "qmlUpdateDate": "2025-01-10T15:46:43",
+          "stemText": "如下图所示的直流稳压电源的焊接电路图。试：将未接入的元件补画完整；元器件安装正确无误后，在变压器一次侧接220V交流电、测量AB、负载RL两端的电压应将万用表分别置于何档？若将可调电阻R1置于480Ω，则AB、RL两端的电压是多少？说明电解电容C1、C3的最小耐压值；说明电容C2的作用；若用万用表测得AB两端的电压只有20V，说明电路中各元件是否正常，若不正常，请找出故障元件，此时负载RL两端的电压怎样变化？",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:41:17"
+        },
+        {
+          "questionId": "3881871378096128",
+          "courseId": 10002,
+          "typeId": "1000206",
+          "topTypeId": "1000206",
+          "typeFeatureIds": [],
+          "paperId": "3875266665897984",
+          "source": "《电工技术模块》直流电路-知识点训练卷 2026版湖南省电工电子类专业 考纲百套卷 第8卷",
+          "year": 2025,
+          "difficulty": 0.45,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">如下图所示，已知</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 'Times New Roman';\"><sub>s1</sub></span><span style=\"font-family: 'Times New Roman';\">=15V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 'Times New Roman';\"><sub>s2</sub></span><span style=\"font-family: 'Times New Roman';\">=4V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 'Times New Roman';\"><sub>s3</sub></span><span style=\"font-family: 'Times New Roman';\">;=13V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>1</sub></span><span style=\"font-family: 'Times New Roman';\">=R</span><span style=\"font-family: 'Times New Roman';\"><sub>2</sub></span><span style=\"font-family: 'Times New Roman';\">=R</span><span style=\"font-family: 'Times New Roman';\"><sub>3</sub></span><span style=\"font-family: 'Times New Roman';\">=R</span><span style=\"font-family: 'Times New Roman';\"><sub>4</sub></span><span style=\"font-family: 'Times New Roman';\"> =1Ω</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>5</sub></span><span style=\"font-family: 'Times New Roman';\">=9Ω</span><span style=\"font-family: 宋体;\">。</span></p><p style=\"text-align:justify;word-break:break-word;\"><img  src=\"https://img.xkw.com/dksih/QBM/2025/10/31/3875266665897984/3881871378096128/STEM/d2d8ffc3519d4b589e09235beed42e40.png\" width=\"271\" height=\"157\" /></p><div class=\"qml-sq\" id-container=\"question\"><div class=\"qml-stem\"><span class=\"ques-no\">（1）</span><span style=\"font-family: 宋体;\">当开关</span><span style=\"font-family: 'Times New Roman';\">S</span><span style=\"font-family: 宋体;\">断开时，试求电阻</span><span style=\"font-family: 'Times New Roman';\">R</span><span style=\"font-family: 'Times New Roman';\"><sub>5</sub></span><span style=\"font-family: 宋体;\">上的电压</span><span style=\"font-family: 'Times New Roman';\">U</span><span style=\"font-family: 'Times New Roman';\"><sub>5</sub></span><span style=\"font-family: 宋体;\">，和电流</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 'Times New Roman';\"><sub>5</sub></span><span style=\"font-family: 'Times New Roman';\">;</span></div></div><div class=\"qml-sq\" id-container=\"question\"><div class=\"qml-stem\"><span class=\"ques-no\">（2）</span><span style=\"font-family: 宋体;\">当开关</span><span style=\"font-family: 'Times New Roman';\">S</span><span style=\"font-family: 宋体;\">闭合时，试用戴维南定理计算</span><span style=\"font-family: 'Times New Roman';\">I</span><span style=\"font-family: 'Times New Roman';\"><sub>5</sub></span><span style=\"font-family: 宋体;\">。</span></div></div></div>",
+          "answer": "<div class=\"qml-answer\">（1）<span class=\"qml-an-sq\" id-container=\"question\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">当开关</span><span style=\"font-family: 'Times New Roman';\">S</span><span style=\"font-family: 宋体;\">断开时：</span><math latex=\"$l_{5}=0\\left(A\\right)$\"><mrow><msub><mi>l</mi><mn>5</mn></msub><mo>=</mo><mn>0</mn><mfenced open=\"(\" close=\")\"><mi>A</mi></mfenced></mrow></math><span style=\"font-family: 宋体;\">：</span><math latex=\"$U_{5}=I_{5}\\times R_{5}=0\\times 9=0\\left(V\\right)$\"><mrow><msub><mi>U</mi><mn>5</mn></msub><mo>=</mo><msub><mi>I</mi><mn>5</mn></msub><mo>×</mo><msub><mi>R</mi><mn>5</mn></msub><mo>=</mo><mn>0</mn><mo>×</mo><mn>9</mn><mo>=</mo><mn>0</mn><mfenced open=\"(\" close=\")\"><mi>V</mi></mfenced></mrow></math></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）<span class=\"qml-an-sq\" id-container=\"question\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">当开关</span><span style=\"font-family: 'Times New Roman';\">S</span><span style=\"font-family: 宋体;\">闭合时：</span><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">∵</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"4\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><img  src=\"https://img.xkw.com/dksih/QBM/2025/10/31/3875266665897984/3881871378096128/ANSWER/f2c25067b726429da7f49c4dfd4257ab.png\" width=\"324\" height=\"75\" /><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"4\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><img  src=\"https://img.xkw.com/dksih/QBM/2025/10/31/3875266665897984/3881871378096128/ANSWER/b576c5a4f9c44ba58fa0890da9843da2.png\" width=\"121\" height=\"151\" /></p><p style=\"text-align:justify;word-break:break-word;\"><img  src=\"https://img.xkw.com/dksih/QBM/2025/10/31/3875266665897984/3881871378096128/ANSWER/2200560381ce4fc181d73e7c084a68b4.png\" width=\"306\" height=\"78\" /></p><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">∴</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><math latex=\"$U_{5}=U_{a}-U_{b}=\\frac{19}{2}-\\frac{13}{2}=\\frac{6}{2}=3\\left(V\\right)$\"><mrow><msub><mi>U</mi><mn>5</mn></msub><mo>=</mo><msub><mi>U</mi><mi>a</mi></msub><mo>−</mo><msub><mi>U</mi><mi>b</mi></msub><mo>=</mo><mfrac><mrow><mn>19</mn></mrow><mn>2</mn></mfrac><mo>−</mo><mfrac><mrow><mn>13</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>6</mn><mn>2</mn></mfrac><mo>=</mo><mn>3</mn><mfenced open=\"(\" close=\")\"><mi>V</mi></mfenced></mrow></math></p><p style=\"text-align:justify;word-break:break-word;\"><math latex=\"$R_{ab}=1//1+1//1=0.5+0.5=1\\left(\\Omega \\right)$\"><mrow><msub><mi>R</mi><mrow><mi>a</mi><mi>b</mi></mrow></msub><mo>=</mo><mn>1</mn><mo>/</mo><mo>/</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>/</mo><mo>/</mo><mn>1</mn><mo>=</mo><mn>0.5</mn><mo>+</mo><mn>0.5</mn><mo>=</mo><mn>1</mn><mfenced open=\"(\" close=\")\"><mi mathvariant=\"normal\">Ω</mi></mfenced></mrow></math></p><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">∴</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"2\">&nbsp;&nbsp;&nbsp;</span></span><math latex=\"$l_{5}=\\frac{3}{1+9}=\\frac{3}{10}=0.3\\left(A\\right)$\"><mrow><msub><mi>l</mi><mn>5</mn></msub><mo>=</mo><mfrac><mn>3</mn><mrow><mn>1</mn><mo>+</mo><mn>9</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mn>0.3</mn><mfenced open=\"(\" close=\")\"><mi>A</mi></mfenced></mrow></math></p></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237997,
+            281149
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87701,
+            87702,
+            87706,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 33,
+          "subQuestionProps": [
+            {
+              "id": 14192467,
+              "subQuestionIndex": 1,
+              "questionId": "3881871378096128",
+              "questionKPoints": [
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87681
+                },
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87701
+                },
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87702
+                }
+              ]
+            },
+            {
+              "id": 14192468,
+              "subQuestionIndex": 2,
+              "questionId": "3881871378096128",
+              "questionKPoints": [
+                {
+                  "abilityId": 0,
+                  "primary": false,
+                  "option": 0,
+                  "kpointId": 87706
+                }
+              ]
+            }
+          ],
+          "multiExplanation": 0,
+          "createDate": "2025-11-09T21:50:27",
+          "updateDate": "2026-03-16T18:43:59",
+          "publishDate": "2026-03-16T18:43:59",
+          "qmlUpdateDate": "2025-11-09T21:50:27",
+          "stemText": "如下图所示，已知Us1=15V，Us2=4V，Us3;=13V，R1=R2=R3=R4 =1Ω，R5=9Ω。当开关S断开时，试求电阻R5上的电压U5，和电流I5;当开关S闭合时，试用戴维南定理计算I5。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T18:53:02"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

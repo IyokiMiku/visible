@@ -1,0 +1,23 @@
+{
+  "type": "yikeyilian",
+  "display_name": "一课一练",
+  "plan_base": "textbook",
+  "need_mapping": true,
+  "need_mesh": false,
+  "need_split": false,
+  "pull_multiplier": 1,
+  "name_template": "第{vol}练 {topic} {province}（{exam_type_name}）《{textbook}》（{edition}） 一课一练 （{variant}）",
+  "template_docx": "templates/template.docx",
+  "spec_md": "编写规范.md",
+  "question_types_dir": "题型定义",
+  "default_volume_config": {
+    "by_type": {
+      "单项选择题": { "count": 5, "score_per": 2 },
+      "填空题": { "count": 3, "score_per": 2 },
+      "综合题": { "count": 2, "score_per": 5 }
+    },
+    "difficulty": { "easy": 80, "medium": 10, "hard": 10 },
+    "narrow_point": { "enabled": false, "merge_threshold": 80 }
+  },
+  "_note": "题量小、按教材目录逐练生成；name_template 注意“一课一练”与“（解析版）”之间含一个空格，最终以模板/编写规范为准。"
+}

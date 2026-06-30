@@ -1,0 +1,2144 @@
+{
+  "paper": {
+    "paper_no": 19,
+    "paper_label": "第19卷",
+    "paper_type": "考点训练卷",
+    "module": "电工技术基础与技能",
+    "topic": "正弦交流电路",
+    "point_name": "纯电阻、纯电感、纯电容电路"
+  },
+  "loaded_paper": {
+    "path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+    "paper_label": "第19卷",
+    "title": "A. 110 V",
+    "questions": [
+      {
+        "question_no": 1,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "我国单相交流电源配置的输出电压为（ ）",
+        "options": [
+          "A. 110 V",
+          "B. 220 V",
+          "C. 380 V",
+          "D. 155 V"
+        ],
+        "answer": "B",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "缺解析"
+        ],
+        "raw_text": "1．我国单相交流电源配置的输出电压为（ ）\nA. 110 V\nB. 220 V\nC. 380 V\nD. 155 V\n【答案】B",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ],
+        "stem_paragraph_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "answer_paragraph_indices": [
+          7
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "missing_analysis",
+            "name": "缺解析",
+            "severity": "failed",
+            "message": "第1题缺少解析。"
+          }
+        ]
+      },
+      {
+        "question_no": 2,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "非正弦周期波与正弦波相比，其波形具有什么特点？（ ）",
+        "options": [
+          "A. 周期固定",
+          "B. 波形复杂",
+          "C. 波形对称",
+          "D. 波形幅值不变"
+        ],
+        "answer": "B",
+        "analysis": "【详解】正确答案是B。非正弦周期波的波形通常比正弦波更为复杂，可能由于多个频率成分的叠加而产生。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "2．非正弦周期波与正弦波相比，其波形具有什么特点？（ ）\nA. 周期固定\nB. 波形复杂\nC. 波形对称\nD. 波形幅值不变\n【答案】B\n【详解】【详解】正确答案是B。非正弦周期波的波形通常比正弦波更为复杂，可能由于多个频率成分的叠加而产生。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16
+        ],
+        "stem_paragraph_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "answer_paragraph_indices": [
+          15
+        ],
+        "analysis_paragraph_indices": [
+          16
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 3,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "什么是正弦交流电的特点之一（ ）",
+        "options": [
+          "A. 波形不规则",
+          "B. 波形非周期性",
+          "C. 波形对称、周期性变化",
+          "D. 波形持续上升"
+        ],
+        "answer": "C",
+        "analysis": "【详解】正弦交流电的波形具有对称性和周期性变化特点。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "3．什么是正弦交流电的特点之一（ ）\nA. 波形不规则\nB. 波形非周期性\nC. 波形对称、周期性变化\nD. 波形持续上升\n【答案】C\n【详解】【详解】正弦交流电的波形具有对称性和周期性变化特点。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25
+        ],
+        "stem_paragraph_indices": [
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "answer_paragraph_indices": [
+          24
+        ],
+        "analysis_paragraph_indices": [
+          25
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 4,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "以下哪种波形最适合用来表示非正弦周期波？（ ）",
+        "options": [
+          "A. 正弦波",
+          "B. 三角波",
+          "C. 方波",
+          "D. 锯齿波"
+        ],
+        "answer": "B",
+        "analysis": "【详解】三角波是一个常见的非正弦周期波形。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "4．以下哪种波形最适合用来表示非正弦周期波？（ ）\nA. 正弦波\nB. 三角波\nC. 方波\nD. 锯齿波\n【答案】B\n【详解】【详解】三角波是一个常见的非正弦周期波形。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          33,
+          34
+        ],
+        "stem_paragraph_indices": [
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "answer_paragraph_indices": [
+          33
+        ],
+        "analysis_paragraph_indices": [
+          34
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 5,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "饱和三角波的特点是？（ ）",
+        "options": [
+          "A. 振幅和周期均不变",
+          "B. 振幅和周期均随时间变化",
+          "C. 频率是周期的两倍",
+          "D. 波形呈不规则变化"
+        ],
+        "answer": "A",
+        "analysis": "【详解】饱和三角波的特点是振幅和周期均不变。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "5．饱和三角波的特点是？（ ）\nA. 振幅和周期均不变\nB. 振幅和周期均随时间变化\nC. 频率是周期的两倍\nD. 波形呈不规则变化\n【答案】A\n【详解】【详解】饱和三角波的特点是振幅和周期均不变。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          36,
+          37,
+          38,
+          39,
+          40,
+          42,
+          43
+        ],
+        "stem_paragraph_indices": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "answer_paragraph_indices": [
+          42
+        ],
+        "analysis_paragraph_indices": [
+          43
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 6,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "正弦交流电与非正弦周期波的比较主要关注（ ）",
+        "options": [
+          "A. 波形的形状",
+          "B. 时间特性",
+          "C. 周期性",
+          "D. 数学形式"
+        ],
+        "answer": "A",
+        "analysis": "【详解】比较正弦交流电与非正弦周期波通常关注波形的形状。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题",
+          "疑似重复题"
+        ],
+        "raw_text": "6．正弦交流电与非正弦周期波的比较主要关注（ ）\nA. 波形的形状\nB. 时间特性\nC. 周期性\nD. 数学形式\n【答案】A\n【详解】【详解】比较正弦交流电与非正弦周期波通常关注波形的形状。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52
+        ],
+        "stem_paragraph_indices": [
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "answer_paragraph_indices": [
+          51
+        ],
+        "analysis_paragraph_indices": [
+          52
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第6题与第19题题干疑似重复（连续相同片段12字，相似度=73%）。"
+          },
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第6题与第33题题干疑似重复（连续相同片段13字，相似度=76%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 7,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "在一个非正弦周期波中，频率成分越多，波形越接近于什么？（ ）",
+        "options": [
+          "A. 正弦波",
+          "B. 方波",
+          "C. 脉冲波",
+          "D. 三角波"
+        ],
+        "answer": "A",
+        "analysis": "【详解】正确答案是A。频率成分越多，非正弦周期波的波形越接近于正弦波。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "7．在一个非正弦周期波中，频率成分越多，波形越接近于什么？（ ）\nA. 正弦波\nB. 方波\nC. 脉冲波\nD. 三角波\n【答案】A\n【详解】【详解】正确答案是A。频率成分越多，非正弦周期波的波形越接近于正弦波。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          54,
+          55,
+          56,
+          57,
+          58,
+          60,
+          61
+        ],
+        "stem_paragraph_indices": [
+          54,
+          55,
+          56,
+          57,
+          58
+        ],
+        "answer_paragraph_indices": [
+          60
+        ],
+        "analysis_paragraph_indices": [
+          61
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 8,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "正弦交流电中的谐波会导致哪种现象？（ ）",
+        "options": [
+          "A. 电流和电压不同相",
+          "B. 波形失真",
+          "C. 频率波动",
+          "D. 电流不稳定"
+        ],
+        "answer": "B",
+        "analysis": "【详解】正弦交流电中的谐波会导致波形失真的现象。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "选项结构不一致"
+        ],
+        "raw_text": "8．正弦交流电中的谐波会导致哪种现象？（ ）\nA. 电流和电压不同相\nB. 波形失真\nC. 频率波动\nD. 电流不稳定\n【答案】B\n【详解】【详解】正弦交流电中的谐波会导致波形失真的现象。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          63,
+          64,
+          65,
+          66,
+          67,
+          69,
+          70
+        ],
+        "stem_paragraph_indices": [
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "answer_paragraph_indices": [
+          69
+        ],
+        "analysis_paragraph_indices": [
+          70
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "inconsistent_option_structure",
+            "name": "选项结构不一致",
+            "severity": "warning",
+            "message": "第8题仅A选项含连接词，选项结构可能突出。"
+          }
+        ]
+      },
+      {
+        "question_no": 9,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "下列哪种波形可以被视为非正弦周期波的例子？（ ）",
+        "options": [
+          "A. 方波",
+          "B. 三角波",
+          "C. 正弦波",
+          "D. 脉冲波"
+        ],
+        "answer": "B",
+        "analysis": "【详解】三角波是非正弦周期波的一个例子，具有特殊的波形形状。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "9．下列哪种波形可以被视为非正弦周期波的例子？（ ）\nA. 方波\nB. 三角波\nC. 正弦波\nD. 脉冲波\n【答案】B\n【详解】【详解】三角波是非正弦周期波的一个例子，具有特殊的波形形状。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          78,
+          79
+        ],
+        "stem_paragraph_indices": [
+          72,
+          73,
+          74,
+          75,
+          76
+        ],
+        "answer_paragraph_indices": [
+          78
+        ],
+        "analysis_paragraph_indices": [
+          79
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 10,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "在正弦交流电路中，电压或电流的变化是（ ）",
+        "options": [
+          "A. 恒定的",
+          "B. 无规律的",
+          "C. 随时间周期性变化的",
+          "D. 随温度变化的"
+        ],
+        "answer": "C",
+        "analysis": "【详解】正弦交流电的电压或电流随时间周期性变化，呈正弦波形。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "选项长度失衡"
+        ],
+        "raw_text": "10．在正弦交流电路中，电压或电流的变化是（ ）\nA. 恒定的\nB. 无规律的\nC. 随时间周期性变化的\nD. 随温度变化的\n【答案】C\n【详解】【详解】正弦交流电的电压或电流随时间周期性变化，呈正弦波形。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          81,
+          82,
+          83,
+          84,
+          85,
+          87,
+          88
+        ],
+        "stem_paragraph_indices": [
+          81,
+          82,
+          83,
+          84,
+          85
+        ],
+        "answer_paragraph_indices": [
+          87
+        ],
+        "analysis_paragraph_indices": [
+          88
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "option_length_imbalance",
+            "name": "选项长度失衡",
+            "severity": "failed",
+            "message": "第10题选项最长/最短字数比为 3.0，超过 2.0；A(3字)，B(4字)，C(9字)，D(6字)。"
+          }
+        ]
+      },
+      {
+        "question_no": 11,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "在纯电阻正弦交流电路中，电压与电流的相位关系是（ ）",
+        "options": [
+          "A. 电压超前电流90°",
+          "B. 电压滞后电流90°",
+          "C. 电压与电流同相位",
+          "D. 电压与电流反相位"
+        ],
+        "answer": "C",
+        "analysis": "纯电阻电路中，电流随电压同时增大、同时减小，并同时经过零值和最大值，因此二者相位相同。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题",
+          "疑似重复题"
+        ],
+        "raw_text": "11．在纯电阻正弦交流电路中，电压与电流的相位关系是（ ）\nA. 电压超前电流90°\nB. 电压滞后电流90°\nC. 电压与电流同相位\nD. 电压与电流反相位\n【答案】C\n【详解】纯电阻电路中，电流随电压同时增大、同时减小，并同时经过零值和最大值，因此二者相位相同。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          90,
+          91,
+          92,
+          93,
+          94,
+          96,
+          97
+        ],
+        "stem_paragraph_indices": [
+          90,
+          91,
+          92,
+          93,
+          94
+        ],
+        "answer_paragraph_indices": [
+          96
+        ],
+        "analysis_paragraph_indices": [
+          97
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第11题与第13题题干疑似重复（去模板后题干高度相似，相似度=100%）。"
+          },
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第11题与第14题题干疑似重复（去模板后题干高度相似，相似度=100%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 12,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "某白炽灯接入正弦交流电源后正常发光，可近似看作的电路类型是（ ）",
+        "options": [
+          "A. 纯电阻电路",
+          "B. 纯电感电路",
+          "C. 纯电容电路",
+          "D. 理想开路电路"
+        ],
+        "answer": "A",
+        "analysis": "白炽灯灯丝主要表现为电阻特性，工作时把电能转化为热能和光能，可近似按纯电阻交流电路分析。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "12．某白炽灯接入正弦交流电源后正常发光，可近似看作的电路类型是（ ）\nA. 纯电阻电路\nB. 纯电感电路\nC. 纯电容电路\nD. 理想开路电路\n【答案】A\n【详解】白炽灯灯丝主要表现为电阻特性，工作时把电能转化为热能和光能，可近似按纯电阻交流电路分析。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          99,
+          100,
+          101,
+          102,
+          103,
+          105,
+          106
+        ],
+        "stem_paragraph_indices": [
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "answer_paragraph_indices": [
+          105
+        ],
+        "analysis_paragraph_indices": [
+          106
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 13,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "在纯电感正弦交流电路中，电流相对于电压的相位关系是（ ）",
+        "options": [
+          "A. 电流超前电压90°",
+          "B. 电流滞后电压90°",
+          "C. 电流与电压同相位",
+          "D. 电流与电压反相位"
+        ],
+        "answer": "B",
+        "analysis": "纯电感电路中，电感对电流变化有阻碍作用，电压在相位上超前电流90°，所以电流滞后电压90°。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题",
+          "疑似重复题"
+        ],
+        "raw_text": "13．在纯电感正弦交流电路中，电流相对于电压的相位关系是（ ）\nA. 电流超前电压90°\nB. 电流滞后电压90°\nC. 电流与电压同相位\nD. 电流与电压反相位\n【答案】B\n【详解】纯电感电路中，电感对电流变化有阻碍作用，电压在相位上超前电流90°，所以电流滞后电压90°。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          108,
+          109,
+          110,
+          111,
+          112,
+          114,
+          115
+        ],
+        "stem_paragraph_indices": [
+          108,
+          109,
+          110,
+          111,
+          112
+        ],
+        "answer_paragraph_indices": [
+          114
+        ],
+        "analysis_paragraph_indices": [
+          115
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第13题与第11题题干疑似重复（去模板后题干高度相似，相似度=100%）。"
+          },
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第13题与第14题题干疑似重复（连续相同片段11字，相似度=100%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 14,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "在纯电容正弦交流电路中，电流相对于电压的相位关系是（ ）",
+        "options": [
+          "A. 电流滞后电压90°",
+          "B. 电流与电压同相位",
+          "C. 电流超前电压90°",
+          "D. 电流与电压反相位"
+        ],
+        "answer": "C",
+        "analysis": "纯电容电路中，电容先有充放电电流变化，后形成端电压变化，因此电流超前电压90°。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题",
+          "疑似重复题"
+        ],
+        "raw_text": "14．在纯电容正弦交流电路中，电流相对于电压的相位关系是（ ）\nA. 电流滞后电压90°\nB. 电流与电压同相位\nC. 电流超前电压90°\nD. 电流与电压反相位\n【答案】C\n【详解】纯电容电路中，电容先有充放电电流变化，后形成端电压变化，因此电流超前电压90°。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          117,
+          118,
+          119,
+          120,
+          121,
+          123,
+          124
+        ],
+        "stem_paragraph_indices": [
+          117,
+          118,
+          119,
+          120,
+          121
+        ],
+        "answer_paragraph_indices": [
+          123
+        ],
+        "analysis_paragraph_indices": [
+          124
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第14题与第11题题干疑似重复（去模板后题干高度相似，相似度=100%）。"
+          },
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第14题与第13题题干疑似重复（连续相同片段11字，相似度=100%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 15,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "在纯电阻交流电路中，已知电压有效值为220 V，电阻为44 Ω，则电流有效值为（ ）",
+        "options": [
+          "A. 4 A",
+          "B. 5 A",
+          "C. 6 A",
+          "D. 8 A"
+        ],
+        "answer": "B",
+        "analysis": "纯电阻交流电路中可用欧姆定律计算有效值。电流为电压除以电阻，即220除以44得5 A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "15．在纯电阻交流电路中，已知电压有效值为220 V，电阻为44 Ω，则电流有效值为（ ）\nA. 4 A\nB. 5 A\nC. 6 A\nD. 8 A\n【答案】B\n【详解】纯电阻交流电路中可用欧姆定律计算有效值。电流为电压除以电阻，即220除以44得5 A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          132,
+          133
+        ],
+        "stem_paragraph_indices": [
+          126,
+          127,
+          128,
+          129,
+          130
+        ],
+        "answer_paragraph_indices": [
+          132
+        ],
+        "analysis_paragraph_indices": [
+          133
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 16,
+        "question_type": "单选题",
+        "heading": "一、单项选择题",
+        "stem": "某交流电源频率由50 Hz升高到100 Hz，分别接入理想线圈和理想电容。若电压有效值保持不变，下列判断正确的是（ ）",
+        "options": [
+          "A. 线圈电流增大，电容电流减小",
+          "B. 线圈电流减小，电容电流增大",
+          "C. 两种元件电流均明显增大",
+          "D. 两种元件电流均明显减小"
+        ],
+        "answer": "B",
+        "analysis": "电感感抗随频率升高而增大，电压不变时线圈电流减小；电容容抗随频率升高而减小，电压不变时电容电流增大。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "解析缺少计算过程"
+        ],
+        "raw_text": "16．某交流电源频率由50 Hz升高到100 Hz，分别接入理想线圈和理想电容。若电压有效值保持不变，下列判断正确的是（ ）\nA. 线圈电流增大，电容电流减小\nB. 线圈电流减小，电容电流增大\nC. 两种元件电流均明显增大\nD. 两种元件电流均明显减小\n【答案】B\n【详解】电感感抗随频率升高而增大，电压不变时线圈电流减小；电容容抗随频率升高而减小，电压不变时电容电流增大。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          135,
+          136,
+          137,
+          138,
+          139,
+          141,
+          142
+        ],
+        "stem_paragraph_indices": [
+          135,
+          136,
+          137,
+          138,
+          139
+        ],
+        "answer_paragraph_indices": [
+          141
+        ],
+        "analysis_paragraph_indices": [
+          142
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "missing_calculation_steps",
+            "name": "解析缺少计算过程",
+            "severity": "warning",
+            "message": "第16题疑似计算相关题，但解析缺少公式、算式或计算步骤。"
+          }
+        ]
+      },
+      {
+        "question_no": 17,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "非正弦周期波4的波形通常比正弦波更接近直流电压的波形。 （ ）",
+        "options": [],
+        "answer": "错误",
+        "analysis": "【详解】错误，非正弦周期波4通常指的是方波，其波形与正弦波差异较大，而不是接近直流电压波形。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "解析缺少计算过程"
+        ],
+        "raw_text": "17．非正弦周期波4的波形通常比正弦波更接近直流电压的波形。 （ ）\n【答案】错误\n【详解】【详解】错误，非正弦周期波4通常指的是方波，其波形与正弦波差异较大，而不是接近直流电压波形。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          145,
+          147,
+          148
+        ],
+        "stem_paragraph_indices": [
+          145
+        ],
+        "answer_paragraph_indices": [
+          147
+        ],
+        "analysis_paragraph_indices": [
+          148
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "missing_calculation_steps",
+            "name": "解析缺少计算过程",
+            "severity": "warning",
+            "message": "第17题疑似计算相关题，但解析缺少公式、算式或计算步骤。"
+          }
+        ]
+      },
+      {
+        "question_no": 18,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "非正弦周期波的特点通常包括不规则波形和多频率成分的叠加。（ ）",
+        "options": [],
+        "answer": "正确",
+        "analysis": "【详解】非正弦周期波的波形常呈不规则形状，由多个频率成分叠加而成。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "18．非正弦周期波的特点通常包括不规则波形和多频率成分的叠加。（ ）\n【答案】正确\n【详解】【详解】非正弦周期波的波形常呈不规则形状，由多个频率成分叠加而成。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          150,
+          152,
+          153
+        ],
+        "stem_paragraph_indices": [
+          150
+        ],
+        "answer_paragraph_indices": [
+          152
+        ],
+        "analysis_paragraph_indices": [
+          153
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 19,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "正弦交流电与非正弦周期波都是描述周期性变化的电信号，但波形特点和频率成分方面有所不同。（ ）",
+        "options": [],
+        "answer": "正确",
+        "analysis": "【详解】正弦交流电和非正弦周期波都是周期性变化的信号，但波形和频率成分方面有明显区别。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题"
+        ],
+        "raw_text": "19．正弦交流电与非正弦周期波都是描述周期性变化的电信号，但波形特点和频率成分方面有所不同。（ ）\n【答案】正确\n【详解】【详解】正弦交流电和非正弦周期波都是周期性变化的信号，但波形和频率成分方面有明显区别。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          155,
+          157,
+          158
+        ],
+        "stem_paragraph_indices": [
+          155
+        ],
+        "answer_paragraph_indices": [
+          157
+        ],
+        "analysis_paragraph_indices": [
+          158
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第19题与第6题题干疑似重复（连续相同片段12字，相似度=73%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 20,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "非正弦周期波的表示方法中，频谱分析可以通过傅里叶变换来实现。（ ）",
+        "options": [],
+        "answer": "正确",
+        "analysis": "【详解】非正弦周期波的频谱分析通常使用傅里叶变换来分解波形的频率成分，揭示波形的复杂特性。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "20．非正弦周期波的表示方法中，频谱分析可以通过傅里叶变换来实现。（ ）\n【答案】正确\n【详解】【详解】非正弦周期波的频谱分析通常使用傅里叶变换来分解波形的频率成分，揭示波形的复杂特性。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          160,
+          162,
+          163
+        ],
+        "stem_paragraph_indices": [
+          160
+        ],
+        "answer_paragraph_indices": [
+          162
+        ],
+        "analysis_paragraph_indices": [
+          163
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 21,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "如果两同频率的正弦交流电在某时刻大小和方向相同，则此二交流电一定同相。（ ）",
+        "options": [],
+        "answer": "错误",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "缺解析"
+        ],
+        "raw_text": "21．如果两同频率的正弦交流电在某时刻大小和方向相同，则此二交流电一定同相。（ ）\n【答案】错误",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          165,
+          167
+        ],
+        "stem_paragraph_indices": [
+          165
+        ],
+        "answer_paragraph_indices": [
+          167
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "missing_analysis",
+            "name": "缺解析",
+            "severity": "failed",
+            "message": "第21题缺少解析。"
+          }
+        ]
+      },
+      {
+        "question_no": 22,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "非正弦量也能用矢量表示。（ ）",
+        "options": [],
+        "answer": "错误",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "缺解析"
+        ],
+        "raw_text": "22．非正弦量也能用矢量表示。（ ）\n【答案】错误",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          169,
+          171
+        ],
+        "stem_paragraph_indices": [
+          169
+        ],
+        "answer_paragraph_indices": [
+          171
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "missing_analysis",
+            "name": "缺解析",
+            "severity": "failed",
+            "message": "第22题缺少解析。"
+          }
+        ]
+      },
+      {
+        "question_no": 23,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "正弦交流电的电压或电流是恒定的。（ ）",
+        "options": [],
+        "answer": "错误",
+        "analysis": "【详解】正弦交流电的电压或电流是随时间周期性变化的，不是恒定的。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "23．正弦交流电的电压或电流是恒定的。（ ）\n【答案】错误\n【详解】【详解】正弦交流电的电压或电流是随时间周期性变化的，不是恒定的。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          173,
+          175,
+          176
+        ],
+        "stem_paragraph_indices": [
+          173
+        ],
+        "answer_paragraph_indices": [
+          175
+        ],
+        "analysis_paragraph_indices": [
+          176
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 24,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "纯电阻正弦交流电路中，电阻只消耗有功功率，不与电源进行能量交换。",
+        "options": [],
+        "answer": "A",
+        "analysis": "电阻把电能转化为热能，平均功率为正值，属于有功功率消耗元件，不像理想电感和理想电容那样往复储能。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误"
+        ],
+        "raw_text": "24．纯电阻正弦交流电路中，电阻只消耗有功功率，不与电源进行能量交换。\n【答案】A\n【详解】电阻把电能转化为热能，平均功率为正值，属于有功功率消耗元件，不像理想电感和理想电容那样往复储能。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          178,
+          180,
+          181
+        ],
+        "stem_paragraph_indices": [
+          178
+        ],
+        "answer_paragraph_indices": [
+          180
+        ],
+        "analysis_paragraph_indices": [
+          181
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第24题判断题答案应为 √ 或 ×。"
+          }
+        ]
+      },
+      {
+        "question_no": 25,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "纯电感正弦交流电路中，理想电感的平均功率为零。",
+        "options": [],
+        "answer": "A",
+        "analysis": "理想电感在一个周期内先从电源吸收能量并储存在磁场中，随后又把能量送回电源，所以平均消耗功率为零。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误",
+          "疑似重复题"
+        ],
+        "raw_text": "25．纯电感正弦交流电路中，理想电感的平均功率为零。\n【答案】A\n【详解】理想电感在一个周期内先从电源吸收能量并储存在磁场中，随后又把能量送回电源，所以平均消耗功率为零。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          183,
+          185,
+          186
+        ],
+        "stem_paragraph_indices": [
+          183
+        ],
+        "answer_paragraph_indices": [
+          185
+        ],
+        "analysis_paragraph_indices": [
+          186
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第25题判断题答案应为 √ 或 ×。"
+          },
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第25题与第26题题干疑似重复（核心关键词高度重合，相似度=94%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 26,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "纯电容正弦交流电路中，理想电容的平均功率为零。",
+        "options": [],
+        "answer": "A",
+        "analysis": "理想电容在充电时吸收能量，在放电时释放能量，一个完整周期内吸收与释放的能量相互抵消。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误",
+          "疑似重复题"
+        ],
+        "raw_text": "26．纯电容正弦交流电路中，理想电容的平均功率为零。\n【答案】A\n【详解】理想电容在充电时吸收能量，在放电时释放能量，一个完整周期内吸收与释放的能量相互抵消。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          188,
+          190,
+          191
+        ],
+        "stem_paragraph_indices": [
+          188
+        ],
+        "answer_paragraph_indices": [
+          190
+        ],
+        "analysis_paragraph_indices": [
+          191
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第26题判断题答案应为 √ 或 ×。"
+          },
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第26题与第25题题干疑似重复（核心关键词高度重合，相似度=94%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 27,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "在纯电感电路中，电压相位滞后电流90°。",
+        "options": [],
+        "answer": "B",
+        "analysis": "该说法错误。纯电感电路中电压超前电流90°，也可说电流滞后电压90°。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误",
+          "解析缺少计算过程",
+          "疑似重复题"
+        ],
+        "raw_text": "27．在纯电感电路中，电压相位滞后电流90°。\n【答案】B\n【详解】该说法错误。纯电感电路中电压超前电流90°，也可说电流滞后电压90°。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          193,
+          195,
+          196
+        ],
+        "stem_paragraph_indices": [
+          193
+        ],
+        "answer_paragraph_indices": [
+          195
+        ],
+        "analysis_paragraph_indices": [
+          196
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第27题判断题答案应为 √ 或 ×。"
+          },
+          {
+            "code": "missing_calculation_steps",
+            "name": "解析缺少计算过程",
+            "severity": "warning",
+            "message": "第27题疑似计算相关题，但解析缺少公式、算式或计算步骤。"
+          },
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第27题与第28题题干疑似重复（核心关键词高度重合，相似度=100%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 28,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "在纯电容电路中，电流相位滞后电压90°。",
+        "options": [],
+        "answer": "B",
+        "analysis": "该说法错误。纯电容电路中电流超前电压90°，也可说电压滞后电流90°。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误",
+          "解析缺少计算过程",
+          "疑似重复题"
+        ],
+        "raw_text": "28．在纯电容电路中，电流相位滞后电压90°。\n【答案】B\n【详解】该说法错误。纯电容电路中电流超前电压90°，也可说电压滞后电流90°。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          198,
+          200,
+          201
+        ],
+        "stem_paragraph_indices": [
+          198
+        ],
+        "answer_paragraph_indices": [
+          200
+        ],
+        "analysis_paragraph_indices": [
+          201
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第28题判断题答案应为 √ 或 ×。"
+          },
+          {
+            "code": "missing_calculation_steps",
+            "name": "解析缺少计算过程",
+            "severity": "warning",
+            "message": "第28题疑似计算相关题，但解析缺少公式、算式或计算步骤。"
+          },
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第28题与第27题题干疑似重复（核心关键词高度重合，相似度=100%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 29,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "纯电阻交流电路中，电压有效值与电流有效值之比等于电阻值。",
+        "options": [],
+        "answer": "A",
+        "analysis": "纯电阻交流电路的有效值关系仍符合欧姆定律，电压有效值除以电流有效值就是电阻值。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误"
+        ],
+        "raw_text": "29．纯电阻交流电路中，电压有效值与电流有效值之比等于电阻值。\n【答案】A\n【详解】纯电阻交流电路的有效值关系仍符合欧姆定律，电压有效值除以电流有效值就是电阻值。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          203,
+          205,
+          206
+        ],
+        "stem_paragraph_indices": [
+          203
+        ],
+        "answer_paragraph_indices": [
+          205
+        ],
+        "analysis_paragraph_indices": [
+          206
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第29题判断题答案应为 √ 或 ×。"
+          }
+        ]
+      },
+      {
+        "question_no": 30,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "交流频率不变时，电感量越大，感抗越小。",
+        "options": [],
+        "answer": "B",
+        "analysis": "该说法错误。感抗随电感量增大而增大，在频率不变时，电感量越大，对交流电流的阻碍作用越强。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误"
+        ],
+        "raw_text": "30．交流频率不变时，电感量越大，感抗越小。\n【答案】B\n【详解】该说法错误。感抗随电感量增大而增大，在频率不变时，电感量越大，对交流电流的阻碍作用越强。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          208,
+          210,
+          211
+        ],
+        "stem_paragraph_indices": [
+          208
+        ],
+        "answer_paragraph_indices": [
+          210
+        ],
+        "analysis_paragraph_indices": [
+          211
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第30题判断题答案应为 √ 或 ×。"
+          }
+        ]
+      },
+      {
+        "question_no": 31,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "某纯电容电路接在电压有效值不变的交流电源上，若频率升高，则电路电流会增大。",
+        "options": [],
+        "answer": "A",
+        "analysis": "频率升高时，电容容抗减小；电压有效值不变时，容抗减小会使电流有效值增大。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误"
+        ],
+        "raw_text": "31．某纯电容电路接在电压有效值不变的交流电源上，若频率升高，则电路电流会增大。\n【答案】A\n【详解】频率升高时，电容容抗减小；电压有效值不变时，容抗减小会使电流有效值增大。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          213,
+          215,
+          216
+        ],
+        "stem_paragraph_indices": [
+          213
+        ],
+        "answer_paragraph_indices": [
+          215
+        ],
+        "analysis_paragraph_indices": [
+          216
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第31题判断题答案应为 √ 或 ×。"
+          }
+        ]
+      },
+      {
+        "question_no": 32,
+        "question_type": "判断题",
+        "heading": "三、判断题",
+        "stem": "在同一正弦交流电源下，增大理想电感的电感量和增大理想电容的电容量，都会使电流减小。",
+        "options": [],
+        "answer": "B",
+        "analysis": "该说法错误。增大电感量会使感抗增大，电流减小；但增大电容量会使容抗减小，电流反而增大。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "答案格式错误"
+        ],
+        "raw_text": "32．在同一正弦交流电源下，增大理想电感的电感量和增大理想电容的电容量，都会使电流减小。\n【答案】B\n【详解】该说法错误。增大电感量会使感抗增大，电流减小；但增大电容量会使容抗减小，电流反而增大。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          218,
+          220,
+          221
+        ],
+        "stem_paragraph_indices": [
+          218
+        ],
+        "answer_paragraph_indices": [
+          220
+        ],
+        "analysis_paragraph_indices": [
+          221
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "invalid_answer_format",
+            "name": "答案格式错误",
+            "severity": "failed",
+            "message": "第32题判断题答案应为 √ 或 ×。"
+          }
+        ]
+      },
+      {
+        "question_no": 33,
+        "question_type": "填空题",
+        "heading": "四、填空题",
+        "stem": "正弦交流电与非正弦周期波的主要联系在于______。",
+        "options": [],
+        "answer": "波形都是周期性的",
+        "analysis": "【详解】正弦交流电和非正弦周期波都具有周期性，但波形形状不同。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题"
+        ],
+        "raw_text": "33．正弦交流电与非正弦周期波的主要联系在于______。\n【答案】波形都是周期性的\n【详解】【详解】正弦交流电和非正弦周期波都具有周期性，但波形形状不同。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          224,
+          226,
+          227
+        ],
+        "stem_paragraph_indices": [
+          224
+        ],
+        "answer_paragraph_indices": [
+          226
+        ],
+        "analysis_paragraph_indices": [
+          227
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第33题与第6题题干疑似重复（连续相同片段13字，相似度=76%）。"
+          }
+        ]
+      },
+      {
+        "question_no": 34,
+        "question_type": "填空题",
+        "heading": "四、填空题",
+        "stem": "有一个电流$i=\\left[10+8\\sin \\omega t+3\\sqrt{2}\\sin 3\\omega t+\\sqrt{2}\\sin \\left(5\\omega t+60{^{\\circ}}\\right)+\\cdot \\cdot \\cdot \\right]\\mathrm{A}$，该电流的直流分量为______，基波为______，高次谐波为______。",
+        "options": [],
+        "answer": "① 10A ② $8\\sin \\omega tA$ ③ $3\\sqrt{2}\\sin 3\\omega t+\\sqrt{2}\\sin \\left(5\\omega t+60{^{\\circ}}\\right)+\\cdot \\cdot \\cdot$",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "缺解析",
+          "格式残留"
+        ],
+        "raw_text": "34．有一个电流$i=\\left[10+8\\sin \\omega t+3\\sqrt{2}\\sin 3\\omega t+\\sqrt{2}\\sin \\left(5\\omega t+60{^{\\circ}}\\right)+\\cdot \\cdot \\cdot \\right]\\mathrm{A}$，该电流的直流分量为______，基波为______，高次谐波为______。\n【答案】① 10A ② $8\\sin \\omega tA$ ③ $3\\sqrt{2}\\sin 3\\omega t+\\sqrt{2}\\sin \\left(5\\omega t+60{^{\\circ}}\\right)+\\cdot \\cdot \\cdot$",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          229,
+          231
+        ],
+        "stem_paragraph_indices": [
+          229
+        ],
+        "answer_paragraph_indices": [
+          231
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "missing_analysis",
+            "name": "缺解析",
+            "severity": "failed",
+            "message": "第34题缺少解析。"
+          },
+          {
+            "code": "format_residue",
+            "name": "格式残留",
+            "severity": "warning",
+            "message": "第34题疑似存在 Markdown 或 LaTeX 残留。"
+          }
+        ]
+      },
+      {
+        "question_no": 35,
+        "question_type": "填空题",
+        "heading": "四、填空题",
+        "stem": "人们常说的交流电压220V、380V，是指交流电压的______。",
+        "options": [],
+        "answer": "有效值",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "缺解析"
+        ],
+        "raw_text": "35．人们常说的交流电压220V、380V，是指交流电压的______。\n【答案】有效值",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          233,
+          235
+        ],
+        "stem_paragraph_indices": [
+          233
+        ],
+        "answer_paragraph_indices": [
+          235
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "missing_analysis",
+            "name": "缺解析",
+            "severity": "failed",
+            "message": "第35题缺少解析。"
+          }
+        ]
+      },
+      {
+        "question_no": 36,
+        "question_type": "填空题",
+        "heading": "四、填空题",
+        "stem": "非正弦周期波的频谱分析通常使用______来实现。",
+        "options": [],
+        "answer": "傅里叶变换",
+        "analysis": "【详解】傅里叶变换是一种常用的频谱分析方法，适用于分析非正弦周期波的频谱特性。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "36．非正弦周期波的频谱分析通常使用______来实现。\n【答案】傅里叶变换\n【详解】【详解】傅里叶变换是一种常用的频谱分析方法，适用于分析非正弦周期波的频谱特性。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          237,
+          239,
+          240
+        ],
+        "stem_paragraph_indices": [
+          237
+        ],
+        "answer_paragraph_indices": [
+          239
+        ],
+        "analysis_paragraph_indices": [
+          240
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 37,
+        "question_type": "填空题",
+        "heading": "四、填空题",
+        "stem": "非正弦周期波的波形特点通常具有______。",
+        "options": [],
+        "answer": "不规则和多频率成分",
+        "analysis": "【详解】非正弦周期波的波形特点通常是不规则的，同时包含多个频率成分的叠加。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "37．非正弦周期波的波形特点通常具有______。\n【答案】不规则和多频率成分\n【详解】【详解】非正弦周期波的波形特点通常是不规则的，同时包含多个频率成分的叠加。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          242,
+          244,
+          245
+        ],
+        "stem_paragraph_indices": [
+          242
+        ],
+        "answer_paragraph_indices": [
+          244
+        ],
+        "analysis_paragraph_indices": [
+          245
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": []
+      },
+      {
+        "question_no": 38,
+        "question_type": "填空题",
+        "heading": "四、填空题",
+        "stem": "图示电流波形为______。",
+        "options": [],
+        "answer": "尖顶脉冲",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "status": "failed",
+        "issues": [
+          "缺解析"
+        ],
+        "raw_text": "38．图示电流波形为______。\n【答案】尖顶脉冲",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第19卷 电工技术基础与技能 纯电阻纯电感纯电容电路.docx",
+        "source_paragraph_indices": [
+          247,
+          249
+        ],
+        "stem_paragraph_indices": [
+          247
+        ],
+        "answer_paragraph_indices": [
+          249
+        ],
+        "analysis_paragraph_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "issue_details": [
+          {
+            "code": "missing_analysis",
+            "name": "缺解析",
+            "severity": "failed",
+            "message": "第38题缺少解析。"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "paper_label": "第3卷",
+  "attempt": 1,
+  "needed_this_attempt": 4,
+  "total_needed": 4,
+  "remaining_before_call": {
+    "判断题|困难": [
+      {
+        "question_type": "判断题",
+        "difficulty": "困难"
+      }
+    ],
+    "综合应用题|简单": [
+      {
+        "question_type": "综合应用题",
+        "difficulty": "简单"
+      },
+      {
+        "question_type": "综合应用题",
+        "difficulty": "简单"
+      },
+      {
+        "question_type": "综合应用题",
+        "difficulty": "简单"
+      }
+    ]
+  },
+  "raw_response": "{\"questions\":[{\"stem\":\"在电源电压一定的电路中，若某用电器两端被导线直接连接形成短路，则该用电器两端电压很小，电流主要从短接导线通过，用电器通常不能正常工作；因此，不能简单认为短路时该用电器的电功率一定增大。（   ）\",\"options\":[\"A. 正确\",\"B. 错误\"],\"answer\":\"A\",\"explanation\":\"短路时电流会优先通过电阻很小的导线，该用电器两端电压很小，不能按正常通路状态判断其功率。短路的主要特点是电路电流可能急剧增大，容易造成电源或导线损坏。\",\"question_type\":\"判断题\",\"difficulty\":\"困难\"},{\"stem\":\"一只小灯泡接在6 V电源上，正常工作时通过它的电流为0.5 A。求该小灯泡正常工作时的电功率。\",\"options\":[],\"answer\":\"3 W\",\"explanation\":\"电功率可用电压与电流的乘积计算，即P=UI。代入数据得P=6×0.5=3 W，所以小灯泡正常工作时的电功率为3 W。\",\"question_type\":\"综合应用题\",\"difficulty\":\"简单\"},{\"stem\":\"某电热器的额定功率为100 W，连续工作2 h。求该电热器在这段时间内消耗的电能。\",\"options\":[],\"answer\":\"200 W·h\",\"explanation\":\"电功可用电功率与通电时间的乘积计算，即W=Pt。代入数据得W=100×2=200 W·h，所以该电热器消耗的电能为200 W·h。\",\"question_type\":\"综合应用题\",\"difficulty\":\"简单\"},{\"stem\":\"某照明电路中，开关闭合后灯泡发光；开关断开后灯泡熄灭，电流表读数为0。判断开关断开后的电路状态，并说明灯泡电功率的变化。\",\"options\":[],\"answer\":\"开路；灯泡电功率为0 W\",\"explanation\":\"开关断开后，电路中没有形成闭合回路，电流为0，属于开路状态。灯泡没有电流通过，不能把电能转化为光和热，因此灯泡的电功率为0 W。\",\"question_type\":\"综合应用题\",\"difficulty\":\"简单\"}]}",
+  "usage": {
+    "prompt_tokens": 18494,
+    "completion_tokens": 928,
+    "total_tokens": 19422
+  }
+}

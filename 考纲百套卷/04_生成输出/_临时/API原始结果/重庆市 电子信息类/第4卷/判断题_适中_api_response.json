@@ -1,0 +1,511 @@
+{
+  "试卷": "第4卷",
+  "题型": "判断题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000202
+  ],
+  "计划补题数": 2,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 11,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87671
+    ],
+    "typeIds": [
+      1000202
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 7,
+      "totalPages": 1,
+      "list": [
+        {
+          "questionId": "3646192406257664",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642274757238784",
+          "source": "《电工技术基础与技能》第二章 课题一 电阻 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻的大小与导体的长度成正比，与横截面积成反比。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据电阻定义式</span><math latex=\"$\\mathrm{R}=\\rho \\frac{\\mathrm{L}}{\\mathrm{S}}$\"><mrow><mtext>R</mtext><mo>=</mo><mi>ρ</mi><mfrac><mtext>L</mtext><mtext>S</mtext></mfrac></mrow></math><span style=\"font-family: 宋体;\">，可得电阻的大小与导体的长度成正比，与横截面积成反比。</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 36,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T22:20:21",
+          "updateDate": "2026-04-20T04:09:52",
+          "publishDate": "2025-04-26T10:33:51",
+          "qmlUpdateDate": "2025-10-21T11:25:08",
+          "stemText": "电阻的大小与导体的长度成正比，与横截面积成反比。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:47:42"
+        },
+        {
+          "questionId": "3646919355654144",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642311600308224",
+          "source": "《电工技术基础与技能》综合练习（五）45分钟专题训练（原卷版+)",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">一根导线的电阻值为</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">Ω，若将其均匀拉长一倍或缩短一半时，则拉长一倍时电阻为</span><span style=\"font-family: 'Times New Roman';\">20</span><span style=\"font-family: 宋体;\">Ω，缩短一半时电阻为</span><span style=\"font-family: 'Times New Roman';\">5</span><span style=\"font-family: 宋体;\">Ω。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">对于一根导线，在均匀拉长时，体积不变。设原来导线的长度为</span><span style=\"font-family: 'Times New Roman';\">L</span><span style=\"font-family: 宋体;\">，横截面积为</span><span style=\"font-family: 'Times New Roman';\">S</span><span style=\"font-family: 宋体;\">，则体积</span><span style=\"font-family: 'Times New Roman';\">V=LS</span><span style=\"font-family: 宋体;\">。</span></p><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">拉长一倍后，长度变为</span><span style=\"font-family: 'Times New Roman';\">2L</span><span style=\"font-family: 宋体;\">，由于体积不变，此时横截面积变为</span><span style=\"font-family: 'Times New Roman';\">S/2</span><span style=\"font-family: 宋体;\">。根据电阻公式</span><math latex=\"$\\mathrm{R}=\\rho \\frac{\\mathrm{L}}{\\mathrm{S}}$\"><mrow><mtext>R</mtext><mo>=</mo><mi>ρ</mi><mfrac><mtext>L</mtext><mtext>S</mtext></mfrac></mrow></math><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">，拉长一倍后电阻</span><math latex=\"$\\mathrm{R}=\\rho \\frac{2\\mathrm{L}}{\\mathrm{S}/2}=4\\rho \\frac{\\mathrm{L}}{\\mathrm{S}}$\"><mrow><mtext>R</mtext><mo>=</mo><mi>ρ</mi><mfrac><mrow><mtext>2L</mtext></mrow><mrow><mtext>S/2</mtext></mrow></mfrac><mo>=</mo><mn>4</mn><mi>ρ</mi><mfrac><mtext>L</mtext><mtext>S</mtext></mfrac></mrow></math><span style=\"font-family: 宋体;\">。故电阻应变为</span><span style=\"font-family: 'Times New Roman';\">40</span><span style=\"font-family: 宋体;\">Ω。分析缩短一半的情况：缩短一半后，长度变为</span><span style=\"font-family: 'Times New Roman';\">L/2</span><span style=\"font-family: 宋体;\">，体积</span><span style=\"font-family: 'Times New Roman';\">V</span><span style=\"font-family: 宋体;\">不变，横截面积变为</span><span style=\"font-family: 'Times New Roman';\">2S</span><span style=\"font-family: 宋体;\">。缩短一半后电阻</span><math latex=\"$\\mathrm{R}=\\rho \\frac{\\mathrm{L}/2}{2\\mathrm{S}}=\\frac{1}{4}\\rho \\frac{\\mathrm{L}}{\\mathrm{S}}$\"><mrow><mtext>R</mtext><mo>=</mo><mi>ρ</mi><mfrac><mrow><mtext>L/2</mtext></mrow><mrow><mtext>2S</mtext></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mi>ρ</mi><mfrac><mtext>L</mtext><mtext>S</mtext></mfrac></mrow></math><span style=\"font-family: 宋体;\">，故电阻变为</span><span style=\"font-family: 'Times New Roman';\">2.5</span><span style=\"font-family: 宋体;\">Ω。故表述错误。</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 30,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-12T22:59:20",
+          "updateDate": "2026-04-20T04:12:15",
+          "publishDate": "2025-04-26T16:25:36",
+          "qmlUpdateDate": "2025-10-21T11:25:41",
+          "stemText": "一根导线的电阻值为10Ω，若将其均匀拉长一倍或缩短一半时，则拉长一倍时电阻为20Ω，缩短一半时电阻为5Ω。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:52:19"
+        },
+        {
+          "questionId": "3650889329614848",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642399136366592",
+          "source": "1.2电阻与部分电路欧姆定律（同步练习）-高一《电工技术基础》同步精品课堂 （高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">导体的电阻永远不变。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><math latex=\"$R=\\rho \\frac{l}{S}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mi>ρ</mi><mfrac><mi>l</mi><mi>S</mi></mfrac></math></p><p style=\"\"><math latex=\"$\\rho$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>ρ</mi></math><span>、</span><span style=\"font-style: italic;\">l</span><span>、S变化会导致电阻变化。</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 46,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-18T13:36:16",
+          "updateDate": "2026-04-20T04:21:57",
+          "publishDate": "2025-02-11T10:18:04",
+          "qmlUpdateDate": "2025-10-21T11:28:08",
+          "stemText": "导体的电阻永远不变。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:14:47"
+        },
+        {
+          "questionId": "3687665111474176",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812032221184",
+          "source": "《电工基础》项目一：课题3 电阻  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻是导体本身的特性，与电流、电压无关。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+          "catalogIds": [
+            237905
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003
+          ],
+          "textBookIds": [
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 39,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T12:36:47",
+          "updateDate": "2026-04-20T05:30:53",
+          "publishDate": "2025-06-27T00:25:45",
+          "qmlUpdateDate": "2025-10-21T11:41:53",
+          "stemText": "电阻是导体本身的特性，与电流、电压无关。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:27"
+        },
+        {
+          "questionId": "3650889329516544",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642399136366592",
+          "source": "1.2电阻与部分电路欧姆定律（同步练习）-高一《电工技术基础》同步精品课堂 （高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">导体的长度和截面积都增大一倍，其电阻也增大一倍。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><math latex=\"$R=\\rho \\frac{l}{S}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mi>ρ</mi><mfrac><mi>l</mi><mi>S</mi></mfrac></math></p><p style=\"\"><span style=\"font-family: 宋体;\">导体的长度和截面积都增大一倍，电阻不变。</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 28,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-18T13:36:16",
+          "updateDate": "2026-04-20T04:21:57",
+          "publishDate": "2025-02-11T10:17:41",
+          "qmlUpdateDate": "2025-10-21T11:28:08",
+          "stemText": "导体的长度和截面积都增大一倍，其电阻也增大一倍。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:14:47"
+        },
+        {
+          "questionId": "3646192406962176",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3642274757238784",
+          "source": "《电工技术基础与技能》第二章 课题一 电阻 45分钟专题训练（原卷版+）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻器的标称值就是实际值。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"0\"><span style=\"font-family: 宋体;\">错误</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电阻器的标称值和实际值有一定误差</span><span style=\"font-family: 'Times New Roman';\">,</span><span style=\"font-family: 宋体;\">故电阻器的标称值并不就是实际值</span></p></div></div>",
+          "catalogIds": [
+            237965,
+            237905,
+            281140
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 36,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T22:20:21",
+          "updateDate": "2026-04-20T04:09:52",
+          "publishDate": "2025-04-26T10:35:06",
+          "qmlUpdateDate": "2025-10-21T11:25:09",
+          "stemText": "电阻器的标称值就是实际值。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:47:42"
+        },
+        {
+          "questionId": "3687665112055808",
+          "courseId": 10002,
+          "typeId": "1000202",
+          "topTypeId": "1000202",
+          "typeFeatureIds": [],
+          "paperId": "3674812032221184",
+          "source": "《电工基础》项目一：课题3 电阻  45分钟专题训练（原卷版+）",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">用滑动变阻器改变电阻，是通过改变接入电路的电阻丝长度来实现的。</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"bracket\">（　　　　　）</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\" judge=\"1\"><span style=\"font-family: 宋体;\">正确</span></span></span></div>",
+          "explanation": "<exps des=\"学科网自动填充\"><seg name=\"详解\"><p align=\"Left\"><span word-font=\"宋体\">略</span></p></seg></exps>",
+          "catalogIds": [
+            237905
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87671
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "4801",
+            "5801"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003
+          ],
+          "textBookIds": [
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 27,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-02-08T12:36:47",
+          "updateDate": "2026-04-20T05:30:53",
+          "publishDate": "2025-06-27T00:25:55",
+          "qmlUpdateDate": "2025-10-21T11:41:53",
+          "stemText": "用滑动变阻器改变电阻，是通过改变接入电路的电阻丝长度来实现的。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T02:53:27"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

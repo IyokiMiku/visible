@@ -1,0 +1,729 @@
+{
+  "试卷": "第3卷",
+  "题型": "单项选择题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000201
+  ],
+  "计划补题数": 2,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 11,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87681
+    ],
+    "typeIds": [
+      1000201
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 18,
+      "totalPages": 2,
+      "list": [
+        {
+          "questionId": "3667466075250688",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3667238486024192",
+          "source": "专题二  简单直流电路",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">用电压表测得电路端电压为零，这说明（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">外电路断路</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">外电路短路</span></span></td></tr><tr><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">外电路上电流比较大</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">电源内电阻为零</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span style=\"font-family: 宋体;\">外电路短路时R=0,U=IR=0。外电路断路U=U</span><sub word-font-size=\"14px\" word-font=\"宋体\"><span>S</span></sub><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237974,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 77,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-10T23:41:45",
+          "updateDate": "2026-04-20T05:00:00",
+          "publishDate": "2025-02-20T13:59:29",
+          "qmlUpdateDate": "2025-02-19T12:45:03",
+          "stemText": "用电压表测得电路端电压为零，这说明（   ）外电路断路外电路短路外电路上电流比较大电源内电阻为零",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:43:19"
+        },
+        {
+          "questionId": "3644427208007680",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3641755382104064",
+          "source": "《电工技术基础与技能》综合练习（七）45分钟专题训练（原卷版+)",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电阻</span><span style=\"font-family: 'Times New Roman';\">R1=4</span><span style=\"font-family: 宋体;\">Ω和</span><span style=\"font-family: 'Times New Roman';\">R2=3</span><span style=\"font-family: 宋体;\">Ω串联于电源电压</span><span style=\"font-family: 'Times New Roman';\">V</span><span style=\"font-family: 宋体;\">上，则其功率比为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">3</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">4</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">3</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">9</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">6</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">16</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">9</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">在串联电路中，电流是处处相等的。因此，当电阻</span><span style=\"font-family: 'Times New Roman';\">R1</span><span style=\"font-family: 宋体;\">和</span><span style=\"font-family: 'Times New Roman';\">R2</span><span style=\"font-family: 宋体;\">串联在电源电压</span><span style=\"font-family: 'Times New Roman';\">V</span><span style=\"font-family: 宋体;\">上时，通过它们的电流是相同的。利用功率的公式来计算每个电阻的功率。功率</span><span style=\"font-family: 'Times New Roman';\">P</span><span style=\"font-family: 宋体;\">的公式为：</span><math latex=\"$P=I^{2}R$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi></math><span style=\"font-family: 宋体;\">由于</span><span style=\"font-family: 'Times New Roman';\">R1</span><span style=\"font-family: 宋体;\">和</span><span style=\"font-family: 'Times New Roman';\">R2</span><span style=\"font-family: 宋体;\">的电流相同，我们可以直接比较它们的电阻值来确定功率比。根据题目，</span><span style=\"font-family: 'Times New Roman';\">R1=4</span><span style=\"font-family: 宋体;\">和</span><span style=\"font-family: 'Times New Roman';\">R2=3</span><span style=\"font-family: 宋体;\">，所以它们的功率比为：</span><math latex=\"$\\frac{P1}{P2}=\\frac{I^{2}R1}{I^{2}R2}=\\frac{R1}{R2}=\\frac{4}{3}$\"><mrow><mfrac><mrow><mi>P</mi><mn>1</mn><mtext>​</mtext></mrow><mrow><mi>P</mi><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi><mn>1</mn></mrow><mrow><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>R</mi><mn>1</mn><mtext>​</mtext></mrow><mrow><mi>R</mi><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mtext>​</mtext></mrow></math><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">因此，电阻</span><span style=\"font-family: 'Times New Roman';\">R1</span><span style=\"font-family: 宋体;\">和</span><span style=\"font-family: 'Times New Roman';\">R2</span><span style=\"font-family: 宋体;\">的功率比是</span><span style=\"font-family: 'Times New Roman';\">4:3</span><span style=\"font-family: 宋体;\">。即电阻</span><span style=\"font-family: 'Times New Roman';\">R1</span><span style=\"font-family: 宋体;\">和</span><span style=\"font-family: 'Times New Roman';\">R2</span><span style=\"font-family: 宋体;\">的功率比为</span><span style=\"font-family: 'Times New Roman';\">4:3</span><span style=\"font-family: 宋体;\">。故选</span><span style=\"font-family: 'Times New Roman';\">B</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237907
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87657,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003
+          ],
+          "textBookIds": [
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 22,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-09T10:29:03",
+          "updateDate": "2026-04-20T04:05:24",
+          "publishDate": "2024-12-18T14:20:27",
+          "qmlUpdateDate": "2024-12-18T14:19:59",
+          "stemText": "电阻R1=4Ω和R2=3Ω串联于电源电压V上，则其功率比为（   ）3∶44∶39∶616∶9",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:37:40"
+        },
+        {
+          "questionId": "3643873200406528",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3641755408572416",
+          "source": "专题二  简单直流电路（专项练习）河南省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">一个闭合电路中，总电流是</span><span style=\"font-family: 'Times New Roman';\">2A</span><span style=\"font-family: 宋体;\">，总电阻是</span><span style=\"font-family: 'Times New Roman';\">5Ω</span><span style=\"font-family: 宋体;\">，求端电压是多少？（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">5V</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">7V</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">8V</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10V</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">C</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律，</span><span style=\"font-family: 'Times New Roman';\">U= IR</span><span style=\"font-family: 宋体;\">，所以端电压为</span><span style=\"font-family: 'Times New Roman';\"> 2A </span><math latex=\"$\\times$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>×</mo></math><span style=\"font-family: 'Times New Roman';\"> 5Ω = 10V</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237974
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 37,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-08T15:41:55",
+          "updateDate": "2026-05-22T14:23:22",
+          "publishDate": "2025-04-23T11:13:20",
+          "qmlUpdateDate": "2026-05-22T14:23:20",
+          "stemText": "一个闭合电路中，总电流是2A，总电阻是5Ω，求端电压是多少？（   ）5V7V8V10V",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:35:19"
+        },
+        {
+          "questionId": "3670603370848256",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3669386372194304",
+          "source": "第一章 第三节  闭合电路欧姆定律",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">一块太阳能电池板，测得它的开路电压为</span><span style=\"font-family: 'Times New Roman';\">800mV</span><span style=\"font-family: 宋体;\">，短路电流为</span><span style=\"font-family: 'Times New Roman';\">40mA</span><span style=\"font-family: 宋体;\">，若将该电池板与一个阻值为</span><span style=\"font-family: 'Times New Roman';\">20Ω</span><span style=\"font-family: 宋体;\">的电阻器连成一闭合电路，则它的端电压是（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.1V</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.2V</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.3V</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.4V</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">D</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">因电路的开路电压等于电源电动势，即</span><math latex=\"$E=800\\mathrm{mV}$\"><mrow><mi>E</mi><mo>=</mo><mn>800</mn><mtext>mV</mtext></mrow></math><span style=\"font-family: 宋体;\">，短路电流</span><math latex=\"$I_{\\mathrm{短}}=\\frac{E}{r}$\"><mrow><msub><mi>I</mi><mi mathvariant=\"normal\">短</mi></msub><mo>=</mo><mfrac><mi>E</mi><mi>r</mi></mfrac></mrow></math><span style=\"font-family: 宋体;\">，则</span><math latex=\"$r=\\frac{E}{I_{\\mathrm{短}}}=\\frac{800\\mathrm{mV}}{40\\mathrm{mA}}=20\\Upomega$\"><mrow><mi>r</mi><mo>=</mo><mfrac><mi>E</mi><mrow><msub><mi>I</mi><mi mathvariant=\"normal\">短</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>800</mn><mtext>mV</mtext></mrow><mrow><mn>40</mn><mtext>mA</mtext></mrow></mfrac><mo>=</mo><mn>20</mn><mi mathvariant=\"normal\">Ω</mi></mrow></math><span style=\"font-family: 宋体;\">。若将该电池板与一个阻值为</span><math latex=\"$20\\Upomega$\"><mrow><mn>20</mn><mi mathvariant=\"normal\">Ω</mi></mrow></math><span style=\"font-family: 宋体;\">的电阻器连成一闭合电路，则电路中的电流为</span><math latex=\"$I=\\frac{E}{R+r}=\\frac{800\\mathrm{mV}}{20\\Upomega +20\\Upomega }=0.02\\mathrm{A}$\"><mrow><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>800</mn><mtext>mV</mtext></mrow><mrow><mn>20</mn><mi mathvariant=\"normal\">Ω</mi><mo>+</mo><mn>20</mn><mi mathvariant=\"normal\">Ω</mi></mrow></mfrac><mo>=</mo><mn>0.02</mn><mtext>A</mtext></mrow></math><span style=\"font-family: 宋体;\">，则它的端电压</span><math latex=\"$U=IR=0.02\\times 20\\mathrm{V}=0.4\\mathrm{V}$\"><mrow><mi>U</mi><mo>=</mo><mi>I</mi><mi>R</mi><mo>=</mo><mn>0.02</mn><mo>×</mo><mn>20</mn><mtext>V</mtext><mo>=</mo><mn>0.4</mn><mtext>V</mtext></mrow></math><span style=\"font-family: 宋体;\">。故</span><span style=\"font-family: 'Times New Roman';\">D</span><span style=\"font-family: 宋体;\">正确。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 64,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-15T10:04:35",
+          "updateDate": "2026-04-20T05:06:43",
+          "publishDate": "2025-02-27T15:25:38",
+          "qmlUpdateDate": "2025-01-15T10:04:35",
+          "stemText": "一块太阳能电池板，测得它的开路电压为800mV，短路电流为40mA，若将该电池板与一个阻值为20Ω的电阻器连成一闭合电路，则它的端电压是（   ）0.1V0.2V0.3V0.4V",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:58:33"
+        },
+        {
+          "questionId": "3881818970652672",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3875266611757056",
+          "source": "《电工技术模块》电路基础知识-知识点训练卷 2026版湖南省电工电子类专业 考纲百套卷 第3卷",
+          "year": 2025,
+          "difficulty": 0.75,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">某电路中，电源电动势为</span><span style=\"font-family: 'Times New Roman';\"> 12V</span><span style=\"font-family: 宋体;\">、内阻为</span><span style=\"font-family: 'Times New Roman';\"> 1Ω</span><span style=\"font-family: 宋体;\">，外接</span><span style=\"font-family: 'Times New Roman';\"> 11Ω </span><span style=\"font-family: 宋体;\">负载时，电源输出功率为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">12W</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">11W</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10W</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">1W</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 42,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-11-09T20:03:49",
+          "updateDate": "2026-03-02T13:08:08",
+          "publishDate": "2026-03-02T13:08:08",
+          "qmlUpdateDate": "2025-11-09T20:03:50",
+          "stemText": "某电路中，电源电动势为 12V、内阻为 1Ω，外接 11Ω 负载时，电源输出功率为（   ）12W11W10W1W",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T18:52:25"
+        },
+        {
+          "questionId": "3643215780667392",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3641755199406080",
+          "source": "专题一 认识电路（专项练习）-山东省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">一个用电器标有</span><span style=\"font-family: 'Times New Roman';\">“220V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">1100W”</span><span style=\"font-family: 宋体;\">字样，则在正常工作时电阻为：（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">44Ω</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">22Ω</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2Ω</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">0.2Ω</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">A</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电功率</span><span style=\"font-family: 'Times New Roman';\">P = U^2 / R</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">1100W = (220V)^2 / R</span><span style=\"font-family: 宋体;\">，解得</span><span style=\"font-family: 'Times New Roman';\">R = (220V)^2 / 1100W = 44Ω</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237907
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 20,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T17:24:24",
+          "updateDate": "2026-04-20T04:01:44",
+          "publishDate": "2025-04-18T18:59:37",
+          "qmlUpdateDate": "2024-12-07T17:24:24",
+          "stemText": "一个用电器标有“220V，1100W”字样，则在正常工作时电阻为：（   ）44Ω22Ω2Ω0.2Ω",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:31:49"
+        },
+        {
+          "questionId": "3643117135355904",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3641713125031936",
+          "source": "【对口高考】河北省-冲刺模拟卷（一）（电工技术基础与技能）（高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">实验测得某有源二端网络的开路电压为</span><span style=\"font-family: 'Times New Roman';\">8V</span><span style=\"font-family: 宋体;\">，短路电流为</span><span style=\"font-family: 'Times New Roman';\">2A</span><span style=\"font-family: 宋体;\">，当外接负载电阻为</span><span style=\"font-family: 'Times New Roman';\">4Ω</span><span style=\"font-family: 宋体;\">时，其端电压为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2V</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4V</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">8V</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">3V</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237974
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 19,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T14:03:42",
+          "updateDate": "2025-03-05T15:50:48",
+          "publishDate": "2025-03-05T15:50:48",
+          "qmlUpdateDate": "2024-12-07T14:03:42",
+          "stemText": "实验测得某有源二端网络的开路电压为8V，短路电流为2A，当外接负载电阻为4Ω时，其端电压为（   ）2V4V8V3V",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:31:13"
+        },
+        {
+          "questionId": "3646191722381312",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3642274697478144",
+          "source": "【对口高考】河北省-冲刺模拟卷（二）-（电工技术基础与技能）（高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">将阻值分别为</span><span style=\"font-family: 'Times New Roman';\">2Ω</span><span style=\"font-family: 宋体;\">与</span><span style=\"font-family: 'Times New Roman';\">3Ω</span><span style=\"font-family: 宋体;\">的两个电阻串联后，接在电压为</span><span style=\"font-family: 'Times New Roman';\">10V</span><span style=\"font-family: 宋体;\">的电源上，消耗的功率为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4W</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">6W</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">8W</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">10W</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">C</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237973,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 37,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T22:18:58",
+          "updateDate": "2025-04-26T10:28:23",
+          "publishDate": "2025-04-26T10:28:23",
+          "qmlUpdateDate": "2024-12-11T22:18:58",
+          "stemText": "将阻值分别为2Ω与3Ω的两个电阻串联后，接在电压为10V的电源上，消耗的功率为（   ）4W6W8W10W",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:47:40"
+        },
+        {
+          "questionId": "3932163622666240",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3875284523458560",
+          "source": "《电工技术模块》电路基础知识-常考题训练卷 2026版湖南省电工电子类专业 考纲百套卷 第70卷",
+          "year": 2025,
+          "difficulty": 0.75,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">某电源电动势</span><span style=\"font-family: 'Times New Roman';\"> E=6V</span><span style=\"font-family: 宋体;\">，短路电流</span><span style=\"font-family: 'Times New Roman';\"> I </span><span style=\"font-family: 宋体;\">短</span><span style=\"font-family: 'Times New Roman';\"> = 3A</span><span style=\"font-family: 宋体;\">，当外电阻</span><span style=\"font-family: 'Times New Roman';\"> R=3</span><span style=\"font-family: 宋体;\">Ω</span><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">时，路端电压为（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">2V</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">3V</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">4V</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">6V</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">C</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237973
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [
+            "5101"
+          ],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 72,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-19T23:10:17",
+          "updateDate": "2026-04-19T15:26:57",
+          "publishDate": "2026-04-19T15:26:56",
+          "qmlUpdateDate": "2026-01-19T23:10:17",
+          "stemText": "某电源电动势 E=6V，短路电流 I 短 = 3A，当外电阻 R=3Ω 时，路端电压为（   ）2V3V4V6V",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T01:40:00"
+        },
+        {
+          "questionId": "3927600946765824",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3926966974472192",
+          "source": "《电工技能基础》简单直流电路 知识点训练卷2026 江苏省职教高考《机电类考纲百套卷》第16卷 入库版",
+          "year": 2025,
+          "difficulty": 0.55,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电路如图所示，</span><span style=\"font-family: 'Times New Roman';\">E</span><span style=\"font-family: 宋体;\">是电源电动势，</span><span style=\"font-family: 'Times New Roman';\">r</span><span style=\"font-family: 宋体;\">是电源内阻，若</span><math latex=\"$\\frac{1}{R_{P}}< \\frac{1}{R_{1}}+\\frac{1}{r}，$\"><mfrac><mrow><mn>1</mn></mrow><mrow><msub><mrow><mi>R</mi></mrow><mrow><mi>P</mi></mrow></msub></mrow></mfrac><mo>&lt;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><msub><mrow><mi>R</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>r</mi></mrow></mfrac><mo>，</mo></math><span style=\"font-family: 宋体;\">当</span><math latex=\"$R_{P}$\"><msub><mrow><mi>R</mi></mrow><mrow><mi>P</mi></mrow></msub></math><span style=\"font-family: 宋体;\">调大时，</span><math latex=\"$R_{P}$\"><msub><mrow><mi>R</mi></mrow><mrow><mi>P</mi></mrow></msub></math><span style=\"font-family: 宋体;\">获得的功率将（</span><span style=\"font-family: 'Times New Roman';\"><span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style=\"font-family: 宋体;\">）</span></p><p style=\"text-align: left;\"><img  height=\"93\" src=\"https://img.xkw.com/dksih/QBM/2026/1/12/3926966974472192/3927600946765824/STEM/35bfd5703d264069956987fefef5f86e.png\" width=\"118\" /></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">变大</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">变小</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">不变</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">无法确定</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span>断开RP求开路电压UOC ：UOC=</span><math latex=\"$U_{OC}=\\frac{E}{R_{1}+r}\\times R_{1}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>U</mi><mrow><mi>O</mi><mi>C</mi></mrow></msub><mo>=</mo><mfrac><mi>E</mi><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><mi>r</mi></mrow></mfrac><mo>×</mo><msub><mi>R</mi><mn>1</mn></msub></math></p><p style=\"\"><span>等效电阻为</span><span style=\"\">R0​ =</span><span>R1//r</span></p><p style=\"\"><span style=\"\"><span>根据</span><span>最大功率传输定理</span><span>，当负载电阻 RP​ 大于等效内阻 R0​ 时，随着 RP​ 的增大，负载获得的功率会</span><span>减小</span><span>。</span></span></p><p style=\"text-align: left;\"><span>因为</span><img  height=\"45\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/2/25/35198bd2-326a-4d53-a2b5-84a51ec60d92.png\" width=\"121\" /></p><p style=\"\"><span>所以</span><span style=\"\">RP​ 大于等效内阻 R0</span></p><p style=\"\"><span>所以选B</span></p></div></div>",
+          "catalogIds": [
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 40,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1553
+          ],
+          "textBookIds": [
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 32,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2026-01-13T12:27:30",
+          "updateDate": "2026-04-16T17:12:20",
+          "publishDate": "2026-02-25T15:32:22",
+          "qmlUpdateDate": "2026-02-25T15:31:48",
+          "stemText": "电路如图所示，E是电源电动势，r是电源内阻，若1RP<1R1+1r，当RP调大时，RP获得的功率将（   ）变大变小不变无法确定",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-30T01:04:48"
+        },
+        {
+          "questionId": "3643065085714432",
+          "courseId": 10002,
+          "typeId": "1000201",
+          "topTypeId": "1000201",
+          "typeFeatureIds": [],
+          "paperId": "3641713009516544",
+          "source": "2.1 电动势 闭合电路的欧姆定律（同步练习）《电工技术基础与技能》同步精品课堂（高教版·第3版）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">某电源的电动势是12V，内阻1Ω，以6A的电流提供负载。此时电源两端电压是多少（<span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">6V</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">11V</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">5V</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 'Times New Roman';\">12V</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">A</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电源两端的电压V = E - Ir = 12 - 6 * 1 = 6V。</span></p></div></div>",
+          "catalogIds": [
+            237974
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 26,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T12:17:48",
+          "updateDate": "2026-04-20T04:01:07",
+          "publishDate": "2025-02-16T16:48:57",
+          "qmlUpdateDate": "2024-12-07T12:17:48",
+          "stemText": "某电源的电动势是12V，内阻1Ω，以6A的电流提供负载。此时电源两端电压是多少（   ）6V11V5V12V",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:30:57"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

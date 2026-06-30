@@ -1,0 +1,568 @@
+{
+  "试卷": "第5卷",
+  "题型": "填空题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000203
+  ],
+  "计划补题数": 1,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 8,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87678
+    ],
+    "typeIds": [
+      1000203
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 13,
+      "totalPages": 2,
+      "list": [
+        {
+          "questionId": "3643215777054720",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3641755199406080",
+          "source": "专题一 认识电路（专项练习）-山东省职教高考《电工技术基础与技能》（高教版）  专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律的公式是</span><span class=\"qml-bk\" index=\"1\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">。如果电流为</span><span style=\"font-family: 'Times New Roman';\">2A</span><span style=\"font-family: 宋体;\">，电阻为</span><span style=\"font-family: 'Times New Roman';\">5Ω</span><span style=\"font-family: 宋体;\">，那么电压为</span><span class=\"qml-bk\" index=\"2\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 'Times New Roman';\">V</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">U=I*R</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">10</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律的公式是</span><span style=\"font-family: 'Times New Roman';\">U=I×R</span><span style=\"font-family: 宋体;\">，电压</span><span style=\"font-family: 'Times New Roman';\">U = 2A × 5Ω = 10V</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237968
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 26,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T17:24:23",
+          "updateDate": "2026-04-20T04:01:44",
+          "publishDate": "2025-04-18T19:00:10",
+          "qmlUpdateDate": "2024-12-07T17:24:24",
+          "stemText": "欧姆定律的公式是。如果电流为2A，电阻为5Ω，那么电压为V。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:31:49"
+        },
+        {
+          "questionId": "3643957589164032",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642274401312768",
+          "source": "专题一 认识电路（专项练习）-浙江省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律表示为</span><span class=\"qml-bk\" index=\"1\" size=\"3\" type=\"underline\" style=\"text-decoration:underline\" >　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><math latex=\"$I=\\frac{U}{R}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac></math></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律是指电流通过导体时，通过导体的电流和导体两端的电压成正比，即</span><math latex=\"$I=\\frac{U}{R}$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac></math><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 46,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-08T18:33:36",
+          "updateDate": "2026-04-20T04:04:35",
+          "publishDate": "2024-12-12T17:12:01",
+          "qmlUpdateDate": "2024-12-12T11:25:29",
+          "stemText": "欧姆定律表示为。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:35:47"
+        },
+        {
+          "questionId": "3648099745161216",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642311958339584",
+          "source": "专题二 电动势、闭合电路的欧姆定律、电阻的串联、并联、混联（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">欧姆定律描述了电流、电压和</span><span class=\"qml-bk\" index=\"1\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">之间的关系。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">电阻</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">欧姆定律表明了电流、电压和电阻之间的线性关系，即电流等于电压与电阻的比值。</span></p></div></div>",
+          "catalogIds": [
+            237968,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 61,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-14T15:00:51",
+          "updateDate": "2026-04-20T04:14:53",
+          "publishDate": "2025-04-26T20:24:19",
+          "qmlUpdateDate": "2024-12-14T15:00:51",
+          "stemText": "欧姆定律描述了电流、电压和之间的关系。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:58:15"
+        },
+        {
+          "questionId": "3649723099734016",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642398744985600",
+          "source": "【对口高考】河北省-冲刺模拟卷（九）-（电工技术基础与技能）（高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如图所示电路，</span><span style=\"font-family: 'Times New Roman';\">E=20V</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">R=4Ω</span><span style=\"font-family: 宋体;\">，</span><span style=\"font-family: 'Times New Roman';\">I=2A</span><span style=\"font-family: 宋体;\">，则端电压</span><span style=\"font-family: 'Times New Roman';\">U=</span><span class=\"qml-bk\" index=\"1\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 'Times New Roman';\">V</span><span style=\"font-family: 宋体;\">。</span></p><p style=\"text-align: left;\"><img  src=\"https://img.xkw.com/dksih/QBM/2024/12/6/3642398744985600/3649723099734016/STEM/2d4cc5a0f8514debb13b5e886803a403.png\" width=\"219\" height=\"76\" /></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">-12</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237968,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 56,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-16T22:03:34",
+          "updateDate": "2025-04-28T14:44:58",
+          "publishDate": "2025-04-28T14:44:58",
+          "qmlUpdateDate": "2024-12-16T22:03:34",
+          "stemText": "如图所示电路，E=20V，R=4Ω，I=2A，则端电压U=V。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:07:34"
+        },
+        {
+          "questionId": "3645992439062528",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642274617524224",
+          "source": "2.1闭合电路的欧姆定律（同步练习）-高一《电工技术基础》同步精品课堂 （高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电源电动势是2 V，内电阻是0.1Ω，当外电路断路时，电路中的电流和端电压分别是</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">2</span><span style=\"font-family: 'Times New Roman';\"> V</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><math latex=\"$I=\\frac{E}{R+r}\\newline R\\rightarrow \\infty \\newline I=0\\newline$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac><mspace linebreak=\"newline\"></mspace><mi>R</mi><mo>→</mo><mo>∞</mo><mspace linebreak=\"newline\"></mspace><mi>I</mi><mo>=</mo><mn>0</mn><mspace linebreak=\"newline\"></mspace></math></p><p style=\"\"><span>U=E-Ir=E=2V</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 56,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T15:33:31",
+          "updateDate": "2026-04-20T04:09:07",
+          "publishDate": "2025-02-11T10:25:24",
+          "qmlUpdateDate": "2025-02-11T09:42:35",
+          "stemText": "电源电动势是2 V，内电阻是0.1Ω，当外电路断路时，电路中的电流和端电压分别是。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:45:57"
+        },
+        {
+          "questionId": "3667466077372416",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3667238486024192",
+          "source": "专题二  简单直流电路",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">两个电阻</span><math latex=\"$R_{1}$\"><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow></math><span style=\"font-family: 宋体;\">和</span><math latex=\"$R_{2}$\"><mrow><msub><mi>R</mi><mn>2</mn></msub></mrow></math><span style=\"font-family: 宋体;\">，已知</span><math latex=\"$R_{1}\\colon R_{2}=1\\colon 2$\"><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>:</mo><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>:</mo><mn>2</mn></mrow></math><span style=\"font-family: 宋体;\">。若它们在电路中并联，则两电阻上的电压比</span><math latex=\"$U_{1}\\colon U_{2}=$\"><mrow><msub><mi>U</mi><mn>1</mn></msub><mo>:</mo><msub><mi>U</mi><mn>2</mn></msub><mo>=</mo></mrow></math><span class=\"qml-bk\" index=\"1\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">；两电阻上的电流比</span><math latex=\"$I_{1}\\colon I_{2}=$\"><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>:</mo><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo></mrow></math><span class=\"qml-bk\" index=\"2\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">；它们消耗的功率比</span><math latex=\"$P_{1}\\colon P_{2}=$\"><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>:</mo><msub><mi>P</mi><mn>2</mn></msub><mo>=</mo></mrow></math><span class=\"qml-bk\" index=\"3\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">1</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">1</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">1</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">∶</span><span style=\"font-family: 'Times New Roman';\">1</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><span style=\"font-family: 宋体;\">并联电路中电压相等。</span></p><p style=\"\"><math latex=\"$I=\\frac{U}{R}\\newline I_{1}\\colon I_{2}=\\frac{U}{R_{1}}\\colon \\frac{U}{R_{2}}=\\frac{R_{2}}{R_{1}}=2\\colon 1$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac><mspace linebreak=\"newline\"></mspace><msub><mi>I</mi><mn>1</mn></msub><mo>:</mo><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mi>U</mi><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>:</mo><mfrac><mi>U</mi><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>R</mi><mn>2</mn></msub><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>=</mo><mn>2</mn><mo>:</mo><mn>1</mn></math></p><p style=\"\"><math latex=\"$P=\\frac{U^{2}}{R}\\newline P_{1}\\colon P_{2}=\\frac{U^{2}}{R_{1}}\\colon \\frac{U^{2}}{R_{2}}=\\frac{R_{2}}{R_{1}}=2\\colon 1$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>=</mo><mfrac><msup><mi>U</mi><mn>2</mn></msup><mi>R</mi></mfrac><mspace linebreak=\"newline\"></mspace><msub><mi>P</mi><mn>1</mn></msub><mo>:</mo><msub><mi>P</mi><mn>2</mn></msub><mo>=</mo><mfrac><msup><mi>U</mi><mn>2</mn></msup><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>:</mo><mfrac><msup><mi>U</mi><mn>2</mn></msup><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>R</mi><mn>2</mn></msub><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>=</mo><mn>2</mn><mo>:</mo><mn>1</mn></math></p></div></div>",
+          "catalogIds": [
+            237980,
+            237910,
+            281144
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87657,
+            87678,
+            87687
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 74,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-10T23:41:45",
+          "updateDate": "2026-04-20T05:00:00",
+          "publishDate": "2025-02-20T15:37:27",
+          "qmlUpdateDate": "2025-02-19T23:56:41",
+          "stemText": "两个电阻R1和R2，已知R1:R2=1:2。若它们在电路中并联，则两电阻上的电压比U1:U2=；两电阻上的电流比I1:I2=；它们消耗的功率比P1:P2=。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:43:19"
+        },
+        {
+          "questionId": "3644764324651008",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642274813779968",
+          "source": "专题一 认识电路（专项练习）-河北省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">当电流为</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">安时，通过一个</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">欧姆的电阻时，电压为</span><span class=\"qml-bk\" index=\"1\" size=\"11\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　　</span><span style=\"font-family: 宋体;\">伏特。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">20</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律，电压等于电流乘以电阻，所以电压为</span><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: 宋体;\">安乘以</span><span style=\"font-family: 'Times New Roman';\">10</span><span style=\"font-family: 宋体;\">欧姆，即</span><span style=\"font-family: 'Times New Roman';\">20</span><span style=\"font-family: 宋体;\">伏特。</span></p></div></div>",
+          "catalogIds": [
+            237968,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 66,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-09T21:54:55",
+          "updateDate": "2026-04-20T04:06:34",
+          "publishDate": "2025-04-25T22:48:02",
+          "qmlUpdateDate": "2024-12-09T21:54:55",
+          "stemText": "当电流为2安时，通过一个10欧姆的电阻时，电压为伏特。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:40:11"
+        },
+        {
+          "questionId": "3643065086607360",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3641713009516544",
+          "source": "2.1 电动势 闭合电路的欧姆定律（同步练习）《电工技术基础与技能》同步精品课堂（高教版·第3版）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电路中的电动势E为12V，总电阻R为4Ω。根据欧姆定律，电路中的总电流I等于</span><span class=\"qml-bk\" index=\"1\" size=\"10\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">I = E/R = 12V / 4Ω = 3A。</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据欧姆定律，电路中的总电流等于电动势E除以总电阻R。</span></p></div></div>",
+          "catalogIds": [
+            237968
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 30,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T12:17:48",
+          "updateDate": "2026-04-20T04:01:07",
+          "publishDate": "2025-02-16T16:52:13",
+          "qmlUpdateDate": "2024-12-07T12:17:48",
+          "stemText": "电路中的电动势E为12V，总电阻R为4Ω。根据欧姆定律，电路中的总电流I等于。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:30:58"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

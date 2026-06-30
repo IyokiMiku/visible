@@ -1,0 +1,25 @@
+{
+  "type": "kaogang_100",
+  "display_name": "考纲百套卷",
+  "plan_base": "syllabus",
+  "need_mapping": true,
+  "need_mesh": true,
+  "need_split": false,
+  "pull_multiplier": 1,
+  "name_template": "第{vol}卷 {paper_name} {paper_subtype}《{course}》{province}（{exam_type_name}）{exam_category} 考纲百套卷（{variant}）",
+  "template_docx": "templates/template.docx",
+  "spec_md": "编写规范.md",
+  "question_types_dir": "题型定义",
+  "default_volume_config": {
+    "by_type": {
+      "单项选择题": { "count": 20, "score_per": 2 },
+      "填空题": { "count": 10, "score_per": 2 },
+      "判断题": { "count": 10, "score_per": 1 },
+      "简答题": { "count": 4, "score_per": 5 },
+      "综合题": { "count": 2, "score_per": 10 }
+    },
+    "difficulty": { "easy": 80, "medium": 10, "hard": 10 },
+    "narrow_point": { "enabled": true, "merge_threshold": 80 }
+  },
+  "_note": "name_template 占位为示意，最终命名以 templates/ 与 编写规范.md 为准。"
+}

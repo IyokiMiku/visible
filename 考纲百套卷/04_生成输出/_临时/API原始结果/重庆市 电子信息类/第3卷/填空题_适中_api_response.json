@@ -1,0 +1,555 @@
+{
+  "试卷": "第3卷",
+  "题型": "填空题",
+  "难度": "适中",
+  "courseId": 10002,
+  "kpointIds数量": 1,
+  "typeIds": [
+    1000203
+  ],
+  "计划补题数": 1,
+  "请求payload": {
+    "pageIndex": 1,
+    "pageSize": 8,
+    "fields": [
+      "question_id",
+      "course_id",
+      "type_id",
+      "top_type_id",
+      "type_feature_ids",
+      "paper_id",
+      "source",
+      "year",
+      "difficulty",
+      "stem",
+      "answer",
+      "explanation",
+      "more_explanations",
+      "catalog_ids",
+      "source_catalog_ids",
+      "kpointIds",
+      "primary_k_point_ids",
+      "tag_ids",
+      "status",
+      "application_id",
+      "source_id",
+      "paper_type_id",
+      "paper_tag_ids",
+      "media",
+      "sub_course",
+      "option_k_points",
+      "kpoint_abilities",
+      "trick_ids",
+      "version_ids",
+      "text_book_ids",
+      "merge_to",
+      "fresh_score",
+      "sub_question_props",
+      "en_words",
+      "multi_explanation",
+      "create_date",
+      "update_date",
+      "publish_date",
+      "qml_update_date",
+      "sync_date",
+      "variant_questions",
+      "stem_text",
+      "bank_ids",
+      "operation_tags"
+    ],
+    "courseId": 10002,
+    "kpointIds": [
+      87681
+    ],
+    "typeIds": [
+      1000203
+    ],
+    "difficultyLowLimit": 0.5,
+    "difficultyUpLimit": 0.79,
+    "structFormat": "HTML",
+    "formatEnum": "LATEX"
+  },
+  "API原始响应": {
+    "valid": true,
+    "result": {
+      "totalCount": 13,
+      "totalPages": 2,
+      "list": [
+        {
+          "questionId": "3667741180116992",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3667241117597696",
+          "source": "专题五  磁场与电磁感应",
+          "year": 2025,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">有一个匝数为</span><span style=\"font-family: 'Times New Roman';\">1000</span><span style=\"font-family: 宋体;\">匝的线圈，在</span><span style=\"font-family: 'Times New Roman';\">0.4s</span><span style=\"font-family: 宋体;\">内穿过它的磁通从</span><span style=\"font-family: 'Times New Roman';\">0.02Wb</span><span style=\"font-family: 宋体;\">增加到</span><span style=\"font-family: 'Times New Roman';\">0.04Wb</span><span style=\"font-family: 宋体;\">，线圈中的感应电动势为</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。如果线圈的电阻是</span><span style=\"font-family: 'Times New Roman';\">10Ω</span><span style=\"font-family: 宋体;\">，当它与一个电阻为</span><span style=\"font-family: 'Times New Roman';\">990Ω</span><span style=\"font-family: 宋体;\">的电热器组成闭合回路时，通过电热器的电流为</span><span class=\"qml-bk\" index=\"2\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">50V</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">0.05A</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><math latex=\"$E=n\\frac{\\Updelta \\phi }{\\Updelta t}=1000\\times \\frac{0.04-0.02}{0.4}=50V\\newline I=\\frac{E}{R+r}=\\frac{50}{990+10}=0.05A$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>E</mi><mo>=</mo><mi>n</mi><mfrac><mrow><mo>Δ</mo><mi>ϕ</mi></mrow><mrow><mo>Δ</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mn>1000</mn><mo>×</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>04</mn><mo>-</mo><mn>0</mn><mo>.</mo><mn>02</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>4</mn></mrow></mfrac><mo>=</mo><mn>50</mn><mi>V</mi><mspace linebreak=\"newline\"></mspace><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mn>50</mn><mrow><mn>990</mn><mo>+</mo><mn>10</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>05</mn><mi>A</mi></math></p></div></div>",
+          "catalogIds": [
+            238034
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681,
+            87749
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "jpcenter",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "41",
+            "4901",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 38,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2025-01-11T09:01:27",
+          "updateDate": "2026-04-20T05:00:13",
+          "publishDate": "2025-02-21T14:00:57",
+          "qmlUpdateDate": "2025-02-21T11:00:37",
+          "stemText": "有一个匝数为1000匝的线圈，在0.4s内穿过它的磁通从0.02Wb增加到0.04Wb，线圈中的感应电动势为。如果线圈的电阻是10Ω，当它与一个电阻为990Ω的电热器组成闭合回路时，通过电热器的电流为。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T01:43:42"
+        },
+        {
+          "questionId": "3650830749794304",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642399115493376",
+          "source": "专题二 简单直流电路（专项练习）-四川省职教高考《电工技术基础与技能》（高教版）专题复习讲练测",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源向负载输出的功率等于负载上的</span><span class=\"qml-bk\" index=\"1\" size=\"8\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　</span><span style=\"font-family: 宋体;\">乘以电流。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">电压</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">功率等于电压与电流的乘积，即</span><span style=\"font-family: 'Times New Roman';\">P=VI</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237975
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87659,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 65,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-18T11:37:05",
+          "updateDate": "2026-04-20T04:21:44",
+          "publishDate": "2025-05-11T09:45:40",
+          "qmlUpdateDate": "2024-12-18T11:37:06",
+          "stemText": "电源向负载输出的功率等于负载上的乘以电流。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:14:17"
+        },
+        {
+          "questionId": "3643072828448768",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3641712986996736",
+          "source": "1.7 电路和欧姆定律（同步练习）-高一《电工基础》同步精品课堂（高教版·第2版）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电源电动势</span><span style=\"font-family: 'Times New Roman';\">E=4</span><span style=\"font-family: 宋体;\">．</span><span style=\"font-family: 'Times New Roman';\">5V</span><span style=\"font-family: 宋体;\">，内阻</span><span style=\"font-family: 'Times New Roman';\">r=0</span><span style=\"font-family: 宋体;\">．</span><span style=\"font-family: 'Times New Roman';\">5Ω</span><span style=\"font-family: 宋体;\">，负载电阻</span><span style=\"font-family: 'Times New Roman';\">R=4Ω</span><span style=\"font-family: 宋体;\">，则电路中电流</span><span style=\"font-family: 'Times New Roman';\">I=</span><span class=\"qml-bk\" index=\"1\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 'Times New Roman';\">A</span><span style=\"font-family: 宋体;\">，路端电压</span><span style=\"font-family: 'Times New Roman';\">U=</span><span class=\"qml-bk\" index=\"2\" size=\"9\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　　　</span><span style=\"font-family: 'Times New Roman';\">V</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">1</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">4</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237973,
+            237906
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003
+          ],
+          "textBookIds": [
+            6137,
+            6136
+          ],
+          "mergeTo": "",
+          "freshScore": 34,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T12:33:33",
+          "updateDate": "2026-04-20T04:01:09",
+          "publishDate": "2025-02-21T09:34:46",
+          "qmlUpdateDate": "2024-12-07T12:33:33",
+          "stemText": "电源电动势E=4．5V，内阻r=0．5Ω，负载电阻R=4Ω，则电路中电流I=A，路端电压U=V。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:31:01"
+        },
+        {
+          "questionId": "3646186895908864",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642274747219968",
+          "source": "8.1 纯电阻电路（同步练习）《电工技术基础与技能》同步精品课堂（高教版·第3版）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">如果一个电阻为</span><span class=\"qml-bk\" index=\"1\" size=\"3\" type=\"underline\" style=\"text-decoration:underline\" >　　　</span><span style=\"font-family: 宋体;\">欧姆的电路通过</span><span class=\"qml-bk\" index=\"2\" size=\"3\" type=\"underline\" style=\"text-decoration:underline\" >　　　</span><span style=\"font-family: 宋体;\">伏特的电压，产生</span><span class=\"qml-bk\" index=\"3\" size=\"3\" type=\"underline\" style=\"text-decoration:underline\" >　　　</span><span style=\"font-family: 宋体;\">安培的电流，则该电路的功率为</span><span class=\"qml-bk\" index=\"4\" size=\"3\" type=\"underline\" style=\"text-decoration:underline\" >　　　</span><span style=\"font-family: 宋体;\">瓦特。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">50</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">10</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">0.2</span></span>&nbsp;&nbsp;&nbsp;&nbsp;④ <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">2</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">根据功率公式</span><span style=\"font-family: 'Times New Roman';\"> P = V * I</span><span style=\"font-family: 宋体;\">，将给定的电压和电流代入即可得到功率值。</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87657,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 42,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T22:09:08",
+          "updateDate": "2026-04-20T04:09:52",
+          "publishDate": "2025-04-26T10:28:07",
+          "qmlUpdateDate": "2024-12-11T22:09:09",
+          "stemText": "如果一个电阻为欧姆的电路通过伏特的电压，产生安培的电流，则该电路的功率为瓦特。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:47:39"
+        },
+        {
+          "questionId": "3645992439062528",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642274617524224",
+          "source": "2.1闭合电路的欧姆定律（同步练习）-高一《电工技术基础》同步精品课堂 （高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">电源电动势是2 V，内电阻是0.1Ω，当外电路断路时，电路中的电流和端电压分别是</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an\"><span style=\"font-family: 宋体;\">2</span><span style=\"font-family: 'Times New Roman';\"> V</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"\"><math latex=\"$I=\\frac{E}{R+r}\\newline R\\rightarrow \\infty \\newline I=0\\newline$\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>E</mi><mrow><mi>R</mi><mo>+</mo><mi>r</mi></mrow></mfrac><mspace linebreak=\"newline\"></mspace><mi>R</mi><mo>→</mo><mo>∞</mo><mspace linebreak=\"newline\"></mspace><mi>I</mi><mo>=</mo><mn>0</mn><mspace linebreak=\"newline\"></mspace></math></p><p style=\"\"><span>U=E-Ir=E=2V</span></p></div></div>",
+          "catalogIds": [
+            237973,
+            237906,
+            281143
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87678,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002,
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6137,
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 56,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-11T15:33:31",
+          "updateDate": "2026-04-20T04:09:07",
+          "publishDate": "2025-02-11T10:25:24",
+          "qmlUpdateDate": "2025-02-11T09:42:35",
+          "stemText": "电源电动势是2 V，内电阻是0.1Ω，当外电路断路时，电路中的电流和端电压分别是。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:45:57"
+        },
+        {
+          "questionId": "3649723099856896",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3642398744985600",
+          "source": "【对口高考】河北省-冲刺模拟卷（九）-（电工技术基础与技能）（高教版）",
+          "year": 2023,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">有一额定值为“</span><span style=\"font-family: 'Times New Roman';\">5W/500Ω”</span><span style=\"font-family: 宋体;\">的绕线电阻，其额定电流</span><span style=\"font-family: 'Times New Roman';\">I=</span><span class=\"qml-bk\" index=\"1\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 'Times New Roman';\">A</span><span style=\"font-family: 宋体;\">，在使用时电压不得超过</span><span class=\"qml-bk\" index=\"2\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">。</span></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 宋体;\">0.1</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 宋体;\">50</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"></div>",
+          "catalogIds": [
+            237907,
+            281141
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 37,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1003,
+            1553
+          ],
+          "textBookIds": [
+            6136,
+            7125
+          ],
+          "mergeTo": "",
+          "freshScore": 70,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-16T22:03:34",
+          "updateDate": "2025-04-28T14:44:50",
+          "publishDate": "2025-04-28T14:44:50",
+          "qmlUpdateDate": "2024-12-16T22:03:34",
+          "stemText": "有一额定值为“5W/500Ω”的绕线电阻，其额定电流I=A，在使用时电压不得超过。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-29T00:07:34"
+        },
+        {
+          "questionId": "3643065086509056",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3641713009516544",
+          "source": "2.1 电动势 闭合电路的欧姆定律（同步练习）《电工技术基础与技能》同步精品课堂（高教版·第3版）",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">电动势为24V的电源，内阻为2Ω，若需保证电源输出的电流不超过5A，外电阻最小应是多少（<span style=\"font-family: 'Times New Roman'\" qml-space-size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>）</span></p><div class=\" qml-og\"><table class=\"qml-og\" style=\"width:100%\"><tr><td>A.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">2.8Ω</span></span></td><td>B.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">4.8Ω</span></span></td><td>C.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">5.8Ω</span></span></td><td colspan=\"1\">D.&nbsp;<span class=\"qml-op\"><span style=\"font-family: 宋体;\">2Ω</span></span></td></tr></table></div></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\"><span class=\"qml-an qml-isop\">B</span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">要求电流I ≤ 5A，E = I(R + r)，24 = 5(R + 2)，解得R = 24/5 - 2 = 4.8Ω。</span></p></div></div>",
+          "catalogIds": [
+            237973
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 1,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 21,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-07T12:17:48",
+          "updateDate": "2026-04-20T04:01:07",
+          "publishDate": "2025-02-15T20:29:57",
+          "qmlUpdateDate": "2024-12-07T12:17:48",
+          "stemText": "电动势为24V的电源，内阻为2Ω，若需保证电源输出的电流不超过5A，外电阻最小应是多少（   ）2.8Ω4.8Ω5.8Ω2Ω",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:30:57"
+        },
+        {
+          "questionId": "3644427209662464",
+          "courseId": 10002,
+          "typeId": "1000203",
+          "topTypeId": "1000203",
+          "typeFeatureIds": [],
+          "paperId": "3641755382104064",
+          "source": "《电工技术基础与技能》综合练习（七）45分钟专题训练（原卷版+)",
+          "year": 2024,
+          "difficulty": 0.65,
+          "stem": "<div class=\"qml-stem\"><p style=\"text-align: left;\"><span style=\"font-family: 宋体;\">某一闭合电路，电源的端电压与电流的变化图线如图所示，则电源的电动势是</span><span class=\"qml-bk\" index=\"1\" size=\"6\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　</span><span style=\"font-family: 宋体;\">伏，电流的内阻是</span><span class=\"qml-bk\" index=\"2\" size=\"4\" type=\"underline\" style=\"text-decoration:underline\" >　　　　</span><span style=\"font-family: 宋体;\">欧。若接某一负载要使电流输出最大功率，则负载的电阻值是</span><span class=\"qml-bk\" index=\"3\" size=\"5\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　</span><span style=\"font-family: 宋体;\">瓦，此时电源的效率是</span><span class=\"qml-bk\" index=\"4\" size=\"7\" type=\"underline\" style=\"text-decoration:underline\" >　　　　　　　</span><span style=\"font-family: 'Times New Roman';\">%</span><span style=\"font-family: 宋体;\">。</span></p><p style=\"text-align: left;\"><img  src=\"https://img.xkw.com/dksih/QBM/2024/12/5/3641755382104064/3644427209662464/STEM/90ec9402dec947f3bff86368ce708168.png\" width=\"196\" height=\"125\" /></p></div>",
+          "answer": "<div class=\"qml-answer\"><span class=\"qml-an-sq\">① <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">4V</span><span style=\"font-family: 宋体;\">，</span></span>&nbsp;&nbsp;&nbsp;&nbsp;② <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">2</span><span style=\"font-family: Symbol;\">&#xF057;</span></span>&nbsp;&nbsp;&nbsp;&nbsp;③ <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">2W</span></span>&nbsp;&nbsp;&nbsp;&nbsp;④ <span class=\"qml-an\"><span style=\"font-family: 'Times New Roman';\">50%</span></span></span></div>",
+          "explanation": "<div class=\"qml-explanation\"><div class=\"qml-seg\" seg-name=\"详解\">【详解】<p style=\"text-align:justify;word-break:break-word;\"><span style=\"font-family: 宋体;\">看图可知当</span><span style=\"font-family: 'Times New Roman';\">I=0</span><span style=\"font-family: 宋体;\">时，相当于电路断路，此时电压就等于电动势；书中</span><span style=\"font-family: 'Times New Roman';\">U-I</span><span style=\"font-family: 宋体;\">图的斜率为内阻</span><span style=\"font-family: 'Times New Roman';\">.</span><span style=\"font-family: 宋体;\">而此图是</span><span style=\"font-family: 'Times New Roman';\">I-U</span><span style=\"font-family: 宋体;\">图，故内阻应是斜率绝对值的倒数</span><math latex=\"$\\mathbf{P}=\\mathbf{I}^{\\mathbf{2}}\\mathbf{R}=\\frac{\\mathrm{E}^{2}}{\\mathrm{（}\\mathrm{R}+\\mathrm{r}\\mathrm{）}^{2}}\\mathrm{R}$\"><mrow><mstyle mathvariant=\"bold\" mathsize=\"normal\"><mi>P</mi></mstyle><mo>=</mo><msup><mstyle mathvariant=\"bold\" mathsize=\"normal\"><mi>I</mi></mstyle><mstyle mathvariant=\"bold\" mathsize=\"normal\"><mn>2</mn></mstyle></msup><mstyle mathvariant=\"bold\" mathsize=\"normal\"><mi>R</mi></mstyle><mo>=</mo><mfrac><mrow><msup><mtext>E</mtext><mtext>2</mtext></msup></mrow><mrow><mi mathvariant=\"normal\">（</mi><mtext>R</mtext><mo>+</mo><mtext>r</mtext><msup><mi mathvariant=\"normal\">）</mi><mtext>2</mtext></msup></mrow></mfrac><mtext>R</mtext></mrow></math><span style=\"font-family: 'Times New Roman';\"> </span><span style=\"font-family: 宋体;\">，当</span><span style=\"font-family: 'Times New Roman';\">R=r</span><span style=\"font-family: 宋体;\">时输出最大，此时</span><span style=\"font-family: 'Times New Roman';\">R=r=2</span><span style=\"font-family: 宋体;\">Ω，由于内外阻相等，故效率为</span><span style=\"font-family: 'Times New Roman';\">50%</span><span style=\"font-family: 宋体;\">。</span></p></div></div>",
+          "catalogIds": [
+            237974
+          ],
+          "sourceCatalogIds": [],
+          "kpointIds": [
+            87680,
+            87681
+          ],
+          "primaryKPointIds": [],
+          "tagIds": [],
+          "status": 1,
+          "applicationId": "zxxk",
+          "sourceId": "",
+          "paperTypeId": 6,
+          "paperTagIds": [
+            "42",
+            "4902",
+            "63"
+          ],
+          "media": 0,
+          "subCourse": 0,
+          "trickIds": [],
+          "versionIds": [
+            1002
+          ],
+          "textBookIds": [
+            6137
+          ],
+          "mergeTo": "",
+          "freshScore": 16,
+          "subQuestionProps": [],
+          "multiExplanation": 0,
+          "createDate": "2024-12-09T10:29:03",
+          "updateDate": "2026-04-20T04:05:25",
+          "publishDate": "2025-04-25T07:46:21",
+          "qmlUpdateDate": "2024-12-09T10:29:03",
+          "stemText": "某一闭合电路，电源的端电压与电流的变化图线如图所示，则电源的电动势是伏，电流的内阻是欧。若接某一负载要使电流输出最大功率，则负载的电阻值是瓦，此时电源的效率是%。",
+          "operationTags": [],
+          "bankIds": [
+            15
+          ],
+          "variantQuestions": {},
+          "syncDate": "2026-06-28T23:37:40"
+        }
+      ]
+    },
+    "traceId": null,
+    "error": null
+  }
+}

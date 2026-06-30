@@ -1,0 +1,14 @@
+# 后端核心依赖
+fastapi
+uvicorn[standard]
+pydantic
+python-docx
+openpyxl
+openai
+requests
+python-multipart
+
+# OCR（教材目录扫描，视现状选用其一/多个；如不需要可注释）
+pymupdf
+pytesseract
+# rapidocr-onnxruntime  # 体积较大，按需启用

@@ -1,0 +1,30 @@
+{
+  "type": "shuangxi",
+  "display_name": "考点双析卷",
+  "plan_base": "syllabus",
+  "need_mapping": true,
+  "need_mesh": false,
+  "need_split": true,
+  "pull_multiplier": 2,
+  "name_template": "第{vol}卷 {paper_name} {suffix}（{variant}）",
+  "template_docx": "templates/template.docx",
+  "spec_md": "编写规范.md",
+  "question_types_dir": "题型定义",
+  "split": {
+    "even": "教师讲解卷",
+    "odd": "学生练习卷",
+    "_note": "已翻转：偶数题→教师讲解卷，奇数题→学生练习卷。"
+  },
+  "default_volume_config": {
+    "by_type": {
+      "单项选择题": { "count": 20, "score_per": 2 },
+      "填空题": { "count": 10, "score_per": 2 },
+      "判断题": { "count": 10, "score_per": 1 },
+      "简答题": { "count": 4, "score_per": 5 },
+      "综合题": { "count": 2, "score_per": 10 }
+    },
+    "difficulty": { "easy": 80, "medium": 10, "hard": 10 },
+    "narrow_point": { "enabled": true, "merge_threshold": 80 }
+  },
+  "_note": "拉题 2× 后奇偶拆分为教师/学生 4 份；name_template 占位为示意，suffix 取教师讲解卷/学生练习卷。"
+}

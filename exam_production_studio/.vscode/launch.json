@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "调试后端 (uvicorn)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["main:app", "--app-dir", "backend", "--port", "8000"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "windows": { "python": "${workspaceFolder}/.venv/Scripts/python.exe" },
+      "linux": { "python": "${workspaceFolder}/.venv/bin/python" },
+      "osx": { "python": "${workspaceFolder}/.venv/bin/python" },
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "调试后端 (热重载)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["main:app", "--app-dir", "backend", "--port", "8000", "--reload"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "windows": { "python": "${workspaceFolder}/.venv/Scripts/python.exe" },
+      "linux": { "python": "${workspaceFolder}/.venv/bin/python" },
+      "osx": { "python": "${workspaceFolder}/.venv/bin/python" },
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

@@ -1,0 +1,4131 @@
+{
+  "paper": {
+    "paper_no": 2,
+    "paper_label": "第2卷",
+    "paper_type": "考点训练卷",
+    "module": "电工技术基础与技能",
+    "topic": "电路基本概念与定律",
+    "point_name": "电流、电压与电位"
+  },
+  "loaded_paper": {
+    "path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+    "paper_label": "第2卷",
+    "title": "2026年6月25日电工技术基础与技能作业",
+    "questions": [
+      {
+        "question_no": 1,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "一个220V、100W的灯泡，其额定电流约为（   ）\n[图片]",
+        "options": [
+          "A. 0.45A",
+          "B. 2.2A",
+          "C. 5A",
+          "D. 0.1A"
+        ],
+        "answer": "A",
+        "analysis": "由P=UI得I=P/U=100W/220V≈0.45A，故选A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "failed",
+        "issues": [
+          "选项长度失衡"
+        ],
+        "raw_text": "6．一个220V、100W的灯泡，其额定电流约为（   ）\n[图片]\nA．0.45A B．2.2A C．5A D．0.1A\n【答案】A\n【详解】由P=UI得I=P/U=100W/220V≈0.45A，故选A。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "stem_paragraph_indices": [
+          31,
+          32,
+          33
+        ],
+        "answer_paragraph_indices": [
+          34
+        ],
+        "analysis_paragraph_indices": [
+          35
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 32,
+              "rel_id": "rId6",
+              "target_ref": "/word/media/image2.png",
+              "sha256": "fdeab71c42b275479278326aaac0633c24c02a3f31add0a14b9665d1450b9e63",
+              "byte_size": 3677947,
+              "width_emu": 1381125,
+              "height_emu": 1200150
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 1,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "option_length_imbalance",
+            "name": "选项长度失衡",
+            "severity": "failed",
+            "message": "第1题选项最长/最短字数比为 2.5，超过 2.0；A(5字)，B(4字)，C(2字)，D(4字)。"
+          }
+        ],
+        "needs_manual_review": true
+      },
+      {
+        "question_no": 2,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "在电源电压一定且电源内阻较小的情况下，电路处于哪种状态时电流最大（   ）",
+        "options": [
+          "A. 额定工作状态",
+          "B. 短路工作状态",
+          "C. 空载工作状态",
+          "D. 轻载工作状态"
+        ],
+        "answer": "B",
+        "analysis": "电路短路时，外电路电阻接近于零，回路总电阻很小，根据欧姆定律可知电流会急剧增大。空载时外电路断开，电流接近零；额定和轻载状态下电流均受负载限制，因此选B。",
+        "knowledge_points": [
+          "电流与电路状态",
+          "短路状态",
+          "欧姆定律"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "2．在 状态下，电路的电流最大（   ）\nA．额定工作状态\nB．短路状态，即空载状态\nC．短路状态\nD．负载获得最大功率时，即阻抗匹配状态\n【答案】B\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "stem_paragraph_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "answer_paragraph_indices": [
+          16
+        ],
+        "analysis_paragraph_indices": [
+          17
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 2,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 3,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "一只额定功率为1 W、电阻值为10 kΩ的电阻，允许通过的最大电流值是（   ）",
+        "options": [
+          "A. 100 mA",
+          "B. 10 mA",
+          "C. 1 mA",
+          "D. 0.1 mA"
+        ],
+        "answer": "B",
+        "analysis": "电阻允许通过的最大电流应由额定功率决定，根据功率公式P=I²R，可得I=√(P/R)。将R=10 kΩ=10000 Ω、P=1 W代入，I=√(1/10000)=0.01 A=10 mA，因此选B。",
+        "knowledge_points": [
+          "电流、电压与电位",
+          "电功率公式",
+          "单位换算"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "3．一只额定功率是1W的电阻，电阻值为10kΩ，则允许通过的最大电流值是（   ）\nA．100A B．0.1A C．0.01A D．1A\n【答案】C\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "stem_paragraph_indices": [
+          18,
+          19
+        ],
+        "answer_paragraph_indices": [
+          20
+        ],
+        "analysis_paragraph_indices": [
+          21
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 3,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 4,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "在闭合电路中，电动势主要存在于（   ）",
+        "options": [
+          "A. 负载内部",
+          "B. 导线内部",
+          "C. 电源内部",
+          "D. 开关内部"
+        ],
+        "answer": "C",
+        "analysis": "电动势表示电源内部非静电力把其他形式的能量转化为电能的本领，作用部位在电源内部。外电路中负载两端体现的是电压降，不是电动势，因此选 C。",
+        "knowledge_points": [
+          "电动势的概念",
+          "电压与电源内部作用"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "11．电动势存在部位是（   ）\nA．电源内部 B．外电路 C．外电阻 D．任何部位\n【答案】A\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          56,
+          57,
+          58,
+          59
+        ],
+        "stem_paragraph_indices": [
+          56,
+          57
+        ],
+        "answer_paragraph_indices": [
+          58
+        ],
+        "analysis_paragraph_indices": [
+          59
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 4,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 5,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "电路如图所示，已知，则流过的电流是 A（   ）\n[图片]\n[图片]",
+        "options": [
+          "A. 0.5",
+          "B. 0.33",
+          "C. 0.25",
+          "D. 0"
+        ],
+        "answer": "A",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "failed",
+        "issues": [
+          "解析过短",
+          "选项长度失衡"
+        ],
+        "raw_text": "15．电路如图所示，已知，则流过的电流是 A（   ）\n[图片]\n[图片]\nA．0.5 B．0.33 C．0.25 D．0\n【答案】A\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "stem_paragraph_indices": [
+          77,
+          78,
+          79
+        ],
+        "answer_paragraph_indices": [
+          80
+        ],
+        "analysis_paragraph_indices": [
+          81
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId7",
+              "target_ref": "/word/media/image3.wmf",
+              "sha256": "cc22e9d80727c28b47a26ccef983377d6841c4d3295a8ed59c5735d19a720cb8",
+              "byte_size": 1978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId9",
+              "target_ref": "/word/media/image4.wmf",
+              "sha256": "d77f565217f8da854abb8627bc278412255598b4135fc0751ebf00d007276429",
+              "byte_size": 740,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId8",
+              "target_ref": "/word/embeddings/oleObject1.bin",
+              "sha256": "9ef28b19233d8b4f1cbbcf7035f88ea8bdb8186969aae4328ac1d0ed6826fc39",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId10",
+              "target_ref": "/word/embeddings/oleObject2.bin",
+              "sha256": "c0fe702d63015d73d3bffda97df9786c7536d045d6facf59df2e00c39da744f3",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId7",
+              "target_ref": "/word/media/image3.wmf",
+              "sha256": "cc22e9d80727c28b47a26ccef983377d6841c4d3295a8ed59c5735d19a720cb8",
+              "byte_size": 1978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId9",
+              "target_ref": "/word/media/image4.wmf",
+              "sha256": "d77f565217f8da854abb8627bc278412255598b4135fc0751ebf00d007276429",
+              "byte_size": 740,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId8",
+              "target_ref": "/word/embeddings/oleObject1.bin",
+              "sha256": "9ef28b19233d8b4f1cbbcf7035f88ea8bdb8186969aae4328ac1d0ed6826fc39",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId10",
+              "target_ref": "/word/embeddings/oleObject2.bin",
+              "sha256": "c0fe702d63015d73d3bffda97df9786c7536d045d6facf59df2e00c39da744f3",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 78,
+              "rel_id": "rId11",
+              "target_ref": "/word/media/image5.png",
+              "sha256": "691cb208d6b04cadd42526a26d489ccf640c4f09174e208d72b341b5cd954ab7",
+              "byte_size": 6113,
+              "width_emu": 1257300,
+              "height_emu": 990600
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 5,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "short_analysis",
+            "name": "解析过短",
+            "severity": "warning",
+            "message": "第5题解析不超过10字。"
+          },
+          {
+            "code": "option_length_imbalance",
+            "name": "选项长度失衡",
+            "severity": "failed",
+            "message": "第5题选项最长/最短字数比为 4.0，超过 2.0；A(3字)，B(4字)，C(4字)，D(1字)。"
+          }
+        ],
+        "needs_manual_review": true
+      },
+      {
+        "question_no": 6,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "在直流电路分析中，关于电流参考方向的说法正确的是（   ）",
+        "options": [
+          "A. 应按电源正极到负极选定",
+          "B. 应始终与实际方向保持一致",
+          "C. 可先任意假定再由结果判断",
+          "D. 确定后计算结果不允许为负"
+        ],
+        "answer": "C",
+        "analysis": "电流参考方向是分析电路时人为规定的方向，列写方程前可以任意假定。求解结果为正时，说明实际方向与参考方向相同；求解结果为负时，说明实际方向与参考方向相反，因此选C。",
+        "knowledge_points": [
+          "电流参考方向",
+          "实际方向与参考方向的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "12．在直流电路分析中，参考方向与实际方向的关系是（   ）\nA．参考方向必须与实际方向一致\nB．参考方向与实际方向无关\nC．参考方向可任意假定，用于列写方程，求解时可能为正、负或零\nD．参考方向一旦确定，不可更改\n【答案】C\n【详解】在直流电路分析中，参考方向可任意假定，用于列写方程。在求解过程中，如果计算结果为正，则表示实际方向与参考方向相同；如果为负，则表示实际方向与参考方向相反；如果为零，则表示该支路无电流。故选B",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66
+        ],
+        "stem_paragraph_indices": [
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        "answer_paragraph_indices": [
+          65
+        ],
+        "analysis_paragraph_indices": [
+          66
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 6,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 7,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "关于电动势的理解，以下哪项描述是正确的（   ）",
+        "options": [
+          "A. 电动势是电源内部的电势差",
+          "B. 电动势是电流通过导体时产生的电磁感应",
+          "C. 电动势是电源输出的电能",
+          "D. 电动势是电子在电路中移动时的势能变化"
+        ],
+        "answer": "A",
+        "analysis": "电动势指的是电源内部产生的电势差，是电源提供给电路的电能单位正电荷所受的力。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "9．关于电动势的理解，以下哪项描述是正确的（   ）\nA．电动势是电源内部的电势差\nB．电动势是电流通过导体时产生的电磁感应\nC．电动势是电源输出的电能\nD．电动势是电子在电路中移动时的势能变化\n【答案】A\n【详解】电动势指的是电源内部产生的电势差，是电源提供给电路的电能单位正电荷所受的力。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ],
+        "stem_paragraph_indices": [
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "answer_paragraph_indices": [
+          49
+        ],
+        "analysis_paragraph_indices": [
+          50
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 7,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 8,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "电流的形成是指（   ）",
+        "options": [
+          "A. 自由电子的定向移动",
+          "B. 正电荷的定向移动",
+          "C. 电荷的自由移动",
+          "D. 电荷的定向移动"
+        ],
+        "answer": "D",
+        "analysis": "电荷的定向移动形成电流，规定：正电荷的定向移动方向为电流的方向。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "13．电流的形成是指（   ）\nA．自由电子的定向移动 B．正电荷的定向移动\nC．电荷的自由移动 D．电荷的定向移动\n【答案】D\n【详解】电荷的定向移动形成电流，规定：正电荷的定向移动方向为电流的方向。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "stem_paragraph_indices": [
+          67,
+          68,
+          69
+        ],
+        "answer_paragraph_indices": [
+          70
+        ],
+        "analysis_paragraph_indices": [
+          71
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 8,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 9,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "若3 min内通过导体横截面的电荷量为1.8 C，则导体中的电流是（   ）",
+        "options": [
+          "A. 0.60 A",
+          "B. 0.10 A",
+          "C. 0.03 A",
+          "D. 0.01 A"
+        ],
+        "answer": "D",
+        "analysis": "电流大小等于单位时间内通过导体横截面的电荷量。3 min应先换算为180 s，再用1.8 C除以180 s，得到电流为0.01 A，因此选D。",
+        "knowledge_points": [
+          "电流的定义",
+          "电荷量与时间的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "14．若3min通过导体横截面的电荷量是1.8C，则导体中的电流是（   ）\nA．1A B．0.1 A C．0.6 A D．0.01A\n【答案】D\n【分析】原卷无答案\n【详解】",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          72,
+          73,
+          74,
+          75,
+          76
+        ],
+        "stem_paragraph_indices": [
+          72,
+          73
+        ],
+        "answer_paragraph_indices": [
+          74
+        ],
+        "analysis_paragraph_indices": [
+          75,
+          76
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 9,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 10,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "一个电池产生的电动势是（   ）",
+        "options": [
+          "A. 电压",
+          "B. 电流",
+          "C. 电阻",
+          "D. 功率"
+        ],
+        "answer": "A",
+        "analysis": "A.电动势是电源提供给电路的电压，所以答案是a。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "7．一个电池产生的电动势是（   ）\nA．电压 B．电流 C．电阻 D．功率\n【答案】A\n【详解】A.电动势是电源提供给电路的电压，所以答案是a。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          36,
+          37,
+          38,
+          39
+        ],
+        "stem_paragraph_indices": [
+          36,
+          37
+        ],
+        "answer_paragraph_indices": [
+          38
+        ],
+        "analysis_paragraph_indices": [
+          39
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 10,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 11,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "电位和电压相同之处是（    ）",
+        "options": [
+          "A. 定义相同",
+          "B. 方向一致",
+          "C. 单位相同",
+          "D. 都与参考点有关"
+        ],
+        "answer": "C",
+        "analysis": "电位是某点相对于参考点的电势高低，电压是两点之间的电位差，二者定义不同；电位与参考点选择有关，而两点间电压通常不随参考点改变。电位和电压的单位都用伏特，因此选C。",
+        "knowledge_points": [
+          "电位与电压的概念",
+          "电压和电位的关系",
+          "参考点"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "5．电位和电压相同之处是（    ）\nA．定义相同 B．方向一致 C．单位相同 D．都与参考点有关\n【答案】C\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          27,
+          28,
+          29,
+          30
+        ],
+        "stem_paragraph_indices": [
+          27,
+          28
+        ],
+        "answer_paragraph_indices": [
+          29
+        ],
+        "analysis_paragraph_indices": [
+          30
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 11,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 12,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "关于电压与电位，下列说法不正确的是（    ）",
+        "options": [
+          "A. 两点间电压不随参考点改变",
+          "B. 某点电位会随参考点改变",
+          "C. 电压大小等于两点电位差",
+          "D. 某点电位与参考点选取无关"
+        ],
+        "answer": "D",
+        "analysis": "电位是相对于参考点的量，参考点改变时，各点电位数值可能随之改变；而两点间电压是电位差，与参考点选取无关。因此D把电位说成与参考点无关，是不正确的。",
+        "knowledge_points": [
+          "电压与电位的关系",
+          "参考点对电位的影响"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "1．关于电压与电位，下列说法不正确的是（    ）\nA．两点间的电压与参考点的选取无关\nB．电路中某点的电位与参考点的选择有关\nC．电压是两点间电位差\nD．某点电压是从该点出发移送单位电荷量到参考点电场力所做的功\n【答案】D\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "stem_paragraph_indices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "answer_paragraph_indices": [
+          9
+        ],
+        "analysis_paragraph_indices": [
+          10
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 12,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 13,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "某电路以接地点为零电位，测得甲点电位为6 V、乙点电位为2 V，则甲、乙两点间的电压大小为（   ）",
+        "options": [
+          "A. 2 V",
+          "B. 4 V",
+          "C. 6 V",
+          "D. 8 V"
+        ],
+        "answer": "B",
+        "analysis": "两点间电压的大小等于这两点电位之差的绝对值。甲点电位为6 V，乙点电位为2 V，电压大小为6 V减2 V，结果为4 V，因此选B。",
+        "knowledge_points": [
+          "电压与电位的关系",
+          "参考点与电位"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "warning",
+        "issues": [
+          "解析缺少计算过程"
+        ],
+        "raw_text": "16．若电路中两点间的电压高，则下列表述正确的是（   ）\nA．两点的电位高 B．两点间的电位差大\nC．两点的电位一定为正 D．两点的电位一定为负\n【答案】B\n【详解】选项 A：两点间电压高并不意味着两点的电位高。\n选项 B：因为电压的定义就是两点间的电位差，所以两点间电压高，两点间的电位差大，B 选项正确。\n选项 C：两点间电压高，两点的电位不一定为正。比如 A 点电位为，B 点电位为，两点间电压，C 选项错误。\n选项 D：同理，两点电位不一定为负，D 选项错误。\n所以答案是 B。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90
+        ],
+        "stem_paragraph_indices": [
+          82,
+          83,
+          84
+        ],
+        "answer_paragraph_indices": [
+          85
+        ],
+        "analysis_paragraph_indices": [
+          86,
+          87,
+          88,
+          89,
+          90
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 13,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "missing_calculation_steps",
+            "name": "解析缺少计算过程",
+            "severity": "warning",
+            "message": "第13题疑似计算相关题，但解析缺少公式、算式或计算步骤。"
+          }
+        ],
+        "fix_type": "regenerated",
+        "needs_manual_review": true
+      },
+      {
+        "question_no": 14,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "在测量电源电动势的实验中，使用电压表测量电源两端电压时，应选择的电路状态是（   ）",
+        "options": [
+          "A. 电路处于闭合状态",
+          "B. 电路接入大电阻状态",
+          "C. 电路处于开路状态",
+          "D. 电路接入小电阻状态"
+        ],
+        "answer": "C",
+        "analysis": "电源电动势是电源内部非静电力把单位正电荷从负极移到正极所做的功，数值上等于电路开路时电源两端的端电压。若电路闭合或接入电阻，电源内部会产生电压降，电压表读数通常小于电动势，因此应在开路状态下测量，选C。",
+        "knowledge_points": [
+          "电动势与端电压的关系",
+          "电压测量条件",
+          "电路开路状态"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "10．在测量电动势的实验中，使用电压表测量时应选择哪个状态（   ）\nA．电路闭合 B．电路连接一个大电阻\nC．电路开路 D．电路连接一个小电阻\n【答案】C\n【详解】为了测量电动势，应该在电路开路的状态下测量电源两端的电压。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "stem_paragraph_indices": [
+          51,
+          52,
+          53
+        ],
+        "answer_paragraph_indices": [
+          54
+        ],
+        "analysis_paragraph_indices": [
+          55
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 14,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 15,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "电动势的大小主要取决于（   ）",
+        "options": [
+          "A. 电源本身的性质",
+          "B. 外电路负载大小",
+          "C. 电源接入的状态",
+          "D. 电路端电压大小"
+        ],
+        "answer": "A",
+        "analysis": "电动势是电源把其他形式的能量转化为电能本领的物理量，其大小主要由电源本身的性质决定。外电路负载、接入状态和端电压会影响工作电流或端电压表现，但不决定电源电动势本身，因此选A。",
+        "knowledge_points": [
+          "电动势的概念",
+          "电压与电位"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "4．电动势大小与（   ）\nA．电源本身的性质有关 B．与外电路负载大小有关\nC．与电源是否接入电路有关 D．与电路端电压大小有关\n【答案】A\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "stem_paragraph_indices": [
+          22,
+          23,
+          24
+        ],
+        "answer_paragraph_indices": [
+          25
+        ],
+        "analysis_paragraph_indices": [
+          26
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 15,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 16,
+        "question_type": "单项选择题",
+        "heading": "一、单选题",
+        "stem": "衡量电源将其他形式的能转化为电能本领大小的物理量是（   ）",
+        "options": [
+          "A. 电功",
+          "B. 电压",
+          "C. 电动势",
+          "D. 电功率"
+        ],
+        "answer": "C",
+        "analysis": "电动势表示电源内部非静电力把其他形式的能转化为电能的本领，数值上等于电源每移动单位正电荷所做的功。电压主要表示两点间电势差，电功和电功率分别表示做功多少和做功快慢，因此选C。",
+        "knowledge_points": [
+          "电动势的物理意义",
+          "电压与电动势的区别"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "8．衡量电源将其他形式的能转化为电能本领大小的物理量是（   ）\nA．电功 B．电压 C．电动势 D．电功率\n【答案】C\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          40,
+          41,
+          42,
+          43
+        ],
+        "stem_paragraph_indices": [
+          40,
+          41
+        ],
+        "answer_paragraph_indices": [
+          42
+        ],
+        "analysis_paragraph_indices": [
+          43
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 16,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 17,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "电路中某点电位的数值与所选参考点有关，而两点间电压的数值与参考点选择无关。( )",
+        "options": [],
+        "answer": "√",
+        "analysis": "电位是某点相对于参考点的电压，参考点改变时各点电位数值会随之改变。两点间电压等于这两点电位之差，参考点同时改变不会改变电位差，因此该表述正确。",
+        "knowledge_points": [
+          "电位与参考点",
+          "电压与电位的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "22．规定自正极通过电源内部指向负极的方向为电动势的方向。( )\n【答案】错误\n【详解】规定从电源的负极经过电源内部指向电源正极的方向为电动势方向，故表述错误。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          108,
+          109,
+          110
+        ],
+        "stem_paragraph_indices": [
+          108
+        ],
+        "answer_paragraph_indices": [
+          109
+        ],
+        "analysis_paragraph_indices": [
+          110
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 17,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 18,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "电路断开时，有端电压，但没有电流。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "电路断开时，回路不闭合，电荷不能形成持续定向移动，因此电路中没有电流。但断开处两端仍可能接在电源或带电节点之间，所以可以存在端电压。",
+        "knowledge_points": [
+          "电流的形成条件",
+          "电压与参考方向",
+          "断路状态下的电压和电流关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "25．电路断开时，有端电压，但没有电流。( )\n【答案】正确\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          117,
+          118,
+          119
+        ],
+        "stem_paragraph_indices": [
+          117
+        ],
+        "answer_paragraph_indices": [
+          118
+        ],
+        "analysis_paragraph_indices": [
+          119
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 18,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 19,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在电路中，某点电位的大小与所选参考点有关；同两点间的电压大小与参考点的选择无关。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "电位是某点相对于参考点的电压，因此参考点改变时，该点电位数值可能随之改变。电压表示两点之间的电位差，同一对节点的电位差不随参考点改变而改变，所以本题说法正确。",
+        "knowledge_points": [
+          "电位与参考点",
+          "电压与电位差"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "31．我们规定电动势的方向为自负极通过电源内部指向正极。( )\n【答案】正确\n【详解】我们规定电动势的方向为自负极通过电源内部指向正极。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          135,
+          136,
+          137
+        ],
+        "stem_paragraph_indices": [
+          135
+        ],
+        "answer_paragraph_indices": [
+          136
+        ],
+        "analysis_paragraph_indices": [
+          137
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 19,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 20,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "当电路开路时，电源电动势的大小为零。( )",
+        "options": [],
+        "answer": "×",
+        "analysis": "电源电动势是固定的，无论电路是否开路，电动势一定是固定的不变的。故表述错误。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "19．当电路开路时，电源电动势的大小为零。( )\n【答案】错误\n【详解】电源电动势是固定的，无论电路是否开路，电动势一定是固定的不变的。故表述错误。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          99,
+          100,
+          101
+        ],
+        "stem_paragraph_indices": [
+          99
+        ],
+        "answer_paragraph_indices": [
+          100
+        ],
+        "analysis_paragraph_indices": [
+          101
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 20,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 21,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "因为正电荷在导体中移动比负电荷重要，所以规定正电荷定向移动的方向为电流方向。( )",
+        "options": [],
+        "answer": "×",
+        "analysis": "规定正电荷定向移动方向为电流方向是历史形成的统一约定，实际上金属导体中电子移动起主要作用。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "30．因为正电荷在导体中移动比负电荷重要，所以规定正电荷定向移动的方向为电流方向。( )\n【答案】错误\n【详解】规定正电荷定向移动方向为电流方向是历史形成的统一约定，实际上金属导体中电子移动起主要作用。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          132,
+          133,
+          134
+        ],
+        "stem_paragraph_indices": [
+          132
+        ],
+        "answer_paragraph_indices": [
+          133
+        ],
+        "analysis_paragraph_indices": [
+          134
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 21,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 22,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "直流电路中，有电流通过的元件，其两端一定有电压。( )",
+        "options": [],
+        "answer": "√",
+        "analysis": "电压是形成电流的原因，所以直流电路中，有电流通过的元件，其两端一定有电压。故正确。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "18．直流电路中，有电流通过的元件，其两端一定有电压。( )\n【答案】正确\n【详解】电压是形成电流的原因，所以直流电路中，有电流通过的元件，其两端一定有电压。故正确。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          96,
+          97,
+          98
+        ],
+        "stem_paragraph_indices": [
+          96
+        ],
+        "answer_paragraph_indices": [
+          97
+        ],
+        "analysis_paragraph_indices": [
+          98
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 22,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 23,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "电源电动势的大小仅决定于电源本身，与外接电路的负载无关。( )",
+        "options": [],
+        "answer": "√",
+        "analysis": "电源电动势的大小仅取决于电源本身，与外电路的负载无关。故正确。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "23．电源电动势的大小仅决定于电源本身，与外接电路的负载无关。( )\n【答案】正确\n【详解】电源电动势的大小仅取决于电源本身，与外电路的负载无关。故正确。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          111,
+          112,
+          113
+        ],
+        "stem_paragraph_indices": [
+          111
+        ],
+        "answer_paragraph_indices": [
+          112
+        ],
+        "analysis_paragraph_indices": [
+          113
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 23,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 24,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "电流或电压的参考方向与真实方向相同，其值取正值；反之取负值。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "电流和电压的数值正负取决于所选参考方向与实际方向的关系。当参考方向与实际方向一致时，代数量为正；方向相反时，代数量为负，因此题干表述正确。",
+        "knowledge_points": [
+          "电流的参考方向",
+          "电压的参考方向",
+          "电路量的正负判定"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "26．电流或电压的参考方向与真实方向相同，其值取正值；反之取负值。( )\n【答案】正确\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          120,
+          121,
+          122
+        ],
+        "stem_paragraph_indices": [
+          120
+        ],
+        "answer_paragraph_indices": [
+          121
+        ],
+        "analysis_paragraph_indices": [
+          122
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 24,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 25,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在电路中，某两点间的电压取决于这两点电位之差，改变电位参考点不会改变该电压值。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "电位是相对于选定参考点的数值，参考点改变时各点电位可能同时发生变化。两点间电压反映的是这两点电位的差值，同一电路状态下不会因参考点重新选取而改变，因此该表述正确。",
+        "knowledge_points": [
+          "电压与电位的关系",
+          "电位参考点"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "17．电流的实际方向是正电荷定向移动的方向，与电子定向移动的方向相反。( )\n【答案】正确\n【详解】电流方向规定为正电荷移动方向，电子带负电，移动方向与电流方向相反，表述正确。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          93,
+          94,
+          95
+        ],
+        "stem_paragraph_indices": [
+          93
+        ],
+        "answer_paragraph_indices": [
+          94
+        ],
+        "analysis_paragraph_indices": [
+          95
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 25,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 26,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在标注电压参考方向后，若按该方向计算得到的电压值为负，说明实际电压极性与所选参考方向相反。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "电压参考方向是人为假定的方向，用来统一列式和判断极性。计算结果为正时表示实际极性与参考方向一致，计算结果为负时表示实际极性与参考方向相反，因此该说法正确。",
+        "knowledge_points": [
+          "电压参考方向",
+          "电压正负值的含义"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "27．电阻、电流和电压都是电路中的基本物理量。( )\n【答案】错误\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          123,
+          124,
+          125
+        ],
+        "stem_paragraph_indices": [
+          123
+        ],
+        "answer_paragraph_indices": [
+          124
+        ],
+        "analysis_paragraph_indices": [
+          125
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 26,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 27,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "电路中任意两点间的电压与这两点间的电位差是相同的。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "电压是衡量电路中两点之间电位差的物理量，通常表示为两点电位之差。只要选定参考点，各点电位可以确定，而任意两点间的电压等于这两点电位的差值，因此题干说法正确。",
+        "knowledge_points": [
+          "电压与电位差的关系",
+          "参考电位"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "21．电路中任意两点间的电压与这两点间的电位差是相同的。( )\n【答案】正确\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          105,
+          106,
+          107
+        ],
+        "stem_paragraph_indices": [
+          105
+        ],
+        "answer_paragraph_indices": [
+          106
+        ],
+        "analysis_paragraph_indices": [
+          107
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 27,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 28,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "电路中某两点间的电压由这两点的电位差决定，改变零电位参考点不会改变该两点间的电压。( )",
+        "options": [],
+        "answer": "√",
+        "analysis": "电位是相对于零电位参考点而言的，改变参考点时，各点电位数值会随之改变。两点间电压反映的是两点电位的差值，两个电位同时按同一基准变化时差值不变，因此该判断正确。",
+        "knowledge_points": [
+          "电压与电位的关系",
+          "零电位参考点"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "29．电流的方向与电子定向移动的方向相同。( )\n【答案】错误\n【详解】电流方向规定为正电荷定向移动方向，电子带负电，其移动方向与电流方向相反，故错误。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          129,
+          130,
+          131
+        ],
+        "stem_paragraph_indices": [
+          129
+        ],
+        "answer_paragraph_indices": [
+          130
+        ],
+        "analysis_paragraph_indices": [
+          131
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 28,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 29,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "电导是电阻的倒数，电纳是电抗的倒数。（   ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "电导表示电阻对电流阻碍作用的倒数关系，纯电阻电路中可写为G=1/R。电纳属于导纳的虚部，纯电抗支路中其数值与电抗的倒数有关，但符号与电抗相反，不能简单说电纳就是电抗的倒数，因此该说法错误。",
+        "knowledge_points": [
+          "电导与电阻的关系",
+          "电纳与电抗的关系",
+          "导纳的组成"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "24．电导是电阻的倒数，电纳是电抗的倒数。( )\n【答案】错误\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          114,
+          115,
+          116
+        ],
+        "stem_paragraph_indices": [
+          114
+        ],
+        "answer_paragraph_indices": [
+          115
+        ],
+        "analysis_paragraph_indices": [
+          116
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 29,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 30,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "当选定的电压参考方向是从电源正极到负极，电源电压取正值。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "电压的正负取决于参考方向与实际电位降低方向是否一致。电源正极电位高于负极，若参考方向从正极指向负极，表示沿高电位到低电位取电压，因此电源电压为正值，本题说法正确。",
+        "knowledge_points": [
+          "电压参考方向",
+          "电位与电压的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "20．当选定的电压参考方向是从电源正极到负极，电源电压取正值。( )\n【答案】正确\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          102,
+          103,
+          104
+        ],
+        "stem_paragraph_indices": [
+          102
+        ],
+        "answer_paragraph_indices": [
+          103
+        ],
+        "analysis_paragraph_indices": [
+          104
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 30,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 31,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "电流为10μA，可以换算成10×10-6A。( )",
+        "options": [],
+        "answer": "×",
+        "analysis": "1µA=1×10-5A",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "32．电流为10μA，可以换算成10×10-6A。( )\n【答案】错误\n【详解】1µA=1×10-5A",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          138,
+          139,
+          140
+        ],
+        "stem_paragraph_indices": [
+          138
+        ],
+        "answer_paragraph_indices": [
+          139
+        ],
+        "analysis_paragraph_indices": [
+          140
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 31,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 32,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在简单直流电路中，电流的方向始终不变。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "直流电路中的电源极性固定，电荷定向移动的方向不随时间周期性改变，因此按常规定义的电流方向保持不变。需要注意的是，分析电路时可人为选定参考方向，但这不改变直流电流实际方向稳定的特点。",
+        "knowledge_points": [
+          "直流电流方向",
+          "电流参考方向"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "28．在简单直流电路中，电流的方向始终不变。( )\n【答案】正确\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          126,
+          127,
+          128
+        ],
+        "stem_paragraph_indices": [
+          126
+        ],
+        "answer_paragraph_indices": [
+          127
+        ],
+        "analysis_paragraph_indices": [
+          128
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 32,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 33,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "电动势是指单位________在电路中移动时所产生的电位差。",
+        "options": [],
+        "answer": "电荷",
+        "analysis": "电动势是电源推动电荷移动的能力。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "34．电动势是指单位________在电路中移动时所产生的电位差。\n【答案】电荷\n【详解】电动势是电源推动电荷移动的能力。",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          146,
+          147,
+          148
+        ],
+        "stem_paragraph_indices": [
+          146
+        ],
+        "answer_paragraph_indices": [
+          147
+        ],
+        "analysis_paragraph_indices": [
+          148
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 33,
+        "_question_type": "填空题",
+        "issue_details": []
+      },
+      {
+        "question_no": 34,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "在电路分析中，若规定电压的参考方向为从a点指向b点，则电压Uab表示a点电位相对于b点电位的______。",
+        "options": [],
+        "answer": "高低差",
+        "analysis": "电压是衡量两点电位差的物理量，带有参考方向。规定Uab时，通常表示a点电位减去b点电位，即比较a点相对于b点的电位高低差；若计算结果为正，说明a点电位高于b点。",
+        "knowledge_points": [
+          "电压与电位的关系",
+          "电压参考方向"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "38．两点间电压等于这两点的________之差。\n【答案】电位\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          159,
+          160,
+          161
+        ],
+        "stem_paragraph_indices": [
+          159
+        ],
+        "answer_paragraph_indices": [
+          160
+        ],
+        "analysis_paragraph_indices": [
+          161
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 34,
+        "_question_type": "填空题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 35,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "把负电荷从电场中的A点移到B点时，电场力做负功，则______点的电位高。",
+        "options": [],
+        "answer": "A",
+        "analysis": "电场力做功与电荷量和两点电位差有关，关系为W=q(φA-φB)。负电荷的电荷量小于零，已知电场力做负功，可判断φA-φB大于零，因此A点电位高于B点。",
+        "knowledge_points": [
+          "电场力做功与电位差的关系",
+          "负电荷在电场中的电位判断"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "39．把负电荷从电场中的A点移到B点时，电场力做负功，则___点的电位高。\n【答案】A\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          162,
+          163,
+          164
+        ],
+        "stem_paragraph_indices": [
+          162
+        ],
+        "answer_paragraph_indices": [
+          163
+        ],
+        "analysis_paragraph_indices": [
+          164
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 35,
+        "_question_type": "填空题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 36,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "电流从电压的________极性端流入元件而从它的________极性端流出，称为关联参考方向。",
+        "options": [],
+        "answer": "正 负",
+        "analysis": "在关联参考方向中，电流参考方向规定为从元件电压参考方向的正极性端流入、从负极性端流出。这样电压和电流的参考方向相互关联，便于按吸收功率的约定分析元件功率。",
+        "knowledge_points": [
+          "关联参考方向",
+          "电压极性",
+          "电流参考方向"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "33．电流从电压的________极性端流入元件而从它的________极性端流出，称为关联参考方向。\n【答案】 正 负\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          143,
+          144,
+          145
+        ],
+        "stem_paragraph_indices": [
+          143
+        ],
+        "answer_paragraph_indices": [
+          144
+        ],
+        "analysis_paragraph_indices": [
+          145
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 36,
+        "_question_type": "填空题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 37,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "把______的能转换成______能的设备叫电源。在电源内部，电源力把正电荷从电源的______极移到电源的______极。",
+        "options": [],
+        "answer": "其他形式的；电；负；正",
+        "analysis": "电源的作用是把化学能、机械能等其他形式的能转换成电能，以维持电路两端的电压。在电源内部，电源力克服静电力作用，把正电荷从负极移到正极，因此四个空依次填写其他形式的、电、负、正。",
+        "knowledge_points": [
+          "电源的能量转换",
+          "电源内部电源力方向",
+          "电压和电位关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "36．把________的能转换成________能的设备叫电源。在电源内部电源力把正电荷从电源的_______极移到电源的______极。\n【答案】 其他形式的 电 负 正\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          153,
+          154,
+          155
+        ],
+        "stem_paragraph_indices": [
+          153
+        ],
+        "answer_paragraph_indices": [
+          154
+        ],
+        "analysis_paragraph_indices": [
+          155
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 37,
+        "_question_type": "填空题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 38,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "如图所示，请用虚线箭头表示电流的实际方向，同时确定I是小于零还是大于零。\nI_______0                            I_______0\n[图片]",
+        "options": [],
+        "answer": "向左；小于 向右；大于",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "warning",
+        "issues": [
+          "解析过短"
+        ],
+        "raw_text": "35．如图所示，请用虚线箭头表示电流的实际方向，同时确定I是小于零还是大于零。\nI_______0                            I_______0\n[图片]\n【答案】 向左；小于 向右；大于\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          149,
+          150,
+          151,
+          152
+        ],
+        "stem_paragraph_indices": [
+          149,
+          150
+        ],
+        "answer_paragraph_indices": [
+          151
+        ],
+        "analysis_paragraph_indices": [
+          152
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 150,
+              "rel_id": "rId12",
+              "target_ref": "/word/media/image6.png",
+              "sha256": "9da36e80928520625d2d78cedee90b5e32882431e25c62c54053b9c7db7d4efc",
+              "byte_size": 4307,
+              "width_emu": 1905000,
+              "height_emu": 1152525
+            },
+            {
+              "paragraph_index": 150,
+              "rel_id": "rId13",
+              "target_ref": "/word/media/image7.png",
+              "sha256": "06fbc7635950a401c63e13eff7e1e58a95aa4f37430787e14b990f6fe7658869",
+              "byte_size": 4309,
+              "width_emu": 2000250,
+              "height_emu": 1143000
+            },
+            {
+              "paragraph_index": 150,
+              "rel_id": "rId12",
+              "target_ref": "/word/media/image6.png",
+              "sha256": "9da36e80928520625d2d78cedee90b5e32882431e25c62c54053b9c7db7d4efc",
+              "byte_size": 4307,
+              "width_emu": 1905000,
+              "height_emu": 1152525
+            },
+            {
+              "paragraph_index": 150,
+              "rel_id": "rId13",
+              "target_ref": "/word/media/image7.png",
+              "sha256": "06fbc7635950a401c63e13eff7e1e58a95aa4f37430787e14b990f6fe7658869",
+              "byte_size": 4309,
+              "width_emu": 2000250,
+              "height_emu": 1143000
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 38,
+        "_question_type": "填空题",
+        "issue_details": [
+          {
+            "code": "short_analysis",
+            "name": "解析过短",
+            "severity": "warning",
+            "message": "第38题解析不超过10字。"
+          }
+        ],
+        "needs_manual_review": true
+      },
+      {
+        "question_no": 39,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题",
+        "stem": "如图所示电路中，已知，，，，，，，，。当以F为参考点时，B点的电位。完成下列各题。\n[图片]\n[图片]\n(1)以F点为参考点，列写B点电位方程，正确的表达式是（   ）\n[图片]\n[图片]\n(2)电路中电流的大小______。\n[图片]\n(3)选择顺时针方向为回路电压参考方向，根据基尔霍夫回路电压定律列写回路电压方程，正确的表达式是 （   ）\nA．\n[图片]\nB．\n[图片]\nC．\n[图片]\nD．\n[图片]\n(4)电压源的电压值______V。\n[图片]\n(5)电压源的功率______W。\n[图片]\n(6)电容C两端的电压值______V。\n[图片]",
+        "options": [
+          "A. B．",
+          "C. D．"
+        ],
+        "answer": "(1)C\n(2)2\n(3)B\n(4)46\n(5)92\n(6)44",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "42．如图所示电路中，已知，，，，，，，，。当以F为参考点时，B点的电位。完成下列各题。\n[图片]\n[图片]\n(1)以F点为参考点，列写B点电位方程，正确的表达式是（   ）\nA． B．\n[图片]\nC． D．\n[图片]\n(2)电路中电流的大小______。\n[图片]\n(3)选择顺时针方向为回路电压参考方向，根据基尔霍夫回路电压定律列写回路电压方程，正确的表达式是 （   ）\nA．\n[图片]\nB．\n[图片]\nC．\n[图片]\nD．\n[图片]\n(4)电压源的电压值______V。\n[图片]\n(5)电压源的功率______W。\n[图片]\n(6)电容C两端的电压值______V。\n[图片]\n【答案】(1)C\n(2)2\n(3)B\n(4)46\n(5)92\n(6)44\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204
+        ],
+        "stem_paragraph_indices": [
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197
+        ],
+        "answer_paragraph_indices": [
+          198,
+          199,
+          200,
+          201,
+          202,
+          203
+        ],
+        "analysis_paragraph_indices": [
+          204
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId33",
+              "target_ref": "/word/media/image18.wmf",
+              "sha256": "0bd9994ed3a0bc7ab31d33761fa1b9a37ace7f17a508a49d575194d415c609f7",
+              "byte_size": 992,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId35",
+              "target_ref": "/word/media/image19.wmf",
+              "sha256": "914d81a405dfc7adbc606fc537c278119c4722960cdf5a8652dec4ca19da1be6",
+              "byte_size": 992,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId37",
+              "target_ref": "/word/media/image20.wmf",
+              "sha256": "3044c263e9d0df3e48ce35c24fcd0f726545f739695e62474ae8cd728c954e45",
+              "byte_size": 984,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId39",
+              "target_ref": "/word/media/image21.wmf",
+              "sha256": "d8de37d3b7a24f926cd0579e232bb9e8824793e337d136a86d538731ae51de54",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId41",
+              "target_ref": "/word/media/image22.wmf",
+              "sha256": "77b317c1b78c0e90a4a2c750cae9f354f05090897b09a1c1a06bbdfb35827b05",
+              "byte_size": 960,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId43",
+              "target_ref": "/word/media/image23.wmf",
+              "sha256": "6f89ecec3c798cd6b6a2d033b25b588ea4b9d440846206d140ce03ee1bd14033",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId45",
+              "target_ref": "/word/media/image24.wmf",
+              "sha256": "35ea182fc2a5a0a45270a385950cf11c06734fa3adcc612d68cc28e67293a7a0",
+              "byte_size": 974,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId47",
+              "target_ref": "/word/media/image25.wmf",
+              "sha256": "1cd646ca5710b9dec5a2d819872aa74ceaea7dcf4125046ddeb97332e78313d2",
+              "byte_size": 964,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId49",
+              "target_ref": "/word/media/image26.wmf",
+              "sha256": "82e202948fe195dc682d07bed890633a7f094a6050322aa2d482cb2412913bff",
+              "byte_size": 962,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId34",
+              "target_ref": "/word/embeddings/oleObject12.bin",
+              "sha256": "69ac99c4fd1a54823be2ba295362d5d6b3f9f8190635febd2da8affa6176d777",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId36",
+              "target_ref": "/word/embeddings/oleObject13.bin",
+              "sha256": "1876d635b058fbb392670240e05a61da1e27f3d64628a49449a7fe766a558623",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId38",
+              "target_ref": "/word/embeddings/oleObject14.bin",
+              "sha256": "e75694325db5be18412e2bcea53ea68950bb74e0e2921427771863b08cb1212b",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId40",
+              "target_ref": "/word/embeddings/oleObject15.bin",
+              "sha256": "8e7a2a303edbe259082d81ae3f21a5c4a510614c86780992f323ce4fc0b62eb5",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId42",
+              "target_ref": "/word/embeddings/oleObject16.bin",
+              "sha256": "406b11d1acdc5c6bdba6cb5dfb8dfa213015861fbba2bc35c2d763970436c0ca",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId44",
+              "target_ref": "/word/embeddings/oleObject17.bin",
+              "sha256": "af06d3de9d131a22674c511be43b0ce10f25fcee9d7c9e0dbaf6341087fe722d",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId46",
+              "target_ref": "/word/embeddings/oleObject18.bin",
+              "sha256": "ac65e470d455e444a65a53a15a76bac3b59d6fdb367403260b8bb181134f7f03",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId48",
+              "target_ref": "/word/embeddings/oleObject19.bin",
+              "sha256": "d5a9b95ebb70f41f4bccd440ef0a3122505ac30ad03ccdf5c4f7c62f54365aad",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId50",
+              "target_ref": "/word/embeddings/oleObject20.bin",
+              "sha256": "2e3643e39fa456b92b91436250a944b58317bbe0d9bbfddbb87508d86ce7006b",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId33",
+              "target_ref": "/word/media/image18.wmf",
+              "sha256": "0bd9994ed3a0bc7ab31d33761fa1b9a37ace7f17a508a49d575194d415c609f7",
+              "byte_size": 992,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId35",
+              "target_ref": "/word/media/image19.wmf",
+              "sha256": "914d81a405dfc7adbc606fc537c278119c4722960cdf5a8652dec4ca19da1be6",
+              "byte_size": 992,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId37",
+              "target_ref": "/word/media/image20.wmf",
+              "sha256": "3044c263e9d0df3e48ce35c24fcd0f726545f739695e62474ae8cd728c954e45",
+              "byte_size": 984,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId39",
+              "target_ref": "/word/media/image21.wmf",
+              "sha256": "d8de37d3b7a24f926cd0579e232bb9e8824793e337d136a86d538731ae51de54",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId41",
+              "target_ref": "/word/media/image22.wmf",
+              "sha256": "77b317c1b78c0e90a4a2c750cae9f354f05090897b09a1c1a06bbdfb35827b05",
+              "byte_size": 960,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId43",
+              "target_ref": "/word/media/image23.wmf",
+              "sha256": "6f89ecec3c798cd6b6a2d033b25b588ea4b9d440846206d140ce03ee1bd14033",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId45",
+              "target_ref": "/word/media/image24.wmf",
+              "sha256": "35ea182fc2a5a0a45270a385950cf11c06734fa3adcc612d68cc28e67293a7a0",
+              "byte_size": 974,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId47",
+              "target_ref": "/word/media/image25.wmf",
+              "sha256": "1cd646ca5710b9dec5a2d819872aa74ceaea7dcf4125046ddeb97332e78313d2",
+              "byte_size": 964,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId49",
+              "target_ref": "/word/media/image26.wmf",
+              "sha256": "82e202948fe195dc682d07bed890633a7f094a6050322aa2d482cb2412913bff",
+              "byte_size": 962,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId34",
+              "target_ref": "/word/embeddings/oleObject12.bin",
+              "sha256": "69ac99c4fd1a54823be2ba295362d5d6b3f9f8190635febd2da8affa6176d777",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId36",
+              "target_ref": "/word/embeddings/oleObject13.bin",
+              "sha256": "1876d635b058fbb392670240e05a61da1e27f3d64628a49449a7fe766a558623",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId38",
+              "target_ref": "/word/embeddings/oleObject14.bin",
+              "sha256": "e75694325db5be18412e2bcea53ea68950bb74e0e2921427771863b08cb1212b",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId40",
+              "target_ref": "/word/embeddings/oleObject15.bin",
+              "sha256": "8e7a2a303edbe259082d81ae3f21a5c4a510614c86780992f323ce4fc0b62eb5",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId42",
+              "target_ref": "/word/embeddings/oleObject16.bin",
+              "sha256": "406b11d1acdc5c6bdba6cb5dfb8dfa213015861fbba2bc35c2d763970436c0ca",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId44",
+              "target_ref": "/word/embeddings/oleObject17.bin",
+              "sha256": "af06d3de9d131a22674c511be43b0ce10f25fcee9d7c9e0dbaf6341087fe722d",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId46",
+              "target_ref": "/word/embeddings/oleObject18.bin",
+              "sha256": "ac65e470d455e444a65a53a15a76bac3b59d6fdb367403260b8bb181134f7f03",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId48",
+              "target_ref": "/word/embeddings/oleObject19.bin",
+              "sha256": "d5a9b95ebb70f41f4bccd440ef0a3122505ac30ad03ccdf5c4f7c62f54365aad",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 184,
+              "rel_id": "rId50",
+              "target_ref": "/word/embeddings/oleObject20.bin",
+              "sha256": "2e3643e39fa456b92b91436250a944b58317bbe0d9bbfddbb87508d86ce7006b",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 185,
+              "rel_id": "rId51",
+              "target_ref": "/word/media/image27.png",
+              "sha256": "6e0073d2c619dde47ca13b5f50f1b94ea143e937f2c8b8e65c545fa6b04596f3",
+              "byte_size": 44079,
+              "width_emu": 3505200,
+              "height_emu": 1333500
+            },
+            {
+              "paragraph_index": 187,
+              "rel_id": "rId52",
+              "target_ref": "/word/media/image28.wmf",
+              "sha256": "41620f5b8eba3321cc578ab6769e4075d752f9c17cc125e07784c37f09a51ac9",
+              "byte_size": 1014,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 187,
+              "rel_id": "rId54",
+              "target_ref": "/word/media/image29.wmf",
+              "sha256": "115b1b90d86c324e1d7e7b5f42eb780905974a1de61e6c536f5b301146ceffdd",
+              "byte_size": 1022,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 187,
+              "rel_id": "rId53",
+              "target_ref": "/word/embeddings/oleObject21.bin",
+              "sha256": "3996a74c5c448900f2d92b65ab8cfa737b6bbe559e989971869ae6fab1fee9cd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 187,
+              "rel_id": "rId55",
+              "target_ref": "/word/embeddings/oleObject22.bin",
+              "sha256": "86e8c6841d542dbdc9bdb2897d9aa88896e96d98669c5a939bf70822b50747de",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 187,
+              "rel_id": "rId52",
+              "target_ref": "/word/media/image28.wmf",
+              "sha256": "41620f5b8eba3321cc578ab6769e4075d752f9c17cc125e07784c37f09a51ac9",
+              "byte_size": 1014,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 187,
+              "rel_id": "rId54",
+              "target_ref": "/word/media/image29.wmf",
+              "sha256": "115b1b90d86c324e1d7e7b5f42eb780905974a1de61e6c536f5b301146ceffdd",
+              "byte_size": 1022,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 187,
+              "rel_id": "rId53",
+              "target_ref": "/word/embeddings/oleObject21.bin",
+              "sha256": "3996a74c5c448900f2d92b65ab8cfa737b6bbe559e989971869ae6fab1fee9cd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 187,
+              "rel_id": "rId55",
+              "target_ref": "/word/embeddings/oleObject22.bin",
+              "sha256": "86e8c6841d542dbdc9bdb2897d9aa88896e96d98669c5a939bf70822b50747de",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 188,
+              "rel_id": "rId56",
+              "target_ref": "/word/media/image30.wmf",
+              "sha256": "c521acec441eaea987e732b8b4b7ca00046a5be8ed6ef80575adb3039c1714ee",
+              "byte_size": 968,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 188,
+              "rel_id": "rId58",
+              "target_ref": "/word/media/image31.wmf",
+              "sha256": "ab1a3d39a6da7156f9a1a2ea9aa5acfad5e0ba532cac3028718c9a7deb536659",
+              "byte_size": 958,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 188,
+              "rel_id": "rId57",
+              "target_ref": "/word/embeddings/oleObject23.bin",
+              "sha256": "34651485e60f222437df54a9299c3fc9838d6ee8be09f5a566a1193aab9c1bb0",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 188,
+              "rel_id": "rId59",
+              "target_ref": "/word/embeddings/oleObject24.bin",
+              "sha256": "0161e3d909380423366cabf498d7e4e4dc95c07d329960fc9d38299860adfacf",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 188,
+              "rel_id": "rId56",
+              "target_ref": "/word/media/image30.wmf",
+              "sha256": "c521acec441eaea987e732b8b4b7ca00046a5be8ed6ef80575adb3039c1714ee",
+              "byte_size": 968,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 188,
+              "rel_id": "rId58",
+              "target_ref": "/word/media/image31.wmf",
+              "sha256": "ab1a3d39a6da7156f9a1a2ea9aa5acfad5e0ba532cac3028718c9a7deb536659",
+              "byte_size": 958,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 188,
+              "rel_id": "rId57",
+              "target_ref": "/word/embeddings/oleObject23.bin",
+              "sha256": "34651485e60f222437df54a9299c3fc9838d6ee8be09f5a566a1193aab9c1bb0",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 188,
+              "rel_id": "rId59",
+              "target_ref": "/word/embeddings/oleObject24.bin",
+              "sha256": "0161e3d909380423366cabf498d7e4e4dc95c07d329960fc9d38299860adfacf",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 189,
+              "rel_id": "rId60",
+              "target_ref": "/word/media/image32.wmf",
+              "sha256": "afdc9bd524c7937768e1510cf0194abc3b660da55608997284d84d92c00701bd",
+              "byte_size": 738,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 189,
+              "rel_id": "rId61",
+              "target_ref": "/word/embeddings/oleObject25.bin",
+              "sha256": "cd64a5f8a7eefc254b485c7fead1bbc9e128cf93911ca3ee405285ca5f7f7262",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 189,
+              "rel_id": "rId60",
+              "target_ref": "/word/media/image32.wmf",
+              "sha256": "afdc9bd524c7937768e1510cf0194abc3b660da55608997284d84d92c00701bd",
+              "byte_size": 738,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 189,
+              "rel_id": "rId61",
+              "target_ref": "/word/embeddings/oleObject25.bin",
+              "sha256": "cd64a5f8a7eefc254b485c7fead1bbc9e128cf93911ca3ee405285ca5f7f7262",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 191,
+              "rel_id": "rId62",
+              "target_ref": "/word/media/image33.wmf",
+              "sha256": "d4559c261d1f8ca0cad256eb4e219fa12faf5d8fa34ef262911874445809166a",
+              "byte_size": 1482,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 191,
+              "rel_id": "rId63",
+              "target_ref": "/word/embeddings/oleObject26.bin",
+              "sha256": "304375b69960e3a5fd7d548edad3c31dfa776299467701a6d6aec77d42e99166",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 191,
+              "rel_id": "rId62",
+              "target_ref": "/word/media/image33.wmf",
+              "sha256": "d4559c261d1f8ca0cad256eb4e219fa12faf5d8fa34ef262911874445809166a",
+              "byte_size": 1482,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 191,
+              "rel_id": "rId63",
+              "target_ref": "/word/embeddings/oleObject26.bin",
+              "sha256": "304375b69960e3a5fd7d548edad3c31dfa776299467701a6d6aec77d42e99166",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 192,
+              "rel_id": "rId64",
+              "target_ref": "/word/media/image34.wmf",
+              "sha256": "6aaa969405435d17a0ace96239241114a48ffdf0068ff65c216ff8d854c36dc5",
+              "byte_size": 1482,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 192,
+              "rel_id": "rId65",
+              "target_ref": "/word/embeddings/oleObject27.bin",
+              "sha256": "5d3e65b2af74d0277753f22aa01bfb99f166400c1e8a6cbb6a69d86e99b77240",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 192,
+              "rel_id": "rId64",
+              "target_ref": "/word/media/image34.wmf",
+              "sha256": "6aaa969405435d17a0ace96239241114a48ffdf0068ff65c216ff8d854c36dc5",
+              "byte_size": 1482,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 192,
+              "rel_id": "rId65",
+              "target_ref": "/word/embeddings/oleObject27.bin",
+              "sha256": "5d3e65b2af74d0277753f22aa01bfb99f166400c1e8a6cbb6a69d86e99b77240",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 193,
+              "rel_id": "rId64",
+              "target_ref": "/word/media/image34.wmf",
+              "sha256": "6aaa969405435d17a0ace96239241114a48ffdf0068ff65c216ff8d854c36dc5",
+              "byte_size": 1482,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 193,
+              "rel_id": "rId66",
+              "target_ref": "/word/embeddings/oleObject28.bin",
+              "sha256": "5d3e65b2af74d0277753f22aa01bfb99f166400c1e8a6cbb6a69d86e99b77240",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 193,
+              "rel_id": "rId64",
+              "target_ref": "/word/media/image34.wmf",
+              "sha256": "6aaa969405435d17a0ace96239241114a48ffdf0068ff65c216ff8d854c36dc5",
+              "byte_size": 1482,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 193,
+              "rel_id": "rId66",
+              "target_ref": "/word/embeddings/oleObject28.bin",
+              "sha256": "5d3e65b2af74d0277753f22aa01bfb99f166400c1e8a6cbb6a69d86e99b77240",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 194,
+              "rel_id": "rId67",
+              "target_ref": "/word/media/image35.wmf",
+              "sha256": "23c58d2060d408db5b57d58cabab6d24d81316bc885c05f58aef3858fb366c39",
+              "byte_size": 1482,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 194,
+              "rel_id": "rId68",
+              "target_ref": "/word/embeddings/oleObject29.bin",
+              "sha256": "2b28125b774454221a63bba88a35ce22e3b834cc4570654469fff7afedfb8480",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 194,
+              "rel_id": "rId67",
+              "target_ref": "/word/media/image35.wmf",
+              "sha256": "23c58d2060d408db5b57d58cabab6d24d81316bc885c05f58aef3858fb366c39",
+              "byte_size": 1482,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 194,
+              "rel_id": "rId68",
+              "target_ref": "/word/embeddings/oleObject29.bin",
+              "sha256": "2b28125b774454221a63bba88a35ce22e3b834cc4570654469fff7afedfb8480",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 195,
+              "rel_id": "rId14",
+              "target_ref": "/word/media/image8.wmf",
+              "sha256": "8fcc60d4b96895d1d67f6ad074ba13c8456cd0ba50c844d82badf75e5eeeab17",
+              "byte_size": 772,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 195,
+              "rel_id": "rId70",
+              "target_ref": "/word/media/image36.wmf",
+              "sha256": "0c00319f46264a64666ad7869632d8944f981863fa5e773028cf426be65b7f94",
+              "byte_size": 880,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 195,
+              "rel_id": "rId69",
+              "target_ref": "/word/embeddings/oleObject30.bin",
+              "sha256": "748b1c088dc026b5cd27b6ab0cdbe08284b3fd143bb08cbd25b3d3ae9d5e036f",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 195,
+              "rel_id": "rId71",
+              "target_ref": "/word/embeddings/oleObject31.bin",
+              "sha256": "fc779741cccf8d9ab99748948dd30a0db8086a5a8bf644b56a3e9187468e6bdd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 195,
+              "rel_id": "rId14",
+              "target_ref": "/word/media/image8.wmf",
+              "sha256": "8fcc60d4b96895d1d67f6ad074ba13c8456cd0ba50c844d82badf75e5eeeab17",
+              "byte_size": 772,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 195,
+              "rel_id": "rId70",
+              "target_ref": "/word/media/image36.wmf",
+              "sha256": "0c00319f46264a64666ad7869632d8944f981863fa5e773028cf426be65b7f94",
+              "byte_size": 880,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 195,
+              "rel_id": "rId69",
+              "target_ref": "/word/embeddings/oleObject30.bin",
+              "sha256": "748b1c088dc026b5cd27b6ab0cdbe08284b3fd143bb08cbd25b3d3ae9d5e036f",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 195,
+              "rel_id": "rId71",
+              "target_ref": "/word/embeddings/oleObject31.bin",
+              "sha256": "fc779741cccf8d9ab99748948dd30a0db8086a5a8bf644b56a3e9187468e6bdd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 196,
+              "rel_id": "rId14",
+              "target_ref": "/word/media/image8.wmf",
+              "sha256": "8fcc60d4b96895d1d67f6ad074ba13c8456cd0ba50c844d82badf75e5eeeab17",
+              "byte_size": 772,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 196,
+              "rel_id": "rId73",
+              "target_ref": "/word/media/image37.wmf",
+              "sha256": "933df390f90d4cb224205065f51f66db4401ac6afa6dc70a6f0df3e7d5caea4c",
+              "byte_size": 738,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 196,
+              "rel_id": "rId72",
+              "target_ref": "/word/embeddings/oleObject32.bin",
+              "sha256": "748b1c088dc026b5cd27b6ab0cdbe08284b3fd143bb08cbd25b3d3ae9d5e036f",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 196,
+              "rel_id": "rId74",
+              "target_ref": "/word/embeddings/oleObject33.bin",
+              "sha256": "57de69d26a29a833d60898b83154cceeda12a2d1a3f301dade6a92a326018938",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 196,
+              "rel_id": "rId14",
+              "target_ref": "/word/media/image8.wmf",
+              "sha256": "8fcc60d4b96895d1d67f6ad074ba13c8456cd0ba50c844d82badf75e5eeeab17",
+              "byte_size": 772,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 196,
+              "rel_id": "rId73",
+              "target_ref": "/word/media/image37.wmf",
+              "sha256": "933df390f90d4cb224205065f51f66db4401ac6afa6dc70a6f0df3e7d5caea4c",
+              "byte_size": 738,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 196,
+              "rel_id": "rId72",
+              "target_ref": "/word/embeddings/oleObject32.bin",
+              "sha256": "748b1c088dc026b5cd27b6ab0cdbe08284b3fd143bb08cbd25b3d3ae9d5e036f",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 196,
+              "rel_id": "rId74",
+              "target_ref": "/word/embeddings/oleObject33.bin",
+              "sha256": "57de69d26a29a833d60898b83154cceeda12a2d1a3f301dade6a92a326018938",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 197,
+              "rel_id": "rId75",
+              "target_ref": "/word/media/image38.wmf",
+              "sha256": "f4ba86381621afcf55c28d3c2b7a82df18587bcf0b0a9a9f8b70c3dfaa2976b0",
+              "byte_size": 864,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 197,
+              "rel_id": "rId76",
+              "target_ref": "/word/embeddings/oleObject34.bin",
+              "sha256": "785f492cddb8bd853778fe3ed2586786b341e7e492aa393343e8c8febcc1916d",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 197,
+              "rel_id": "rId75",
+              "target_ref": "/word/media/image38.wmf",
+              "sha256": "f4ba86381621afcf55c28d3c2b7a82df18587bcf0b0a9a9f8b70c3dfaa2976b0",
+              "byte_size": 864,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 197,
+              "rel_id": "rId76",
+              "target_ref": "/word/embeddings/oleObject34.bin",
+              "sha256": "785f492cddb8bd853778fe3ed2586786b341e7e492aa393343e8c8febcc1916d",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 39,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      },
+      {
+        "question_no": 40,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题",
+        "stem": "如图所示的电路，闭合开关，当滑动变阻器的滑片向右移动时，试分析灯泡、、的亮度变化情况。\n[图片]\n[图片]",
+        "options": [],
+        "answer": "闭合开关，当滑动变阻器的滑片向右移动时，滑动变阻器接入电路的阻值变大，整个电路的总电阻增大，由闭合电路欧姆定律可知，总电流减小，端电压增大，可知流过灯泡的电流变小，灯泡变暗；总电流减小，灯泡两端的电压变小，则灯泡两端的电压变大，灯泡变亮；灯泡两端的电压变大，通过灯泡的电流变大，又总电流减小，则通过灯泡的电流变小，灯泡变暗。\n[图片]",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "43．如图所示的电路，闭合开关，当滑动变阻器的滑片向右移动时，试分析灯泡、、的亮度变化情况。\n[图片]\n[图片]\n【答案】闭合开关，当滑动变阻器的滑片向右移动时，滑动变阻器接入电路的阻值变大，整个电路的总电阻增大，由闭合电路欧姆定律可知，总电流减小，端电压增大，可知流过灯泡的电流变小，灯泡变暗；总电流减小，灯泡两端的电压变小，则灯泡两端的电压变大，灯泡变亮；灯泡两端的电压变大，通过灯泡的电流变大，又总电流减小，则通过灯泡的电流变小，灯泡变暗。\n[图片]\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          205,
+          206,
+          207,
+          208
+        ],
+        "stem_paragraph_indices": [
+          205,
+          206
+        ],
+        "answer_paragraph_indices": [
+          207
+        ],
+        "analysis_paragraph_indices": [
+          208
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": true,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId77",
+              "target_ref": "/word/media/image39.wmf",
+              "sha256": "94b37946923932c61d9347ef4d720f3c607a67eafcb58d40e8bf384bcf95c898",
+              "byte_size": 650,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId79",
+              "target_ref": "/word/media/image40.wmf",
+              "sha256": "abb51ecd74f69ddfd7b4d806c00e3588cd6782aed661f68ed6efaabdd16472cc",
+              "byte_size": 632,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId81",
+              "target_ref": "/word/media/image41.wmf",
+              "sha256": "860765fb6cee37a2044e4f2bc60a078c57643b5ac5621f2d7c9a5b8a014acbc8",
+              "byte_size": 740,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId83",
+              "target_ref": "/word/media/image42.wmf",
+              "sha256": "fc9ed236f14b10792c6c929e186255d51c9e2857bd4466d0ce6380e942c33563",
+              "byte_size": 742,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId85",
+              "target_ref": "/word/media/image43.wmf",
+              "sha256": "6295336cfbf215a352c538f2b6fb5ed15acf7cbba198070a33de85f4a7a23cdd",
+              "byte_size": 738,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId78",
+              "target_ref": "/word/embeddings/oleObject35.bin",
+              "sha256": "54b7f7debe8570424a46e6632efe51b3d237a2c816baa37d58383be8b0e802a6",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId80",
+              "target_ref": "/word/embeddings/oleObject36.bin",
+              "sha256": "e0d506ac990088d4f1b547e247f8d04de9e2a1a150a2cbf62324c6676df36a7c",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId82",
+              "target_ref": "/word/embeddings/oleObject37.bin",
+              "sha256": "23962787320b27929afcc0633474ee2c52f447174f5b12dec5298b60c4453009",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId84",
+              "target_ref": "/word/embeddings/oleObject38.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId86",
+              "target_ref": "/word/embeddings/oleObject39.bin",
+              "sha256": "57917a0a913f6b8fd20268ca3928e71b0827ba472571443fa1a730c2068f7402",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId77",
+              "target_ref": "/word/media/image39.wmf",
+              "sha256": "94b37946923932c61d9347ef4d720f3c607a67eafcb58d40e8bf384bcf95c898",
+              "byte_size": 650,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId79",
+              "target_ref": "/word/media/image40.wmf",
+              "sha256": "abb51ecd74f69ddfd7b4d806c00e3588cd6782aed661f68ed6efaabdd16472cc",
+              "byte_size": 632,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId81",
+              "target_ref": "/word/media/image41.wmf",
+              "sha256": "860765fb6cee37a2044e4f2bc60a078c57643b5ac5621f2d7c9a5b8a014acbc8",
+              "byte_size": 740,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId83",
+              "target_ref": "/word/media/image42.wmf",
+              "sha256": "fc9ed236f14b10792c6c929e186255d51c9e2857bd4466d0ce6380e942c33563",
+              "byte_size": 742,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId85",
+              "target_ref": "/word/media/image43.wmf",
+              "sha256": "6295336cfbf215a352c538f2b6fb5ed15acf7cbba198070a33de85f4a7a23cdd",
+              "byte_size": 738,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId78",
+              "target_ref": "/word/embeddings/oleObject35.bin",
+              "sha256": "54b7f7debe8570424a46e6632efe51b3d237a2c816baa37d58383be8b0e802a6",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId80",
+              "target_ref": "/word/embeddings/oleObject36.bin",
+              "sha256": "e0d506ac990088d4f1b547e247f8d04de9e2a1a150a2cbf62324c6676df36a7c",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId82",
+              "target_ref": "/word/embeddings/oleObject37.bin",
+              "sha256": "23962787320b27929afcc0633474ee2c52f447174f5b12dec5298b60c4453009",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId84",
+              "target_ref": "/word/embeddings/oleObject38.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 205,
+              "rel_id": "rId86",
+              "target_ref": "/word/embeddings/oleObject39.bin",
+              "sha256": "57917a0a913f6b8fd20268ca3928e71b0827ba472571443fa1a730c2068f7402",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 206,
+              "rel_id": "rId87",
+              "target_ref": "/word/media/image44.png",
+              "sha256": "27beb6f8520789f8c3f1907729f90ae7de35586bcb3e94b80eb6f55439dc36dd",
+              "byte_size": 7571,
+              "width_emu": 1323975,
+              "height_emu": 981075
+            }
+          ],
+          "answer": [
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId77",
+              "target_ref": "/word/media/image39.wmf",
+              "sha256": "94b37946923932c61d9347ef4d720f3c607a67eafcb58d40e8bf384bcf95c898",
+              "byte_size": 650,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId79",
+              "target_ref": "/word/media/image40.wmf",
+              "sha256": "abb51ecd74f69ddfd7b4d806c00e3588cd6782aed661f68ed6efaabdd16472cc",
+              "byte_size": 632,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId90",
+              "target_ref": "/word/media/image45.wmf",
+              "sha256": "3c78a081c0a70d4e6aaa24702b128451ed6df2a827a67bfd03329648f3d16091",
+              "byte_size": 740,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId83",
+              "target_ref": "/word/media/image42.wmf",
+              "sha256": "fc9ed236f14b10792c6c929e186255d51c9e2857bd4466d0ce6380e942c33563",
+              "byte_size": 742,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId85",
+              "target_ref": "/word/media/image43.wmf",
+              "sha256": "6295336cfbf215a352c538f2b6fb5ed15acf7cbba198070a33de85f4a7a23cdd",
+              "byte_size": 738,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId88",
+              "target_ref": "/word/embeddings/oleObject40.bin",
+              "sha256": "54b7f7debe8570424a46e6632efe51b3d237a2c816baa37d58383be8b0e802a6",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId89",
+              "target_ref": "/word/embeddings/oleObject41.bin",
+              "sha256": "e0d506ac990088d4f1b547e247f8d04de9e2a1a150a2cbf62324c6676df36a7c",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId91",
+              "target_ref": "/word/embeddings/oleObject42.bin",
+              "sha256": "138b3e0c014a9eeb295033b585aa424547c430b67353e03c33df23ef1c51b1bd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId92",
+              "target_ref": "/word/embeddings/oleObject43.bin",
+              "sha256": "138b3e0c014a9eeb295033b585aa424547c430b67353e03c33df23ef1c51b1bd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId93",
+              "target_ref": "/word/embeddings/oleObject44.bin",
+              "sha256": "138b3e0c014a9eeb295033b585aa424547c430b67353e03c33df23ef1c51b1bd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId94",
+              "target_ref": "/word/embeddings/oleObject45.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId95",
+              "target_ref": "/word/embeddings/oleObject46.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId96",
+              "target_ref": "/word/embeddings/oleObject47.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId97",
+              "target_ref": "/word/embeddings/oleObject48.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId98",
+              "target_ref": "/word/embeddings/oleObject49.bin",
+              "sha256": "57917a0a913f6b8fd20268ca3928e71b0827ba472571443fa1a730c2068f7402",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId99",
+              "target_ref": "/word/embeddings/oleObject50.bin",
+              "sha256": "57917a0a913f6b8fd20268ca3928e71b0827ba472571443fa1a730c2068f7402",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId77",
+              "target_ref": "/word/media/image39.wmf",
+              "sha256": "94b37946923932c61d9347ef4d720f3c607a67eafcb58d40e8bf384bcf95c898",
+              "byte_size": 650,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId79",
+              "target_ref": "/word/media/image40.wmf",
+              "sha256": "abb51ecd74f69ddfd7b4d806c00e3588cd6782aed661f68ed6efaabdd16472cc",
+              "byte_size": 632,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId90",
+              "target_ref": "/word/media/image45.wmf",
+              "sha256": "3c78a081c0a70d4e6aaa24702b128451ed6df2a827a67bfd03329648f3d16091",
+              "byte_size": 740,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId83",
+              "target_ref": "/word/media/image42.wmf",
+              "sha256": "fc9ed236f14b10792c6c929e186255d51c9e2857bd4466d0ce6380e942c33563",
+              "byte_size": 742,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId85",
+              "target_ref": "/word/media/image43.wmf",
+              "sha256": "6295336cfbf215a352c538f2b6fb5ed15acf7cbba198070a33de85f4a7a23cdd",
+              "byte_size": 738,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId88",
+              "target_ref": "/word/embeddings/oleObject40.bin",
+              "sha256": "54b7f7debe8570424a46e6632efe51b3d237a2c816baa37d58383be8b0e802a6",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId89",
+              "target_ref": "/word/embeddings/oleObject41.bin",
+              "sha256": "e0d506ac990088d4f1b547e247f8d04de9e2a1a150a2cbf62324c6676df36a7c",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId91",
+              "target_ref": "/word/embeddings/oleObject42.bin",
+              "sha256": "138b3e0c014a9eeb295033b585aa424547c430b67353e03c33df23ef1c51b1bd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId92",
+              "target_ref": "/word/embeddings/oleObject43.bin",
+              "sha256": "138b3e0c014a9eeb295033b585aa424547c430b67353e03c33df23ef1c51b1bd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId93",
+              "target_ref": "/word/embeddings/oleObject44.bin",
+              "sha256": "138b3e0c014a9eeb295033b585aa424547c430b67353e03c33df23ef1c51b1bd",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId94",
+              "target_ref": "/word/embeddings/oleObject45.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId95",
+              "target_ref": "/word/embeddings/oleObject46.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId96",
+              "target_ref": "/word/embeddings/oleObject47.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId97",
+              "target_ref": "/word/embeddings/oleObject48.bin",
+              "sha256": "3ecc07f996d74eb7301aa0bf11301cace37525e90dca863170490cb01362407a",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId98",
+              "target_ref": "/word/embeddings/oleObject49.bin",
+              "sha256": "57917a0a913f6b8fd20268ca3928e71b0827ba472571443fa1a730c2068f7402",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 207,
+              "rel_id": "rId99",
+              "target_ref": "/word/embeddings/oleObject50.bin",
+              "sha256": "57917a0a913f6b8fd20268ca3928e71b0827ba472571443fa1a730c2068f7402",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            }
+          ],
+          "analysis": []
+        },
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object,answer_visual_object",
+        "_question_no": 40,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      },
+      {
+        "question_no": 41,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题",
+        "stem": "某有源支路接于U=230V 的电源上，电路如下图所示，支路电阻为 R 0 =0.6Ω，测得电路中的电流 I=5 A。求：\n[图片]\n(1)该有源支路的电动势 E；\n(2)此支路是从电网吸收电能还是向电网输送电能？",
+        "options": [],
+        "answer": "(1)\n[图片]\n(2)\n[图片]",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "44．某有源支路接于U=230V 的电源上，电路如下图所示，支路电阻为 R 0 =0.6Ω，测得电路中的电流 I=5 A。求：\n[图片]\n(1)该有源支路的电动势 E；\n(2)此支路是从电网吸收电能还是向电网输送电能？\n【答案】(1)\n[图片]\n(2)\n[图片]\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ],
+        "stem_paragraph_indices": [
+          209,
+          210,
+          211,
+          212
+        ],
+        "answer_paragraph_indices": [
+          213,
+          214
+        ],
+        "analysis_paragraph_indices": [
+          215
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": true,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 210,
+              "rel_id": "rId100",
+              "target_ref": "/word/media/image46.png",
+              "sha256": "544c9ea91b622cfbfe65440531594d72cd9fc9353797a0f09a6afaa0df9b14f1",
+              "byte_size": 3962,
+              "width_emu": 1428750,
+              "height_emu": 1200150
+            }
+          ],
+          "answer": [
+            {
+              "paragraph_index": 213,
+              "rel_id": "rId101",
+              "target_ref": "/word/media/image47.wmf",
+              "sha256": "a7d86355cd591b276ed18e19cb8a447ee5dd306e06b50f452282a4eae2e9b571",
+              "byte_size": 1378,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 213,
+              "rel_id": "rId102",
+              "target_ref": "/word/embeddings/oleObject51.bin",
+              "sha256": "4002bd1ad005f12b3a00bc8c5343bed6e38686e7474fd0d0ec6cf7e05797bc69",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 213,
+              "rel_id": "rId101",
+              "target_ref": "/word/media/image47.wmf",
+              "sha256": "a7d86355cd591b276ed18e19cb8a447ee5dd306e06b50f452282a4eae2e9b571",
+              "byte_size": 1378,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 213,
+              "rel_id": "rId102",
+              "target_ref": "/word/embeddings/oleObject51.bin",
+              "sha256": "4002bd1ad005f12b3a00bc8c5343bed6e38686e7474fd0d0ec6cf7e05797bc69",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 214,
+              "rel_id": "rId103",
+              "target_ref": "/word/media/image48.wmf",
+              "sha256": "c668c8088e07f6e31ba60ff08190966b7faa6ddecb9e6861d79cef1f002fe04a",
+              "byte_size": 3032,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 214,
+              "rel_id": "rId104",
+              "target_ref": "/word/embeddings/oleObject52.bin",
+              "sha256": "cfbf85d92e55baf39a30f8fa4cc2585f091ba6933a31dcac848d60b237412fc8",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 214,
+              "rel_id": "rId103",
+              "target_ref": "/word/media/image48.wmf",
+              "sha256": "c668c8088e07f6e31ba60ff08190966b7faa6ddecb9e6861d79cef1f002fe04a",
+              "byte_size": 3032,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 214,
+              "rel_id": "rId104",
+              "target_ref": "/word/embeddings/oleObject52.bin",
+              "sha256": "cfbf85d92e55baf39a30f8fa4cc2585f091ba6933a31dcac848d60b237412fc8",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            }
+          ],
+          "analysis": []
+        },
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object,answer_visual_object",
+        "_question_no": 41,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      },
+      {
+        "question_no": 42,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题",
+        "stem": "某电路的部分结构如图所示，若选择c点为参考点时，其余各点的电位分别是V，V，V，V。完成下列各题。\n[图片]\n[图片]\n(1)若选择c点为参考点，则c点的电位是（    ）\n(2)若选择c点为参考点，a、c两点间的电压______V。\n[图片]\n(3)若选择c点为参考点，e、b两点间的电压______V。\n[图片]\n(4)若选择d点为参考点，a点的电位______V。\n[图片]\n(5)若选择d点为参考点，c点的电位______V。\n[图片]",
+        "options": [
+          "A. 1V",
+          "B. 0V",
+          "C. -1V",
+          "D. 2V"
+        ],
+        "answer": "(1)B\n(2)-6\n(3)-1\n(4)-4\n(5)2",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "41．某电路的部分结构如图所示，若选择c点为参考点时，其余各点的电位分别是V，V，V，V。完成下列各题。\n[图片]\n[图片]\n(1)若选择c点为参考点，则c点的电位是（    ）\nA．1V B．0V C．-1V D．2V\n(2)若选择c点为参考点，a、c两点间的电压______V。\n[图片]\n(3)若选择c点为参考点，e、b两点间的电压______V。\n[图片]\n(4)若选择d点为参考点，a点的电位______V。\n[图片]\n(5)若选择d点为参考点，c点的电位______V。\n[图片]\n【答案】(1)B\n(2)-6\n(3)-1\n(4)-4\n(5)2\n【解析】略",
+        "source_docx_path": "C:\\Users\\dell\\Desktop\\考纲百套卷生成工具包\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第2卷.docx",
+        "source_paragraph_indices": [
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183
+        ],
+        "stem_paragraph_indices": [
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177
+        ],
+        "answer_paragraph_indices": [
+          178,
+          179,
+          180,
+          181,
+          182
+        ],
+        "analysis_paragraph_indices": [
+          183
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId16",
+              "target_ref": "/word/media/image9.wmf",
+              "sha256": "2c38b4feb21e6b8a45f0f3f83344e018b2b2597157ac6e483125611d932fca33",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId18",
+              "target_ref": "/word/media/image10.wmf",
+              "sha256": "7e875033abe64799de7461cf62d9f9ec2d45df4e54ec4d220d12cb8b7160f28a",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId20",
+              "target_ref": "/word/media/image11.wmf",
+              "sha256": "b8553398ea03ac0520b3c79837be187cf7f6ff92eb89a1f40c3594edae006c0f",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId22",
+              "target_ref": "/word/media/image12.wmf",
+              "sha256": "95d71be7e69a257ad4cb3cc05d85a5164e16817d72144db52336ba0b9da0385c",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId17",
+              "target_ref": "/word/embeddings/oleObject4.bin",
+              "sha256": "ae6caa26c07b1ec6a52fdd6a5a20f7439b09a46549c3f32ac4bdcfcdb8673310",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId19",
+              "target_ref": "/word/embeddings/oleObject5.bin",
+              "sha256": "364f422a680527ba9eb41d2dbb9d9e897f7408c81d21ca0074a9859042b79313",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId21",
+              "target_ref": "/word/embeddings/oleObject6.bin",
+              "sha256": "f692de4cda0c520b716ae3a7b5138f2b3d4888f4716d5ef2f494ee8aa158a2d4",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId23",
+              "target_ref": "/word/embeddings/oleObject7.bin",
+              "sha256": "79689d80ce192e37fd52d7966800740bcec067bda09fef80ced584bd2cd3c6e3",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId16",
+              "target_ref": "/word/media/image9.wmf",
+              "sha256": "2c38b4feb21e6b8a45f0f3f83344e018b2b2597157ac6e483125611d932fca33",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId18",
+              "target_ref": "/word/media/image10.wmf",
+              "sha256": "7e875033abe64799de7461cf62d9f9ec2d45df4e54ec4d220d12cb8b7160f28a",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId20",
+              "target_ref": "/word/media/image11.wmf",
+              "sha256": "b8553398ea03ac0520b3c79837be187cf7f6ff92eb89a1f40c3594edae006c0f",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId22",
+              "target_ref": "/word/media/image12.wmf",
+              "sha256": "95d71be7e69a257ad4cb3cc05d85a5164e16817d72144db52336ba0b9da0385c",
+              "byte_size": 978,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId17",
+              "target_ref": "/word/embeddings/oleObject4.bin",
+              "sha256": "ae6caa26c07b1ec6a52fdd6a5a20f7439b09a46549c3f32ac4bdcfcdb8673310",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId19",
+              "target_ref": "/word/embeddings/oleObject5.bin",
+              "sha256": "364f422a680527ba9eb41d2dbb9d9e897f7408c81d21ca0074a9859042b79313",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId21",
+              "target_ref": "/word/embeddings/oleObject6.bin",
+              "sha256": "f692de4cda0c520b716ae3a7b5138f2b3d4888f4716d5ef2f494ee8aa158a2d4",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 170,
+              "rel_id": "rId23",
+              "target_ref": "/word/embeddings/oleObject7.bin",
+              "sha256": "79689d80ce192e37fd52d7966800740bcec067bda09fef80ced584bd2cd3c6e3",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 171,
+              "rel_id": "rId24",
+              "target_ref": "/word/media/image13.png",
+              "sha256": "c3a87fd8be5c2dfd32f2e25e534c6140523ed43844eb6d3bfaabfcdc4a2e75c5",
+              "byte_size": 5837,
+              "width_emu": 1181100,
+              "height_emu": 1238250
+            },
+            {
+              "paragraph_index": 174,
+              "rel_id": "rId25",
+              "target_ref": "/word/media/image14.wmf",
+              "sha256": "cceed7f8a539f05c5e182edc1f0176d60213dd93834258f2e9e6ca402bf9fcd4",
+              "byte_size": 872,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 174,
+              "rel_id": "rId26",
+              "target_ref": "/word/embeddings/oleObject8.bin",
+              "sha256": "eccbe7ba9010ae4e8617ae7a082636debec8c9d2a73e55f1e298d6d741945ef8",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 174,
+              "rel_id": "rId25",
+              "target_ref": "/word/media/image14.wmf",
+              "sha256": "cceed7f8a539f05c5e182edc1f0176d60213dd93834258f2e9e6ca402bf9fcd4",
+              "byte_size": 872,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 174,
+              "rel_id": "rId26",
+              "target_ref": "/word/embeddings/oleObject8.bin",
+              "sha256": "eccbe7ba9010ae4e8617ae7a082636debec8c9d2a73e55f1e298d6d741945ef8",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 175,
+              "rel_id": "rId27",
+              "target_ref": "/word/media/image15.wmf",
+              "sha256": "663dc7bfa18ddb76ffee43b329493cbd349bb392103a541ef91161c26f92e789",
+              "byte_size": 872,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 175,
+              "rel_id": "rId28",
+              "target_ref": "/word/embeddings/oleObject9.bin",
+              "sha256": "c2911c38eb1e9df653d8cf6e2a9d842075813b26651f31502f9cca5562a3092f",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 175,
+              "rel_id": "rId27",
+              "target_ref": "/word/media/image15.wmf",
+              "sha256": "663dc7bfa18ddb76ffee43b329493cbd349bb392103a541ef91161c26f92e789",
+              "byte_size": 872,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 175,
+              "rel_id": "rId28",
+              "target_ref": "/word/embeddings/oleObject9.bin",
+              "sha256": "c2911c38eb1e9df653d8cf6e2a9d842075813b26651f31502f9cca5562a3092f",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 176,
+              "rel_id": "rId29",
+              "target_ref": "/word/media/image16.wmf",
+              "sha256": "294f12693591b6f5cb311f0216a546af4131e696daa9df2214f6c5d03d35a4de",
+              "byte_size": 848,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 176,
+              "rel_id": "rId30",
+              "target_ref": "/word/embeddings/oleObject10.bin",
+              "sha256": "628a44f038c8a4a2b68e50b69d8d1d1d358a7823245ac3caa5637b8d04ae5e0e",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 176,
+              "rel_id": "rId29",
+              "target_ref": "/word/media/image16.wmf",
+              "sha256": "294f12693591b6f5cb311f0216a546af4131e696daa9df2214f6c5d03d35a4de",
+              "byte_size": 848,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 176,
+              "rel_id": "rId30",
+              "target_ref": "/word/embeddings/oleObject10.bin",
+              "sha256": "628a44f038c8a4a2b68e50b69d8d1d1d358a7823245ac3caa5637b8d04ae5e0e",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 177,
+              "rel_id": "rId31",
+              "target_ref": "/word/media/image17.wmf",
+              "sha256": "360b751c6a8b20ffd9adfb37dcaf93ab838081f56091924c286a21dce0d1d54a",
+              "byte_size": 864,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 177,
+              "rel_id": "rId32",
+              "target_ref": "/word/embeddings/oleObject11.bin",
+              "sha256": "564fe77750e20d42401a3158c67b4d0bbb7ad7affef466d3ff1a89b5771ac232",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 177,
+              "rel_id": "rId31",
+              "target_ref": "/word/media/image17.wmf",
+              "sha256": "360b751c6a8b20ffd9adfb37dcaf93ab838081f56091924c286a21dce0d1d54a",
+              "byte_size": 864,
+              "width_emu": null,
+              "height_emu": null
+            },
+            {
+              "paragraph_index": 177,
+              "rel_id": "rId32",
+              "target_ref": "/word/embeddings/oleObject11.bin",
+              "sha256": "564fe77750e20d42401a3158c67b4d0bbb7ad7affef466d3ff1a89b5771ac232",
+              "byte_size": 3584,
+              "width_emu": null,
+              "height_emu": null
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 42,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      }
+    ],
+    "warnings": []
+  }
+}

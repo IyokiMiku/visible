@@ -1,0 +1,2927 @@
+{
+  "paper": {
+    "paper_no": 5,
+    "paper_label": "第5卷",
+    "paper_type": "考点训练卷",
+    "module": "电工技术基础与技能",
+    "topic": "电路基本概念与定律",
+    "point_name": "部分电路与全电路欧姆定律"
+  },
+  "loaded_paper": {
+    "path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷 电工技术基础与技能 部分电路与全电路欧姆定律.docx",
+    "paper_label": "第5卷",
+    "title": "A. 0.5A B. 5A",
+    "questions": [
+      {
+        "question_no": 1,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "把一个电阻为 10Ω的导体接到电压为 5V 的电源上，通过导体的电流是（ ）",
+        "options": [
+          "A. 0.5A",
+          "B. 5A",
+          "C. 2A",
+          "D. 10A"
+        ],
+        "answer": "A",
+        "analysis": "根据欧姆定律I=U/R，I=5V/10Ω=0.5A，所以选 A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "1．把一个电阻为 10Ω的导体接到电压为 5V 的电源上，通过导体的电流是（ ）\nA. 0.5A B. 5A\nC. 2A D. 10A\n【答案】A\n【详解】【详解】根据欧姆定律I=U/R，I=5V/10Ω=0.5A，所以选 A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          1,
+          3,
+          4
+        ],
+        "source_body_indices": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "original_docx_body_indices": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "original_docx_body_range": {
+          "start": 1,
+          "end": 5
+        },
+        "stem_paragraph_indices": [
+          1
+        ],
+        "answer_paragraph_indices": [
+          3
+        ],
+        "analysis_paragraph_indices": [
+          4
+        ],
+        "option_table_indices": [
+          0
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 1,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 2,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "下列说法中，正确的是（ ）",
+        "options": [
+          "A. 据可知，加在电阻两端的电压变为原来的2倍，导体的电阻也变为原来的2倍",
+          "B. 不考虑温度对阻值的影响，通过导体的电流及加在两端的电压改变时导体的电阻不变",
+          "C. 据可知，导体的电阻率与导体的电阻和横截面积的乘积RS成正比，与导体的长度l成反比",
+          "D. 导体的电阻率与导体的长度l、横截面积S、导体的电阻R皆有关"
+        ],
+        "answer": "B",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "warning",
+        "issues": [
+          "选项结构不一致"
+        ],
+        "raw_text": "2．下列说法中，正确的是（ ）\nA. 据可知，加在电阻两端的电压变为原来的2倍，导体的电阻也变为原来的2倍\nB. 不考虑温度对阻值的影响，通过导体的电流及加在两端的电压改变时导体的电阻不变\nC. 据可知，导体的电阻率与导体的电阻和横截面积的乘积RS成正比，与导体的长度l成反比\nD. 导体的电阻率与导体的长度l、横截面积S、导体的电阻R皆有关\n【答案】B\n【详解】略",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          6,
+          8,
+          9
+        ],
+        "source_body_indices": [
+          7,
+          8,
+          10,
+          11
+        ],
+        "original_docx_body_indices": [
+          7,
+          8,
+          10,
+          11
+        ],
+        "original_docx_body_range": {
+          "start": 7,
+          "end": 11
+        },
+        "stem_paragraph_indices": [
+          6
+        ],
+        "answer_paragraph_indices": [
+          8
+        ],
+        "analysis_paragraph_indices": [
+          9
+        ],
+        "option_table_indices": [
+          1
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "body_visual_object",
+        "_question_no": 2,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "inconsistent_option_structure",
+            "name": "选项结构不一致",
+            "severity": "warning",
+            "message": "第2题仅C选项含连接词，选项结构可能突出。"
+          }
+        ],
+        "needs_manual_review": true
+      },
+      {
+        "question_no": 3,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "一节干电池的电动势为1.5 V，内阻为0.5 Ω，接入阻值为2.5 Ω的小灯泡后，小灯泡两端的电压为（   ）",
+        "options": [
+          "A. 0.25 V",
+          "B. 1.25 V",
+          "C. 1.50 V",
+          "D. 1.75 V"
+        ],
+        "answer": "B",
+        "analysis": "根据全电路欧姆定律，电路电流为I=E/(R+r)=1.5/(2.5+0.5)=0.5 A。小灯泡两端电压为外电路电压，U=IR=0.5×2.5=1.25 V，因此选B。",
+        "knowledge_points": [
+          "全电路欧姆定律",
+          "电源内阻",
+          "外电路电压计算"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "3．在一个电路中，如果总电流为10安，总电压为50伏特，总电阻为多少欧姆？（ ）\nA. 5欧姆 B. 10欧姆\nC. 40欧姆 D. 50欧姆\n【答案】A\n【详解】【详解】总电阻等于总电压除以总电流，所以总电阻为50伏特除以10安，即5欧姆。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          11,
+          13,
+          14
+        ],
+        "source_body_indices": [
+          13,
+          14,
+          16,
+          17
+        ],
+        "original_docx_body_indices": [
+          13,
+          14,
+          16,
+          17
+        ],
+        "original_docx_body_range": {
+          "start": 13,
+          "end": 17
+        },
+        "stem_paragraph_indices": [
+          11
+        ],
+        "answer_paragraph_indices": [
+          13
+        ],
+        "analysis_paragraph_indices": [
+          14
+        ],
+        "option_table_indices": [
+          2
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 3,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 4,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "如何计算电路中某一点的电压？（ ）",
+        "options": [
+          "A. 电流乘以电阻",
+          "B. 电阻乘以电流",
+          "C. 电流除以电阻",
+          "D. 电流加上电阻"
+        ],
+        "answer": "B",
+        "analysis": "根据欧姆定律，电压等于电流乘以电阻。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "4．如何计算电路中某一点的电压？（ ）\nA. 电流乘以电阻 B. 电阻乘以电流\nC. 电流除以电阻 D. 电流加上电阻\n【答案】B\n【详解】【详解】根据欧姆定律，电压等于电流乘以电阻。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          16,
+          18,
+          19
+        ],
+        "source_body_indices": [
+          19,
+          20,
+          22,
+          23
+        ],
+        "original_docx_body_indices": [
+          19,
+          20,
+          22,
+          23
+        ],
+        "original_docx_body_range": {
+          "start": 19,
+          "end": 23
+        },
+        "stem_paragraph_indices": [
+          16
+        ],
+        "answer_paragraph_indices": [
+          18
+        ],
+        "analysis_paragraph_indices": [
+          19
+        ],
+        "option_table_indices": [
+          3
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 4,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 5,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "某电阻两端电压为12 V，电阻值为6 Ω，通过的电流是（   ）",
+        "options": [
+          "A. 0.5 A",
+          "B. 2 A",
+          "C. 6 A",
+          "D. 12 A"
+        ],
+        "answer": "B",
+        "analysis": "根据部分电路欧姆定律，电流等于电压除以电阻。将电压12 V和电阻6 Ω代入，得到电流为2 A，因此选B。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "电流计算"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "5．某电阻两端电压为 12V，电阻值为 6Ω，通过的电流是（ ）\nA. 0.5A B. 2A\nC. 6A D. 12A\n【答案】B",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          21,
+          23
+        ],
+        "source_body_indices": [
+          25,
+          26,
+          28
+        ],
+        "original_docx_body_indices": [
+          25,
+          26,
+          28
+        ],
+        "original_docx_body_range": {
+          "start": 25,
+          "end": 28
+        },
+        "stem_paragraph_indices": [
+          21
+        ],
+        "answer_paragraph_indices": [
+          23
+        ],
+        "analysis_paragraph_indices": [],
+        "option_table_indices": [
+          4
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 5,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 6,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "一个电阻为10Ω的导体，若它两端的电压从5V增加到10V，则通过它的电流变化了（ ）",
+        "options": [
+          "A. 0.5A",
+          "B. 1A",
+          "C. 1.5A",
+          "D. 2A"
+        ],
+        "answer": "A",
+        "analysis": "原来电流=5V/10Ω=0.5A，后来电流= 10V/10Ω=1A，电流变化了1A - 0.5A = 0.5A，所以选 A。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "6．一个电阻为10Ω的导体，若它两端的电压从5V增加到10V，则通过它的电流变化了（ ）\nA. 0.5A B. 1A\nC. 1.5A D. 2A\n【答案】A\n【详解】【详解】原来电流=5V/10Ω=0.5A，后来电流= 10V/10Ω=1A，电流变化了1A - 0.5A = 0.5A，所以选 A。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          25,
+          27,
+          28
+        ],
+        "source_body_indices": [
+          30,
+          31,
+          33,
+          34
+        ],
+        "original_docx_body_indices": [
+          30,
+          31,
+          33,
+          34
+        ],
+        "original_docx_body_range": {
+          "start": 30,
+          "end": 34
+        },
+        "stem_paragraph_indices": [
+          25
+        ],
+        "answer_paragraph_indices": [
+          27
+        ],
+        "analysis_paragraph_indices": [
+          28
+        ],
+        "option_table_indices": [
+          5
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "analysis_visual_object",
+        "_question_no": 6,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 7,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "如图所示为两个电阻的伏安特性曲线，由此可确定（ ）\n[图片]\nA.\nB.\nC.",
+        "options": [
+          "D. ，"
+        ],
+        "answer": "B",
+        "analysis": "由欧姆定律可知，故B正确。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题"
+        ],
+        "raw_text": "7．如图所示为两个电阻的伏安特性曲线，由此可确定（ ）\n[图片]\nA.\nB.\nC.\nD. ，\n【答案】B\n【详解】【详解】由欧姆定律可知，故B正确。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          30,
+          31,
+          33,
+          34
+        ],
+        "source_body_indices": [
+          36,
+          37,
+          38,
+          40,
+          41
+        ],
+        "original_docx_body_indices": [
+          36,
+          37,
+          38,
+          40,
+          41
+        ],
+        "original_docx_body_range": {
+          "start": 36,
+          "end": 41
+        },
+        "stem_paragraph_indices": [
+          30,
+          31
+        ],
+        "answer_paragraph_indices": [
+          33
+        ],
+        "analysis_paragraph_indices": [
+          34
+        ],
+        "option_table_indices": [
+          6
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 31,
+              "rel_id": "rId9",
+              "target_ref": "/word/media/image1.png",
+              "sha256": "63f34fc238acf4f6b65a031a23640bb3bd0d2140513be530a53c515635058394",
+              "byte_size": 6147,
+              "width_emu": 1171575,
+              "height_emu": 942975
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 31,
+            "rel_id": "rId9",
+            "target_ref": "/word/media/image1.png",
+            "sha256": "63f34fc238acf4f6b65a031a23640bb3bd0d2140513be530a53c515635058394",
+            "byte_size": 6147,
+            "width_emu": 1171575,
+            "height_emu": 942975
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object,analysis_visual_object",
+        "_question_no": 7,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第7题与第12题题干疑似重复（核心关键词高度重合，相似度=100%）。"
+          }
+        ],
+        "needs_manual_review": true
+      },
+      {
+        "question_no": 8,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "已知电阻R = 5Ω，通过的电流I = 2A，则电阻两端的电压U为（ ）",
+        "options": [
+          "A. 2.5V",
+          "B. 0.4V",
+          "C. 10V",
+          "D. 7V"
+        ],
+        "answer": "C",
+        "analysis": "根据欧姆定律U = IR，U = 2A错误5Ω = 10V，所以选 B。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "8．已知电阻R = 5Ω，通过的电流I = 2A，则电阻两端的电压U为（ ）\nA. 2.5V B. 10V\nC. 0.4V D. 7V\n【答案】B\n【详解】【详解】根据欧姆定律U = IR，U = 2A错误5Ω = 10V，所以选 B。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          36,
+          38,
+          39
+        ],
+        "source_body_indices": [
+          43,
+          44,
+          46,
+          47
+        ],
+        "original_docx_body_indices": [
+          43,
+          44,
+          46,
+          47
+        ],
+        "original_docx_body_range": {
+          "start": 43,
+          "end": 47
+        },
+        "stem_paragraph_indices": [
+          36
+        ],
+        "answer_paragraph_indices": [
+          38
+        ],
+        "analysis_paragraph_indices": [
+          39
+        ],
+        "option_table_indices": [
+          7
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 8,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 9,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "在一个串联电路中，如果总电流为5A，总电阻为10欧姆，则电路中的总电压是多少（ ）",
+        "options": [
+          "A. 10V",
+          "B. 15V",
+          "C. 20V",
+          "D. 25V"
+        ],
+        "answer": "C",
+        "analysis": "总电压等于总电流乘以总电阻，即 ( V = IR = 5 \\ 10 = 50V )",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "9．在一个串联电路中，如果总电流为5A，总电阻为10欧姆，则电路中的总电压是多少（ ）\nA. 10V B. 15V\nC. 20V D. 25V\n【答案】C\n【详解】【详解】总电压等于总电流乘以总电阻，即 ( V = IR = 5 \\ 10 = 50V )",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          41,
+          43,
+          44
+        ],
+        "source_body_indices": [
+          49,
+          50,
+          52,
+          53
+        ],
+        "original_docx_body_indices": [
+          49,
+          50,
+          52,
+          53
+        ],
+        "original_docx_body_range": {
+          "start": 49,
+          "end": 53
+        },
+        "stem_paragraph_indices": [
+          41
+        ],
+        "answer_paragraph_indices": [
+          43
+        ],
+        "analysis_paragraph_indices": [
+          44
+        ],
+        "option_table_indices": [
+          8
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 9,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 10,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "某蓄电池接上4 Ω负载后，测得负载两端电压为10 V，已知蓄电池内阻为0.5 Ω，则该蓄电池的电动势为（   ）",
+        "options": [
+          "A. 10.50 V",
+          "B. 11.25 V",
+          "C. 12.00 V",
+          "D. 14.00 V"
+        ],
+        "answer": "B",
+        "analysis": "负载两端电压为10 V，外电阻为4 Ω，电路电流为10除以4，得到2.5 A。电源电动势等于端电压与内阻压降之和，内阻压降为2.5乘以0.5，得到1.25 V，所以电动势为11.25 V，选B。",
+        "knowledge_points": [
+          "全电路欧姆定律",
+          "电源端电压与内阻压降"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "10．在一个电路中，总电压为30伏特，总电流为5安，总电阻为多少欧姆？（ ）\nA. 3欧姆 B. 5欧姆\nC. 6欧姆 D. 10欧姆\n【答案】C\n【详解】【详解】总电阻等于总电压除以总电流，所以总电阻为30伏特除以5安，即6欧姆。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          46,
+          48,
+          49
+        ],
+        "source_body_indices": [
+          55,
+          56,
+          58,
+          59
+        ],
+        "original_docx_body_indices": [
+          55,
+          56,
+          58,
+          59
+        ],
+        "original_docx_body_range": {
+          "start": 55,
+          "end": 59
+        },
+        "stem_paragraph_indices": [
+          46
+        ],
+        "answer_paragraph_indices": [
+          48
+        ],
+        "analysis_paragraph_indices": [
+          49
+        ],
+        "option_table_indices": [
+          9
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 10,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 11,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "欧姆定律表明电流与电压之间的关系是？（ ）",
+        "options": [
+          "A. 电流与电压平方成正比",
+          "B. 电流与电阻成正比",
+          "C. 电流与电压成反比",
+          "D. 电流与电阻成反比"
+        ],
+        "answer": "B",
+        "analysis": "欧姆定律表示电流与电压成正比，与电阻成反比。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "11．欧姆定律表明电流与电压之间的关系是？（ ）\nA. 电流与电压平方成正比\nB. 电流与电阻成正比\nC. 电流与电压成反比\nD. 电流与电阻成反比\n【答案】B\n【详解】【详解】欧姆定律表示电流与电压成正比，与电阻成反比。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          51,
+          53,
+          54
+        ],
+        "source_body_indices": [
+          61,
+          62,
+          64,
+          65
+        ],
+        "original_docx_body_indices": [
+          61,
+          62,
+          64,
+          65
+        ],
+        "original_docx_body_range": {
+          "start": 61,
+          "end": 65
+        },
+        "stem_paragraph_indices": [
+          51
+        ],
+        "answer_paragraph_indices": [
+          53
+        ],
+        "analysis_paragraph_indices": [
+          54
+        ],
+        "option_table_indices": [
+          10
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 11,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 12,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "如图所示为两个电阻的伏安特性曲线，由图可确定（ ）\n[图片]\nA.\nB.\nC.",
+        "options": [
+          "D. 无法确定"
+        ],
+        "answer": "A",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "warning",
+        "issues": [
+          "疑似重复题"
+        ],
+        "raw_text": "12．如图所示为两个电阻的伏安特性曲线，由图可确定（ ）\n[图片]\nA.\nB.\nC.\nD. 无法确定\n【答案】A",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          56,
+          57,
+          59
+        ],
+        "source_body_indices": [
+          67,
+          68,
+          69,
+          71
+        ],
+        "original_docx_body_indices": [
+          67,
+          68,
+          69,
+          71
+        ],
+        "original_docx_body_range": {
+          "start": 67,
+          "end": 71
+        },
+        "stem_paragraph_indices": [
+          56,
+          57
+        ],
+        "answer_paragraph_indices": [
+          59
+        ],
+        "analysis_paragraph_indices": [],
+        "option_table_indices": [
+          11
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 57,
+              "rel_id": "rId10",
+              "target_ref": "/word/media/image2.png",
+              "sha256": "812b385fffb323a5f0b5928bab9051f9fdd55b6fba582edc4f51396b52e9bd3a",
+              "byte_size": 13129,
+              "width_emu": 1400175,
+              "height_emu": 1085850
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 57,
+            "rel_id": "rId10",
+            "target_ref": "/word/media/image2.png",
+            "sha256": "812b385fffb323a5f0b5928bab9051f9fdd55b6fba582edc4f51396b52e9bd3a",
+            "byte_size": 13129,
+            "width_emu": 1400175,
+            "height_emu": 1085850
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 12,
+        "_question_type": "单项选择题",
+        "issue_details": [
+          {
+            "code": "similar_question",
+            "name": "疑似重复题",
+            "severity": "warning",
+            "message": "第12题与第7题题干疑似重复（核心关键词高度重合，相似度=100%）。"
+          }
+        ],
+        "needs_manual_review": true
+      },
+      {
+        "question_no": 13,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "当电阻器两端的电压为12伏特，电阻为4欧姆时，通过电阻器的电流为（ ）",
+        "options": [
+          "A. 3安培",
+          "B. 2安培",
+          "C. 4安培",
+          "D. 6安培"
+        ],
+        "answer": "A",
+        "analysis": "根据欧姆定律，电流等于电压除以电阻，即I=V/R=12V/4Ω=3A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "13．当电阻器两端的电压为12伏特，电阻为4欧姆时，通过电阻器的电流为（ ）\nA. 2安培 B. 3安培\nC. 4安培 D. 6安培\n【答案】B\n【详解】【详解】根据欧姆定律，电流等于电压除以电阻，即I=V/R=12V/4Ω=3A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          61,
+          63,
+          64
+        ],
+        "source_body_indices": [
+          73,
+          74,
+          76,
+          77
+        ],
+        "original_docx_body_indices": [
+          73,
+          74,
+          76,
+          77
+        ],
+        "original_docx_body_range": {
+          "start": 73,
+          "end": 77
+        },
+        "stem_paragraph_indices": [
+          61
+        ],
+        "answer_paragraph_indices": [
+          63
+        ],
+        "analysis_paragraph_indices": [
+          64
+        ],
+        "option_table_indices": [
+          12
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 13,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 14,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "某灯泡的电阻为50Ω，接在220V的电压下，其电流是多少？（ ）",
+        "options": [
+          "A. 2.2A",
+          "B. 3.2A",
+          "C. 4.4A",
+          "D. 5.2A"
+        ],
+        "answer": "A",
+        "analysis": "根据欧姆定律I = U / R，电流I = 220V / 50Ω = 4.4A。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "14．某灯泡的电阻为50Ω，接在220V的电压下，其电流是多少？（ ）\nA. 2.2A B. 3.2A\nC. 4.4A D. 5.2A\n【答案】A\n【详解】【详解】根据欧姆定律I = U / R，电流I = 220V / 50Ω = 4.4A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          66,
+          68,
+          69
+        ],
+        "source_body_indices": [
+          79,
+          80,
+          82,
+          83
+        ],
+        "original_docx_body_indices": [
+          79,
+          80,
+          82,
+          83
+        ],
+        "original_docx_body_range": {
+          "start": 79,
+          "end": 83
+        },
+        "stem_paragraph_indices": [
+          66
+        ],
+        "answer_paragraph_indices": [
+          68
+        ],
+        "analysis_paragraph_indices": [
+          69
+        ],
+        "option_table_indices": [
+          13
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 14,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 15,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "在电源电压保持不变的直流电路中，若负载电阻增大，则电路中的电流会（ ）",
+        "options": [
+          "A. 电流明显增大",
+          "B. 电流相应减小",
+          "C. 电流保持不变",
+          "D. 电流先减后增"
+        ],
+        "answer": "B",
+        "analysis": "根据部分电路欧姆定律I=U/R，在电源电压U保持不变时，电流I与电阻R成反比。负载电阻增大后，电路电流应相应减小，因此选B。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "电阻与电流的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "15．若直流电路中的负载增加（即电阻增大），则电路中的电流会（ ）\nA. 增大 B. 减小\nC. 保持不变 D. 先增大后减小\n【答案】B\n【详解】【详解】根据欧姆定律，当电压不变时，电阻增大，则电流会减小。故选B",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          71,
+          73,
+          74
+        ],
+        "source_body_indices": [
+          85,
+          86,
+          88,
+          89
+        ],
+        "original_docx_body_indices": [
+          85,
+          86,
+          88,
+          89
+        ],
+        "original_docx_body_range": {
+          "start": 85,
+          "end": 89
+        },
+        "stem_paragraph_indices": [
+          71
+        ],
+        "answer_paragraph_indices": [
+          73
+        ],
+        "analysis_paragraph_indices": [
+          74
+        ],
+        "option_table_indices": [
+          14
+        ],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 15,
+        "_question_type": "单项选择题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 16,
+        "question_type": "单项选择题",
+        "heading": "一、单项选择题",
+        "stem": "如图所示，直线A、B分别为电源a、b的外特性图形，设两个电源的内阻分别为和，若将一定值电阻R分别接到a、b两电源上，通过R的电流分别为和，则（ ）\n[图片]\n[图片]",
+        "options": [
+          "A. =，=",
+          "B. ，",
+          "C. ，=",
+          "D. =，"
+        ],
+        "answer": "B",
+        "analysis": "",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "16．如图所示，直线A、B分别为电源a、b的外特性图形，设两个电源的内阻分别为和，若将一定值电阻R分别接到a、b两电源上，通过R的电流分别为和，则（ ）\n[图片]\n[图片]\nA. =，=\nB. ，\nC. ，=\nD. =，\n【答案】B",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          76,
+          77,
+          79
+        ],
+        "source_body_indices": [
+          91,
+          92,
+          93,
+          95
+        ],
+        "original_docx_body_indices": [
+          91,
+          92,
+          93,
+          95
+        ],
+        "original_docx_body_range": {
+          "start": 91,
+          "end": 95
+        },
+        "stem_paragraph_indices": [
+          76,
+          77
+        ],
+        "answer_paragraph_indices": [
+          79
+        ],
+        "analysis_paragraph_indices": [],
+        "option_table_indices": [
+          15
+        ],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [
+            {
+              "paragraph_index": 77,
+              "rel_id": "rId11",
+              "target_ref": "/word/media/image3.png",
+              "sha256": "36a3c27508390d1cdcca8dc581c3de8595b93c678b3fe3e0226283bb84ccaac2",
+              "byte_size": 23023,
+              "width_emu": 1400175,
+              "height_emu": 1114425
+            }
+          ],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": true,
+        "original_docx_image_refs": [
+          {
+            "paragraph_index": 77,
+            "rel_id": "rId11",
+            "target_ref": "/word/media/image3.png",
+            "sha256": "36a3c27508390d1cdcca8dc581c3de8595b93c678b3fe3e0226283bb84ccaac2",
+            "byte_size": 23023,
+            "width_emu": 1400175,
+            "height_emu": 1114425
+          }
+        ],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 16,
+        "_question_type": "单项选择题",
+        "issue_details": []
+      },
+      {
+        "question_no": 17,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "某纯电阻负载两端电压为12 V，通过该负载的电流为0.5 A，则该负载的电阻为24 Ω。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "部分电路欧姆定律可写为R=U/I。将题中数据代入得R=12/0.5=24 Ω，计算结果与题干表述一致，因此该说法正确。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "电阻计算",
+          "电压与电流的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "17．欧姆定律适用于所有直流电路。（ ）\n【答案】错误\n【详解】【详解】欧姆定律仅适用于线性元件（如电阻），不适用于含二极管等非线性元件的电路。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          82,
+          84,
+          85
+        ],
+        "source_body_indices": [
+          98,
+          100,
+          101
+        ],
+        "original_docx_body_indices": [
+          98,
+          100,
+          101
+        ],
+        "original_docx_body_range": {
+          "start": 98,
+          "end": 101
+        },
+        "stem_paragraph_indices": [
+          82
+        ],
+        "answer_paragraph_indices": [
+          84
+        ],
+        "analysis_paragraph_indices": [
+          85
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 17,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 18,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "欧姆定律表达式中的I、U、R三个量必须是对应同一导体在同种情况下的物理量。（ ）\n[图片]",
+        "options": [],
+        "answer": "√",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "18．欧姆定律表达式中的I、U、R三个量必须是对应同一导体在同种情况下的物理量。（ ）\n[图片]\n【答案】正确\n【详解】略",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          87,
+          89,
+          90
+        ],
+        "source_body_indices": [
+          103,
+          105,
+          106
+        ],
+        "original_docx_body_indices": [
+          103,
+          105,
+          106
+        ],
+        "original_docx_body_range": {
+          "start": 103,
+          "end": 106
+        },
+        "stem_paragraph_indices": [
+          87
+        ],
+        "answer_paragraph_indices": [
+          89
+        ],
+        "analysis_paragraph_indices": [
+          90
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 18,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 19,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在闭合电路中，电源电动势和内阻保持不变时，外电路电阻增大，干路电流也随之增大。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "全电路欧姆定律表明，闭合电路中的干路电流由电源电动势除以外电阻与内阻之和决定。电源电动势和内阻不变时，外电路电阻增大，总电阻增大，干路电流应减小，因此题干说法错误。",
+        "knowledge_points": [
+          "全电路欧姆定律",
+          "外电阻变化对电流的影响"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "19．欧姆定律适用于所有含有电阻的电路，包括含电容、电感的电路。（ ）\n【答案】错误\n【详解】【详解】欧姆定律仅适用于纯电阻电路，含电容、电感的非纯电阻电路中，电压与电流相位不同，不满足欧姆定律，故错误。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          92,
+          94,
+          95
+        ],
+        "source_body_indices": [
+          108,
+          110,
+          111
+        ],
+        "original_docx_body_indices": [
+          108,
+          110,
+          111
+        ],
+        "original_docx_body_range": {
+          "start": 108,
+          "end": 111
+        },
+        "stem_paragraph_indices": [
+          92
+        ],
+        "answer_paragraph_indices": [
+          94
+        ],
+        "analysis_paragraph_indices": [
+          95
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 19,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 20,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "当外电路断开时，外电阻R趋向于0。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "根据全电路欧姆定律I=E/(R+r)，其中R表示外电阻，r表示电源内阻。外电路断开时电流I=0，要使I=E/(R+r)趋于0，在电源电动势E不为0的情况下，应理解为外电阻R趋向于无穷大；只有外电路短路时，外电阻R才趋近于0。因此本题说法错误。",
+        "knowledge_points": [
+          "全电路欧姆定律",
+          "外电路断路与短路"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "20．当外电路断开时，R趋向于0。（ ）\n【答案】错误\n【详解】【详解】当外电路断开时，R趋向于无穷大。当外电路短路时，R趋近于零。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          97,
+          99,
+          100
+        ],
+        "source_body_indices": [
+          113,
+          115,
+          116
+        ],
+        "original_docx_body_indices": [
+          113,
+          115,
+          116
+        ],
+        "original_docx_body_range": {
+          "start": 113,
+          "end": 116
+        },
+        "stem_paragraph_indices": [
+          97
+        ],
+        "answer_paragraph_indices": [
+          99
+        ],
+        "analysis_paragraph_indices": [
+          100
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 20,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 21,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在含有内阻的电源闭合回路中，外电路电阻增大时，若电动势和内阻保持不变，回路电流会减小。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "根据全电路欧姆定律，回路电流等于电源电动势除以外电阻与内阻之和。电动势和内阻不变时，外电阻增大使总电阻增大，所以回路电流减小，题干表述正确。",
+        "knowledge_points": [
+          "全电路欧姆定律",
+          "电源内阻对回路电流的影响"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "21．欧姆定律适用于所有电路，包括含电容、电感的电路。（ ）\n【答案】错误\n【详解】【详解】欧姆定律仅适用于线性电路，含容感的交流电路需用阻抗分析，非线性电路不适用，表述错误。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          102,
+          104,
+          105
+        ],
+        "source_body_indices": [
+          118,
+          120,
+          121
+        ],
+        "original_docx_body_indices": [
+          118,
+          120,
+          121
+        ],
+        "original_docx_body_range": {
+          "start": 118,
+          "end": 121
+        },
+        "stem_paragraph_indices": [
+          102
+        ],
+        "answer_paragraph_indices": [
+          104
+        ],
+        "analysis_paragraph_indices": [
+          105
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 21,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 22,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在含有电源内阻的闭合直流电路中，只要外电路接通，路端电压就总是等于电源电动势。（ ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "电源向外电路供电时，电流通过电源内阻会产生内阻电压降，路端电压应小于电源电动势。只有外电路断开、电流为零时，路端电压才等于电源电动势。因此该说法错误。",
+        "knowledge_points": [
+          "全电路欧姆定律",
+          "电源内阻",
+          "路端电压与电动势的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "22．欧姆定律适用于所有类型的电路。（ ）\n【答案】错误\n【详解】【详解】欧姆定律仅适用于纯电阻电路和线性元件，不适用于含电容、电感的交流电路，故错误。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          107,
+          109,
+          110
+        ],
+        "source_body_indices": [
+          123,
+          125,
+          126
+        ],
+        "original_docx_body_indices": [
+          123,
+          125,
+          126
+        ],
+        "original_docx_body_range": {
+          "start": 123,
+          "end": 126
+        },
+        "stem_paragraph_indices": [
+          107
+        ],
+        "answer_paragraph_indices": [
+          109
+        ],
+        "analysis_paragraph_indices": [
+          110
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 22,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 23,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "一个电器接在220 V的电源上，电阻为50 Ω，通过它的电流为4.4 A。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "根据部分电路欧姆定律U=IR，可得I=U/R。代入数据计算，I=220/50=4.4 A，与题干所述电流4.4 A一致，所以该判断正确。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "电流计算"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "23．一个电器接在220伏特的电源上，电阻为50欧姆，电流为4.4安。（ ）\n【答案】错误\n【详解】【详解】错误。根据欧姆定律，电流等于电压除以电阻，所以电流为220伏特除以50欧姆，即4.4安。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          112,
+          114,
+          115
+        ],
+        "source_body_indices": [
+          128,
+          130,
+          131
+        ],
+        "original_docx_body_indices": [
+          128,
+          130,
+          131
+        ],
+        "original_docx_body_range": {
+          "start": 128,
+          "end": 131
+        },
+        "stem_paragraph_indices": [
+          112
+        ],
+        "answer_paragraph_indices": [
+          114
+        ],
+        "analysis_paragraph_indices": [
+          115
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 23,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 24,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "欧姆定律表明，通过导体的电流与导体两端的电压成正比，与导体的电阻成反比。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "部分电路欧姆定律可表示为I=U/R，在电阻一定时，电流随导体两端电压增大而增大，二者成正比；在电压一定时，电阻越大，电流越小，二者成反比。因此题干表述正确。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "电流与电压、电阻的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "24．欧姆定律表明，通过导体的电流与导体两端的电压成正比，与导体的电阻成反比。（ ）\n【答案】正确",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          117,
+          119
+        ],
+        "source_body_indices": [
+          133,
+          135
+        ],
+        "original_docx_body_indices": [
+          133,
+          135
+        ],
+        "original_docx_body_range": {
+          "start": 133,
+          "end": 135
+        },
+        "stem_paragraph_indices": [
+          117
+        ],
+        "answer_paragraph_indices": [
+          119
+        ],
+        "analysis_paragraph_indices": [],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 24,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 25,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "欧姆定律指出了电流、电压和电阻之间的定量关系（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "欧姆定律表明了电路中电压与电流的关系，即V=IR，其中V为电压，I为电流，R为电阻。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "25．欧姆定律指出了电流、电压和电阻之间的定量关系（ ）\n【答案】正确\n【详解】【详解】欧姆定律表明了电路中电压与电流的关系，即V=IR，其中V为电压，I为电流，R为电阻。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          121,
+          123,
+          124
+        ],
+        "source_body_indices": [
+          137,
+          139,
+          140
+        ],
+        "original_docx_body_indices": [
+          137,
+          139,
+          140
+        ],
+        "original_docx_body_range": {
+          "start": 137,
+          "end": 140
+        },
+        "stem_paragraph_indices": [
+          121
+        ],
+        "answer_paragraph_indices": [
+          123
+        ],
+        "analysis_paragraph_indices": [
+          124
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 25,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 26,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "全电路欧姆定律适用于既有负载又有电源的电路。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "全电路包括内电路和外电路两部分，内电路指电源内部，所以全电路欧姆定律适用于既有负载又有电源的电路。表述正确。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "26．全电路欧姆定律适用于既有负载又有电源的电路。（ ）\n【答案】正确\n【详解】【详解】全电路包括内电路和外电路两部分，内电路指电源内部，所以全电路欧姆定律适用于既有负载又有电源的电路。表述正确。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          126,
+          128,
+          129
+        ],
+        "source_body_indices": [
+          142,
+          144,
+          145
+        ],
+        "original_docx_body_indices": [
+          142,
+          144,
+          145
+        ],
+        "original_docx_body_range": {
+          "start": 142,
+          "end": 145
+        },
+        "stem_paragraph_indices": [
+          126
+        ],
+        "answer_paragraph_indices": [
+          128
+        ],
+        "analysis_paragraph_indices": [
+          129
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 26,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 27,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在闭合电路中，电源电动势一定时，外电路电阻增大，回路电流会减小。（   ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "全电路欧姆定律可表示为I=E/(R+r)，其中E为电源电动势，R为外电路电阻，r为电源内阻。当E和r不变时，R增大会使分母增大，因此回路电流减小，题干表述正确。",
+        "knowledge_points": [
+          "全电路欧姆定律",
+          "电源内阻对电流的影响"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "27．欧姆定律适用于所有电路，包括含有电容和电感的电路。（ ）\n【答案】错误\n【详解】【详解】欧姆定律仅适用于线性纯电阻电路，含电容、电感的电路不适用，表述错误。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          131,
+          133,
+          134
+        ],
+        "source_body_indices": [
+          147,
+          149,
+          150
+        ],
+        "original_docx_body_indices": [
+          147,
+          149,
+          150
+        ],
+        "original_docx_body_range": {
+          "start": 147,
+          "end": 150
+        },
+        "stem_paragraph_indices": [
+          131
+        ],
+        "answer_paragraph_indices": [
+          133
+        ],
+        "analysis_paragraph_indices": [
+          134
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 27,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 28,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "欧姆定律具有普遍性，线性电路和非线性电路都适用。（   ）",
+        "options": [],
+        "answer": "×",
+        "analysis": "欧姆定律适用于电阻值保持不变、伏安特性近似为直线的线性电路或线性元件。非线性元件的电压与电流不成固定比例关系，不能简单套用欧姆定律判断其工作状态，因此本题说法错误。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "线性电路与非线性电路"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "28．欧姆定律具有普遍性，线性电路和非线性电路都适用。（ ）\n【答案】错误\n【详解】略",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          136,
+          138,
+          139
+        ],
+        "source_body_indices": [
+          152,
+          154,
+          155
+        ],
+        "original_docx_body_indices": [
+          152,
+          154,
+          155
+        ],
+        "original_docx_body_range": {
+          "start": 152,
+          "end": 155
+        },
+        "stem_paragraph_indices": [
+          136
+        ],
+        "answer_paragraph_indices": [
+          138
+        ],
+        "analysis_paragraph_indices": [
+          139
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 28,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 29,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "纯电阻单相正弦交流电路中的电压与电流，其瞬时值遵循欧姆定律。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "纯电阻电路中电压与电流的瞬时值遵循欧姆定律，故正确。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "29．纯电阻单相正弦交流电路中的电压与电流，其瞬时值遵循欧姆定律。（ ）\n【答案】正确\n【详解】【详解】纯电阻电路中电压与电流的瞬时值遵循欧姆定律，故正确。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          141,
+          143,
+          144
+        ],
+        "source_body_indices": [
+          157,
+          159,
+          160
+        ],
+        "original_docx_body_indices": [
+          157,
+          159,
+          160
+        ],
+        "original_docx_body_range": {
+          "start": 157,
+          "end": 160
+        },
+        "stem_paragraph_indices": [
+          141
+        ],
+        "answer_paragraph_indices": [
+          143
+        ],
+        "analysis_paragraph_indices": [
+          144
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 29,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 30,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "根据欧姆定律，若电阻一定，电压增加一倍，则电流也增加一倍。（ ）",
+        "options": [],
+        "answer": "√",
+        "analysis": "根据欧姆定律 ( I = )，当电阻R一定时，电流I与电压U成正比。因此，当电压增加一倍时，电流也增加一倍。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "30．根据欧姆定律，若电阻一定，电压增加一倍，则电流也增加一倍。（ ）\n【答案】正确\n【详解】【详解】根据欧姆定律 ( I = )，当电阻R一定时，电流I与电压U成正比。因此，当电压增加一倍时，电流也增加一倍。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          146,
+          148,
+          149
+        ],
+        "source_body_indices": [
+          162,
+          164,
+          165
+        ],
+        "original_docx_body_indices": [
+          162,
+          164,
+          165
+        ],
+        "original_docx_body_range": {
+          "start": 162,
+          "end": 165
+        },
+        "stem_paragraph_indices": [
+          146
+        ],
+        "answer_paragraph_indices": [
+          148
+        ],
+        "analysis_paragraph_indices": [
+          149
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "analysis_visual_object",
+        "_question_no": 30,
+        "_question_type": "判断题",
+        "issue_details": []
+      },
+      {
+        "question_no": 31,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "在一段金属导体温度基本不变时，若导体两端电压增大到原来的2倍，则通过导体的电流也增大到原来的2倍。（ ）",
+        "options": [
+          "A. 正确",
+          "B. 错误"
+        ],
+        "answer": "√",
+        "analysis": "根据部分电路欧姆定律I=U/R。温度基本不变时，金属导体的电阻R可认为不变，原电流为I1=U/R；电压增大到原来的2倍后，电流为I2=2U/R=2I1。因此通过导体的电流也增大到原来的2倍，题干说法正确。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "电流与电压的正比关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "31．在一段金属导体温度基本不变时，若导体两端电压增大到原来的2倍，则通过导体的电流也增大到原来的2倍。（ ）\nA. 正确\nB. 错误\n【答案】√\n【详解】部分电路欧姆定律表明，在电阻不变时，电流与导体两端电压成正比。题干限定温度基本不变，可认为电阻不变，因此电压加倍时电流也加倍。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          151,
+          152,
+          153,
+          155,
+          156
+        ],
+        "source_body_indices": [
+          167,
+          168,
+          169,
+          171,
+          172
+        ],
+        "original_docx_body_indices": [
+          167,
+          168,
+          169,
+          171,
+          172
+        ],
+        "original_docx_body_range": {
+          "start": 167,
+          "end": 172
+        },
+        "stem_paragraph_indices": [
+          151,
+          152,
+          153
+        ],
+        "answer_paragraph_indices": [
+          155
+        ],
+        "analysis_paragraph_indices": [
+          156
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 31,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 32,
+        "question_type": "判断题",
+        "heading": "二、判断题",
+        "stem": "一只定值电阻两端电压为6 V，通过它的电流为0.3 A，则该电阻的阻值为20 Ω。（ ）",
+        "options": [
+          "A. 正确",
+          "B. 错误"
+        ],
+        "answer": "√",
+        "analysis": "根据部分电路欧姆定律U=IR，可得R=U/I。代入数据得R=6/0.3=20 Ω，所以题干中计算出的电阻值正确。",
+        "knowledge_points": [
+          "部分电路欧姆定律的应用"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "32．某电源给外电路供电时，只要电源电动势保持不变，外电路电阻越小，路端电压就一定越接近电源电动势。（ ）\nA. 正确\nB. 错误\n【答案】×\n【详解】全电路欧姆定律表明，外电路电阻越小，电路电流越大，电源内阻上的电压损失越大。路端电压会小于电源电动势，并且通常会随外电路电阻减小而降低。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          158,
+          159,
+          160,
+          162,
+          163
+        ],
+        "source_body_indices": [
+          174,
+          175,
+          176,
+          178,
+          179
+        ],
+        "original_docx_body_indices": [
+          174,
+          175,
+          176,
+          178,
+          179
+        ],
+        "original_docx_body_range": {
+          "start": 174,
+          "end": 179
+        },
+        "stem_paragraph_indices": [
+          158,
+          159,
+          160
+        ],
+        "answer_paragraph_indices": [
+          162
+        ],
+        "analysis_paragraph_indices": [
+          163
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 32,
+        "_question_type": "判断题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 33,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "一闭合回路由电源和外电路的电阻组成，当外电阻变为原来的2倍时，电路中的电流减小为原来的，则外电阻与电源内阻之比为______。\n[图片]",
+        "options": [],
+        "answer": "[图片]",
+        "analysis": "根据闭合电路欧姆定律，开始时有，外电阻变为原来的2倍后有，联立解得。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "33．一闭合回路由电源和外电路的电阻组成，当外电阻变为原来的2倍时，电路中的电流减小为原来的，则外电阻与电源内阻之比为______。\n[图片]\n【答案】\n[图片]\n【详解】【详解】根据闭合电路欧姆定律，开始时有，外电阻变为原来的2倍后有，联立解得。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          166,
+          168,
+          169
+        ],
+        "source_body_indices": [
+          182,
+          184,
+          185
+        ],
+        "original_docx_body_indices": [
+          182,
+          184,
+          185
+        ],
+        "original_docx_body_range": {
+          "start": 182,
+          "end": 185
+        },
+        "stem_paragraph_indices": [
+          166
+        ],
+        "answer_paragraph_indices": [
+          168
+        ],
+        "analysis_paragraph_indices": [
+          169
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": true,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object,answer_visual_object,analysis_visual_object",
+        "_question_no": 33,
+        "_question_type": "填空题",
+        "issue_details": []
+      },
+      {
+        "question_no": 34,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "两个电阻 = 5Ω、 = 10Ω串联在电路中，总电压为 15V，则通过R1的电流是______。\n[图片]",
+        "options": [],
+        "answer": "1A",
+        "analysis": "略",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "34．两个电阻 = 5Ω、 = 10Ω串联在电路中，总电压为 15V，则通过R1的电流是______。\n[图片]\n【答案】1A\n【详解】略",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          171,
+          173,
+          174
+        ],
+        "source_body_indices": [
+          187,
+          189,
+          190
+        ],
+        "original_docx_body_indices": [
+          187,
+          189,
+          190
+        ],
+        "original_docx_body_range": {
+          "start": 187,
+          "end": 190
+        },
+        "stem_paragraph_indices": [
+          171
+        ],
+        "answer_paragraph_indices": [
+          173
+        ],
+        "analysis_paragraph_indices": [
+          174
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": true,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "stem_visual_object",
+        "_question_no": 34,
+        "_question_type": "填空题",
+        "issue_details": []
+      },
+      {
+        "question_no": 35,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "根据欧姆定律，电阻是电压与______的比值，这一关系决定了导体中的电流强度。",
+        "options": [],
+        "answer": "电流",
+        "analysis": "部分电路欧姆定律表明，在同一段导体中，电压、电流和电阻三者存在确定关系，电阻等于导体两端电压与通过导体电流的比值。因此空格处应填“电流”，不能填“电阻”或“功率”等其他电学量。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "电阻与电压、电流的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "35．根据欧姆定律，电阻是电压与______的比值，这一关系决定了导体中的电流强度。\n【答案】电流",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          176,
+          178
+        ],
+        "source_body_indices": [
+          192,
+          194
+        ],
+        "original_docx_body_indices": [
+          192,
+          194
+        ],
+        "original_docx_body_range": {
+          "start": 192,
+          "end": 194
+        },
+        "stem_paragraph_indices": [
+          176
+        ],
+        "answer_paragraph_indices": [
+          178
+        ],
+        "analysis_paragraph_indices": [],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 35,
+        "_question_type": "填空题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 36,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "欧姆定律指出，在纯电阻电路中，导体中的电流与导体两端的电压成______，与导体的电阻成反比。",
+        "options": [],
+        "answer": "正比",
+        "analysis": "根据部分电路欧姆定律，在电阻一定时，导体两端电压越大，通过导体的电流也越大，二者按相同比例变化，因此电流与电压成正比；在电压一定时，电阻越大，电流越小，所以电流与电阻成反比。",
+        "knowledge_points": [
+          "部分电路欧姆定律"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "36．欧姆定律指出，在纯电阻电路中，导体中的电流与导体两端的电压成______，与导体的电阻成反比。\n【答案】正比",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          180,
+          182
+        ],
+        "source_body_indices": [
+          196,
+          198
+        ],
+        "original_docx_body_indices": [
+          196,
+          198
+        ],
+        "original_docx_body_range": {
+          "start": 196,
+          "end": 198
+        },
+        "stem_paragraph_indices": [
+          180
+        ],
+        "answer_paragraph_indices": [
+          182
+        ],
+        "analysis_paragraph_indices": [],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 36,
+        "_question_type": "填空题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 37,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "欧姆定律的基本公式为I=______，其中I为电流、U为电压、R为电阻。",
+        "options": [],
+        "answer": "U/R",
+        "analysis": "欧姆定律表明，通过一段电阻的电流与其两端电压成正比、与电阻成反比，因此电流可用电压除以电阻表示。题干中已给出I表示电流、U表示电压、R表示电阻，所以空格应填U/R。",
+        "knowledge_points": [
+          "部分电路欧姆定律",
+          "电流、电压与电阻的关系"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "37．欧姆定律的基本公式为I=______，其中I为电流、U为电压、R为电阻。\n【答案】U/R",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          184,
+          186
+        ],
+        "source_body_indices": [
+          200,
+          202
+        ],
+        "original_docx_body_indices": [
+          200,
+          202
+        ],
+        "original_docx_body_range": {
+          "start": 200,
+          "end": 202
+        },
+        "stem_paragraph_indices": [
+          184
+        ],
+        "answer_paragraph_indices": [
+          186
+        ],
+        "analysis_paragraph_indices": [],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 37,
+        "_question_type": "填空题",
+        "issue_details": [],
+        "fix_type": "repaired"
+      },
+      {
+        "question_no": 38,
+        "question_type": "填空题",
+        "heading": "三、填空题",
+        "stem": "欧姆定律表示为______。",
+        "options": [],
+        "answer": "[图片]",
+        "analysis": "欧姆定律是指电流通过导体时，通过导体的电流和导体两端的电压成正比，即。\n[图片]",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "38．欧姆定律表示为______。\n【答案】\n[图片]\n【详解】【详解】欧姆定律是指电流通过导体时，通过导体的电流和导体两端的电压成正比，即。\n[图片]",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          188,
+          190,
+          191
+        ],
+        "source_body_indices": [
+          204,
+          206,
+          207
+        ],
+        "original_docx_body_indices": [
+          204,
+          206,
+          207
+        ],
+        "original_docx_body_range": {
+          "start": 204,
+          "end": 207
+        },
+        "stem_paragraph_indices": [
+          188
+        ],
+        "answer_paragraph_indices": [
+          190
+        ],
+        "analysis_paragraph_indices": [
+          191
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": true,
+          "analysis": true
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": true,
+        "protection_reason": "answer_visual_object,analysis_visual_object",
+        "_question_no": 38,
+        "_question_type": "填空题",
+        "issue_details": []
+      },
+      {
+        "question_no": 39,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题",
+        "stem": "一只电阻接在6 V直流电源两端，通过它的电流为0.3 A。求该电阻的阻值。",
+        "options": [],
+        "answer": "20 Ω",
+        "analysis": "根据部分电路欧姆定律，电阻为电压除以电流。代入数据得6除以0.3为20，因此该电阻的阻值为20 Ω。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "39．一只电阻接在6 V直流电源两端，通过它的电流为0.3 A。求该电阻的阻值。\n【答案】20 Ω\n【详解】根据部分电路欧姆定律，电阻为电压除以电流。代入数据得6除以0.3为20，因此该电阻的阻值为20 Ω。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          194,
+          196,
+          197
+        ],
+        "source_body_indices": [
+          210,
+          212,
+          213
+        ],
+        "original_docx_body_indices": [
+          210,
+          212,
+          213
+        ],
+        "original_docx_body_range": {
+          "start": 210,
+          "end": 213
+        },
+        "stem_paragraph_indices": [
+          194
+        ],
+        "answer_paragraph_indices": [
+          196
+        ],
+        "analysis_paragraph_indices": [
+          197
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 39,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      },
+      {
+        "question_no": 40,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题",
+        "stem": "某照明小灯泡正常工作时电阻为12 Ω，通过灯泡的电流为0.5 A。求灯泡两端的电压。",
+        "options": [],
+        "answer": "6 V",
+        "analysis": "根据部分电路欧姆定律，电压为电流与电阻的乘积。代入数据得0.5×12为6，因此灯泡两端电压为6 V。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "40．某照明小灯泡正常工作时电阻为12 Ω，通过灯泡的电流为0.5 A。求灯泡两端的电压。\n【答案】6 V\n【详解】根据部分电路欧姆定律，电压为电流与电阻的乘积。代入数据得0.5×12为6，因此灯泡两端电压为6 V。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          199,
+          201,
+          202
+        ],
+        "source_body_indices": [
+          215,
+          217,
+          218
+        ],
+        "original_docx_body_indices": [
+          215,
+          217,
+          218
+        ],
+        "original_docx_body_range": {
+          "start": 215,
+          "end": 218
+        },
+        "stem_paragraph_indices": [
+          199
+        ],
+        "answer_paragraph_indices": [
+          201
+        ],
+        "analysis_paragraph_indices": [
+          202
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 40,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      },
+      {
+        "question_no": 41,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题",
+        "stem": "某实验电路采用一节直流电源供电，电源电动势为24 V，内阻为2 Ω，外电路接有一只10 Ω的定值电阻。求：（1）闭合开关后电路中的电流；（2）定值电阻两端的端电压；（3）电源内阻上消耗的电压。",
+        "options": [],
+        "answer": "（1）2 A\n（2）20 V\n（3）4 V",
+        "analysis": "（1）根据全电路欧姆定律，电路电流等于电源电动势除以外电阻与内阻之和，即I=24/(10+2)=2 A。（2）定值电阻两端电压按部分电路欧姆定律计算，U外=IR=2×10=20 V。（3）内阻上的电压为U内=Ir=2×2=4 V，且20 V与4 V之和等于电源电动势24 V，计算结果相互吻合。",
+        "knowledge_points": [
+          "全电路欧姆定律",
+          "部分电路欧姆定律",
+          "电源内阻与端电压"
+        ],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "41．一个电源的电动势为12 V，内阻为1 Ω，外接电阻为5 Ω。求电路中的电流。\n【答案】2 A\n【详解】全电路中总电阻为外电阻与内阻之和，即5 Ω与1 Ω相加为6 Ω。电流为电动势除以总电阻，12除以6为2，因此电路中的电流为2 A。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          204,
+          206,
+          207
+        ],
+        "source_body_indices": [
+          220,
+          222,
+          223
+        ],
+        "original_docx_body_indices": [
+          220,
+          222,
+          223
+        ],
+        "original_docx_body_range": {
+          "start": 220,
+          "end": 223
+        },
+        "stem_paragraph_indices": [
+          204
+        ],
+        "answer_paragraph_indices": [
+          206
+        ],
+        "analysis_paragraph_indices": [
+          207
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 41,
+        "_question_type": "综合应用题",
+        "issue_details": [],
+        "fix_type": "regenerated"
+      },
+      {
+        "question_no": 42,
+        "question_type": "综合应用题",
+        "heading": "四、综合应用题",
+        "stem": "某直流电源电动势为24 V，内阻为2 Ω，先接入10 Ω外电阻工作。现要求路端电压不低于18 V。求：（1）接入10 Ω外电阻时电路电流和路端电压；（2）该状态是否满足要求；（3）若只允许更换外电阻，外电阻至少应为多少欧姆。",
+        "options": [],
+        "answer": "（1）电路电流为2 A，路端电压为20 V。 （2）满足要求。 （3）外电阻至少应为6 Ω。",
+        "analysis": "（1）总电阻为10 Ω与2 Ω相加，即12 Ω；电流为24除以12，得2 A。路端电压为电流与外电阻的乘积，2×10得20 V。 （2）20 V高于18 V，所以接入10 Ω外电阻时满足路端电压不低于18 V的要求。 （3）要求路端电压不低于18 V时，内阻上的电压损失最多为6 V，对应电流最多为3 A。外电阻应不小于18除以3，结果为6 Ω。",
+        "knowledge_points": [],
+        "difficulty": "",
+        "source_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "status": "passed",
+        "issues": [],
+        "raw_text": "42．某直流电源电动势为24 V，内阻为2 Ω，先接入10 Ω外电阻工作。现要求路端电压不低于18 V。求：（1）接入10 Ω外电阻时电路电流和路端电压；（2）该状态是否满足要求；（3）若只允许更换外电阻，外电阻至少应为多少欧姆。\n【答案】（1）电路电流为2 A，路端电压为20 V。 （2）满足要求。 （3）外电阻至少应为6 Ω。\n【详解】（1）总电阻为10 Ω与2 Ω相加，即12 Ω；电流为24除以12，得2 A。路端电压为电流与外电阻的乘积，2×10得20 V。 （2）20 V高于18 V，所以接入10 Ω外电阻时满足路端电压不低于18 V的要求。 （3）要求路端电压不低于18 V时，内阻上的电压损失最多为6 V，对应电流最多为3 A。外电阻应不小于18除以3，结果为6 Ω。",
+        "source_docx_path": "C:\\Users\\zxxk\\Desktop\\wyy\\考纲百套卷\\04_生成输出\\组卷待质检\\重庆市 电子信息类\\第5卷_repaired.docx",
+        "source_paragraph_indices": [
+          209,
+          211,
+          212
+        ],
+        "source_body_indices": [
+          225,
+          227,
+          228
+        ],
+        "original_docx_body_indices": [
+          225,
+          227,
+          228
+        ],
+        "original_docx_body_range": {
+          "start": 225,
+          "end": 228
+        },
+        "stem_paragraph_indices": [
+          209
+        ],
+        "answer_paragraph_indices": [
+          211
+        ],
+        "analysis_paragraph_indices": [
+          212
+        ],
+        "option_table_indices": [],
+        "image_flags": {
+          "stem": false,
+          "answer": false,
+          "analysis": false
+        },
+        "image_refs": {
+          "stem": [],
+          "answer": [],
+          "analysis": []
+        },
+        "has_original_docx_images": false,
+        "original_docx_image_refs": [],
+        "protected_original_docx_block": false,
+        "protection_reason": "",
+        "_question_no": 42,
+        "_question_type": "综合应用题",
+        "issue_details": []
+      }
+    ],
+    "warnings": []
+  }
+}
