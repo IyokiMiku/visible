@@ -43,6 +43,22 @@ exam_production_studio/
 
 VS Code 调试：打开项目后在「运行和调试」选择 **调试后端 (uvicorn)** 即可断点调试（配置见 `.vscode/launch.json`；前端另开终端 `npm run dev`）。
 
+## 打包分发到其他电脑（源码包，可调试）
+
+不要直接拷贝 `.venv` 和 `frontend/node_modules`（含本机绝对路径/平台二进制，跨机不可用）。
+用打包脚本生成**干净源码包**：
+
+```bat
+.\package.bat
+```
+
+会在上级目录生成 `exam_production_studio_src.zip`（已排除 `.venv` / `node_modules` / `dist` / `data\studio.db` / `data\projects` / `__pycache__` / `.env`，约 0.5 MB）。
+
+目标 Windows 电脑上：
+1. 安装 **Python 3.10+** 和 **Node 18+**（仅一次）；
+2. 解压该 zip；
+3. 运行 `exam_production_studio\start.bat`——**首次运行会自动创建 venv 并安装前后端依赖**（需联网，几分钟），之后即可正常运行与断点调试。
+
 ## 运行（开发模式 · 手动）
 
 ```bash
