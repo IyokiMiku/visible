@@ -79,6 +79,37 @@ def get_xueke_config() -> dict[str, Any]:
     }
 
 
+def _default_desktop() -> Path:
+    """探测桌面目录（兼容 OneDrive 重定向与中文“桌面”）。"""
+    home = Path.home()
+    candidates: list[Path] = []
+    for env_key in ("OneDrive", "OneDriveConsumer", "OneDriveCommercial"):
+        v = os.getenv(env_key)
+        if v:
+            candidates.append(Path(v) / "Desktop")
+    candidates += [home / "Desktop", home / "桌面"]
+    for c in candidates:
+        try:
+            if c.exists():
+                return c
+        except OSError:
+            continue
+    return home / "Desktop"
+
+
+def get_output_root() -> Path:
+    """成品归档根目录：settings(output.dir) > .env(OUTPUT_DIR) > 默认 桌面/生成结果。
+
+    相对路径相对项目根解析。
+    """
+    s = _load_settings()
+    raw = _merge(s, "output.dir", "OUTPUT_DIR", "").strip()
+    if raw:
+        p = Path(raw)
+        return p if p.is_absolute() else BASE_DIR / p
+    return _default_desktop() / "生成结果"
+
+
 def get_vision_config() -> dict[str, Any]:
     """视觉模型配置（预留）。未配置 api_key 时 enabled=False。"""
     s = _load_settings()

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { ElMessageBox } from 'element-plus'
+import { ElMessage, ElMessageBox } from 'element-plus'
 import { api, type Project } from '../services/api'
 
 const router = useRouter()
@@ -32,6 +32,15 @@ async function remove(id: string) {
   await load()
 }
 
+async function openFolder(id: string) {
+  try {
+    const res = await api.openOutputFolder(id)
+    ElMessage.success(`已打开：${res?.path || '输出目录'}`)
+  } catch {
+    /* 错误已由全局拦截器提示 */
+  }
+}
+
 onMounted(load)
 </script>
 
@@ -56,10 +65,11 @@ onMounted(load)
           <el-tag :type="STATUS_TYPE[row.status] || 'info'">{{ row.status }}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column label="操作" width="240">
+      <el-table-column label="操作" width="340">
         <template #default="{ row }">
           <el-button size="small" @click="router.push(`/projects/${row.id}/flow`)">流程</el-button>
           <el-button size="small" @click="router.push(`/projects/${row.id}/artifacts`)">产物</el-button>
+          <el-button size="small" type="primary" plain @click="openFolder(row.id)">打开文件夹</el-button>
           <el-button size="small" type="danger" @click="remove(row.id)">删除</el-button>
         </template>
       </el-table-column>

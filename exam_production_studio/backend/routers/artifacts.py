@@ -1,13 +1,17 @@
 """产物归档与下载（阶段七，设计文档 §5.4）。"""
 from __future__ import annotations
 
+import os
 import re
+import subprocess
+import sys
 import zipfile
 from pathlib import Path
 
 from fastapi import APIRouter
 from fastapi.responses import FileResponse
 
+from engine import archive
 from ._common import fail, load_ctx, ok
 
 router = APIRouter(prefix="/api/projects", tags=["artifacts"])
@@ -64,6 +68,33 @@ def zip_artifacts(project_id: str):
             if f.is_file() and f != zip_path:
                 zf.write(f, f.relative_to(out))
     return FileResponse(str(zip_path), filename=zip_path.name)
+
+
+@router.post("/{project_id}/artifacts/open")
+def open_output_folder(project_id: str):
+    """在本机资源管理器/访达中打开该项目的归档输出目录（不存在则创建）。
+
+    仅适用于后端与用户同机的本地运行场景。
+    """
+    try:
+        ctx = load_ctx(project_id)
+    except KeyError:
+        return fail("项目不存在", status=404)
+    dest = archive.dest_dir(ctx)
+    try:
+        dest.mkdir(parents=True, exist_ok=True)
+    except OSError as e:
+        return fail(f"无法创建输出目录：{e}")
+    try:
+        if sys.platform.startswith("win"):
+            os.startfile(str(dest))  # type: ignore[attr-defined]
+        elif sys.platform == "darwin":
+            subprocess.Popen(["open", str(dest)])
+        else:
+            subprocess.Popen(["xdg-open", str(dest)])
+    except Exception as e:  # noqa: BLE001
+        return fail(f"打开文件夹失败：{e}")
+    return ok({"path": str(dest)})
 
 
 @router.get("/{project_id}/artifacts/download")

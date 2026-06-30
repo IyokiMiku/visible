@@ -216,6 +216,14 @@ def _run(project_id: str, run_id: str) -> None:
     repo.set_project_status(project_id, "done")
     _emit(ctx, run_id, "完成", "全部卷生成完毕。", event="done")
 
+    # 成品归档到本地输出目录（默认 桌面/生成结果）；失败不影响出卷结果
+    try:
+        from engine import archive
+        dest = archive.archive_project(ctx)
+        _emit(ctx, run_id, "完成", f"成品已归档到：{dest}")
+    except Exception as e:  # noqa: BLE001
+        _emit(ctx, run_id, "完成", f"归档到输出目录失败：{e}", level="warn")
+
 
 def _do_pause(ctx: ProjectContext, run_id: str, node: str) -> None:
     repo.update_run(run_id, status="paused", current_node=node)

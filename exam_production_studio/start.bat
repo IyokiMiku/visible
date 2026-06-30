@@ -61,7 +61,11 @@ powershell -NoProfile -Command "Start-Sleep -Milliseconds 1500" >nul 2>&1
 echo [run] backend http://127.0.0.1:8000  frontend http://localhost:5173
 REM backend: powershell -NoExit keeps the window open after a crash so the traceback stays visible;
 REM Tee-Object also streams output into backend\backend.log for post-mortem.
-start "EPS Backend" powershell -NoProfile -NoExit -Command "& '.venv\Scripts\python.exe' -m uvicorn main:app --app-dir backend --port 8000 --reload 2>&1 | Out-String -Stream | Tee-Object -FilePath 'backend\backend.log'"
+REM NOTE: --reload is intentionally OFF on Windows. WatchFiles keeps re-spawning python
+REM workers and eventually exhausts the desktop heap, which makes new workers die at
+REM startup with 0xc0000142 (STATUS_DLL_INIT_FAILED). After editing backend code, just
+REM re-run start.bat (its cleanup step kills the old backend and starts a fresh one).
+start "EPS Backend" powershell -NoProfile -NoExit -Command "& '.venv\Scripts\python.exe' -m uvicorn main:app --app-dir backend --port 8000 2>&1 | Out-String -Stream | Tee-Object -FilePath 'backend\backend.log'"
 start "EPS Frontend" cmd /c "cd frontend && npm run dev"
 
 echo.

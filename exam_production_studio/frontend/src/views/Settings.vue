@@ -8,6 +8,7 @@ const form = reactive<any>({
   xueke: { cookie: '', app_key: '', sign: '' },
   vision: { enabled: '', model: '', base_url: '', api_key: '' },
   thresholds: { match: '0.85', max_fix_rounds: '2' },
+  output: { dir: '' },
 })
 
 async function load() {
@@ -16,6 +17,7 @@ async function load() {
   Object.assign(form.xueke, s.xueke || {})
   Object.assign(form.vision, s.vision || {})
   Object.assign(form.thresholds, s.thresholds || {})
+  Object.assign(form.output, s.output || {})
 }
 async function save() {
   await api.putSettings(form)
@@ -48,6 +50,14 @@ onMounted(load)
       <el-divider content-position="left">默认阈值</el-divider>
       <el-form-item label="信度阈值"><el-input v-model="form.thresholds.match" /></el-form-item>
       <el-form-item label="修复轮数"><el-input v-model="form.thresholds.max_fix_rounds" /></el-form-item>
+
+      <el-divider content-position="left">输出目录</el-divider>
+      <el-form-item label="成品输出目录">
+        <el-input v-model="form.output.dir" placeholder="留空则默认 桌面/生成结果；可填绝对路径，如 D:\\生成结果" />
+        <div style="color: #888; font-size: 12px; margin-top: 4px">
+          生成完成后，成品与质检报告会自动归档到 此目录/卷类/省份简称 考类/教材或课程/
+        </div>
+      </el-form-item>
 
       <el-form-item><el-button type="primary" @click="save">保存</el-button></el-form-item>
     </el-form>

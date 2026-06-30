@@ -72,6 +72,7 @@ export const api = {
   downloadUrl: (id: string, path: string) =>
     `/api/projects/${id}/artifacts/download?path=${encodeURIComponent(path)}`,
   zipUrl: (id: string) => `/api/projects/${id}/artifacts/zip`,
+  openOutputFolder: (id: string) => http.post<any, any>(`/projects/${id}/artifacts/open`),
 
   getSettings: () => http.get<any, any>('/settings'),
   putSettings: (body: any) => http.put('/settings', body),
