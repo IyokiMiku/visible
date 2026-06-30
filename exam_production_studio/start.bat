@@ -37,7 +37,9 @@ REM give the OS a moment to release sockets
 powershell -NoProfile -Command "Start-Sleep -Milliseconds 1500" >nul 2>&1
 
 echo [run] backend http://127.0.0.1:8000  frontend http://localhost:5173
-start "EPS Backend" .venv\Scripts\python -m uvicorn main:app --app-dir backend --port 8000 --reload
+REM backend: powershell -NoExit keeps the window open after a crash so the traceback stays visible;
+REM Tee-Object also streams output into backend\backend.log for post-mortem.
+start "EPS Backend" powershell -NoProfile -NoExit -Command "& '.venv\Scripts\python.exe' -m uvicorn main:app --app-dir backend --port 8000 --reload 2>&1 | Out-String -Stream | Tee-Object -FilePath 'backend\backend.log'"
 start "EPS Frontend" cmd /c "cd frontend && npm run dev"
 
 echo.

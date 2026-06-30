@@ -58,18 +58,21 @@ def row_to_question(row: dict[str, Any], qtype: str) -> Question | None:
     stem_html = row.get("stem", "") or ""
     if is_image_only_question(stem_html):
         return None
-    stem_text, _imgs, options = convert_stem_html(stem_html)
+    stem_text, stem_imgs, options = convert_stem_html(stem_html)
     opts = [o.get("text", "") for o in options] if options else []
+    # 选项图片与 opts 下标对齐，供 docx 渲染图片选项
+    option_imgs = [list(o.get("images") or []) for o in options] if options else []
     answer = convert_answer_html(row.get("answer", "") or "", row.get("type_id"))
     analysis = convert_explanation_html(row.get("explanation") or row.get("more_explanations") or "")
     kpoints = row.get("kpointIds") or row.get("kpoint_ids") or []
     kpoint = str(kpoints[0]) if isinstance(kpoints, list) and kpoints else ""
-    if not stem_text:
+    if not stem_text and not stem_imgs:
         return None
     return Question(
         number=0, qtype=qtype, stem=stem_text, options=opts, answer=answer.strip(),
         analysis=analysis.strip(), difficulty=_difficulty_label(row.get("difficulty")),
         kpoint=kpoint, source="xueke", confidence=1.0,
+        stem_images=list(stem_imgs or []), option_images=option_imgs,
     )
 
 

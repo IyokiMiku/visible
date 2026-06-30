@@ -8,6 +8,10 @@ openai
 requests
 python-multipart
 
+# DOCX 富渲染：公式 LaTeX→OMML（需本机 Office 的 MML2OMML.XSL），图片尺寸自适配
+latex2mathml
+Pillow
+
 # OCR（教材目录扫描，视现状选用其一/多个；如不需要可注释）
 pymupdf
 pytesseract

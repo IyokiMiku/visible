@@ -18,6 +18,10 @@ class Question:
     kpoint: str = ""
     source: str = "xueke"           # xueke | ai
     confidence: float = 1.0
+    # 富内容：题干图片 + 与 options 对齐的选项图片（每个元素为该选项的图片列表）。
+    # 图片条目形如 {"url":..,"width":..,"height":..,"local_path":..}（local_path 由下载层补齐）。
+    stem_images: list[dict] = field(default_factory=list)
+    option_images: list[list[dict]] = field(default_factory=list)
 
 
 @dataclass
