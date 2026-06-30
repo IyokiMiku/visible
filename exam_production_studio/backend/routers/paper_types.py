@@ -4,6 +4,7 @@
 """
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 from fastapi import APIRouter
@@ -14,6 +15,7 @@ from engine import registry
 from shared.docx import naming
 from shared.docx.convert import LibreOfficeNotFound, docx_to_pdf
 from shared.docx.sample import build_sample_docx
+from shared.xueke_api import kpoint_resolver
 from ._common import fail, ok
 
 router = APIRouter(prefix="/api/paper-types", tags=["paper-types"])
@@ -92,6 +94,78 @@ def put_spec(paper_type: str, body: TextIn):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(body.content, encoding="utf-8")
     return ok({"saved": True})
+
+
+def _read_json(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def _match_course_file(index: dict, *keys: str) -> str | None:
+    """按 课程/考类 名称或别名在 题型定义/index.json 中匹配出对应文件名。"""
+    courses = index.get("courses") or []
+    cleaned = [k.strip() for k in keys if k and k.strip()]
+    if not cleaned:
+        return None
+    # 先精确匹配 name/alias，再退化为包含匹配（避免空泛误匹配）
+    for exact in (True, False):
+        for key in cleaned:
+            for c in courses:
+                names = [c.get("name", "")] + list(c.get("aliases") or [])
+                for n in names:
+                    n = (n or "").strip()
+                    if not n:
+                        continue
+                    if (exact and key == n) or (not exact and (n in key or key in n)):
+                        return c.get("file")
+    return None
+
+
+def _types_from_file(qt_dir: Path, filename: str) -> list[str]:
+    data = _read_json(qt_dir / filename)
+    out: list[str] = []
+    seen: set[str] = set()
+    for qt in data.get("questionTypes") or []:
+        name = kpoint_resolver.normalize_type_name(str(qt.get("name", "")).strip())
+        if name and name not in seen:
+            seen.add(name)
+            out.append(name)
+    return out
+
+
+def _resolve_question_types(paper_type: str, course: str, category: str) -> dict:
+    """返回 {question_types, source, matched}。
+
+    优先按 课程/考类 命中 题型定义/<file>.json 的 questionTypes（归一化为标准名）；
+    未命中则回退到全局标准名列表，保证下拉不为空、不过度限制。
+    """
+    mode = registry.get(paper_type)
+    qt_dir = mode.question_types_dir
+    if qt_dir is not None:
+        qt_dir = Path(qt_dir)
+        if qt_dir.exists():
+            index = _read_json(qt_dir / "index.json")
+            matched = _match_course_file(index, course or "", category or "")
+            if matched:
+                types = _types_from_file(qt_dir, matched)
+                if types:
+                    return {"question_types": types, "source": "course", "matched": matched}
+    return {
+        "question_types": list(kpoint_resolver.TYPE_NAME_SYNONYMS.keys()),
+        "source": "global",
+        "matched": None,
+    }
+
+
+@router.get("/{paper_type}/question-types")
+def get_question_types(paper_type: str, course: str = "", category: str = ""):
+    if paper_type not in _ALLOWED:
+        return fail("未知试卷类型", status=404)
+    return ok(_resolve_question_types(paper_type, course, category))
 
 
 @router.post("/{paper_type}/preview")

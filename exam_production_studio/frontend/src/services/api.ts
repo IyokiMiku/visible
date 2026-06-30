@@ -77,6 +77,8 @@ export const api = {
   putSettings: (body: any) => http.put('/settings', body),
 
   getPaperType: (type: string) => http.get<any, any>(`/paper-types/${type}`),
+  getQuestionTypes: (type: string, course = '', category = '') =>
+    http.get<any, any>(`/paper-types/${type}/question-types`, { params: { course, category } }),
   putEditorialNote: (type: string, content: string) =>
     http.put(`/paper-types/${type}/editorial-note`, { content }),
   putSpec: (type: string, content: string) =>

@@ -14,29 +14,34 @@ const TYPES = [
   { value: 'shuangxi', label: '考点双析卷', desc: '考纲基础 · 拉题×2 · 奇偶分卷' },
 ]
 
-// 与后端 kpoint_resolver.TYPE_NAME_SYNONYMS 的标准名保持一致（别名如“单选题”最终统一为“单项选择题”）
-const QUESTION_TYPES = [
+// 题型下拉：按 卷类/考类/课程 从后端 题型定义 动态加载（标准名，别名如“单选题”已统一为“单项选择题”）。
+// 接口不可用或未命中时，回退到这份全局标准名列表，保证下拉不为空。
+const FALLBACK_QUESTION_TYPES = [
   '单项选择题',
   '多项选择题',
   '判断题',
   '填空题',
   '简答题',
-  '综合题',
+  '综合应用题',
   '计算题',
+  '作图题',
+  '识图题',
+  '简答作图题',
 ]
+const questionTypes = ref<string[]>([...FALLBACK_QUESTION_TYPES])
 
 const DEFAULT_VOLUME: Record<string, any[]> = {
   yikeyilian: [
     { type: '单项选择题', count: 5, score_per: 2 },
     { type: '填空题', count: 3, score_per: 2 },
-    { type: '综合题', count: 2, score_per: 5 },
+    { type: '综合应用题', count: 2, score_per: 5 },
   ],
   kaogang_100: [
     { type: '单项选择题', count: 20, score_per: 2 },
     { type: '填空题', count: 10, score_per: 2 },
     { type: '判断题', count: 10, score_per: 1 },
     { type: '简答题', count: 4, score_per: 5 },
-    { type: '综合题', count: 2, score_per: 10 },
+    { type: '综合应用题', count: 2, score_per: 10 },
   ],
   shuangxi: [
     { type: '单项选择题', count: 20, score_per: 2 },
@@ -70,6 +75,38 @@ watch(
     form.volume = JSON.parse(JSON.stringify(DEFAULT_VOLUME[t] || DEFAULT_VOLUME['yikeyilian']))
   },
 )
+
+async function loadQuestionTypes() {
+  try {
+    const res: any = await api.getQuestionTypes(form.paper_type, form.course, form.exam_category)
+    const list: string[] = (res && res.question_types) || []
+    questionTypes.value = list.length ? list : [...FALLBACK_QUESTION_TYPES]
+  } catch {
+    questionTypes.value = [...FALLBACK_QUESTION_TYPES]
+  }
+}
+
+let qtTimer: ReturnType<typeof setTimeout> | null = null
+watch(
+  () => [form.paper_type, form.course, form.exam_category],
+  () => {
+    if (qtTimer) clearTimeout(qtTimer)
+    qtTimer = setTimeout(loadQuestionTypes, 400)
+  },
+)
+
+const validTypeSet = computed(() => new Set(questionTypes.value))
+// 行的题型已选、但不在当前选项集合内 → 失效（切换卷类/考类/课程后可能出现）
+function isRowInvalid(row: any): boolean {
+  return !!row.type && !validTypeSet.value.has(row.type)
+}
+// 题型选项变化后，提示哪些已填行的题型失效（不自动删除，避免丢失已填题量/分值）
+watch(questionTypes, () => {
+  const bad = [...new Set(form.volume.filter((r: any) => isRowInvalid(r)).map((r: any) => r.type))]
+  if (bad.length) {
+    ElMessage.warning(`当前考类不支持以下题型，已高亮，请重新选择：${bad.join('、')}`)
+  }
+})
 
 function parseRangeCount(s: string): string {
   const t = (s || '').trim()
@@ -106,6 +143,8 @@ const saving = ref(false)
 async function submit() {
   if (diffSum.value !== 100) return ElMessage.error('难度分布三者之和必须为 100')
   if (form.volume.some((r: any) => !r.type)) return ElMessage.error('请为每个题型行选择题型')
+  if (form.volume.some((r: any) => isRowInvalid(r)))
+    return ElMessage.error('存在当前考类不支持的题型（已高亮），请重新选择')
   if (!form.output_versions.length) return ElMessage.error('至少选择一个输出版本')
   const examTypeName =
     form.exam_type_name === '__other__' ? form.exam_type_name_other.trim() : form.exam_type_name
@@ -139,6 +178,7 @@ async function submit() {
 
 onMounted(() => {
   if (route.query.type) form.paper_type = route.query.type as string
+  loadQuestionTypes()
 })
 </script>
 
@@ -217,9 +257,17 @@ onMounted(() => {
         <el-table :data="form.volume" size="small" style="width: 640px">
           <el-table-column label="题型">
             <template #default="{ row }">
-              <el-select v-model="row.type" size="small" placeholder="请选择题型" style="width: 100%">
-                <el-option v-for="qt in QUESTION_TYPES" :key="qt" :label="qt" :value="qt" />
+              <el-select
+                v-model="row.type"
+                size="small"
+                placeholder="请选择题型"
+                style="width: 100%"
+                :class="{ 'qt-invalid': isRowInvalid(row) }"
+              >
+                <el-option v-for="qt in questionTypes" :key="qt" :label="qt" :value="qt" />
+                <el-option v-if="isRowInvalid(row)" :key="row.type" :label="`${row.type}（不适用）`" :value="row.type" />
               </el-select>
+              <div v-if="isRowInvalid(row)" class="qt-invalid-tip">当前考类不支持，请重新选择</div>
             </template>
           </el-table-column>
           <el-table-column label="题量" width="150">
@@ -280,3 +328,17 @@ onMounted(() => {
     </el-form>
   </el-card>
 </template>
+
+<style scoped>
+/* 失效题型行高亮：兼容 Element Plus 新旧 select 包裹元素 */
+.qt-invalid :deep(.el-select__wrapper),
+.qt-invalid :deep(.el-input__wrapper) {
+  box-shadow: 0 0 0 1px var(--el-color-danger) inset;
+}
+.qt-invalid-tip {
+  margin-top: 2px;
+  color: var(--el-color-danger);
+  font-size: 12px;
+  line-height: 1.2;
+}
+</style>

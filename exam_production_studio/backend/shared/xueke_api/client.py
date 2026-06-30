@@ -23,7 +23,8 @@ from .html_content_converter import (
 SECTION_BY_NAME = {
     "单项选择题": "choice", "多项选择题": "choice", "选择题": "choice",
     "填空题": "fill", "判断题": "judge", "简答题": "short_answer",
-    "综合题": "calc", "计算题": "calc",
+    "综合应用题": "calc", "综合题": "calc", "计算题": "calc",
+    "作图题": "short_answer", "识图题": "short_answer", "简答作图题": "short_answer",
 }
 
 

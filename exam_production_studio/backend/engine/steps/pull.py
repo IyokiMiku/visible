@@ -10,14 +10,19 @@ from typing import Any, Callable
 from engine import registry, repo
 from engine.drivers.base import PaperQuestions, Question
 from shared.ai import ai_fill as default_fill
-from shared.xueke_api import pull_for_plan
+from shared.xueke_api import kpoint_resolver, pull_for_plan
 
 
 def build_paper_plan(ctx, paper_no: int) -> dict[str, Any]:
     paper = repo.get_paper(ctx.project_id, paper_no) or {}
     mode = registry.get(ctx.paper_type)
     vc = ctx.volume_config or mode.default_volume_config
-    by_type = {t: int(c.get("count", 0)) for t, c in (vc.get("by_type") or {}).items()}
+    # 题型名归一化为标准名（如 综合题→综合应用题、单选题→单项选择题），保证拉题/输出统一命名；
+    # 归一化后同名合并题量，兼容历史项目里残留的旧命名。
+    by_type: dict[str, int] = {}
+    for t, c in (vc.get("by_type") or {}).items():
+        name = kpoint_resolver.normalize_type_name(str(t))
+        by_type[name] = by_type.get(name, 0) + int(c.get("count", 0))
     return {
         "paper_no": paper_no,
         "topic": paper.get("topic") or ctx.course,

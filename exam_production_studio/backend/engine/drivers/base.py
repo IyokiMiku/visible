@@ -9,7 +9,7 @@ from typing import Any, Protocol, runtime_checkable
 @dataclass
 class Question:
     number: int
-    qtype: str                      # 单项选择题/填空题/判断题/简答题/综合题...
+    qtype: str                      # 单项选择题/填空题/判断题/简答题/综合应用题...
     stem: str
     options: list[str] = field(default_factory=list)  # 选择题选项文本（不含 A./B.）
     answer: str = ""
