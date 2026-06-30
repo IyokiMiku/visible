@@ -9,7 +9,7 @@ from fastapi.staticfiles import StaticFiles
 
 import config
 import db
-from routers import (artifacts, flow, projects, resources, review, settings, qc, ws)
+from routers import (artifacts, flow, paper_types, projects, resources, review, settings, qc, ws)
 
 app = FastAPI(title="出卷集成工作台 / Exam Production Studio")
 
@@ -32,7 +32,7 @@ def health():
     return {"code": 0, "message": "ok", "data": {"service": "exam_production_studio"}}
 
 
-for _r in (projects, resources, flow, review, qc, artifacts, settings):
+for _r in (projects, resources, flow, review, qc, artifacts, settings, paper_types):
     app.include_router(_r.router)
 app.include_router(ws.router)
 

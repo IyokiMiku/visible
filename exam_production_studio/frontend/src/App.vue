@@ -1,14 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
-const router = useRouter()
 const currentId = computed(() => (route.params.id as string) || '')
-
-function newWithType(t: string) {
-  router.push({ path: '/projects/new', query: { type: t } })
-}
 </script>
 
 <template>
@@ -23,9 +18,9 @@ function newWithType(t: string) {
       <el-aside width="220px" style="border-right: 1px solid #eee; overflow: auto">
         <el-menu :default-active="route.path" router>
           <el-menu-item-group title="产品系列">
-            <el-menu-item index="t-yikeyilian" @click="newWithType('yikeyilian')">一课一练</el-menu-item>
-            <el-menu-item index="t-kaogang_100" @click="newWithType('kaogang_100')">考纲百套卷</el-menu-item>
-            <el-menu-item index="t-shuangxi" @click="newWithType('shuangxi')">考点双析卷</el-menu-item>
+            <el-menu-item index="/paper-types/yikeyilian/config">一课一练</el-menu-item>
+            <el-menu-item index="/paper-types/kaogang_100/config">考纲百套卷</el-menu-item>
+            <el-menu-item index="/paper-types/shuangxi/config">考点双析卷</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group title="工作区">
             <el-menu-item index="/projects">项目列表</el-menu-item>

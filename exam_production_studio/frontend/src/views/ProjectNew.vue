@@ -2,6 +2,7 @@
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
+import { Delete } from '@element-plus/icons-vue'
 import { api } from '../services/api'
 
 const route = useRoute()
@@ -11,6 +12,17 @@ const TYPES = [
   { value: 'yikeyilian', label: '一课一练', desc: '教材目录基础 · 逐练小卷 · ×1' },
   { value: 'kaogang_100', label: '考纲百套卷', desc: '考纲基础 · 含细目表 · ×1' },
   { value: 'shuangxi', label: '考点双析卷', desc: '考纲基础 · 拉题×2 · 奇偶分卷' },
+]
+
+// 与后端 kpoint_resolver.TYPE_NAME_SYNONYMS 的标准名保持一致（别名如“单选题”最终统一为“单项选择题”）
+const QUESTION_TYPES = [
+  '单项选择题',
+  '多项选择题',
+  '判断题',
+  '填空题',
+  '简答题',
+  '综合题',
+  '计算题',
 ]
 
 const DEFAULT_VOLUME: Record<string, any[]> = {
@@ -38,6 +50,7 @@ const form = reactive<any>({
   name: '',
   province: '',
   exam_type_name: '高职分类考试',
+  exam_type_name_other: '',
   exam_category: '',
   course: '',
   textbook: '',
@@ -83,7 +96,7 @@ const rangeCount = computed(() => parseRangeCount(form.paper_range))
 const diffSum = computed(() => form.difficulty.easy + form.difficulty.medium + form.difficulty.hard)
 
 function addRow() {
-  form.volume.push({ type: '新题型', count: 1, score_per: 1 })
+  form.volume.push({ type: '', count: 1, score_per: 1 })
 }
 function delRow(i: number) {
   form.volume.splice(i, 1)
@@ -92,7 +105,11 @@ function delRow(i: number) {
 const saving = ref(false)
 async function submit() {
   if (diffSum.value !== 100) return ElMessage.error('难度分布三者之和必须为 100')
+  if (form.volume.some((r: any) => !r.type)) return ElMessage.error('请为每个题型行选择题型')
   if (!form.output_versions.length) return ElMessage.error('至少选择一个输出版本')
+  const examTypeName =
+    form.exam_type_name === '__other__' ? form.exam_type_name_other.trim() : form.exam_type_name
+  if (form.exam_type_name === '__other__' && !examTypeName) return ElMessage.error('请输入考试名称/类型')
   saving.value = true
   try {
     const by_type: Record<string, any> = {}
@@ -101,7 +118,7 @@ async function submit() {
       paper_type: form.paper_type,
       name: form.name,
       province: form.province,
-      exam_type_name: form.exam_type_name,
+      exam_type_name: examTypeName,
       exam_category: form.exam_category,
       course: form.course,
       textbook: form.textbook,
@@ -155,13 +172,21 @@ onMounted(() => {
         <el-input v-model="form.province" placeholder="如 内蒙古自治区（自治区不简写）" />
       </el-form-item>
       <el-form-item label="考试名称/类型">
-        <el-select v-model="form.exam_type_name" allow-create filterable default-first-option style="width: 260px">
+        <el-select v-model="form.exam_type_name" filterable default-first-option style="width: 260px">
           <el-option label="高职分类考试" value="高职分类考试" />
           <el-option label="对口招生" value="对口招生" />
+          <el-option label="春季高考" value="春季高考" />
+          <el-option label="其他名称" value="__other__" />
         </el-select>
+        <el-input
+          v-if="form.exam_type_name === '__other__'"
+          v-model="form.exam_type_name_other"
+          placeholder="请输入考试名称/类型"
+          style="width: 260px; margin-left: 12px"
+        />
       </el-form-item>
       <el-form-item label="考类/专业类别">
-        <el-input v-model="form.exam_category" placeholder="如 电子与信息大类" />
+        <el-input v-model="form.exam_category" placeholder="如 机电类/土建类/汽修类" />
       </el-form-item>
       <el-form-item label="课程名">
         <el-input v-model="form.course" />
@@ -189,19 +214,23 @@ onMounted(() => {
       </el-form-item>
 
       <el-form-item label="题型/题量/分值">
-        <el-table :data="form.volume" size="small" style="width: 560px">
+        <el-table :data="form.volume" size="small" style="width: 640px">
           <el-table-column label="题型">
-            <template #default="{ row }"><el-input v-model="row.type" size="small" /></template>
+            <template #default="{ row }">
+              <el-select v-model="row.type" size="small" placeholder="请选择题型" style="width: 100%">
+                <el-option v-for="qt in QUESTION_TYPES" :key="qt" :label="qt" :value="qt" />
+              </el-select>
+            </template>
           </el-table-column>
-          <el-table-column label="题量" width="110">
-            <template #default="{ row }"><el-input-number v-model="row.count" :min="0" size="small" /></template>
+          <el-table-column label="题量" width="150">
+            <template #default="{ row }"><el-input-number v-model="row.count" :min="0" size="small" style="width: 120px" /></template>
           </el-table-column>
-          <el-table-column label="分值" width="110">
-            <template #default="{ row }"><el-input-number v-model="row.score_per" :min="0" size="small" /></template>
+          <el-table-column label="分值" width="150">
+            <template #default="{ row }"><el-input-number v-model="row.score_per" :min="0" size="small" style="width: 120px" /></template>
           </el-table-column>
-          <el-table-column width="70">
+          <el-table-column label="操作" width="90">
             <template #default="{ $index }">
-              <el-button size="small" type="danger" link @click="delRow($index)">删</el-button>
+              <el-button size="small" type="danger" :icon="Delete" @click="delRow($index)">删除</el-button>
             </template>
           </el-table-column>
         </el-table>
@@ -209,13 +238,15 @@ onMounted(() => {
       </el-form-item>
 
       <el-form-item label="难度分布">
-        <span style="margin-right: 8px">简单</span>
-        <el-input-number v-model="form.difficulty.easy" :min="0" :max="100" size="small" />
-        <span style="margin: 0 8px">适中</span>
-        <el-input-number v-model="form.difficulty.medium" :min="0" :max="100" size="small" />
-        <span style="margin: 0 8px">困难</span>
-        <el-input-number v-model="form.difficulty.hard" :min="0" :max="100" size="small" />
-        <el-tag :type="diffSum === 100 ? 'success' : 'danger'" style="margin-left: 12px">合计 {{ diffSum }}</el-tag>
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px">
+          <span>简单</span>
+          <el-input-number v-model="form.difficulty.easy" :min="0" :max="100" size="small" style="width: 120px" />
+          <span>适中</span>
+          <el-input-number v-model="form.difficulty.medium" :min="0" :max="100" size="small" style="width: 120px" />
+          <span>困难</span>
+          <el-input-number v-model="form.difficulty.hard" :min="0" :max="100" size="small" style="width: 120px" />
+          <el-tag :type="diffSum === 100 ? 'success' : 'danger'" style="margin-left: 4px">合计 {{ diffSum }}</el-tag>
+        </div>
       </el-form-item>
 
       <el-form-item label="窄考点合并">
@@ -236,9 +267,11 @@ onMounted(() => {
         <el-switch v-model="form.ai.summary" active-text="摘要" style="margin-left: 12px" />
         <el-switch v-model="form.ai.fill" active-text="补题" style="margin-left: 12px" />
       </el-form-item>
-      <el-form-item label="信度阈值 / 修复轮数">
+      <el-form-item label="信度阈值">
         <el-input-number v-model="form.ai.match_threshold" :min="0" :max="1" :step="0.05" size="small" />
-        <el-input-number v-model="form.ai.max_fix_rounds" :min="0" size="small" style="margin-left: 12px" />
+      </el-form-item>
+      <el-form-item label="修复轮数">
+        <el-input-number v-model="form.ai.max_fix_rounds" :min="0" size="small" />
       </el-form-item>
 
       <el-form-item>

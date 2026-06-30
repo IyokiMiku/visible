@@ -75,6 +75,14 @@ export const api = {
 
   getSettings: () => http.get<any, any>('/settings'),
   putSettings: (body: any) => http.put('/settings', body),
+
+  getPaperType: (type: string) => http.get<any, any>(`/paper-types/${type}`),
+  putEditorialNote: (type: string, content: string) =>
+    http.put(`/paper-types/${type}/editorial-note`, { content }),
+  putSpec: (type: string, content: string) =>
+    http.put(`/paper-types/${type}/spec`, { content }),
+  previewPaperType: (type: string, editorial_note: string) =>
+    http.post<Blob, Blob>(`/paper-types/${type}/preview`, { editorial_note }, { responseType: 'blob' }),
 }
 
 export default http

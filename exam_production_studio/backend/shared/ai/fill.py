@@ -10,6 +10,7 @@ import re
 from typing import Any
 
 from engine.drivers.base import Question
+from shared.xueke_api import kpoint_resolver
 from . import llm
 from .prompts import build_generation_prompt
 
@@ -40,7 +41,7 @@ def parse_paper_text(text: str) -> list[Question]:
         mh = _TYPE_HEADER.match(line.strip())
         if mh and ("题" in mh.group(1)) and not _Q_START.match(line.strip()):
             flush()
-            cur_type = mh.group(1).strip()
+            cur_type = kpoint_resolver.normalize_type_name(mh.group(1).strip())
             continue
         mq = _Q_START.match(line)
         if mq and not _OPTION.match(line.strip()):

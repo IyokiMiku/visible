@@ -777,6 +777,69 @@ def add_editorial_note(doc: Document, textbook_name: str, edition: str,
         doc.add_paragraph()  # 无图片时表格与标题之间空行
 
 
+def add_editorial_note_text(doc: Document, text: str, separator_image: str = None):
+    """以编写说明蓝框样式渲染任意文本（按换行分段）。
+
+    与 add_editorial_note 共用同一套蓝色虚线表格 + 楷体 10.5pt #4472C4 排版，
+    但文本由调用方提供（来源于各类型可编辑的 编写说明.tpl.txt），供专属配置
+    预览与正式出卷流程共用。
+    """
+    paragraphs = str(text or "").split("\n")
+    if not any(seg.strip() for seg in paragraphs):
+        paragraphs = [""]
+
+    table = doc.add_table(rows=1, cols=1)
+    table.autofit = True
+
+    # 去除模板自带的顶部空行（表格前第一个空白段落）
+    body = doc.element.body
+    first_p = body.find(qn('w:p'))
+    if first_p is not None:
+        first_t = first_p.find(qn('w:r'))
+        if first_t is None or not (first_t.text or '').strip():
+            body.remove(first_p)
+
+    # 蓝色虚线边框 1.5pt
+    tbl = table._tbl
+    tblPr = tbl.find(qn('w:tblPr'))
+    if tblPr is None:
+        tblPr = OxmlElement('w:tblPr')
+        tbl.insert(0, tblPr)
+    borders = OxmlElement('w:tblBorders')
+    for edge in ('top', 'left', 'bottom', 'right'):
+        border = OxmlElement(f'w:{edge}')
+        border.set(qn('w:val'), 'dashed')
+        border.set(qn('w:sz'), '12')
+        border.set(qn('w:space'), '0')
+        border.set(qn('w:color'), '4472C4')
+        borders.append(border)
+    tblPr.append(borders)
+
+    tblW = OxmlElement('w:tblW')
+    tblW.set(qn('w:w'), '5000')
+    tblW.set(qn('w:type'), 'pct')
+    tblPr.append(tblW)
+
+    cell = table.rows[0].cells[0]
+    for i, seg in enumerate(paragraphs):
+        para = cell.paragraphs[0] if i == 0 else cell.add_paragraph()
+        para.paragraph_format.line_spacing = 1.0
+        para.paragraph_format.space_before = Pt(4)
+        para.paragraph_format.space_after = Pt(4)
+        para.paragraph_format.first_line_indent = Cm(0.74)
+        _add_mixed_run(para, seg, "楷体", 10.5, True, (0x44, 0x72, 0xC4))
+
+    if separator_image and os.path.exists(separator_image):
+        img_para = doc.add_paragraph()
+        img_para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        img_para.paragraph_format.space_before = Pt(0)
+        img_para.paragraph_format.space_after = Pt(0)
+        run = img_para.add_run()
+        run.add_picture(separator_image, width=Cm(4.60))
+    else:
+        doc.add_paragraph()
+
+
 # -- 选项布局自动适配阈值 --
 _OPTION_SINGLE_COL_THRESHOLD = 12    # 任一选项超此字数 → 单列
 _OPTION_ROW_BALANCE_RATIO = 1.6       # 同排两选项长度比超此值 → 单列（避免短选项下方大量空白）

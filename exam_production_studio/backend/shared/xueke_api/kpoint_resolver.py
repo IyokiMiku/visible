@@ -29,6 +29,25 @@ TYPE_NAME_SYNONYMS = {
     "计算题": ["分析计算题", "计算题", "计算", "综合应用题"],
 }
 
+# 同义词 → 标准名 的反查表（首次出现者优先，避免歧义同义词被后写覆盖）。
+_SYNONYM_TO_CANONICAL: dict[str, str] = {}
+for _canon, _syns in TYPE_NAME_SYNONYMS.items():
+    for _syn in _syns:
+        _SYNONYM_TO_CANONICAL.setdefault(_syn, _canon)
+
+
+def normalize_type_name(name: str) -> str:
+    """把任意题型别名归一化为标准名（如 单选题/单选/选择题 → 单项选择题）。
+
+    用于最终生成等环节统一命名；无法识别时原样返回。
+    """
+    if not name:
+        return name
+    n = name.strip()
+    if n in TYPE_NAME_SYNONYMS:  # 已是标准名，优先返回自身
+        return n
+    return _SYNONYM_TO_CANONICAL.get(n, n)
+
 
 def _list_categories() -> list[Path]:
     return sorted(MAPPING_DIR.glob("*.md")) if MAPPING_DIR.exists() else []

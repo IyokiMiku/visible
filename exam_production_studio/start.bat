@@ -23,6 +23,28 @@ if not exist "frontend\node_modules" (
   popd
 )
 
+REM ---- ensure LibreOffice (needed for in-app PDF template preview) ----
+set "SOFFICE_PATH="
+if exist "%ProgramFiles%\LibreOffice\program\soffice.exe" set "SOFFICE_PATH=%ProgramFiles%\LibreOffice\program\soffice.exe"
+if not defined SOFFICE_PATH if exist "%ProgramFiles(x86)%\LibreOffice\program\soffice.exe" set "SOFFICE_PATH=%ProgramFiles(x86)%\LibreOffice\program\soffice.exe"
+if not defined SOFFICE_PATH for /f "delims=" %%i in ('where soffice 2^>nul') do set "SOFFICE_PATH=%%i"
+if not defined SOFFICE_PATH (
+  echo [setup] LibreOffice not found - it is required for the in-app PDF template preview.
+  where winget >nul 2>&1
+  if errorlevel 1 (
+    echo [setup] winget unavailable. Please install LibreOffice manually: https://www.libreoffice.org/download/
+  ) else (
+    powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\install_libreoffice.ps1"
+    if exist "%ProgramFiles%\LibreOffice\program\soffice.exe" set "SOFFICE_PATH=%ProgramFiles%\LibreOffice\program\soffice.exe"
+    if not defined SOFFICE_PATH if exist "%ProgramFiles(x86)%\LibreOffice\program\soffice.exe" set "SOFFICE_PATH=%ProgramFiles(x86)%\LibreOffice\program\soffice.exe"
+  )
+)
+if defined SOFFICE_PATH (
+  echo [setup] LibreOffice: %SOFFICE_PATH%
+) else (
+  echo [setup] LibreOffice still not detected; PDF preview stays disabled until it is installed.
+)
+
 echo [cleanup] stopping previous backend/frontend (incl. reload child processes) ...
 REM tree-kill uvicorn (reloader + worker + multiprocessing spawn child that holds the socket)
 powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'uvicorn main:app' } | ForEach-Object { taskkill /F /T /PID $_.ProcessId 2>$null | Out-Null }" >nul 2>&1

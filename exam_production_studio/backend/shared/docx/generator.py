@@ -20,6 +20,7 @@ from engine import registry
 from engine.drivers.base import PaperQuestions
 from . import naming
 from .docx_utils1 import (
+    add_editorial_note_text,
     add_labeled_text,
     add_paragraph_with_style,
     add_structured_choice_question,
@@ -142,6 +143,11 @@ def generate_docx(
     out_path = out_dir / f"{fname}.docx"
 
     doc = _new_document(ctx)
+    note_text = naming.build_editorial_note(
+        ctx, qs.paper_no, paper_name=paper_name, paper_subtype=paper_subtype, topic=topic,
+    )
+    if note_text:
+        add_editorial_note_text(doc, note_text)
     _add_title(doc, naming.build_title_lines(
         ctx, qs.paper_no, paper_name=paper_name, paper_subtype=paper_subtype,
         suffix=suffix, topic=topic,
