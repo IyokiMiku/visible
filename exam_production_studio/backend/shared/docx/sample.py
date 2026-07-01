@@ -49,6 +49,11 @@ def _preview_dir() -> Path:
     return d
 
 
+def sample_pdf_path(paper_type: str) -> Path:
+    """样张 PDF 的固定输出路径（与 build_sample_docx 输出同名同目录）。"""
+    return _preview_dir() / f"{paper_type}_sample.pdf"
+
+
 def _sample_ctx(paper_type: str) -> ProjectContext:
     fields = _SAMPLE_FIELDS.get(paper_type, _SAMPLE_FIELDS["yikeyilian"])
     return ProjectContext(project_id="_preview", paper_type=paper_type, **fields)

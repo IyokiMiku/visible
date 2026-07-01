@@ -8,6 +8,7 @@ const routes = [
   { path: '/projects/:id/resources', name: 'resources', component: () => import('../views/Resources.vue') },
   { path: '/projects/:id/flow', name: 'flow', component: () => import('../views/Flow.vue') },
   { path: '/projects/:id/reviews', name: 'reviews', component: () => import('../views/Reviews.vue') },
+  { path: '/projects/:id/content-review', name: 'content-review', component: () => import('../views/ContentReview.vue') },
   { path: '/projects/:id/quality', name: 'quality', component: () => import('../views/Quality.vue') },
   { path: '/projects/:id/artifacts', name: 'artifacts', component: () => import('../views/Artifacts.vue') },
   { path: '/settings', name: 'settings', component: () => import('../views/Settings.vue') },

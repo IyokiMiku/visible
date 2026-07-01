@@ -14,7 +14,9 @@ from typing import Any
 
 import config
 from engine.drivers.base import Question
+from shared import config_errors
 from .api_pull_core import pull_questions
+from .query_questions import XuekeAuthError
 from . import kpoint_resolver
 from .html_content_converter import (
     convert_answer_html, convert_explanation_html, convert_stem_html, is_image_only_question,
@@ -113,6 +115,11 @@ def pull_for_plan(ctx, plan: dict[str, Any], needed: dict[str, int]) -> PulledRe
             rows = pull_questions(course_id=int(course_id), kpoint_ids=kpoint_ids, type_ids=tids,
                                   section_type=section, needed=n, cookie=cookie,
                                   app_key=app_key or "", sign=sign or "")
+        except XuekeAuthError as e:
+            # 鉴权失败（Cookie 失效/无权限）：记录配置错误以点亮红点，不中断流程（其余走补题/待确认）
+            config_errors.record("xueke", "cookie", f"学科网 Cookie 无效或已过期：{e}")
+            notes.append(f"{qtype}: {e}")
+            continue
         except Exception as e:  # noqa: BLE001
             notes.append(f"{qtype}: 拉题失败 {e}")
             continue

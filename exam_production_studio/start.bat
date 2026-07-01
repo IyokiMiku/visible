@@ -1,15 +1,15 @@
 @echo off
-chcp 65001 >nul
+chcp 936 >nul
 setlocal
 cd /d "%~dp0"
 
 echo ============================================
-echo  Exam Production Studio - one-click start
+echo  ³ö¾í¼¯³É¹¤×÷Ì¨ - Ò»¼üÆô¶¯
 echo ============================================
 
 REM ---- backend venv and deps ----
 if not exist ".venv\Scripts\python.exe" (
-  echo [setup] creating Python venv and installing backend deps...
+  echo [°²×°] ÕıÔÚ´´½¨ Python ĞéÄâ»·¾³²¢°²×°ºó¶ËÒÀÀµ¡­¡­
   python -m venv .venv
   .venv\Scripts\python -m pip install --upgrade pip
   .venv\Scripts\python -m pip install -r backend\requirements.txt
@@ -17,11 +17,20 @@ if not exist ".venv\Scripts\python.exe" (
 
 REM ---- frontend deps ----
 if not exist "frontend\node_modules" (
-  echo [setup] installing frontend deps...
+  echo [°²×°] ÕıÔÚ°²×°Ç°¶ËÒÀÀµ¡­¡­
   pushd frontend
   call npm install
   popd
 )
+
+REM ---- ensure browser deps for Ñ§¿ÆÍø Cookie auto-fetch (login window / read browser) ----
+.venv\Scripts\python -c "import playwright" 2>nul
+if errorlevel 1 (
+  echo [°²×°] ÕıÔÚ°²×° playwright Óë browser_cookie3 ¡­¡­
+  .venv\Scripts\python -m pip install playwright browser_cookie3
+)
+REM install chromium engine (idempotent; fast no-op if already present)
+.venv\Scripts\python -m playwright install chromium >nul 2>&1
 
 REM ---- ensure LibreOffice (needed for in-app PDF template preview) ----
 set "SOFFICE_PATH="
@@ -29,10 +38,10 @@ if exist "%ProgramFiles%\LibreOffice\program\soffice.exe" set "SOFFICE_PATH=%Pro
 if not defined SOFFICE_PATH if exist "%ProgramFiles(x86)%\LibreOffice\program\soffice.exe" set "SOFFICE_PATH=%ProgramFiles(x86)%\LibreOffice\program\soffice.exe"
 if not defined SOFFICE_PATH for /f "delims=" %%i in ('where soffice 2^>nul') do set "SOFFICE_PATH=%%i"
 if not defined SOFFICE_PATH (
-  echo [setup] LibreOffice not found - it is required for the in-app PDF template preview.
+  echo [°²×°] Î´ÕÒµ½ LibreOffice ¡ª¡ª Ó¦ÓÃÄÚ PDF Ä£°åÔ¤ÀÀĞèÒªËü¡£
   where winget >nul 2>&1
   if errorlevel 1 (
-    echo [setup] winget unavailable. Please install LibreOffice manually: https://www.libreoffice.org/download/
+    echo [°²×°] ÏµÍ³ÎŞ winget£¬ÇëÊÖ¶¯°²×° LibreOffice£ºhttps://www.libreoffice.org/download/
   ) else (
     powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\install_libreoffice.ps1"
     if exist "%ProgramFiles%\LibreOffice\program\soffice.exe" set "SOFFICE_PATH=%ProgramFiles%\LibreOffice\program\soffice.exe"
@@ -40,23 +49,20 @@ if not defined SOFFICE_PATH (
   )
 )
 if defined SOFFICE_PATH (
-  echo [setup] LibreOffice: %SOFFICE_PATH%
+  echo [°²×°] ÒÑÕÒµ½ LibreOffice£º%SOFFICE_PATH%
 ) else (
-  echo [setup] LibreOffice still not detected; PDF preview stays disabled until it is installed.
+  echo [°²×°] ÈÔÎ´¼ì²âµ½ LibreOffice£»ÔÚ°²×°Ç° PDF Ô¤ÀÀ½«±£³Ö½ûÓÃ¡£
 )
 
-echo [cleanup] stopping previous backend/frontend (incl. reload child processes) ...
-REM tree-kill uvicorn (reloader + worker + multiprocessing spawn child that holds the socket)
-powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'uvicorn main:app' } | ForEach-Object { taskkill /F /T /PID $_.ProcessId 2>$null | Out-Null }" >nul 2>&1
-REM tree-kill the frontend vite dev server
-powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object { $_.Name -eq 'node.exe' -and $_.CommandLine -match 'vite' } | ForEach-Object { taskkill /F /T /PID $_.ProcessId 2>$null | Out-Null }" >nul 2>&1
-REM fallback: tree-kill whoever still listens on 8000/5173
-powershell -NoProfile -Command "Get-NetTCPConnection -LocalPort 8000,5173 -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { taskkill /F /T /PID $_ 2>$null | Out-Null }" >nul 2>&1
+echo [ÇåÀí] ÕıÔÚÍ£Ö¹´ËÇ°µÄºó¶Ë/Ç°¶Ë½ø³Ì£¨º¬ÈÈÖØÔØ×Ó½ø³Ì£©¡­¡­
+REM Merged cleanup (kill uvicorn + vite + port listeners + wait) into a single
+REM powershell process. Previously this was 4 separate powershell.exe launched
+REM in quick succession; that burst could hit 0xc0000142 (STATUS_DLL_INIT_FAILED)
+REM on a constrained desktop heap. One process = no burst.
+powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\stop_servers.ps1" >nul 2>&1
 REM also close previous EPS windows started by this script
 taskkill /F /FI "WINDOWTITLE eq EPS Backend*" >nul 2>&1
 taskkill /F /FI "WINDOWTITLE eq EPS Frontend*" >nul 2>&1
-REM give the OS a moment to release sockets
-powershell -NoProfile -Command "Start-Sleep -Milliseconds 1500" >nul 2>&1
 
 REM ---- choose backend mode ----
 REM 1 = hot reload (--reload): backend auto-restarts when you edit code under backend\.
@@ -67,28 +73,36 @@ REM 0xc0000142 (STATUS_DLL_INIT_FAILED). The desktop heap has been enlarged (Sha
 REM 2nd value 20480 -> 40960) so reload should be stable; if 0xc0000142 ever returns, use mode 2.
 echo.
 echo ============================================
-echo  è¯·é€‰æ‹©åç«¯å¯åŠ¨æ¨¡å¼ï¼š
-echo    [1] çƒ­é‡è½½  (--reloadï¼Œä¿®æ”¹ä»£ç åè‡ªåŠ¨é‡å¯)
-echo    [2] éçƒ­é‡è½½  (ç¨³å®šæ¨¡å¼ï¼›ä¿®æ”¹åç«¯ä»£ç åéœ€é‡æ–°è¿è¡Œ start.bat)
+echo  ÇëÑ¡Ôñºó¶ËÆô¶¯Ä£Ê½£º
+echo    [1] ÈÈÖØÔØÄ£Ê½£ºĞŞ¸Äºó¶Ë´úÂëºó×Ô¶¯ÖØÆô
+echo    [2] ·ÇÈÈÖØÔØÄ£Ê½£ºÎÈ¶¨£»ĞŞ¸Äºó¶Ë´úÂëºóĞèÖØĞÂÔËĞĞÆô¶¯½Å±¾
 echo ============================================
 set "EPS_RELOAD="
 set "MODE="
-set /p "MODE=è¯·è¾“å…¥ 1 æˆ– 2 (é»˜è®¤ 2): "
+set /p "MODE=ÇëÊäÈë 1 »ò 2£¬Ä¬ÈÏ 2£º "
 if "%MODE%"=="1" (
   set "EPS_RELOAD=--reload"
-  echo [æ¨¡å¼] å·²å¯ç”¨çƒ­é‡è½½
+  echo [Ä£Ê½] ÒÑÆôÓÃÈÈÖØÔØ
 ) else (
-  echo [æ¨¡å¼] å·²ç¦ç”¨çƒ­é‡è½½ ^(ç¨³å®šæ¨¡å¼^)
+  echo [Ä£Ê½] ÒÑ½ûÓÃÈÈÖØÔØ£¬ÎÈ¶¨Ä£Ê½
 )
 
-echo [run] backend http://127.0.0.1:8000  frontend http://localhost:5173
+echo [ÔËĞĞ] ºó¶Ë http://127.0.0.1:8000  Ç°¶Ë http://localhost:5173
 REM backend: powershell -NoExit keeps the window open after a crash so the traceback stays visible;
 REM Tee-Object also streams output into backend\backend.log for post-mortem.
 start "EPS Backend" powershell -NoProfile -NoExit -Command "& '.venv\Scripts\python.exe' -m uvicorn main:app --app-dir backend --port 8000 %EPS_RELOAD% 2>&1 | Out-String -Stream | Tee-Object -FilePath 'backend\backend.log'"
+
+REM Wait (max 60s) until backend /api/health responds before starting the
+REM frontend, to avoid the startup race (vite proxy 500 / blank config page).
+REM Single powershell with an internal loop = no powershell burst.
+echo [WAIT] waiting for backend to be ready ...
+powershell -NoProfile -Command "$d=(Get-Date).AddSeconds(60); while((Get-Date) -lt $d){ try{ Invoke-WebRequest -UseBasicParsing -Uri 'http://127.0.0.1:8000/api/health' -TimeoutSec 2 | Out-Null; exit 0 }catch{ Start-Sleep -Milliseconds 500 } }; exit 1"
+if errorlevel 1 echo [WARN] backend not detected within 60s; starting frontend anyway (refresh the page if it is blank).
+
 start "EPS Frontend" cmd /c "cd frontend && npm run dev"
 
 echo.
-echo Backend and frontend started in two new windows.
-echo Open: http://localhost:5173
-echo Close those windows (or Ctrl+C inside them) to stop.
+echo ºó¶ËÓëÇ°¶ËÒÑÔÚÁ½¸öĞÂ´°¿ÚÖĞÆô¶¯¡£
+echo ÇëÔÚä¯ÀÀÆ÷´ò¿ª£ºhttp://localhost:5173
+echo ¹Ø±ÕÕâÁ½¸ö´°¿Ú£¬»òÔÚÆäÖĞ°´ Ctrl+C£¬¼´¿ÉÍ£Ö¹¡£
 endlocal

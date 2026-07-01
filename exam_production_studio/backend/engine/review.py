@@ -9,7 +9,7 @@ from typing import Any
 
 from engine import repo
 
-VALID_TYPES = {"AI_MATCH", "AI_GENERATE", "RULE_CONFLICT", "QC_FAIL"}
+VALID_TYPES = {"AI_MATCH", "AI_GENERATE", "RULE_CONFLICT", "QC_FAIL", "CONTENT_REVIEW"}
 
 
 def enqueue(ctx, run_id: str, node: str, rtype: str, paper_no: int | None,
