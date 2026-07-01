@@ -10,12 +10,15 @@ from __future__ import annotations
 
 import re
 import shutil
+import zipfile
 from pathlib import Path
 
 import config
 from engine import registry
 
 _ILLEGAL = re.compile(r'[\\/:*?"<>|]')
+# 从文件名提取「基名」和「版本」，如「第1卷 xxx（解析版）」→ (第1卷 xxx, 解析版)
+_VARIANT_RE = re.compile(r"^(.+?)[（(](解析版|原卷版)[）)]")
 
 # 去后缀得到省份简称（长后缀优先，避免“自治区”被“区”之类误伤）
 _PROVINCE_SUFFIXES = (
@@ -78,8 +81,51 @@ def _copy_overwrite_or_v2(src: Path, dst_dir: Path) -> Path:
         raise
 
 
+def _move_overwrite(src: Path, dst_dir: Path) -> None:
+    """移动文件到子目录，覆盖同名（先删旧目标，避免 Windows 下 move 报错）。"""
+    dst_dir.mkdir(parents=True, exist_ok=True)
+    target = dst_dir / src.name
+    try:
+        if target.exists():
+            target.unlink()
+        shutil.move(str(src), str(target))
+    except (OSError, shutil.Error):
+        pass
+
+
+def _package_and_classify(dest: Path) -> None:
+    """G2/G3：对归档目录根部的成品 docx 配对打包 zip，并分类到 解析版/原卷版/压缩包。"""
+    docx_files = [
+        f for f in dest.iterdir()
+        if f.is_file() and f.suffix.lower() == ".docx" and not f.name.startswith("~")
+    ]
+    groups: dict[str, dict[str, Path]] = {}
+    for f in docx_files:
+        m = _VARIANT_RE.match(f.stem)
+        if not m:
+            continue
+        base, variant = m.group(1).strip(), m.group(2)
+        groups.setdefault(base, {})[variant] = f
+
+    for base, variants in groups.items():
+        # 配对（解析版+原卷版）打包 zip（打包用源文件，尚未移动）
+        if "解析版" in variants and "原卷版" in variants:
+            zip_dir = dest / "压缩包"
+            zip_dir.mkdir(parents=True, exist_ok=True)
+            zip_path = zip_dir / f"{base}.zip"
+            try:
+                with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+                    for v in ("解析版", "原卷版"):
+                        zf.write(variants[v], variants[v].name)
+            except OSError:
+                pass
+        # 分类移动
+        for variant, path in variants.items():
+            _move_overwrite(path, dest / variant)
+
+
 def archive_project(ctx) -> Path:
-    """把项目成品(docx)与质检报告复制到输出目录，返回目标目录。"""
+    """把项目成品(docx)与质检报告复制到输出目录，配对打包并分类，返回目标目录。"""
     dest = dest_dir(ctx)
     src_out = ctx.dir("生成结果")
     if src_out.exists():
@@ -91,4 +137,6 @@ def archive_project(ctx) -> Path:
         qc_dest = dest / "质检报告"
         for f in sorted(src_qc.rglob("*.md")):
             _copy_overwrite_or_v2(f, qc_dest)
+    # G2/G3：配对打包 zip + 分类到 解析版/原卷版/压缩包
+    _package_and_classify(dest)
     return dest

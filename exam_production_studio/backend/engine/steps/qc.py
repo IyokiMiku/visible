@@ -9,10 +9,29 @@ from typing import Any
 from engine import repo
 from engine.drivers.base import PaperQuestions, QCResult
 from shared.qc import run_quality_checks, write_report, append_error_report
+from shared.qc.ai_check import ai_theme_check
+
+_SEVERITY_PENALTY = {"严重": 15.0, "警告": 5.0, "信息": 0.0}
+_PASS_SCORE = 90.0
+
+
+def _merge_ai_issues(ctx, result: QCResult, qs: PaperQuestions) -> None:
+    """把 AI 相符性问题并入质检结果并重算评分/结论（best-effort，异常已在内部吞掉）。"""
+    topic = qs.meta.get("topic") or getattr(ctx, "course", "")
+    ai_issues = ai_theme_check(qs, topic, course=getattr(ctx, "course", ""))
+    if not ai_issues:
+        return
+    result.structured = list(result.structured) + ai_issues
+    result.issues = [i.to_text() for i in result.structured]
+    penalty = min(100.0, sum(_SEVERITY_PENALTY.get(i.severity, 0.0) for i in result.structured))
+    result.score = max(0.0, 100.0 - penalty)
+    has_placeholder = any(i.code == "ai_placeholder" for i in result.structured)
+    result.passed = result.score >= _PASS_SCORE and not has_placeholder
 
 
 def qc(ctx, paper_no: int, qs: PaperQuestions) -> tuple[QCResult, list[dict[str, Any]]]:
     result = run_quality_checks(ctx, qs)
+    _merge_ai_issues(ctx, result, qs)
     report_path = write_report(ctx, result)
     result.report_path = report_path
     if not result.passed:

@@ -33,6 +33,10 @@ from .images import ensure_local_images
 RED = (255, 0, 0)
 _CN_NUM = "一二三四五六七八九十"
 
+# 主观题：原卷版需在题后留出空白作答区
+SUBJECTIVE_TYPES = {"简答题", "计算题", "综合应用题", "分析题", "作图题", "识图题", "简答作图题"}
+_ANSWER_SPACE_LINES = 4
+
 # 解析标签去重：反复剥离开头的【解析|详解|分析…】，最终统一加单个【解析】
 _DUP_LABEL_RE = re.compile(
     r"^(?:【\s*(?:解析|详解|分析|答案解析|试题解析|题目解析|解题思路|点睛)\s*】|(?:解析|详解|分析)\s*[:：])\s*"
@@ -167,10 +171,15 @@ def generate_docx(
     for ti, qtype in enumerate(order):
         cn = _CN_NUM[ti] if ti < len(_CN_NUM) else str(ti + 1)
         add_paragraph_with_style(doc, f"{cn}、{qtype}", font_name="黑体", font_size=12, bold=True, space_after=6)
+        is_subjective = qtype in SUBJECTIVE_TYPES
         for q in grouped[qtype]:
             _render_question(doc, q, img_dir)
             if show_answer:
                 _render_answer_analysis(doc, q)
+            elif is_subjective:
+                # 原卷版：主观题后留出空白作答区，供学生作答
+                for _ in range(_ANSWER_SPACE_LINES):
+                    add_paragraph_with_style(doc, "", font_name="宋体", font_size=10.5, space_after=2)
 
     save_docx(doc, str(out_path))
     return out_path

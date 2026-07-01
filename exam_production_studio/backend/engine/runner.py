@@ -12,11 +12,14 @@ import threading
 import traceback
 from typing import Any
 
-from engine import events, repo, review
+from engine import events, questions_store, repo, review
 from engine.context import ProjectContext
 from engine.drivers import get_driver
+from shared import config_errors
+from shared.config_errors import ConfigError
+from shared.ai.llm import LLMNotConfigured
 
-BLOCKING_TYPES = {"AI_MATCH", "RULE_CONFLICT", "AI_GENERATE", "QC_FAIL"}
+BLOCKING_TYPES = {"AI_MATCH", "RULE_CONFLICT", "AI_GENERATE", "QC_FAIL", "CONTENT_REVIEW"}
 
 _controls: dict[str, dict[str, Any]] = {}
 _lock = threading.Lock()
@@ -118,6 +121,11 @@ def _safe_run(project_id: str, run_id: str) -> None:
     try:
         _run(project_id, run_id)
     except Exception as e:  # noqa: BLE001
+        # 只有「配置类」异常才记录到红点标记；普通 bug/文件错等不点亮红点
+        if isinstance(e, ConfigError):
+            config_errors.record(e.group, e.field, e.message)
+        elif isinstance(e, LLMNotConfigured):
+            config_errors.record("llm", "api_key", str(e))
         try:
             ctx = _build_ctx(project_id)
             _emit(ctx, run_id, "", f"流程异常：{e}\n{traceback.format_exc()}", level="error", event="error")
@@ -172,46 +180,83 @@ def _run(project_id: str, run_id: str) -> None:
         _save_state(ctx, state)
         _set_progress(ctx, run_id, label, round(20 + i * 8, 1))
 
-    # ---- 逐卷阶段 ----
+    # ---- 逐卷阶段（路线B：质检不过→内容审阅暂停；通过/审阅通过→格式装配）----
     papers = repo.get_papers(project_id)
     total = len(papers) or 1
+    need_review = False
     for idx, paper in enumerate(papers):
         pno = paper["paper_no"]
         if pno in state["papers_done"]:
             continue
         if _should_pause(project_id):
             return _do_pause(ctx, run_id, "拉题与补题")
-        _emit(ctx, run_id, "拉题与补题", f"第{pno}卷：拉题 + 不足AI补题")
-        pq, pull_reviews = driver.produce_questions(ctx, pno)
-        blocked = _enqueue_reviews(ctx, run_id, "拉题与补题", pull_reviews)
 
-        if driver_need_split(driver):
-            _emit(ctx, run_id, "奇偶分卷", f"第{pno}卷：奇偶拆分为教师/学生各2份")
-            paths = driver.assemble(ctx, pno, pq)  # 双析驱动内部走 split
-        else:
-            paths = driver.assemble(ctx, pno, pq)
-        repo.update_paper(project_id, pno, docx_paths=[str(p) for p in paths], status="pulled")
+        existing = questions_store.load_questions(ctx, pno)
+        review_state = questions_store.load_review(ctx, pno)
 
-        _emit(ctx, run_id, "质检导出", f"第{pno}卷：逐卷质检")
-        qc_result, qc_reviews = driver.qc(ctx, pno, pq)
-        blocked = _enqueue_reviews(ctx, run_id, "质检导出", qc_reviews) or blocked
-        repo.update_paper(project_id, pno,
-                          status="qc_passed" if qc_result.passed else "pending_review",
-                          qc_report_path=str(qc_result.report_path or ""))
+        # 已（自动或人工）审阅通过 → 用已保存题目直接格式装配
+        if existing is not None and review_state.get("status") == "已通过":
+            _emit(ctx, run_id, "格式装配", f"第{pno}卷：审阅通过，格式装配")
+            _assemble_and_save(ctx, run_id, driver, project_id, pno, existing)
+            state["papers_done"].append(pno)
+            _save_state(ctx, state)
+            _set_progress(ctx, run_id, "格式装配", round(60 + (idx + 1) / total * 40, 1))
+            continue
 
-        # 本卷产物已生成并落库后再判断是否暂停，避免恢复时丢失已完成工作
-        state["papers_done"].append(pno)
-        _save_state(ctx, state)
-        _set_progress(ctx, run_id, "质检导出", round(60 + (idx + 1) / total * 40, 1))
+        if existing is None:
+            # 首次：拉题+补题 → 存题目 → 质检 → 存质检
+            _emit(ctx, run_id, "拉题与补题", f"第{pno}卷：拉题 + 不足AI补题")
+            pq, pull_reviews = driver.produce_questions(ctx, pno)
+            questions_store.save_questions(ctx, pq, review={"status": "待审", "confirmed_nos": []})
+            pull_blocked = _enqueue_reviews(ctx, run_id, "拉题与补题", pull_reviews)
 
-        if blocked:
-            repo.update_run(run_id, status="review", current_node="待确认")
-            repo.set_project_status(project_id, "review")
-            _emit(ctx, run_id, "待确认", f"第{pno}卷命中阻塞型待确认（AI补题/质检），流程暂停，等待人工处理。",
+            _emit(ctx, run_id, "质检导出", f"第{pno}卷：逐卷质检")
+            qc_result, _qc_reviews = driver.qc(ctx, pno, pq)
+            questions_store.save_qc(ctx, qc_result)
+            repo.update_paper(project_id, pno, qc_report_path=str(qc_result.report_path or ""))
+
+            if qc_result.passed and not pull_blocked:
+                # 质检通过 → 自动视为审阅通过并装配
+                questions_store.update_review(ctx, pno, {
+                    "status": "已通过", "auto": True,
+                    "confirmed_nos": [q.number for q in pq.questions],
+                })
+                _emit(ctx, run_id, "格式装配", f"第{pno}卷：质检通过，格式装配")
+                _assemble_and_save(ctx, run_id, driver, project_id, pno, pq)
+                state["papers_done"].append(pno)
+                _save_state(ctx, state)
+                _set_progress(ctx, run_id, "格式装配", round(60 + (idx + 1) / total * 40, 1))
+                continue
+
+            # 质检不过 → 需人工内容审阅（不加入 papers_done，批量收集后统一暂停）
+            if not qc_result.passed:
+                review.enqueue(ctx, run_id, "内容审阅", "CONTENT_REVIEW", pno,
+                               qc_result.score / 100.0,
+                               {"score": qc_result.score, "issue_count": len(qc_result.structured)})
+                events.publish(project_id, {"event": "review", "node": "内容审阅",
+                                            "type": "CONTENT_REVIEW", "paper_no": pno, "time": repo.now()})
+            repo.update_paper(project_id, pno, status="pending_review")
+            _emit(ctx, run_id, "内容审阅", f"第{pno}卷质检未通过，待人工内容审阅。",
                   level="warn", event="review")
-            return
+            need_review = True
+            continue
+
+        # existing 存在但未审阅通过（如人工退回后 resume）→ 仍需审阅
+        if not _has_pending_for(project_id, pno):
+            review.enqueue(ctx, run_id, "内容审阅", "CONTENT_REVIEW", pno, 0.0, {"resumed": True})
+        repo.update_paper(project_id, pno, status="pending_review")
+        need_review = True
+
+    if need_review:
+        repo.update_run(run_id, status="review", current_node="内容审阅")
+        repo.set_project_status(project_id, "review")
+        _emit(ctx, run_id, "内容审阅",
+              "存在待人工内容审阅的卷，流程暂停。请在「内容审阅」逐题确认并整卷通过后继续。",
+              level="warn", event="review")
+        return
 
     # ---- 完成 ----
+    config_errors.clear()  # 正常完成 → 清除运行时配置错误标记
     repo.update_run(run_id, status="done", current_node="完成", progress=100.0, finished_at=repo.now())
     repo.set_project_status(project_id, "done")
     _emit(ctx, run_id, "完成", "全部卷生成完毕。", event="done")
@@ -229,6 +274,18 @@ def _do_pause(ctx: ProjectContext, run_id: str, node: str) -> None:
     repo.update_run(run_id, status="paused", current_node=node)
     repo.set_project_status(ctx.project_id, "running")
     _emit(ctx, run_id, node, "流程已暂停。", level="warn", event="paused")
+
+
+def _assemble_and_save(ctx: ProjectContext, run_id: str, driver, project_id: str, pno: int, pq) -> None:
+    """格式装配（含双析奇偶分卷）并落库 docx 路径。"""
+    if driver_need_split(driver):
+        _emit(ctx, run_id, "奇偶分卷", f"第{pno}卷：奇偶拆分为教师/学生各2份")
+    paths = driver.assemble(ctx, pno, pq)
+    repo.update_paper(project_id, pno, docx_paths=[str(p) for p in paths], status="qc_passed")
+
+
+def _has_pending_for(project_id: str, pno: int) -> bool:
+    return any(r.get("paper_no") == pno for r in review.pending(project_id))
 
 
 def _enqueue_reviews(ctx: ProjectContext, run_id: str, node: str, reviews: list[dict[str, Any]]) -> bool:

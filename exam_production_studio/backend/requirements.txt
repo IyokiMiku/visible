@@ -16,3 +16,7 @@ Pillow
 pymupdf
 pytesseract
 # rapidocr-onnxruntime  # 体积较大，按需启用
+
+# 学科网 Cookie 自动获取
+browser_cookie3          # 方式二：读取本机已登录浏览器的 Cookie
+playwright               # 方式一：弹出真实浏览器让用户登录后抓取 Cookie（需 playwright install chromium）

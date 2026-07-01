@@ -6,6 +6,11 @@ from pathlib import Path
 from engine.drivers.base import QCResult
 
 
+def _esc(text: str) -> str:
+    """转义 Markdown 表格单元格中的竖线与换行。"""
+    return str(text or "").replace("\n", " ").replace("|", "\\|")
+
+
 def write_report(ctx, qc: QCResult) -> Path:
     out_dir = ctx.dir("质检报告")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -21,12 +26,36 @@ def write_report(ctx, qc: QCResult) -> Path:
         f"- 格式校验：{'通过' if qc.format_ok else '不通过'}",
         f"- AI 风险：{qc.ai_risk}",
         "",
-        "## 问题列表",
     ]
-    if qc.issues:
-        lines += [f"- {i}" for i in qc.issues]
+
+    if qc.structured:
+        per_q = sorted((i for i in qc.structured if i.scope == "单题"),
+                       key=lambda i: (i.question_no or 0))
+        whole = [i for i in qc.structured if i.scope != "单题"]
+
+        lines.append("## 单题问题")
+        if per_q:
+            lines.append("| 题号 | 严重度 | 类型 | 详情 |")
+            lines.append("|---|---|---|---|")
+            for i in per_q:
+                lines.append(f"| {i.question_no} | {i.severity} | {_esc(i.type)} | {_esc(i.detail)} |")
+        else:
+            lines.append("- 无")
+
+        lines += ["", "## 全卷 / 跨卷问题"]
+        if whole:
+            lines.append("| 范围 | 严重度 | 类型 | 详情 |")
+            lines.append("|---|---|---|---|")
+            for i in whole:
+                loc = ("第" + "&".join(str(n) for n in i.related_nos) + "题") if i.related_nos else i.scope
+                lines.append(f"| {_esc(loc)} | {i.severity} | {_esc(i.type)} | {_esc(i.detail)} |")
+        else:
+            lines.append("- 无")
     else:
-        lines.append("- 无")
+        # 兜底：无结构化数据时沿用字符串列表
+        lines.append("## 问题列表")
+        lines += [f"- {i}" for i in qc.issues] if qc.issues else ["- 无"]
+
     path.write_text("\n".join(lines), encoding="utf-8")
     return path
 

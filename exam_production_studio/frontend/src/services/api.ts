@@ -76,14 +76,39 @@ export const api = {
 
   getSettings: () => http.get<any, any>('/settings'),
   putSettings: (body: any) => http.put('/settings', body),
+  checkSettings: () => http.get<any, any>('/settings/check'),
+  xkAutoReadCookie: () => http.post<any, any>('/settings/xueke/cookie/auto-read'),
+  xkLoginStart: () => http.post<any, any>('/settings/xueke/cookie/login/start'),
+  xkLoginConfirm: () => http.post<any, any>('/settings/xueke/cookie/login/confirm'),
+  xkLoginCancel: () => http.post<any, any>('/settings/xueke/cookie/login/cancel'),
+  xkLoginStatus: () => http.get<any, any>('/settings/xueke/cookie/login/status'),
+
+  // 内容审阅（路线B）
+  crPapers: (id: string) => http.get<any[], any[]>(`/projects/${id}/content-review/papers`),
+  crPaper: (id: string, no: number) => http.get<any, any>(`/projects/${id}/content-review/${no}`),
+  crEditQuestion: (id: string, no: number, num: number, body: any) =>
+    http.put(`/projects/${id}/content-review/${no}/question/${num}`, body),
+  crReorderOptions: (id: string, no: number, num: number, order: number[]) =>
+    http.post(`/projects/${id}/content-review/${no}/question/${num}/reorder-options`, { order }),
+  crRegenerate: (id: string, no: number, num: number) =>
+    http.post<any, any>(`/projects/${id}/content-review/${no}/question/${num}/regenerate`),
+  crConfirm: (id: string, no: number, num: number) =>
+    http.post<any, any>(`/projects/${id}/content-review/${no}/question/${num}/confirm`),
+  crApprove: (id: string, no: number) =>
+    http.post<any, any>(`/projects/${id}/content-review/${no}/approve`),
 
   getPaperType: (type: string) => http.get<any, any>(`/paper-types/${type}`),
   getQuestionTypes: (type: string, course = '', category = '') =>
     http.get<any, any>(`/paper-types/${type}/question-types`, { params: { course, category } }),
+  getTypeLibrary: (type: string) => http.get<any, any>(`/paper-types/${type}/library`),
+  saveCustomTypes: (type: string, entry_id: string, types: string[]) =>
+    http.put(`/paper-types/${type}/custom-types`, { entry_id, types }),
   putEditorialNote: (type: string, content: string) =>
     http.put(`/paper-types/${type}/editorial-note`, { content }),
   putSpec: (type: string, content: string) =>
     http.put(`/paper-types/${type}/spec`, { content }),
+  loadPaperTypePreview: (type: string) =>
+    http.get<Blob, Blob>(`/paper-types/${type}/preview`, { responseType: 'blob' }),
   previewPaperType: (type: string, editorial_note: string) =>
     http.post<Blob, Blob>(`/paper-types/${type}/preview`, { editorial_note }, { responseType: 'blob' }),
 }

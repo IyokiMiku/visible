@@ -10,4 +10,4 @@ from engine.drivers.common import CommonDriver
 
 class YikeyilianDriver(CommonDriver):
     type = "yikeyilian"
-    flow_nodes = ["读取资料", "解析目录", "生成规划", "知识点匹配", "拉题与补题", "质检导出"]
+    flow_nodes = ["读取资料", "解析目录", "生成规划", "知识点匹配", "拉题与补题", "质检导出", "内容审阅", "格式装配"]

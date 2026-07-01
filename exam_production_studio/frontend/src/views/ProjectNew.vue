@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, reactive, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { ElMessage } from 'element-plus'
+import { ElMessage, ElMessageBox } from 'element-plus'
 import { Delete } from '@element-plus/icons-vue'
 import { api } from '../services/api'
 
@@ -29,6 +29,20 @@ const FALLBACK_QUESTION_TYPES = [
   '简答作图题',
 ]
 const questionTypes = ref<string[]>([...FALLBACK_QUESTION_TYPES])
+// 用户自定义题型（学科网未收录、但实际需要的题型，如“名词解释题”）。
+// 后端按“考类/课程”绑定存储；这里保留会话副本，供下拉即时显示与合法性判断。
+const customTypes = ref<string[]>([])
+// 当前 考类/课程 对应的题型库条目 id（下拉快速加/校验时用于定位绑定分组）。
+const currentEntryId = ref<string>('__global__')
+// 下拉“自定义题型…”的哨兵值，选中后弹出输入框，不会作为真实题型写入。
+const CUSTOM_OPTION = '__custom__'
+
+// 自定义题型统一以“题”结尾（如 名词解释 → 名词解释题），空值返回空串。
+function ensureQuestionSuffix(name: string): string {
+  const n = (name || '').trim()
+  if (!n) return ''
+  return n.endsWith('题') ? n : n + '题'
+}
 
 const DEFAULT_VOLUME: Record<string, any[]> = {
   yikeyilian: [
@@ -69,20 +83,62 @@ const form = reactive<any>({
   volume: JSON.parse(JSON.stringify(DEFAULT_VOLUME['yikeyilian'])),
 })
 
+// 创建项目表单草稿：跳到全局设置再回来时，防止已填内容丢失。
+// 用 sessionStorage：同一标签页内跳转/回退保留，关闭标签页自动清空（临时草稿语义）。
+const DRAFT_KEY = 'projectNewDraft'
+let restoring = false
+
+function saveDraft() {
+  try {
+    sessionStorage.setItem(DRAFT_KEY, JSON.stringify(form))
+  } catch {
+    /* 隐私模式/容量异常时忽略，不影响填写 */
+  }
+}
+
+function loadDraft(): boolean {
+  try {
+    const raw = sessionStorage.getItem(DRAFT_KEY)
+    if (!raw) return false
+    const saved = JSON.parse(raw)
+    restoring = true
+    Object.assign(form, saved)
+    // paper_type 的 watcher 会在下个 tick 触发，restoring 标志避免其覆盖恢复的 volume
+    nextTick(() => {
+      restoring = false
+    })
+    return true
+  } catch {
+    return false
+  }
+}
+
+function clearDraft() {
+  sessionStorage.removeItem(DRAFT_KEY)
+}
+
 watch(
   () => form.paper_type,
   (t) => {
+    if (restoring) return
     form.volume = JSON.parse(JSON.stringify(DEFAULT_VOLUME[t] || DEFAULT_VOLUME['yikeyilian']))
   },
 )
+
+// 深度监听表单，任何改动即写入草稿
+watch(form, saveDraft, { deep: true })
 
 async function loadQuestionTypes() {
   try {
     const res: any = await api.getQuestionTypes(form.paper_type, form.course, form.exam_category)
     const list: string[] = (res && res.question_types) || []
     questionTypes.value = list.length ? list : [...FALLBACK_QUESTION_TYPES]
+    customTypes.value = (res && res.custom_types) || []
+    currentEntryId.value = (res && res.matched_id) || '__global__'
   } catch {
     questionTypes.value = [...FALLBACK_QUESTION_TYPES]
+    customTypes.value = []
+    currentEntryId.value = '__global__'
   }
 }
 
@@ -95,7 +151,47 @@ watch(
   },
 )
 
-const validTypeSet = computed(() => new Set(questionTypes.value))
+// 下拉可选题型 = 后端题型 + 自定义题型（去重，自定义在末尾）
+const allTypes = computed(() => {
+  const seen = new Set<string>()
+  const merged: string[] = []
+  for (const t of [...questionTypes.value, ...customTypes.value]) {
+    if (t && !seen.has(t)) {
+      seen.add(t)
+      merged.push(t)
+    }
+  }
+  return merged
+})
+const validTypeSet = computed(() => new Set(allTypes.value))
+
+async function onTypeChange(row: any, val: string) {
+  if (val !== CUSTOM_OPTION) return
+  row.type = ''
+  try {
+    const { value } = await ElMessageBox.prompt(
+      '请输入自定义题型名称（会自动以“题”结尾，如 名词解释 → 名词解释题）',
+      '自定义题型',
+      { confirmButtonText: '确定', cancelButtonText: '取消', inputPattern: /\S/, inputErrorMessage: '题型名称不能为空' },
+    )
+    const name = ensureQuestionSuffix(value || '')
+    if (!name) return
+    // 持久化到当前 考类/课程 绑定分组（覆盖式保存全量列表）
+    if (!customTypes.value.includes(name)) {
+      const next = [...customTypes.value, name]
+      try {
+        await api.saveCustomTypes(form.paper_type, currentEntryId.value, next)
+      } catch {
+        /* 保存失败已由拦截器提示，仍允许本次会话临时使用 */
+      }
+      customTypes.value = next
+    }
+    if (!questionTypes.value.includes(name)) questionTypes.value.push(name)
+    row.type = name
+  } catch {
+    /* 用户取消，保持未选择 */
+  }
+}
 // 行的题型已选、但不在当前选项集合内 → 失效（切换卷类/考类/课程后可能出现）
 function isRowInvalid(row: any): boolean {
   return !!row.type && !validTypeSet.value.has(row.type)
@@ -139,6 +235,70 @@ function delRow(i: number) {
   form.volume.splice(i, 1)
 }
 
+// ===== 管理题型弹窗：按考类/课程展示题型库，内置只读、自定义可增删 =====
+interface TypeGroup {
+  id: string
+  name: string
+  builtin_types: string[]
+  custom_types: string[]
+  input: string
+}
+const mgrVisible = ref(false)
+const mgrLoading = ref(false)
+const mgrGroups = ref<TypeGroup[]>([])
+let mgrDirty = false
+
+async function openManager() {
+  mgrVisible.value = true
+  mgrLoading.value = true
+  mgrDirty = false
+  try {
+    const res: any = await api.getTypeLibrary(form.paper_type)
+    mgrGroups.value = (res?.groups || []).map((g: any) => ({
+      id: g.id,
+      name: g.name,
+      builtin_types: g.builtin_types || [],
+      custom_types: g.custom_types || [],
+      input: '',
+    }))
+  } finally {
+    mgrLoading.value = false
+  }
+}
+
+async function persistGroup(g: TypeGroup) {
+  try {
+    await api.saveCustomTypes(form.paper_type, g.id, g.custom_types)
+    mgrDirty = true
+  } catch {
+    /* 拦截器已提示 */
+  }
+}
+
+async function addTypeInGroup(g: TypeGroup) {
+  const name = ensureQuestionSuffix(g.input || '')
+  if (!name) return
+  if (g.builtin_types.includes(name) || g.custom_types.includes(name)) {
+    ElMessage.warning('该题型已存在')
+    g.input = ''
+    return
+  }
+  g.custom_types.push(name)
+  g.input = ''
+  await persistGroup(g)
+}
+
+async function removeTypeInGroup(g: TypeGroup, name: string) {
+  g.custom_types = g.custom_types.filter((t) => t !== name)
+  await persistGroup(g)
+}
+
+function onManagerClosed() {
+  // 管理期间若有改动，刷新当前下拉，使新增/删除立即生效
+  if (mgrDirty) loadQuestionTypes()
+  mgrDirty = false
+}
+
 const saving = ref(false)
 async function submit() {
   if (diffSum.value !== 100) return ElMessage.error('难度分布三者之和必须为 100')
@@ -169,6 +329,7 @@ async function submit() {
       ai_options: form.ai,
     }
     const p = await api.createProject(body)
+    clearDraft()
     ElMessage.success('项目已创建')
     router.push(`/projects/${p.id}/resources`)
   } finally {
@@ -177,14 +338,21 @@ async function submit() {
 }
 
 onMounted(() => {
-  if (route.query.type) form.paper_type = route.query.type as string
+  // 有草稿则整体恢复（含 paper_type）；没有草稿再回退到 URL 参数
+  const restored = loadDraft()
+  if (!restored && route.query.type) form.paper_type = route.query.type as string
   loadQuestionTypes()
 })
 </script>
 
 <template>
   <el-card>
-    <template #header>项目创建</template>
+    <template #header>
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <span>项目创建</span>
+        <el-button size="small" @click="openManager">管理题型</el-button>
+      </div>
+    </template>
     <el-form label-width="120px" style="max-width: 920px">
       <el-form-item label="卷类产品">
         <div style="display: flex; gap: 12px; flex-wrap: wrap">
@@ -263,9 +431,11 @@ onMounted(() => {
                 placeholder="请选择题型"
                 style="width: 100%"
                 :class="{ 'qt-invalid': isRowInvalid(row) }"
+                @change="(val: string) => onTypeChange(row, val)"
               >
-                <el-option v-for="qt in questionTypes" :key="qt" :label="qt" :value="qt" />
+                <el-option v-for="qt in allTypes" :key="qt" :label="qt" :value="qt" />
                 <el-option v-if="isRowInvalid(row)" :key="row.type" :label="`${row.type}（不适用）`" :value="row.type" />
+                <el-option :key="CUSTOM_OPTION" label="+ 自定义题型…" :value="CUSTOM_OPTION" />
               </el-select>
               <div v-if="isRowInvalid(row)" class="qt-invalid-tip">当前考类不支持，请重新选择</div>
             </template>
@@ -326,6 +496,49 @@ onMounted(() => {
         <el-button type="primary" :loading="saving" @click="submit">保存并进入资源导入</el-button>
       </el-form-item>
     </el-form>
+
+    <el-dialog
+      v-model="mgrVisible"
+      title="管理题型"
+      width="720px"
+      @closed="onManagerClosed"
+    >
+      <div style="color: #888; font-size: 12px; margin-bottom: 12px">
+        灰色为内置题型（只读）；自定义题型仅本机保存、自动以“题”结尾，删除/新增后立即生效。按考类/课程分别维护。
+      </div>
+      <div v-loading="mgrLoading" style="max-height: 60vh; overflow-y: auto">
+        <div
+          v-for="g in mgrGroups"
+          :key="g.id"
+          style="border: 1px solid #eee; border-radius: 6px; padding: 10px 12px; margin-bottom: 10px"
+        >
+          <div style="font-weight: 600; margin-bottom: 8px">{{ g.name }}</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center">
+            <el-tag v-for="t in g.builtin_types" :key="'b-' + t" type="info">{{ t }}</el-tag>
+            <el-tag
+              v-for="t in g.custom_types"
+              :key="'c-' + t"
+              type="success"
+              closable
+              @close="removeTypeInGroup(g, t)"
+            >{{ t }}</el-tag>
+          </div>
+          <div style="display: flex; gap: 8px; margin-top: 10px">
+            <el-input
+              v-model="g.input"
+              size="small"
+              placeholder="输入自定义题型（如 名词解释）"
+              style="width: 240px"
+              @keyup.enter="addTypeInGroup(g)"
+            />
+            <el-button size="small" type="primary" plain @click="addTypeInGroup(g)">添加</el-button>
+          </div>
+        </div>
+      </div>
+      <template #footer>
+        <el-button type="primary" @click="mgrVisible = false">完成</el-button>
+      </template>
+    </el-dialog>
   </el-card>
 </template>
 

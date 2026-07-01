@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import { api } from '../services/api'
 import { connectFlowWs } from '../services/ws'
+import { refreshSettingsStatus } from '../services/settingsStatus'
 
 const route = useRoute()
 const router = useRouter()
@@ -67,6 +68,8 @@ onMounted(async () => {
       scrollLog()
     }
     if (['progress', 'review', 'paused', 'done', 'error', 'blocked'].includes(ev.event)) refresh()
+    // 运行失败或完成后，刷新全局设置状态（用于精准点亮/熄灭「全局设置」红点）
+    if (ev.event === 'error' || ev.event === 'done') refreshSettingsStatus()
     if (ev.event === 'review') ElMessage.warning('命中待确认事项，请前往「待确认事项」处理')
   })
 })

@@ -10,6 +10,7 @@ from typing import Any, Callable
 from engine import registry, repo
 from engine.drivers.base import PaperQuestions, Question
 from shared.ai import ai_fill as default_fill
+from shared.docx.images import ensure_local_images
 from shared.xueke_api import kpoint_resolver, pull_for_plan
 
 
@@ -60,6 +61,13 @@ def produce_questions(
     # 重新编号
     for i, q in enumerate(questions, 1):
         q.number = i
+
+    # B1：图片预下载到本地（供质检/内容审阅前即可显示；ensure_local_images 幂等，装配时复用）
+    img_dir = ctx.dir("_临时") / "images"
+    for q in questions:
+        q.stem_images = ensure_local_images(q.stem_images, img_dir)
+        if q.option_images:
+            q.option_images = [ensure_local_images(imgs, img_dir) for imgs in q.option_images]
 
     # 待确认判定：仍不足，或存在低信度 AI 占位题
     final_by_type: dict[str, int] = {}
