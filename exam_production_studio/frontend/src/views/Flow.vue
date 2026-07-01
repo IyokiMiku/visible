@@ -175,7 +175,7 @@ onUnmounted(() => disconnect && disconnect())
     <template #header>
       <div style="display: flex; justify-content: space-between; align-items: center">
         <span>流程执行</span>
-        <el-tag :type="STATUS_TYPE[flow.status] || 'info'">{{ flow.status }}</el-tag>
+        <el-tag :type="statusType">{{ statusLabel }}</el-tag>
       </div>
     </template>
 
