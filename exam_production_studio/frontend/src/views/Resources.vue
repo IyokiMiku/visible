@@ -10,6 +10,7 @@ const router = useRouter()
 const id = route.params.id as string
 const resources = ref<any[]>([])
 const project = ref<any>(null)
+const notFound = ref(false)
 const uploadUrl = api.uploadResourceUrl(id)
 
 // 各资源类型：接受的扩展名 + 中文提示 + 是否必填。与后端 ALLOWED_EXTS 保持一致。
@@ -52,8 +53,16 @@ function makeBeforeUpload(exts: string[]) {
   }
 }
 
-// el-upload 走浏览器原生请求，不经 axios 拦截器；需自行判断后端返回 code
-function onSuccess(resp: any) {
+// ---- 上传进度反馈 ----
+// 以 el-upload 内部文件 uid 为键，记录上传中的文件与百分比
+const uploads = ref<Record<string, { name: string; percent: number }>>({})
+const uploadingCount = computed(() => Object.keys(uploads.value).length)
+
+function onProgress(evt: any, file: any) {
+  uploads.value[String(file.uid)] = { name: file.name, percent: Math.round(evt?.percent || 0) }
+}
+function onSuccess(resp: any, file: any) {
+  if (file?.uid != null) delete uploads.value[String(file.uid)]
   if (resp && typeof resp === 'object' && 'code' in resp && resp.code !== 0) {
     ElMessage.error(resp.message || '上传失败')
     return
@@ -61,7 +70,8 @@ function onSuccess(resp: any) {
   ElMessage.success('上传成功')
   load()
 }
-function onError() {
+function onError(_err: any, file: any) {
+  if (file?.uid != null) delete uploads.value[String(file.uid)]
   ElMessage.error('上传失败，请检查文件或网络')
 }
 
@@ -80,7 +90,7 @@ async function removeFile(rid: string, filename: string) {
   }
 }
 
-// 模板来源：默认使用系统内置模板 / 上传自定义
+// 模板来源：默认使用系统内置模板 / 上传自定义（本地状态，刷新后按“是否已传自定义模板”初始化）
 const templateMode = ref<'default' | 'upload'>('default')
 // 规划表来源：与项目 plan_source 联动（ocr=默认使用生成的，upload=上传）
 const planMode = computed<'default' | 'upload'>({
@@ -136,24 +146,41 @@ function goFlow() {
   router.push(`/projects/${id}/flow`)
 }
 
+// 首次加载后按已有文件初始化模板模式（避免刷新后自定义模板状态丢失）
+let templateInit = false
 async function load() {
   resources.value = await api.listResources(id)
+  if (!templateInit) {
+    templateInit = true
+    if (filesOf('模板').length) templateMode.value = 'upload'
+  }
 }
 async function loadProject() {
   try {
     project.value = await api.getProject(id)
   } catch {
-    /* 忽略：项目信息仅用于默认选项联动 */
+    notFound.value = true
   }
 }
 onMounted(() => {
-  load()
   loadProject()
+  load()
 })
 </script>
 
 <template>
-  <el-card>
+  <el-result
+    v-if="notFound"
+    icon="warning"
+    title="项目不存在"
+    sub-title="该项目可能已被删除，或链接有误。"
+  >
+    <template #extra>
+      <el-button type="primary" @click="router.push('/projects')">返回项目列表</el-button>
+    </template>
+  </el-result>
+
+  <el-card v-else>
     <template #header>
       <div style="display: flex; justify-content: space-between; align-items: center">
         <span>资源导入</span>
@@ -178,6 +205,15 @@ onMounted(() => {
       style="margin-bottom: 16px"
     />
 
+    <!-- 上传进度 -->
+    <div v-if="uploadingCount" class="uploading-box">
+      <div class="uploading-title">上传中（{{ uploadingCount }}）…</div>
+      <div v-for="(u, uid) in uploads" :key="uid" class="uploading-row">
+        <span class="fname" :title="u.name">{{ u.name }}</span>
+        <el-progress :percentage="u.percent" :stroke-width="10" style="flex: 1; min-width: 120px" />
+      </div>
+    </div>
+
     <div class="kind-grid">
       <!-- 文档类：考纲(必填) / 教材(可选) / 真题(可选) -->
       <el-card v-for="k in DOC_KINDS" :key="k.key" shadow="never" class="kind-card">
@@ -195,6 +231,7 @@ onMounted(() => {
           name="file"
           :accept="accept(k.exts)"
           :before-upload="makeBeforeUpload(k.exts)"
+          :on-progress="onProgress"
           :on-success="onSuccess"
           :on-error="onError"
           :show-file-list="false"
@@ -220,9 +257,12 @@ onMounted(() => {
           <el-radio-button value="default">使用默认模板</el-radio-button>
           <el-radio-button value="upload">上传自定义</el-radio-button>
         </el-radio-group>
-        <div v-if="templateMode === 'default'" class="kind-note">
-          将使用系统内置排版模板，无需上传。
-        </div>
+        <template v-if="templateMode === 'default'">
+          <div class="kind-note">将使用系统内置排版模板，无需上传。</div>
+          <div v-if="filesOf('模板').length" class="kind-warn">
+            已上传的自定义模板在“使用默认模板”下不会生效，如需启用请切到“上传自定义”。
+          </div>
+        </template>
         <template v-else>
           <div class="kind-hint">支持格式：Word 文档（.doc/.docx）</div>
           <el-upload
@@ -232,6 +272,7 @@ onMounted(() => {
             name="file"
             :accept="accept(TEMPLATE_EXTS)"
             :before-upload="makeBeforeUpload(TEMPLATE_EXTS)"
+            :on-progress="onProgress"
             :on-success="onSuccess"
             :on-error="onError"
             :show-file-list="false"
@@ -258,9 +299,14 @@ onMounted(() => {
           <el-radio-button value="default">默认使用生成的</el-radio-button>
           <el-radio-button value="upload">上传规划表</el-radio-button>
         </el-radio-group>
-        <div v-if="planMode === 'default'" class="kind-note">
-          将由系统按<strong>考纲</strong>自动生成规划表（本地 OCR 扫描/合成），无需上传——因此此时考纲为必填。
-        </div>
+        <template v-if="planMode === 'default'">
+          <div class="kind-note">
+            将由系统按<strong>考纲</strong>自动生成规划表（本地 OCR 扫描/合成），无需上传——因此此时考纲为必填。
+          </div>
+          <div v-if="filesOf('规划表').length" class="kind-warn">
+            已上传的规划表在“默认使用生成的”下不会被使用，如需使用请切到“上传规划表”。
+          </div>
+        </template>
         <template v-else>
           <div class="kind-hint">支持格式：Excel 表格（.xlsx/.xls），必须上传</div>
           <el-upload
@@ -270,6 +316,7 @@ onMounted(() => {
             name="file"
             :accept="accept(PLAN_EXTS)"
             :before-upload="makeBeforeUpload(PLAN_EXTS)"
+            :on-progress="onProgress"
             :on-success="onSuccess"
             :on-error="onError"
             :show-file-list="false"
@@ -289,20 +336,6 @@ onMounted(() => {
         </template>
       </el-card>
     </div>
-
-    <el-divider />
-    <el-table :data="resources" empty-text="尚未导入资源">
-      <el-table-column prop="kind" label="类型" width="100" />
-      <el-table-column prop="filename" label="文件名" min-width="240" />
-      <el-table-column label="状态" width="110">
-        <template #default="{ row }"><el-tag type="success">{{ statusZh(row.status) }}</el-tag></template>
-      </el-table-column>
-      <el-table-column label="操作" width="90">
-        <template #default="{ row }">
-          <el-button size="small" type="danger" link @click="removeFile(row.id, row.filename)">删除</el-button>
-        </template>
-      </el-table-column>
-    </el-table>
   </el-card>
 </template>
 
@@ -338,6 +371,40 @@ onMounted(() => {
   border-radius: 4px;
   padding: 10px;
   line-height: 1.5;
+}
+.kind-warn {
+  margin-top: 8px;
+  color: #e6a23c;
+  font-size: 12px;
+  background: #fdf6ec;
+  border-radius: 4px;
+  padding: 8px 10px;
+  line-height: 1.5;
+}
+.uploading-box {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px dashed var(--el-color-primary);
+  border-radius: 6px;
+  background: #f4f8ff;
+}
+.uploading-title {
+  font-size: 13px;
+  color: var(--el-color-primary);
+  margin-bottom: 6px;
+}
+.uploading-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  padding: 3px 0;
+}
+.uploading-row .fname {
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .up-icon {
   font-size: 32px;
