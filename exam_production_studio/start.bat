@@ -12,8 +12,12 @@ if not exist ".venv\Scripts\python.exe" (
   echo [安装] 正在创建 Python 虚拟环境并安装后端依赖……
   python -m venv .venv
   .venv\Scripts\python -m pip install --upgrade pip
-  .venv\Scripts\python -m pip install -r backend\requirements.txt
 )
+
+REM ---- backend deps: run every start so newly-added/missing deps are auto-installed ----
+REM (pip skips already-satisfied packages quickly; only missing ones are downloaded)
+echo [deps] checking backend dependencies (auto-install if missing) ...
+.venv\Scripts\python -m pip install -q -r backend\requirements.txt
 
 REM ---- frontend deps ----
 if not exist "frontend\node_modules" (
