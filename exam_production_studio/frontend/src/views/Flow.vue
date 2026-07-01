@@ -12,6 +12,7 @@ const id = route.params.id as string
 const flow = ref<any>({ flow_nodes: [], status: '', current_node: '', progress: 0, papers: [], pending_reviews: 0 })
 const logs = ref<any[]>([])
 const logBox = ref<HTMLElement>()
+const paperTableMaxHeight = ref(260)
 let disconnect: (() => void) | null = null
 
 type FlowStatus = 'ready' | 'running' | 'review' | 'paused' | 'blocked' | 'done' | 'failed'
@@ -137,6 +138,10 @@ function scrollLog() {
     if (logBox.value) logBox.value.scrollTop = logBox.value.scrollHeight
   })
 }
+function updatePaperTableHeight() {
+  if (typeof window === 'undefined') return
+  paperTableMaxHeight.value = Math.max(180, Math.min(360, window.innerHeight - 460))
+}
 
 async function start() {
   await api.start(id)
@@ -160,6 +165,8 @@ async function doRerun() {
 }
 
 onMounted(async () => {
+  updatePaperTableHeight()
+  window.addEventListener('resize', updatePaperTableHeight)
   await refresh()
   await loadLogs()
   disconnect = connectFlowWs(id, (ev) => {
@@ -171,7 +178,10 @@ onMounted(async () => {
     if (ev.event === 'review') ElMessage.warning('命中待确认事项，请前往「待确认事项」处理')
   })
 })
-onUnmounted(() => disconnect && disconnect())
+onUnmounted(() => {
+  window.removeEventListener('resize', updatePaperTableHeight)
+  disconnect && disconnect()
+})
 </script>
 
 <template>
@@ -227,7 +237,7 @@ onUnmounted(() => disconnect && disconnect())
           <el-descriptions-item label="待确认">{{ flow.pending_reviews }}</el-descriptions-item>
           <el-descriptions-item label="卷数">{{ flow.papers.length }}</el-descriptions-item>
         </el-descriptions>
-        <el-table :data="flow.papers" size="small" style="margin-top: 10px">
+        <el-table :data="flow.papers" size="small" :max-height="paperTableMaxHeight" style="margin-top: 10px">
           <el-table-column prop="paper_no" label="卷号" width="70" />
           <el-table-column label="状态">
             <template #default="scope">{{ labelFrom(PAPER_STATUS_LABEL, scope.row.status) }}</template>
