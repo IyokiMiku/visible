@@ -49,8 +49,12 @@ const NODE_LABEL: Record<string, string> = {
 }
 
 const PAPER_STATUS_LABEL: Record<string, string> = {
+  pending: '待处理',
   ready: '待处理',
   running: '处理中',
+  pulled: '已拉题',
+  qc_passed: '质检通过',
+  pending_review: '待人工确认',
   review: '待确认',
   done: '已完成',
   failed: '失败',
@@ -180,21 +184,29 @@ onUnmounted(() => disconnect && disconnect())
     </template>
 
     <el-steps :active="activeStep" align-center finish-status="success" style="margin-bottom: 16px">
-      <el-step v-for="n in flow.flow_nodes" :key="n" :title="n" />
+      <el-step v-for="n in flow.flow_nodes" :key="n" :title="labelFrom(NODE_LABEL, n)" />
     </el-steps>
 
     <el-row :gutter="16">
       <el-col :span="16">
+        <el-alert
+          :title="workStatusTitle"
+          :description="workStatusDescription"
+          :type="statusType === 'danger' ? 'error' : statusType === 'success' ? 'success' : statusType === 'warning' ? 'warning' : 'info'"
+          show-icon
+          :closable="false"
+          style="margin-bottom: 12px"
+        />
         <div style="margin-bottom: 8px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap">
-          <el-button type="primary" @click="start">开始</el-button>
-          <el-button @click="pause">暂停</el-button>
-          <el-button type="success" @click="resume">继续</el-button>
-          <el-select v-model="rerunNode" placeholder="选择回退节点" style="width: 160px" size="default">
-            <el-option v-for="n in flow.flow_nodes" :key="n" :label="n" :value="n" />
+          <el-button type="primary" :disabled="isRunning" @click="start">开始</el-button>
+          <el-button :disabled="!canPause" @click="pause">暂停</el-button>
+          <el-button type="success" :disabled="!canResume" @click="resume">继续</el-button>
+          <el-select v-model="rerunNode" placeholder="选择回退节点" style="width: 160px" size="default" :disabled="isRunning">
+            <el-option v-for="n in flow.flow_nodes" :key="n" :label="labelFrom(NODE_LABEL, n)" :value="n" />
           </el-select>
-          <el-button @click="doRerun">回退重跑</el-button>
+          <el-button :disabled="!canRerun" @click="doRerun">回退重跑</el-button>
           <el-badge :value="flow.pending_reviews" :hidden="!flow.pending_reviews">
-            <el-button @click="router.push(`/projects/${id}/reviews`)">待确认</el-button>
+            <el-button :type="flow.pending_reviews ? 'warning' : 'default'" @click="router.push(`/projects/${id}/reviews`)">{{ pendingReviewText }}</el-button>
           </el-badge>
         </div>
         <div
@@ -211,13 +223,15 @@ onUnmounted(() => disconnect && disconnect())
           <el-descriptions-item label="进度">
             <el-progress :percentage="Math.round(flow.progress)" />
           </el-descriptions-item>
-          <el-descriptions-item label="当前节点">{{ flow.current_node || '-' }}</el-descriptions-item>
+          <el-descriptions-item label="当前节点">{{ currentNodeLabel }}</el-descriptions-item>
           <el-descriptions-item label="待确认">{{ flow.pending_reviews }}</el-descriptions-item>
           <el-descriptions-item label="卷数">{{ flow.papers.length }}</el-descriptions-item>
         </el-descriptions>
         <el-table :data="flow.papers" size="small" style="margin-top: 10px">
           <el-table-column prop="paper_no" label="卷号" width="70" />
-          <el-table-column prop="status" label="状态" />
+          <el-table-column label="状态">
+            <template #default="scope">{{ labelFrom(PAPER_STATUS_LABEL, scope.row.status) }}</template>
+          </el-table-column>
         </el-table>
         <el-button style="margin-top: 10px" @click="router.push(`/projects/${id}/quality`)">查看质量摘要</el-button>
         <el-button style="margin-top: 10px" @click="router.push(`/projects/${id}/artifacts`)">输出归档</el-button>
