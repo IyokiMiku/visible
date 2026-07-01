@@ -16,7 +16,14 @@ const form = reactive<any>({
   vision: { enabled: '', model: '', base_url: '', api_key: '' },
   thresholds: { match: '0.85', max_fix_rounds: '2' },
   output: { dir: '' },
+  ai: { trace_enabled: true, trace_keep_runs: '10' },
 })
+
+// ai.trace_enabled 存库为字符串，未设置时默认开启
+function parseTraceEnabled(raw: any): boolean {
+  if (raw === undefined || raw === null || raw === '') return true
+  return !['false', '0', 'off', 'no'].includes(String(raw).toLowerCase())
+}
 
 const validateTemperature = (_rule: any, value: any, callback: any) => {
   const s = String(value ?? '').trim()
@@ -104,6 +111,8 @@ async function load() {
   Object.assign(form.vision, s.vision || {})
   Object.assign(form.thresholds, s.thresholds || {})
   Object.assign(form.output, s.output || {})
+  form.ai.trace_enabled = parseTraceEnabled(s.ai?.trace_enabled)
+  form.ai.trace_keep_runs = String(s.ai?.trace_keep_runs ?? '10') || '10'
   if (!String(form.llm.temperature ?? '').trim()) form.llm.temperature = '0.2'
   refreshSettingsStatus()
 }
@@ -201,6 +210,18 @@ defineExpose({ load, save })
       <div style="color: #888; font-size: 12px; margin-top: 4px">
         生成完成后，成品与质检报告会自动归档到 此目录/卷类/省份简称 考类/教材或课程/
       </div>
+    </el-form-item>
+
+    <el-divider content-position="left">排查 / 调试</el-divider>
+    <el-form-item label="记录 AI 调用">
+      <el-switch v-model="form.ai.trace_enabled" />
+      <div style="color: #888; font-size: 12px; margin-top: 4px">
+        开启后，每次生成都会把 LLM 的提示词与原始响应存到「中间文件 › 运行记录/AI调用」，便于排查出题问题。
+      </div>
+    </el-form-item>
+    <el-form-item label="保留运行次数">
+      <el-input v-model="form.ai.trace_keep_runs" style="width: 120px" placeholder="10" />
+      <span style="color: #888; font-size: 12px; margin-left: 8px">只保留最近 N 次运行的 AI 记录，防止占用磁盘。</span>
     </el-form-item>
 
     <el-form-item>

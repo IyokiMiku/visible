@@ -11,11 +11,36 @@ import db
 from engine import registry, repo
 from engine.context import ProjectContext
 from shared.docx import build_filename
+from . import paper_types
 from ._common import fail, ok
 
 router = APIRouter(prefix="/api/projects", tags=["projects"])
 
 _JSON_FIELDS = {"volume_config", "output_versions", "ai_options"}
+
+
+def _score_total(volume_config: dict[str, Any] | None) -> float:
+    """按 by_type 合计 count×score_per。"""
+    by_type = (volume_config or {}).get("by_type") or {}
+    total = 0.0
+    for v in by_type.values():
+        try:
+            total += float(v.get("count", 0)) * float(v.get("score_per", 0))
+        except (TypeError, ValueError):
+            continue
+    return total
+
+
+def _check_full_score(paper_type: str, volume_config: dict[str, Any] | None) -> str | None:
+    """非「一课一练」产品：题型分值合计须等于该系列满分，否则返回错误文案。"""
+    if not paper_types.score_enabled(paper_type):
+        return None
+    total = _score_total(volume_config)
+    total_disp = int(total) if float(total).is_integer() else total
+    full = paper_types.get_full_score(paper_type)
+    if total_disp != full:
+        return f"题型分值合计为 {total_disp} 分，与该系列满分 {full} 分不一致，请调整题量/分值或修改满分"
+    return None
 
 
 class ProjectIn(BaseModel):
@@ -58,6 +83,9 @@ def create_project(body: ProjectIn):
         return fail(f"未知试卷类型: {body.paper_type}")
     pid = repo.new_id("prj_")
     vc = body.volume_config or mode.default_volume_config
+    err = _check_full_score(body.paper_type, vc)
+    if err:
+        return fail(err)
     ov = body.output_versions or ["原卷版", "解析版"]
     ai = body.ai_options or {"match": True, "summary": True, "fill": True,
                              "match_threshold": 0.85, "max_fix_rounds": 2}
@@ -86,6 +114,10 @@ def get_project(project_id: str):
 def update_project(project_id: str, body: ProjectIn):
     if not repo.get_project(project_id):
         return fail("项目不存在", status=404)
+    if body.volume_config is not None:
+        err = _check_full_score(body.paper_type, body.volume_config)
+        if err:
+            return fail(err)
     fields = body.model_dump()
     for f in _JSON_FIELDS:
         if fields.get(f) is not None:

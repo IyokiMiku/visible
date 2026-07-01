@@ -55,12 +55,12 @@ const DEFAULT_VOLUME: Record<string, any[]> = {
     { type: '填空题', count: 10, score_per: 2 },
     { type: '判断题', count: 10, score_per: 1 },
     { type: '简答题', count: 4, score_per: 5 },
-    { type: '综合应用题', count: 2, score_per: 10 },
+    { type: '综合应用题', count: 1, score_per: 10 },
   ],
   shuangxi: [
-    { type: '单项选择题', count: 20, score_per: 2 },
-    { type: '填空题', count: 10, score_per: 2 },
-    { type: '判断题', count: 10, score_per: 1 },
+    { type: '单项选择题', count: 25, score_per: 2 },
+    { type: '填空题', count: 15, score_per: 2 },
+    { type: '判断题', count: 20, score_per: 1 },
   ],
 }
 
@@ -74,6 +74,8 @@ const form = reactive<any>({
   course: '',
   textbook: '',
   edition: '',
+  paper_header: '',
+  exam_minutes: 60,
   paper_range: 'all',
   plan_source: 'ocr',
   output_versions: ['原卷版', '解析版'],
@@ -120,6 +122,7 @@ function clearDraft() {
 watch(
   () => form.paper_type,
   (t) => {
+    loadFullScore()
     if (restoring) return
     form.volume = JSON.parse(JSON.stringify(DEFAULT_VOLUME[t] || DEFAULT_VOLUME['yikeyilian']))
   },
@@ -228,6 +231,30 @@ function parseRangeCount(s: string): string {
 const rangeCount = computed(() => parseRangeCount(form.paper_range))
 const diffSum = computed(() => form.difficulty.easy + form.difficulty.medium + form.difficulty.hard)
 
+// 卷首抬头自动值：省份+考类+考试类型（可在表单覆盖）；考试类型选“其他名称”时取自填框
+const resolvedExamType = computed(() =>
+  form.exam_type_name === '__other__' ? (form.exam_type_name_other || '') : form.exam_type_name,
+)
+const autoHeader = computed(() => `${form.province}${form.exam_category}${resolvedExamType.value}`)
+
+// 该产品系列满分：一课一练不标注分数（scoreEnabled=false），其余默认 100，可在产品系列设置里改。
+const scoreEnabled = ref(true)
+const fullScore = ref(100)
+async function loadFullScore() {
+  try {
+    const d: any = await api.getPaperType(form.paper_type)
+    scoreEnabled.value = d.score_enabled !== false
+    fullScore.value = typeof d.full_score === 'number' ? d.full_score : 100
+  } catch {
+    scoreEnabled.value = form.paper_type !== 'yikeyilian'
+    fullScore.value = 100
+  }
+}
+const scoreSum = computed(() =>
+  form.volume.reduce((s: number, r: any) => s + (Number(r.count) || 0) * (Number(r.score_per) || 0), 0),
+)
+const scoreMatched = computed(() => !scoreEnabled.value || scoreSum.value === fullScore.value)
+
 function addRow() {
   form.volume.push({ type: '', count: 1, score_per: 1 })
 }
@@ -301,8 +328,18 @@ function onManagerClosed() {
 
 const saving = ref(false)
 async function submit() {
+  if (!form.province.trim()) return ElMessage.error('请填写省份')
+  if (!form.exam_category.trim()) return ElMessage.error('请填写考类/专业类别')
+  if (!form.course.trim()) return ElMessage.error('请填写课程名')
+  if (form.paper_type === 'yikeyilian') {
+    if (!form.textbook.trim()) return ElMessage.error('请填写教材名称')
+    if (!form.edition.trim()) return ElMessage.error('请填写出版社·版次')
+  }
+  if (!form.paper_range.trim()) return ElMessage.error('请填写卷号范围')
   if (diffSum.value !== 100) return ElMessage.error('难度分布三者之和必须为 100')
   if (form.volume.some((r: any) => !r.type)) return ElMessage.error('请为每个题型行选择题型')
+  if (!scoreMatched.value)
+    return ElMessage.error(`题型分值合计为 ${scoreSum.value} 分，与该系列满分 ${fullScore.value} 分不一致`)
   if (form.volume.some((r: any) => isRowInvalid(r)))
     return ElMessage.error('存在当前考类不支持的题型（已高亮），请重新选择')
   if (!form.output_versions.length) return ElMessage.error('至少选择一个输出版本')
@@ -325,7 +362,13 @@ async function submit() {
       paper_range: form.paper_range,
       plan_source: form.plan_source,
       output_versions: form.output_versions,
-      volume_config: { by_type, difficulty: form.difficulty, narrow_point: form.narrow_point },
+      volume_config: {
+        by_type,
+        difficulty: form.difficulty,
+        narrow_point: form.narrow_point,
+        paper_header: (form.paper_header || '').trim(),
+        exam_minutes: Number(form.exam_minutes) || 60,
+      },
       ai_options: form.ai,
     }
     const p = await api.createProject(body)
@@ -342,6 +385,7 @@ onMounted(() => {
   const restored = loadDraft()
   if (!restored && route.query.type) form.paper_type = route.query.type as string
   loadQuestionTypes()
+  loadFullScore()
 })
 </script>
 
@@ -374,12 +418,12 @@ onMounted(() => {
       </el-form-item>
 
       <el-form-item label="项目名称">
-        <el-input v-model="form.name" placeholder="留空将自动按 类型_省份_课程 生成" />
+        <el-input v-model="form.name" placeholder="可留空自动生成" />
       </el-form-item>
-      <el-form-item label="省份（全称）">
+      <el-form-item label="省份（全称）" required>
         <el-input v-model="form.province" placeholder="如 内蒙古自治区（自治区不简写）" />
       </el-form-item>
-      <el-form-item label="考试名称/类型">
+      <el-form-item label="考试名称/类型" required>
         <el-select v-model="form.exam_type_name" filterable default-first-option style="width: 260px">
           <el-option label="高职分类考试" value="高职分类考试" />
           <el-option label="对口招生" value="对口招生" />
@@ -393,20 +437,35 @@ onMounted(() => {
           style="width: 260px; margin-left: 12px"
         />
       </el-form-item>
-      <el-form-item label="考类/专业类别">
+      <el-form-item label="考类/专业类别" required>
         <el-input v-model="form.exam_category" placeholder="如 机电类/土建类/汽修类" />
       </el-form-item>
-      <el-form-item label="课程名">
+      <el-form-item label="课程名" required>
         <el-input v-model="form.course" />
       </el-form-item>
-      <el-form-item label="教材名称" v-if="form.paper_type === 'yikeyilian'">
+      <el-form-item label="教材名称" required v-if="form.paper_type === 'yikeyilian'">
         <el-input v-model="form.textbook" placeholder="如 电工基础" />
       </el-form-item>
-      <el-form-item label="出版社·版次" v-if="form.paper_type === 'yikeyilian'">
+      <el-form-item label="出版社·版次" required v-if="form.paper_type === 'yikeyilian'">
         <el-input v-model="form.edition" placeholder="如 高教版·第三版" />
       </el-form-item>
 
-      <el-form-item label="卷号范围">
+      <el-form-item label="试卷抬头（首行）" v-if="form.paper_type === 'shuangxi'">
+        <el-input
+          v-model="form.paper_header"
+          :placeholder="autoHeader || '留空自动：省份+考类+考试类型'"
+          style="width: 420px"
+        />
+        <span style="margin-left: 12px; color: #888; font-size: 12px">
+          留空则用：{{ autoHeader || '省份+考类+考试类型' }}
+        </span>
+      </el-form-item>
+      <el-form-item label="考试时长（分钟）" v-if="scoreEnabled">
+        <el-input-number v-model="form.exam_minutes" :min="1" size="small" style="width: 120px" />
+        <span style="margin-left: 12px; color: #888; font-size: 12px">卷首“时间：X分钟”，默认 60</span>
+      </el-form-item>
+
+      <el-form-item label="卷号范围" required>
         <el-input v-model="form.paper_range" style="width: 260px" placeholder="all / 1-5 / 3,7,12" />
         <el-tag style="margin-left: 12px" type="success">将生成 {{ rangeCount }} 套</el-tag>
       </el-form-item>
@@ -452,7 +511,18 @@ onMounted(() => {
             </template>
           </el-table-column>
         </el-table>
-        <el-button size="small" style="margin-top: 8px" @click="addRow">+ 增加题型</el-button>
+        <div style="margin-top: 8px; display: flex; align-items: center; gap: 12px">
+          <el-button size="small" @click="addRow">+ 增加题型</el-button>
+          <template v-if="scoreEnabled">
+            <el-tag :type="scoreMatched ? 'success' : 'danger'">
+              分值合计 {{ scoreSum }} / 满分 {{ fullScore }}
+            </el-tag>
+            <span v-if="!scoreMatched" style="color: var(--el-color-danger); font-size: 12px">
+              需等于满分才能创建（满分在「产品系列专属配置」里修改）
+            </span>
+          </template>
+          <el-tag v-else type="info">一课一练不标注分数</el-tag>
+        </div>
       </el-form-item>
 
       <el-form-item label="难度分布">

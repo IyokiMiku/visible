@@ -53,6 +53,7 @@ watch(() => route.path, () => refreshSettingsStatus())
             <el-menu-item :index="`/projects/${currentId}/content-review`">内容审阅</el-menu-item>
             <el-menu-item :index="`/projects/${currentId}/quality`">质量摘要</el-menu-item>
             <el-menu-item :index="`/projects/${currentId}/artifacts`">输出归档</el-menu-item>
+            <el-menu-item :index="`/projects/${currentId}/files`">中间文件</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group title="系统">
             <el-menu-item index="/settings">

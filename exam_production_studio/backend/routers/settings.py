@@ -22,6 +22,7 @@ _KEYS = [
     "vision.api_key", "vision.base_url", "vision.model", "vision.enabled",
     "thresholds.match", "thresholds.max_fix_rounds",
     "output.dir",
+    "ai.trace_enabled", "ai.trace_keep_runs",
 ]
 
 
@@ -31,6 +32,7 @@ class SettingsIn(BaseModel):
     vision: dict[str, Any] | None = None
     thresholds: dict[str, Any] | None = None
     output: dict[str, Any] | None = None
+    ai: dict[str, Any] | None = None
 
 
 def _get_all() -> dict[str, str]:
@@ -52,7 +54,7 @@ def _grouped(masked: bool = True) -> dict[str, Any]:
             if xueke.get(f):
                 xueke[f] = "***已配置***"
     return {"llm": llm, "xueke": xueke, "vision": g("vision"),
-            "thresholds": g("thresholds"), "output": g("output")}
+            "thresholds": g("thresholds"), "output": g("output"), "ai": g("ai")}
 
 
 @router.get("")
@@ -63,7 +65,7 @@ def get_settings():
 @router.put("")
 def put_settings(body: SettingsIn):
     groups = {"llm": body.llm, "xueke": body.xueke, "vision": body.vision,
-              "thresholds": body.thresholds, "output": body.output}
+              "thresholds": body.thresholds, "output": body.output, "ai": body.ai}
     for prefix, data in groups.items():
         if not data:
             continue

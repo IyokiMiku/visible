@@ -154,10 +154,15 @@ def build_title_lines(
             f"第{paper_no}练 {topic or paper_name}".strip(),
         ]
     if t == "shuangxi":
+        vc = getattr(ctx, "volume_config", {}) or {}
+        header = str(vc.get("paper_header") or "").strip() or (
+            f"{ctx.province}{ctx.exam_category}{ctx.exam_type_name}"
+        )
+        name = paper_name or topic
         return [
-            f"{ctx.province}（{ctx.exam_type_name}）考点双析卷".strip(),
-            f"第{paper_no}卷 {paper_name or topic} {suffix}".strip(),
-            f"《{ctx.course}》{ctx.exam_category}".strip(),
+            header.strip(),
+            f"《{ctx.course}》　考点双析卷　第{paper_no}卷".strip(),
+            f"{name}　　{suffix}".strip(),
         ]
     # kaogang_100 默认
     return [

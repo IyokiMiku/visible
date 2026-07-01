@@ -31,6 +31,15 @@ def _rel(ctx, p: Path) -> str:
         return str(p)
 
 
+def _within(root: Path, target: Path) -> bool:
+    """target 是否位于 root 目录树内（解析软链/.. 后判断，堵前缀绕过）。"""
+    try:
+        target.resolve().relative_to(root.resolve())
+        return True
+    except ValueError:
+        return False
+
+
 @router.get("/{project_id}/artifacts")
 def list_artifacts(project_id: str):
     try:
@@ -104,7 +113,70 @@ def download_artifact(project_id: str, path: str):
     except KeyError:
         return fail("项目不存在", status=404)
     target = (ctx.root / path).resolve()
-    # 路径安全：必须位于项目树内
-    if not str(target).startswith(str(ctx.root.resolve())) or not target.exists():
+    # 路径安全：必须位于项目树内（用 relative_to 判断，避免前缀绕过）
+    if not _within(ctx.root, target) or not target.is_file():
         return fail("文件不存在或路径非法", status=404)
     return FileResponse(str(target), filename=target.name)
+
+
+@router.get("/{project_id}/artifacts/tree")
+def artifact_tree(project_id: str, base: str = "04_生成输出"):
+    """列出项目树内某个基准目录下的全部文件/子目录（供中间文件浏览页）。
+
+    默认列 04_生成输出。返回扁平列表，前端据 path 自行拼树 / 调 download 下载。
+    """
+    try:
+        ctx = load_ctx(project_id)
+    except KeyError:
+        return fail("项目不存在", status=404)
+    base_dir = (ctx.root / base).resolve()
+    if not _within(ctx.root, base_dir):
+        return fail("路径非法", status=400)
+    entries: list[dict] = []
+    if base_dir.exists():
+        for p in sorted(base_dir.rglob("*"), key=lambda x: str(x).lower()):
+            is_dir = p.is_dir()
+            try:
+                size = 0 if is_dir else p.stat().st_size
+                mtime = p.stat().st_mtime
+            except OSError:
+                size, mtime = 0, 0
+            entries.append({
+                "name": p.name,
+                "path": _rel(ctx, p),
+                "is_dir": is_dir,
+                "size": size,
+                "mtime": mtime,
+                "suffix": "" if is_dir else p.suffix.lower(),
+            })
+    return ok({"base": base, "entries": entries})
+
+
+@router.get("/{project_id}/artifacts/preview-xlsx")
+def preview_xlsx(project_id: str, path: str, max_rows: int = 500, max_cols: int = 50):
+    """把项目树内某个 xlsx（规划表/映射表等）读成二维数组，供前端表格预览。"""
+    try:
+        ctx = load_ctx(project_id)
+    except KeyError:
+        return fail("项目不存在", status=404)
+    target = (ctx.root / path).resolve()
+    if not _within(ctx.root, target) or not target.is_file() or target.suffix.lower() != ".xlsx":
+        return fail("文件不存在或不是 xlsx", status=404)
+    try:
+        from openpyxl import load_workbook
+
+        wb = load_workbook(str(target), data_only=True, read_only=True)
+    except Exception as exc:  # noqa: BLE001
+        return fail(f"无法读取 xlsx：{exc}")
+    try:
+        sheets: list[dict] = []
+        for ws in wb.worksheets:
+            rows: list[list] = []
+            for r_idx, row in enumerate(ws.iter_rows(values_only=True)):
+                if r_idx >= max_rows:
+                    break
+                rows.append(["" if v is None else v for v in row[:max_cols]])
+            sheets.append({"name": ws.title, "rows": rows})
+    finally:
+        wb.close()
+    return ok({"path": path, "sheets": sheets})

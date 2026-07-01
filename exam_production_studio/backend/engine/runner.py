@@ -16,6 +16,7 @@ from engine import events, questions_store, repo, review
 from engine.context import ProjectContext
 from engine.drivers import get_driver
 from shared import config_errors
+from shared.ai import trace
 from shared.config_errors import ConfigError
 from shared.ai.llm import LLMNotConfigured
 
@@ -133,12 +134,16 @@ def _safe_run(project_id: str, run_id: str) -> None:
             pass
         repo.update_run(run_id, status="failed", finished_at=repo.now())
         repo.set_project_status(project_id, "failed")
+    finally:
+        # AI 调用追踪：本线程运行结束，清理追踪上下文
+        trace.end()
 
 
 def _run(project_id: str, run_id: str) -> None:
     ctx = _build_ctx(project_id)
     driver = get_driver(ctx)
     state = _load_state(ctx)
+    trace.begin(ctx.root, run_id)
 
     if review.has_pending(project_id):
         _emit(ctx, run_id, "", "存在未处理的待确认事项，请先在「待确认事项」处理后再继续。", level="warn", event="blocked")
@@ -166,6 +171,7 @@ def _run(project_id: str, run_id: str) -> None:
             continue
         if _should_pause(project_id):
             return _do_pause(ctx, run_id, label)
+        trace.stage(label)
         result = fn()
         # 阶段产生阻塞型待确认 → 暂停（标记本阶段已完成，避免 resume 后重复入队）
         if isinstance(result, dict) and result.get("blocked"):
@@ -206,11 +212,13 @@ def _run(project_id: str, run_id: str) -> None:
         if existing is None:
             # 首次：拉题+补题 → 存题目 → 质检 → 存质检
             _emit(ctx, run_id, "拉题与补题", f"第{pno}卷：拉题 + 不足AI补题")
+            trace.stage("拉题与补题", pno)
             pq, pull_reviews = driver.produce_questions(ctx, pno)
             questions_store.save_questions(ctx, pq, review={"status": "待审", "confirmed_nos": []})
             pull_blocked = _enqueue_reviews(ctx, run_id, "拉题与补题", pull_reviews)
 
             _emit(ctx, run_id, "质检导出", f"第{pno}卷：逐卷质检")
+            trace.stage("质检导出", pno)
             qc_result, _qc_reviews = driver.qc(ctx, pno, pq)
             questions_store.save_qc(ctx, qc_result)
             repo.update_paper(project_id, pno, qc_report_path=str(qc_result.report_path or ""))

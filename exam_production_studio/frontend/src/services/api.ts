@@ -73,6 +73,10 @@ export const api = {
     `/api/projects/${id}/artifacts/download?path=${encodeURIComponent(path)}`,
   zipUrl: (id: string) => `/api/projects/${id}/artifacts/zip`,
   openOutputFolder: (id: string) => http.post<any, any>(`/projects/${id}/artifacts/open`),
+  artifactTree: (id: string, base = '04_生成输出') =>
+    http.get<any, any>(`/projects/${id}/artifacts/tree`, { params: { base } }),
+  previewXlsx: (id: string, path: string) =>
+    http.get<any, any>(`/projects/${id}/artifacts/preview-xlsx`, { params: { path } }),
 
   getSettings: () => http.get<any, any>('/settings'),
   putSettings: (body: any) => http.put('/settings', body),
@@ -107,6 +111,8 @@ export const api = {
     http.put(`/paper-types/${type}/editorial-note`, { content }),
   putSpec: (type: string, content: string) =>
     http.put(`/paper-types/${type}/spec`, { content }),
+  putFullScore: (type: string, full_score: number) =>
+    http.put(`/paper-types/${type}/full-score`, { full_score }),
   loadPaperTypePreview: (type: string) =>
     http.get<Blob, Blob>(`/paper-types/${type}/preview`, { responseType: 'blob' }),
   previewPaperType: (type: string, editorial_note: string) =>

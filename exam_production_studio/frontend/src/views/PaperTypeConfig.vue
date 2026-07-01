@@ -8,19 +8,27 @@ import { api } from '../services/api'
 const route = useRoute()
 const paperType = ref<string>((route.params.type as string) || '')
 
-const form = reactive<{ editorial_note: string; spec: string }>({ editorial_note: '', spec: '' })
+const form = reactive<{ editorial_note: string; spec: string; full_score: number }>({
+  editorial_note: '',
+  spec: '',
+  full_score: 100,
+})
 const displayName = ref('')
 const placeholders = ref<Array<{ key: string; desc: string }>>([])
+// 一课一练不标注分数：后端返回 score_enabled=false 时隐藏满分设置
+const scoreEnabled = ref(true)
 
 // 已保存基线：load() / 保存成功后更新，用于「改过才自动保存」的脏检查
 const savedNote = ref('')
 const savedSpec = ref('')
+const savedFullScore = ref(100)
 // 上次生成预览时所用的“编写说明”原文，用于提示“样张与当前编写说明不一致”
 const previewedNote = ref('')
 
 const noteDirty = computed(() => form.editorial_note !== savedNote.value)
 const specDirty = computed(() => form.spec !== savedSpec.value)
-const dirty = computed(() => noteDirty.value || specDirty.value)
+const scoreDirty = computed(() => scoreEnabled.value && form.full_score !== savedFullScore.value)
+const dirty = computed(() => noteDirty.value || specDirty.value || scoreDirty.value)
 // 纯前端字符串比较，无网络/无重新生成，开销可忽略
 const previewStale = computed(() => form.editorial_note !== previewedNote.value)
 
@@ -37,8 +45,11 @@ async function load() {
     displayName.value = d.display_name
     form.editorial_note = d.editorial_note || ''
     form.spec = d.spec || ''
+    scoreEnabled.value = d.score_enabled !== false
+    form.full_score = typeof d.full_score === 'number' ? d.full_score : 100
     savedNote.value = form.editorial_note
     savedSpec.value = form.spec
+    savedFullScore.value = form.full_score
     placeholders.value = d.placeholders || []
     await loadPreview()
   } finally {
@@ -118,6 +129,19 @@ async function saveSpec() {
   }
 }
 
+const savingScore = ref(false)
+async function saveFullScore() {
+  if (!(form.full_score > 0)) return ElMessage.error('满分必须为正整数')
+  savingScore.value = true
+  try {
+    await api.putFullScore(paperType.value, form.full_score)
+    savedFullScore.value = form.full_score
+    ElMessage.success('该卷满分已保存（全局生效）')
+  } finally {
+    savingScore.value = false
+  }
+}
+
 // 离开确认弹窗：有未保存改动时三选一（保存并离开 / 不保存且离开 / 取消）。
 const leaveDialogVisible = ref(false)
 const leaveSaving = ref(false)
@@ -150,6 +174,10 @@ async function onLeaveSave() {
       await api.putSpec(paperType.value, form.spec)
       savedSpec.value = form.spec
     }
+    if (scoreDirty.value) {
+      await api.putFullScore(paperType.value, form.full_score)
+      savedFullScore.value = form.full_score
+    }
     resolveLeave('save')
   } catch {
     /* 拦截器已提示；保存失败则不放行，留在本页 */
@@ -168,6 +196,7 @@ async function guardLeave(): Promise<boolean> {
     // 还原为已保存基线，避免残留改动影响 beforeunload 提示
     form.editorial_note = savedNote.value
     form.spec = savedSpec.value
+    form.full_score = savedFullScore.value
   }
   return true
 }
@@ -214,6 +243,14 @@ onBeforeUnmount(() => window.removeEventListener('beforeunload', onBeforeUnload)
     <template #header>
       <span>{{ displayName || paperType }} · 专属配置</span>
     </template>
+
+    <div v-if="scoreEnabled" class="full-score-bar">
+      <span class="full-score-label">该卷满分</span>
+      <el-input-number v-model="form.full_score" :min="1" :step="10" size="small" style="width: 140px" />
+      <span class="full-score-unit">分</span>
+      <el-button type="primary" size="small" :loading="savingScore" @click="saveFullScore">保存满分</el-button>
+      <span class="full-score-tip">用于组卷时校验各题型分值合计是否等于满分（默认 100）</span>
+    </div>
 
     <el-row :gutter="16">
       <el-col :span="11">
@@ -313,5 +350,24 @@ onBeforeUnmount(() => window.removeEventListener('beforeunload', onBeforeUnload)
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+}
+.full-score-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  background: var(--el-fill-color-light);
+  border-radius: 6px;
+}
+.full-score-label {
+  font-weight: 600;
+}
+.full-score-unit {
+  color: var(--el-text-color-secondary);
+}
+.full-score-tip {
+  color: var(--el-text-color-secondary);
+  font-size: 12px;
 }
 </style>

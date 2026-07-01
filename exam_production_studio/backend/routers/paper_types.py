@@ -30,6 +30,13 @@ _CUSTOM_KEY = "custom.question_types"
 # 未匹配到具体考类/课程时，自定义题型归入的通用分组。
 _GLOBAL_ENTRY = "__global__"
 
+# 各产品系列的整卷满分（供分值校验用），存 settings 表这一条键。
+# 结构：{ paper_type: int }。一课一练不标注分数，不参与此设置。
+_FULL_SCORE_KEY = "paper.full_score"
+_DEFAULT_FULL_SCORE = 100
+# 一课一练按题练习、不标注分数，无整卷满分概念。
+_NO_SCORE_TYPES = {"yikeyilian"}
+
 # 编写说明模板可用占位符（展示给用户）。
 _PLACEHOLDERS = [
     {"key": "{province}", "desc": "省份全称"},
@@ -80,6 +87,9 @@ def get_paper_type(paper_type: str):
         "editorial_note": naming.load_note_template(paper_type),
         "placeholders": _PLACEHOLDERS,
         "spec": _read_text(_spec_path(paper_type)),
+        # 一课一练不标注分数：full_score 返回 None，前端据此隐藏满分设置
+        "score_enabled": paper_type not in _NO_SCORE_TYPES,
+        "full_score": None if paper_type in _NO_SCORE_TYPES else _get_full_score(paper_type),
     })
 
 
@@ -101,6 +111,22 @@ def put_spec(paper_type: str, body: TextIn):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(body.content, encoding="utf-8")
     return ok({"saved": True})
+
+
+class FullScoreIn(BaseModel):
+    full_score: int = _DEFAULT_FULL_SCORE
+
+
+@router.put("/{paper_type}/full-score")
+def put_full_score(paper_type: str, body: FullScoreIn):
+    if paper_type not in _ALLOWED:
+        return fail("未知试卷类型", status=404)
+    if paper_type in _NO_SCORE_TYPES:
+        return fail("该产品系列不标注分数，无需设置满分", status=400)
+    if body.full_score <= 0:
+        return fail("满分必须为正整数", status=400)
+    _set_full_score(paper_type, body.full_score)
+    return ok({"full_score": body.full_score})
 
 
 def _read_json(path: Path) -> dict:
@@ -168,6 +194,47 @@ def _save_custom(data: dict) -> None:
 
 def _custom_for(paper_type: str, entry_id: str) -> list[str]:
     return list(((_load_custom().get(paper_type) or {}).get(entry_id)) or [])
+
+
+def _load_full_scores() -> dict:
+    row = db.query_one("SELECT value FROM settings WHERE key=?", (_FULL_SCORE_KEY,))
+    if not row or not row.get("value"):
+        return {}
+    try:
+        data = json.loads(row["value"])
+        return data if isinstance(data, dict) else {}
+    except (json.JSONDecodeError, TypeError):
+        return {}
+
+
+def _get_full_score(paper_type: str) -> int:
+    """返回该产品系列的整卷满分；未设置则回退默认 100。"""
+    val = _load_full_scores().get(paper_type)
+    try:
+        n = int(val)
+    except (TypeError, ValueError):
+        return _DEFAULT_FULL_SCORE
+    return n if n > 0 else _DEFAULT_FULL_SCORE
+
+
+def get_full_score(paper_type: str) -> int:
+    """公开接口：返回该产品系列整卷满分（供其他路由做分值校验）。"""
+    return _get_full_score(paper_type)
+
+
+def score_enabled(paper_type: str) -> bool:
+    """该产品系列是否标注分数（一课一练不标注）。"""
+    return paper_type not in _NO_SCORE_TYPES
+
+
+def _set_full_score(paper_type: str, full_score: int) -> None:
+    data = _load_full_scores()
+    data[paper_type] = int(full_score)
+    db.execute(
+        "INSERT INTO settings (key, value) VALUES (?,?) "
+        "ON CONFLICT(key) DO UPDATE SET value=excluded.value",
+        (_FULL_SCORE_KEY, json.dumps(data, ensure_ascii=False)),
+    )
 
 
 def _types_from_file(qt_dir: Path, filename: str) -> list[str]:

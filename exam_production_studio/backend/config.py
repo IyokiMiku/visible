@@ -110,6 +110,25 @@ def get_output_root() -> Path:
     return _default_desktop() / "生成结果"
 
 
+def get_ai_trace_config() -> dict[str, Any]:
+    """AI 调用追踪（把每次 LLM 的 prompt/响应落盘，供排查）。
+
+    enabled：settings(ai.trace_enabled) > .env(AI_TRACE_ENABLED) > 默认 true。
+    keep_runs：只保留最近 N 次运行的记录目录，默认 10。
+    """
+    s = _load_settings()
+    enabled_raw = _merge(s, "ai.trace_enabled", "AI_TRACE_ENABLED", "true").strip().lower()
+    keep_raw = _merge(s, "ai.trace_keep_runs", "AI_TRACE_KEEP_RUNS", "10").strip()
+    try:
+        keep_runs = int(keep_raw)
+    except ValueError:
+        keep_runs = 10
+    return {
+        "enabled": enabled_raw not in ("0", "false", "no", "off", ""),
+        "keep_runs": max(1, keep_runs),
+    }
+
+
 def get_vision_config() -> dict[str, Any]:
     """视觉模型配置（预留）。未配置 api_key 时 enabled=False。"""
     s = _load_settings()

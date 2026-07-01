@@ -37,6 +37,9 @@ _CN_NUM = "一二三四五六七八九十"
 SUBJECTIVE_TYPES = {"简答题", "计算题", "综合应用题", "分析题", "作图题", "识图题", "简答作图题"}
 _ANSWER_SPACE_LINES = 4
 
+# 需要卷首「时间/总分 + 班级密封线」两行的产品（一课一练不标分值，不加）
+_EXAM_INFO_TYPES = {"shuangxi", "kaogang_100"}
+
 # 解析标签去重：反复剥离开头的【解析|详解|分析…】，最终统一加单个【解析】
 _DUP_LABEL_RE = re.compile(
     r"^(?:【\s*(?:解析|详解|分析|答案解析|试题解析|题目解析|解题思路|点睛)\s*】|(?:解析|详解|分析)\s*[:：])\s*"
@@ -83,6 +86,40 @@ def _add_title(doc: Document, lines: list[str]) -> None:
             doc, ln, font_name="宋体", font_size=14, bold=True,
             alignment=WD_ALIGN_PARAGRAPH.CENTER, space_after=2,
         )
+
+
+def _paper_total_score(ctx) -> int | float:
+    """按 volume_config.by_type 合计 count×score_per，作为卷首总分显示。"""
+    by_type = (getattr(ctx, "volume_config", {}) or {}).get("by_type") or {}
+    total = 0.0
+    for v in by_type.values():
+        try:
+            total += float(v.get("count", 0)) * float(v.get("score_per", 0))
+        except (TypeError, ValueError):
+            continue
+    return int(total) if float(total).is_integer() else total
+
+
+def _add_exam_info(doc: Document, ctx) -> None:
+    """卷首「时间：X分钟  总分：Y分」+「班级/姓名/学号/成绩」两行（仅指定产品）。"""
+    if getattr(ctx, "paper_type", "") not in _EXAM_INFO_TYPES:
+        return
+    vc = getattr(ctx, "volume_config", {}) or {}
+    try:
+        minutes = int(vc.get("exam_minutes") or 60)
+    except (TypeError, ValueError):
+        minutes = 60
+    total = _paper_total_score(ctx)
+    add_paragraph_with_style(
+        doc, f"时间：{minutes}分钟    总分：{total}分",
+        font_name="宋体", font_size=10.5,
+        alignment=WD_ALIGN_PARAGRAPH.CENTER, space_after=2,
+    )
+    add_paragraph_with_style(
+        doc, "班级＿＿＿＿　姓名＿＿＿＿　学号＿＿＿＿　成绩＿＿＿＿",
+        font_name="宋体", font_size=10.5,
+        alignment=WD_ALIGN_PARAGRAPH.CENTER, space_after=2,
+    )
 
 
 def _option_dicts(q) -> list[dict]:
@@ -156,6 +193,7 @@ def generate_docx(
         ctx, qs.paper_no, paper_name=paper_name, paper_subtype=paper_subtype,
         suffix=suffix, topic=topic,
     ))
+    _add_exam_info(doc, ctx)
     doc.add_paragraph()
 
     # 按题型分组保持顺序

@@ -11,6 +11,7 @@ const routes = [
   { path: '/projects/:id/content-review', name: 'content-review', component: () => import('../views/ContentReview.vue') },
   { path: '/projects/:id/quality', name: 'quality', component: () => import('../views/Quality.vue') },
   { path: '/projects/:id/artifacts', name: 'artifacts', component: () => import('../views/Artifacts.vue') },
+  { path: '/projects/:id/files', name: 'files', component: () => import('../views/Files.vue') },
   { path: '/settings', name: 'settings', component: () => import('../views/Settings.vue') },
 ]
 
