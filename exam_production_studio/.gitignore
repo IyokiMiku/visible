@@ -10,6 +10,7 @@ frontend/dist/
 # 运行时数据（库与产物，按需保留）
 data/studio.db
 data/projects/
+data/_preview/
 
 # 运行时日志（不应提交，避免反复合并冲突）
 *.log
