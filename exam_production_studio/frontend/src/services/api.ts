@@ -76,10 +76,19 @@ export const api = {
 
   getSettings: () => http.get<any, any>('/settings'),
   putSettings: (body: any) => http.put('/settings', body),
+  checkSettings: () => http.get<any, any>('/settings/check'),
+  xkAutoReadCookie: () => http.post<any, any>('/settings/xueke/cookie/auto-read'),
+  xkLoginStart: () => http.post<any, any>('/settings/xueke/cookie/login/start'),
+  xkLoginConfirm: () => http.post<any, any>('/settings/xueke/cookie/login/confirm'),
+  xkLoginCancel: () => http.post<any, any>('/settings/xueke/cookie/login/cancel'),
+  xkLoginStatus: () => http.get<any, any>('/settings/xueke/cookie/login/status'),
 
   getPaperType: (type: string) => http.get<any, any>(`/paper-types/${type}`),
   getQuestionTypes: (type: string, course = '', category = '') =>
     http.get<any, any>(`/paper-types/${type}/question-types`, { params: { course, category } }),
+  getTypeLibrary: (type: string) => http.get<any, any>(`/paper-types/${type}/library`),
+  saveCustomTypes: (type: string, entry_id: string, types: string[]) =>
+    http.put(`/paper-types/${type}/custom-types`, { entry_id, types }),
   putEditorialNote: (type: string, content: string) =>
     http.put(`/paper-types/${type}/editorial-note`, { content }),
   putSpec: (type: string, content: string) =>

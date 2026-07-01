@@ -30,15 +30,27 @@ def call_api(
     if not cfg.get("api_key"):
         raise LLMNotConfigured("未配置 LLM api_key（请在全局设置或 .env 填写 LLM_API_KEY）")
 
+    import openai
     from openai import OpenAI
 
+    from shared.config_errors import ConfigError
+
     client = OpenAI(api_key=cfg["api_key"], base_url=cfg.get("base_url") or None)
-    resp = client.chat.completions.create(
-        model=model or cfg.get("model") or "gpt-4o",
-        messages=messages,
-        temperature=temperature,
-        max_tokens=max_tokens,
-    )
+    try:
+        resp = client.chat.completions.create(
+            model=model or cfg.get("model") or "gpt-4o",
+            messages=messages,
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+    except openai.AuthenticationError as e:
+        raise ConfigError("llm", "api_key", "大模型 API 密钥无效或已过期，请在全局设置检查") from e
+    except openai.APIConnectionError as e:
+        raise ConfigError("llm", "base_url", "无法连接大模型接口地址，请检查 base_url 或网络") from e
+    except openai.NotFoundError as e:
+        raise ConfigError("llm", "model", "大模型名称不存在或不可用，请检查 model") from e
+    except openai.OpenAIError as e:
+        raise ConfigError("llm", None, f"大模型调用失败：{e}") from e
     return resp.choices[0].message.content or ""
 
 

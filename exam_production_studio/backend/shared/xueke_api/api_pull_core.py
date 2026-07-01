@@ -11,7 +11,10 @@ import re
 from typing import Any, Sequence
 
 from .html_content_converter import convert_answer_html
-from .query_questions import build_payload, query as api_query
+from .query_questions import build_payload, query as api_query, XuekeAuthError
+
+# valid=false 时错误文案里若含这些词，判定为鉴权类失败（Cookie 失效/未登录/无权限）
+_AUTH_HINTS = ("未登录", "登录", "鉴权", "无权限", "未授权", "token", "cookie", "身份", "过期", "401", "403")
 
 # 流程题型 → API section_type；倍率沿用原工具
 SECTION_TYPE_MAP = {
@@ -71,6 +74,8 @@ def pull_page(
     result = api_query(payload, app_key=app_key, sign=sign, cookie=cookie)
     if result is None or not result.get("valid"):
         err = result.get("error", "无响应") if isinstance(result, dict) else "无响应"
+        if any(h in str(err).lower() for h in _AUTH_HINTS):
+            raise XuekeAuthError(f"学科网鉴权失败：{err}")
         raise RuntimeError(f"学科网 API 调用失败: {err}")
     return result.get("result", {}).get("list", []) or []
 

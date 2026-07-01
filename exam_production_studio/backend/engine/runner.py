@@ -15,6 +15,9 @@ from typing import Any
 from engine import events, repo, review
 from engine.context import ProjectContext
 from engine.drivers import get_driver
+from shared import config_errors
+from shared.config_errors import ConfigError
+from shared.ai.llm import LLMNotConfigured
 
 BLOCKING_TYPES = {"AI_MATCH", "RULE_CONFLICT", "AI_GENERATE", "QC_FAIL"}
 
@@ -118,6 +121,11 @@ def _safe_run(project_id: str, run_id: str) -> None:
     try:
         _run(project_id, run_id)
     except Exception as e:  # noqa: BLE001
+        # 只有「配置类」异常才记录到红点标记；普通 bug/文件错等不点亮红点
+        if isinstance(e, ConfigError):
+            config_errors.record(e.group, e.field, e.message)
+        elif isinstance(e, LLMNotConfigured):
+            config_errors.record("llm", "api_key", str(e))
         try:
             ctx = _build_ctx(project_id)
             _emit(ctx, run_id, "", f"流程异常：{e}\n{traceback.format_exc()}", level="error", event="error")
@@ -212,6 +220,7 @@ def _run(project_id: str, run_id: str) -> None:
             return
 
     # ---- 完成 ----
+    config_errors.clear()  # 正常完成 → 清除运行时配置错误标记
     repo.update_run(run_id, status="done", current_node="完成", progress=100.0, finished_at=repo.now())
     repo.set_project_status(project_id, "done")
     _emit(ctx, run_id, "完成", "全部卷生成完毕。", event="done")

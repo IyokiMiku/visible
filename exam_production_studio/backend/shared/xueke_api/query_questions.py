@@ -17,6 +17,10 @@ API_URL = "https://yanyi.zxxk.com/11181/18001/api-question/v1/question/get-quest
 DEFAULT_APP_KEY = "4f2a82224eb140e5964d0891a1affcc6"
 DEFAULT_SIGN = "dfe533d82b4e5ee8aa390b1f775537ae"
 
+
+class XuekeAuthError(RuntimeError):
+    """学科网鉴权失败：Cookie 失效/未登录/无权限。用于精准点亮「全局设置」红点。"""
+
 ALL_FIELDS = [
     "question_id", "course_id", "type_id", "top_type_id", "type_feature_ids",
     "paper_id", "source", "year", "difficulty",
@@ -106,6 +110,8 @@ def query(
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
         print(f"[xueke] HTTP {e.code}: {body[:300]}", file=sys.stderr)
+        if e.code in (401, 403):
+            raise XuekeAuthError(f"学科网登录状态失效或无权限（HTTP {e.code}）") from e
         return None
     except urllib.error.URLError as e:
         print(f"[xueke] Network error: {e.reason}", file=sys.stderr)
