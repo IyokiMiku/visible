@@ -154,10 +154,7 @@ def build_title_lines(
             f"第{paper_no}练 {topic or paper_name}".strip(),
         ]
     if t == "shuangxi":
-        vc = getattr(ctx, "volume_config", {}) or {}
-        header = str(vc.get("paper_header") or "").strip() or (
-            f"{ctx.province}{ctx.exam_category}{ctx.exam_type_name}"
-        )
+        header = str(ctx.exam_type_name or "").strip()
         name = paper_name or topic
         return [
             header.strip(),

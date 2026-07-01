@@ -18,6 +18,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 from engine import registry
 from engine.drivers.base import PaperQuestions
+from shared.xueke_api.kpoint_resolver import normalize_type_name
 from . import naming
 from .docx_utils1 import (
     add_editorial_note_text,
@@ -98,6 +99,35 @@ def _paper_total_score(ctx) -> int | float:
         except (TypeError, ValueError):
             continue
     return int(total) if float(total).is_integer() else total
+
+
+def _section_score_map(ctx) -> dict[str, float]:
+    """题型（归一化名）→ 每小题分值，取自 volume_config.by_type。"""
+    by_type = (getattr(ctx, "volume_config", {}) or {}).get("by_type") or {}
+    out: dict[str, float] = {}
+    for raw, v in by_type.items():
+        try:
+            score = float((v or {}).get("score_per", 0) or 0)
+        except (TypeError, ValueError):
+            continue
+        if score <= 0:
+            continue
+        out[normalize_type_name(str(raw))] = score
+    return out
+
+
+def _fmt_num(x: float) -> str:
+    return str(int(x)) if float(x).is_integer() else str(x)
+
+
+def _section_note(count: int, score_per: float | None) -> str:
+    """题型标题后的括注：（本大题共X小题，每题Y分，共Z分）；无分值时仅标题量。"""
+    if count <= 0:
+        return ""
+    if not score_per or score_per <= 0:
+        return f"（本大题共{count}小题）"
+    total = float(score_per) * count
+    return f"（本大题共{count}小题，每题{_fmt_num(score_per)}分，共{_fmt_num(total)}分）"
 
 
 def _add_exam_info(doc: Document, ctx) -> None:
@@ -206,9 +236,11 @@ def generate_docx(
         grouped[q.qtype].append(q)
 
     show_answer = variant == "解析版"
+    score_map = _section_score_map(ctx)
     for ti, qtype in enumerate(order):
         cn = _CN_NUM[ti] if ti < len(_CN_NUM) else str(ti + 1)
-        add_paragraph_with_style(doc, f"{cn}、{qtype}", font_name="黑体", font_size=12, bold=True, space_after=6)
+        note = _section_note(len(grouped[qtype]), score_map.get(qtype))
+        add_paragraph_with_style(doc, f"{cn}、{qtype}{note}", font_name="黑体", font_size=12, bold=True, space_after=6)
         is_subjective = qtype in SUBJECTIVE_TYPES
         for q in grouped[qtype]:
             _render_question(doc, q, img_dir)

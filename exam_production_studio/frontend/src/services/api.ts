@@ -34,6 +34,7 @@ export interface Project {
   paper_range: string
   plan_source: string
   status: string
+  created_at?: string
   volume_config?: any
   output_versions?: string[]
   ai_options?: any
@@ -49,6 +50,10 @@ export const api = {
 
   listResources: (id: string) => http.get<any[], any[]>(`/projects/${id}/resources`),
   uploadResourceUrl: (id: string) => `/api/projects/${id}/resources`,
+
+  getPlan: (id: string) => http.get<any, any>(`/projects/${id}/plan`),
+  generatePlan: (id: string, plan_source?: string) =>
+    http.post<any, any>(`/projects/${id}/plan/generate`, { plan_source }),
 
   getFlow: (id: string) => http.get<any, any>(`/projects/${id}/flow`),
   start: (id: string) => http.post(`/projects/${id}/flow/start`),

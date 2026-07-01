@@ -1,8 +1,9 @@
 """AI 补题统一入口 ai_fill（阶段四 shared/ai，设计文档 §6.4）。
 
 - 已配置 LLM：调用 LLM 按缺口生成，并解析为 Question。
-- 未配置 LLM：生成可占位的合成题（标记 source='ai'、低信度），保证流程可离线跑通，
-  并由上层据信度/数量决定是否进入待确认队列（AI_GENERATE）。
+- 退化为占位题（标记 source='ai'、低信度=0.0）的三种情形，占位题文案会区分原因：
+  1) 未配置 LLM；2) AI 补题调用失败（如超时/网络，附具体错误）；3) AI 返回为空或无法解析。
+  保证流程可离线跑通，并由上层据信度/数量决定是否进入待确认队列（AI_GENERATE）。
 """
 from __future__ import annotations
 
@@ -83,8 +84,16 @@ _DEFAULT_OPTIONS = {
 }
 
 
-def _synthetic(plan: dict[str, Any], shortfall: dict[str, int], start_number: int) -> list[Question]:
+def _synthetic(
+    plan: dict[str, Any],
+    shortfall: dict[str, int],
+    start_number: int,
+    reason: str = "未配置 LLM",
+    detail: str = "",
+) -> list[Question]:
+    """生成占位题。reason 区分退化原因（未配置 / 调用失败 / 返回为空），detail 附具体错误。"""
     topic = plan.get("topic") or plan.get("paper_name") or plan.get("point_name") or "本卷主题"
+    detail_suffix = f"（{detail}）" if detail else ""
     out: list[Question] = []
     n = start_number
     for qtype, count in shortfall.items():
@@ -92,10 +101,11 @@ def _synthetic(plan: dict[str, Any], shortfall: dict[str, int], start_number: in
             q = Question(
                 number=n,
                 qtype=qtype,
-                stem=f"【AI待补/未配置LLM】关于「{topic}」的{qtype}占位第{i + 1}题（需人工确认或配置 LLM 后重算）",
+                stem=(f"【AI待补·{reason}】关于「{topic}」的{qtype}占位第{i + 1}题"
+                      f"（需人工确认或修复后重新生成）"),
                 options=list(_DEFAULT_OPTIONS.get(qtype, [])),
                 answer="A" if "选择" in qtype else "待补充",
-                analysis="占位解析：当前未配置 LLM，无法自动补题，已标记待人工确认。",
+                analysis=f"占位解析：AI 补题退化，原因：{reason}{detail_suffix}，已标记待人工确认。",
                 difficulty="简单",
                 kpoint=str(plan.get("point_name") or topic),
                 source="ai",
@@ -106,22 +116,28 @@ def _synthetic(plan: dict[str, Any], shortfall: dict[str, int], start_number: in
     return out
 
 
+def _err_detail(exc: Exception, limit: int = 120) -> str:
+    """把异常压成一行简短描述，供占位题标注（避免把超长堆栈塞进题干）。"""
+    msg = f"{type(exc).__name__}: {exc}".replace("\n", " ").strip()
+    return msg[:limit]
+
+
 def ai_fill(ctx, plan: dict[str, Any], shortfall: dict[str, int], start_number: int = 1) -> list[Question]:
     shortfall = {t: int(n) for t, n in shortfall.items() if int(n) > 0}
     if not shortfall:
         return []
     if not llm.is_configured():
-        return _synthetic(plan, shortfall, start_number)
+        return _synthetic(plan, shortfall, start_number, reason="未配置 LLM")
     try:
         prompt = build_generation_prompt(ctx, plan, shortfall)
         text = llm.complete(prompt, temperature=0.7, max_tokens=4096)
         parsed = parse_paper_text(text)
         if not parsed:
-            return _synthetic(plan, shortfall, start_number)
+            return _synthetic(plan, shortfall, start_number, reason="AI 返回为空或无法解析")
         for idx, q in enumerate(parsed):
             q.number = start_number + idx
             q.source = "ai"
             q.confidence = max(q.confidence, 0.7)
         return parsed
-    except Exception:
-        return _synthetic(plan, shortfall, start_number)
+    except Exception as e:  # noqa: BLE001
+        return _synthetic(plan, shortfall, start_number, reason="AI 补题调用失败", detail=_err_detail(e))

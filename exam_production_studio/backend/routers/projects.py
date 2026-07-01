@@ -9,7 +9,8 @@ from pydantic import BaseModel
 
 import db
 from engine import registry, repo
-from engine.context import ProjectContext
+from engine.context import ProjectContext, parse_range
+from engine.drivers import get_driver
 from shared.docx import build_filename
 from . import paper_types
 from ._common import fail, ok
@@ -29,6 +30,23 @@ def _score_total(volume_config: dict[str, Any] | None) -> float:
         except (TypeError, ValueError):
             continue
     return total
+
+
+def _plan_total(project_id: str) -> int:
+    """已生成规划表的总卷量（papers 行数）。未生成则为 0。"""
+    return len(repo.get_papers(project_id))
+
+
+def _check_paper_range(project_id: str, paper_range: str) -> str | None:
+    """卷号范围合法性：可解析、且不超出已生成规划表的总卷量。"""
+    total = _plan_total(project_id)
+    try:
+        selected = parse_range(paper_range, total or None)
+    except ValueError as e:
+        return f"卷号范围无效：{e}"
+    if total and selected and (min(selected) < 1 or max(selected) > total):
+        return f"卷号范围超出总卷量（当前总卷量 {total} 套）"
+    return None
 
 
 def _check_full_score(paper_type: str, volume_config: dict[str, Any] | None) -> str | None:
@@ -57,6 +75,12 @@ class ProjectIn(BaseModel):
     volume_config: dict[str, Any] | None = None
     output_versions: list[str] | None = None
     ai_options: dict[str, Any] | None = None
+    # 三步创建向导：第一步先建草稿(draft)，第三步保存时置为 ready
+    status: str | None = None
+
+
+class PlanGenIn(BaseModel):
+    plan_source: str | None = None
 
 
 def _serialize(row: dict[str, Any]) -> dict[str, Any]:
@@ -90,6 +114,7 @@ def create_project(body: ProjectIn):
     ai = body.ai_options or {"match": True, "summary": True, "fill": True,
                              "match_threshold": 0.85, "max_fix_rounds": 2}
     name = body.name or f"{mode.display_name}_{body.province}_{body.course}".strip("_")
+    status = body.status or "ready"
     db.execute(
         "INSERT INTO projects (id,name,paper_type,province,exam_category,course,textbook,edition,"
         "exam_type_name,name_template,volume_config,paper_range,plan_source,output_versions,ai_options,status,created_at,updated_at)"
@@ -98,7 +123,7 @@ def create_project(body: ProjectIn):
          body.edition, body.exam_type_name, mode.name_template,
          json.dumps(vc, ensure_ascii=False), body.paper_range, body.plan_source,
          json.dumps(ov, ensure_ascii=False), json.dumps(ai, ensure_ascii=False),
-         "ready", repo.now(), repo.now()))
+         status, repo.now(), repo.now()))
     return ok(_serialize(repo.get_project(pid)))
 
 
@@ -118,7 +143,14 @@ def update_project(project_id: str, body: ProjectIn):
         err = _check_full_score(body.paper_type, body.volume_config)
         if err:
             return fail(err)
+    # 卷号范围须落在已生成规划表的总卷量之内
+    err = _check_paper_range(project_id, body.paper_range)
+    if err:
+        return fail(err)
     fields = body.model_dump()
+    # status 未显式传入时不覆盖（避免把已有状态置空）
+    if fields.get("status") is None:
+        fields.pop("status", None)
     for f in _JSON_FIELDS:
         if fields.get(f) is not None:
             fields[f] = json.dumps(fields[f], ensure_ascii=False)
@@ -153,3 +185,67 @@ def name_preview(project_id: str):
     except ValueError:
         pass
     return ok({"preview": sample, "paper_count": total})
+
+
+@router.get("/{project_id}/plan")
+def get_plan(project_id: str):
+    """读取当前规划表的总卷量（供创建向导第三步约束卷号范围）。"""
+    row = repo.get_project(project_id)
+    if not row:
+        return fail("项目不存在", status=404)
+    total = _plan_total(project_id)
+    return ok({"total": total, "generated": total > 0})
+
+
+@router.post("/{project_id}/plan/generate")
+def generate_plan(project_id: str, body: PlanGenIn):
+    """创建向导第二步：按来源（生成/上传）产出规划表、映射表、（考纲百套卷）细目表，
+    并以「全部卷」口径落库 papers，返回总卷量。第三步据此约束卷号范围。"""
+    row = repo.get_project(project_id)
+    if not row:
+        return fail("项目不存在", status=404)
+    if body.plan_source:
+        db.execute("UPDATE projects SET plan_source=?, updated_at=? WHERE id=?",
+                   (body.plan_source, repo.now(), project_id))
+        row = repo.get_project(project_id)
+
+    ctx = ProjectContext.from_row(row)
+    # 生成阶段以「全部」口径求总卷量，卷号范围留待第三步选择
+    ctx.paper_range = "all"
+    ctx.ensure_dirs()
+
+    # 上传模式：必须已上传规划表 xlsx，否则明确报错（避免误用占位合成卷量）
+    if ctx.plan_source == "upload":
+        from engine.steps.planning import _find_uploaded_plan
+        if _find_uploaded_plan(ctx) is None:
+            return fail("未找到已上传的规划表 xlsx，请先上传规划表后再试")
+
+    driver = get_driver(ctx)
+
+    warnings: list[str] = []
+    try:
+        plan_path, rows = driver.gen_planning(ctx, ctx.plan_source)
+    except Exception as e:  # noqa: BLE001
+        return fail(f"生成规划表失败：{e}")
+
+    mapping_file = None
+    try:
+        map_path, _low = driver.gen_mapping(ctx)
+        mapping_file = map_path.name if map_path else None
+    except Exception as e:  # noqa: BLE001
+        warnings.append(f"映射表生成失败：{e}")
+
+    mesh_files: list[str] = []
+    if registry.get(ctx.paper_type).need_mesh:
+        try:
+            mesh_files = [p.name for p in (driver.gen_mesh(ctx) or [])]
+        except Exception as e:  # noqa: BLE001
+            warnings.append(f"细目表生成失败：{e}")
+
+    return ok({
+        "total": len(rows),
+        "plan_file": plan_path.name,
+        "mapping_file": mapping_file,
+        "mesh_files": mesh_files,
+        "warnings": warnings,
+    })

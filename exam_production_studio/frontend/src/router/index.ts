@@ -5,7 +5,6 @@ const routes = [
   { path: '/projects', name: 'projects', component: () => import('../views/ProjectList.vue') },
   { path: '/projects/new', name: 'project-new', component: () => import('../views/ProjectNew.vue') },
   { path: '/paper-types/:type/config', name: 'paper-type-config', component: () => import('../views/PaperTypeConfig.vue') },
-  { path: '/projects/:id/resources', name: 'resources', component: () => import('../views/Resources.vue') },
   { path: '/projects/:id/flow', name: 'flow', component: () => import('../views/Flow.vue') },
   { path: '/projects/:id/reviews', name: 'reviews', component: () => import('../views/Reviews.vue') },
   { path: '/projects/:id/content-review', name: 'content-review', component: () => import('../views/ContentReview.vue') },
