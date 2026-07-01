@@ -11,5 +11,12 @@ frontend/dist/
 data/studio.db
 data/projects/
 
+# 运行日志
+*.log
+backend/*.log
+
+# 预览临时产物（LibreOffice 缓存 + 样张，运行时生成）
+data/_preview/
+
 # 本地密钥（绝不提交）
 .env
