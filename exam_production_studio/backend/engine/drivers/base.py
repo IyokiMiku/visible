@@ -40,11 +40,41 @@ class PaperQuestions:
 
 
 @dataclass
+class QCIssue:
+    """结构化质检问题（供审阅页把问题挂到对应题目/全卷）。
+
+    scope: 单题 | 全卷 | 跨卷
+    code: 稳定机器键（如 option_length_imbalance），供审阅页绑定修复动作
+    question_no: 单题问题的题号；全卷/跨卷为 None
+    related_nos: 涉及多题时（如题干查重）记录相关题号
+    severity: 严重 | 警告 | 信息
+    """
+    scope: str
+    type: str
+    severity: str
+    detail: str
+    code: str = ""
+    question_no: int | None = None
+    related_nos: list[int] = field(default_factory=list)
+
+    def to_text(self) -> str:
+        """人类可读单行文本（向后兼容旧的 issues: list[str]）。"""
+        if self.question_no is not None:
+            loc = f"第{self.question_no}题"
+        elif self.related_nos:
+            loc = "第" + "&".join(str(n) for n in self.related_nos) + "题"
+        else:
+            loc = self.scope
+        return f"[{loc}] {self.type}：{self.detail}"
+
+
+@dataclass
 class QCResult:
     paper_no: int
     score: float
     passed: bool
     issues: list[str] = field(default_factory=list)
+    structured: list[QCIssue] = field(default_factory=list)
     report_path: Path | None = None
     completeness: float = 1.0
     coverage: float = 1.0

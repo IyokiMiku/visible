@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, reactive, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { Delete } from '@element-plus/icons-vue'
@@ -83,12 +83,50 @@ const form = reactive<any>({
   volume: JSON.parse(JSON.stringify(DEFAULT_VOLUME['yikeyilian'])),
 })
 
+// 创建项目表单草稿：跳到全局设置再回来时，防止已填内容丢失。
+// 用 sessionStorage：同一标签页内跳转/回退保留，关闭标签页自动清空（临时草稿语义）。
+const DRAFT_KEY = 'projectNewDraft'
+let restoring = false
+
+function saveDraft() {
+  try {
+    sessionStorage.setItem(DRAFT_KEY, JSON.stringify(form))
+  } catch {
+    /* 隐私模式/容量异常时忽略，不影响填写 */
+  }
+}
+
+function loadDraft(): boolean {
+  try {
+    const raw = sessionStorage.getItem(DRAFT_KEY)
+    if (!raw) return false
+    const saved = JSON.parse(raw)
+    restoring = true
+    Object.assign(form, saved)
+    // paper_type 的 watcher 会在下个 tick 触发，restoring 标志避免其覆盖恢复的 volume
+    nextTick(() => {
+      restoring = false
+    })
+    return true
+  } catch {
+    return false
+  }
+}
+
+function clearDraft() {
+  sessionStorage.removeItem(DRAFT_KEY)
+}
+
 watch(
   () => form.paper_type,
   (t) => {
+    if (restoring) return
     form.volume = JSON.parse(JSON.stringify(DEFAULT_VOLUME[t] || DEFAULT_VOLUME['yikeyilian']))
   },
 )
+
+// 深度监听表单，任何改动即写入草稿
+watch(form, saveDraft, { deep: true })
 
 async function loadQuestionTypes() {
   try {
@@ -291,6 +329,7 @@ async function submit() {
       ai_options: form.ai,
     }
     const p = await api.createProject(body)
+    clearDraft()
     ElMessage.success('项目已创建')
     router.push(`/projects/${p.id}/resources`)
   } finally {
@@ -299,7 +338,9 @@ async function submit() {
 }
 
 onMounted(() => {
-  if (route.query.type) form.paper_type = route.query.type as string
+  // 有草稿则整体恢复（含 paper_type）；没有草稿再回退到 URL 参数
+  const restored = loadDraft()
+  if (!restored && route.query.type) form.paper_type = route.query.type as string
   loadQuestionTypes()
 })
 </script>

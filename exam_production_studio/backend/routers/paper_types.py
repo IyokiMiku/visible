@@ -15,7 +15,7 @@ import db
 from engine import registry
 from shared.docx import naming
 from shared.docx.convert import LibreOfficeNotFound, docx_to_pdf
-from shared.docx.sample import build_sample_docx
+from shared.docx.sample import build_sample_docx, sample_pdf_path
 from shared.xueke_api import kpoint_resolver
 from ._common import fail, ok
 
@@ -290,13 +290,36 @@ def put_custom_types(paper_type: str, body: CustomTypesIn):
     return ok({"entry_id": entry_id, "types": cleaned})
 
 
+def _generate_preview(paper_type: str, note_template: str | None):
+    """用（草稿或已保存的）编写说明模板重新生成样张 PDF，返回 pdf 路径。"""
+    docx_path = build_sample_docx(paper_type, note_template=note_template)
+    return docx_to_pdf(docx_path)
+
+
+@router.get("/{paper_type}/preview")
+def get_preview(paper_type: str):
+    """按需预览：已有样张 PDF 时直接返回（不重新生成）；没有才用已保存模板生成一次。"""
+    if paper_type not in _ALLOWED:
+        return fail("未知试卷类型", status=404)
+    pdf_path = sample_pdf_path(paper_type)
+    if pdf_path.exists() and pdf_path.stat().st_size > 0:
+        return FileResponse(str(pdf_path), media_type="application/pdf", filename=pdf_path.name)
+    try:
+        pdf_path = _generate_preview(paper_type, None)
+    except LibreOfficeNotFound as exc:
+        return fail(str(exc))
+    except Exception as exc:  # noqa: BLE001
+        return fail(f"预览生成失败：{exc}")
+    return FileResponse(str(pdf_path), media_type="application/pdf", filename=pdf_path.name)
+
+
 @router.post("/{paper_type}/preview")
 def preview(paper_type: str, body: PreviewIn):
+    """强制重新生成样张（保存编写说明后 / 手动“刷新预览”时调用）。"""
     if paper_type not in _ALLOWED:
         return fail("未知试卷类型", status=404)
     try:
-        docx_path = build_sample_docx(paper_type, note_template=body.editorial_note)
-        pdf_path = docx_to_pdf(docx_path)
+        pdf_path = _generate_preview(paper_type, body.editorial_note)
     except LibreOfficeNotFound as exc:
         return fail(str(exc))
     except Exception as exc:  # noqa: BLE001

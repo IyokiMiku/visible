@@ -55,17 +55,14 @@ if defined SOFFICE_PATH (
 )
 
 echo [清理] 正在停止此前的后端/前端进程（含热重载子进程）……
-REM tree-kill uvicorn (reloader + worker + multiprocessing spawn child that holds the socket)
-powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'uvicorn main:app' } | ForEach-Object { taskkill /F /T /PID $_.ProcessId 2>$null | Out-Null }" >nul 2>&1
-REM tree-kill the frontend vite dev server
-powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object { $_.Name -eq 'node.exe' -and $_.CommandLine -match 'vite' } | ForEach-Object { taskkill /F /T /PID $_.ProcessId 2>$null | Out-Null }" >nul 2>&1
-REM fallback: tree-kill whoever still listens on 8000/5173
-powershell -NoProfile -Command "Get-NetTCPConnection -LocalPort 8000,5173 -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { taskkill /F /T /PID $_ 2>$null | Out-Null }" >nul 2>&1
+REM Merged cleanup (kill uvicorn + vite + port listeners + wait) into a single
+REM powershell process. Previously this was 4 separate powershell.exe launched
+REM in quick succession; that burst could hit 0xc0000142 (STATUS_DLL_INIT_FAILED)
+REM on a constrained desktop heap. One process = no burst.
+powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\stop_servers.ps1" >nul 2>&1
 REM also close previous EPS windows started by this script
 taskkill /F /FI "WINDOWTITLE eq EPS Backend*" >nul 2>&1
 taskkill /F /FI "WINDOWTITLE eq EPS Frontend*" >nul 2>&1
-REM give the OS a moment to release sockets
-powershell -NoProfile -Command "Start-Sleep -Milliseconds 1500" >nul 2>&1
 
 REM ---- choose backend mode ----
 REM 1 = hot reload (--reload): backend auto-restarts when you edit code under backend\.
@@ -94,6 +91,14 @@ echo [运行] 后端 http://127.0.0.1:8000  前端 http://localhost:5173
 REM backend: powershell -NoExit keeps the window open after a crash so the traceback stays visible;
 REM Tee-Object also streams output into backend\backend.log for post-mortem.
 start "EPS Backend" powershell -NoProfile -NoExit -Command "& '.venv\Scripts\python.exe' -m uvicorn main:app --app-dir backend --port 8000 %EPS_RELOAD% 2>&1 | Out-String -Stream | Tee-Object -FilePath 'backend\backend.log'"
+
+REM Wait (max 60s) until backend /api/health responds before starting the
+REM frontend, to avoid the startup race (vite proxy 500 / blank config page).
+REM Single powershell with an internal loop = no powershell burst.
+echo [WAIT] waiting for backend to be ready ...
+powershell -NoProfile -Command "$d=(Get-Date).AddSeconds(60); while((Get-Date) -lt $d){ try{ Invoke-WebRequest -UseBasicParsing -Uri 'http://127.0.0.1:8000/api/health' -TimeoutSec 2 | Out-Null; exit 0 }catch{ Start-Sleep -Milliseconds 500 } }; exit 1"
+if errorlevel 1 echo [WARN] backend not detected within 60s; starting frontend anyway (refresh the page if it is blank).
+
 start "EPS Frontend" cmd /c "cd frontend && npm run dev"
 
 echo.

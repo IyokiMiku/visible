@@ -50,6 +50,7 @@ watch(() => route.path, () => refreshSettingsStatus())
             <el-menu-item :index="`/projects/${currentId}/resources`">资源导入</el-menu-item>
             <el-menu-item :index="`/projects/${currentId}/flow`">流程执行</el-menu-item>
             <el-menu-item :index="`/projects/${currentId}/reviews`">待确认事项</el-menu-item>
+            <el-menu-item :index="`/projects/${currentId}/content-review`">内容审阅</el-menu-item>
             <el-menu-item :index="`/projects/${currentId}/quality`">质量摘要</el-menu-item>
             <el-menu-item :index="`/projects/${currentId}/artifacts`">输出归档</el-menu-item>
           </el-menu-item-group>
