@@ -49,6 +49,7 @@ export const api = {
 
   listResources: (id: string) => http.get<any[], any[]>(`/projects/${id}/resources`),
   uploadResourceUrl: (id: string) => `/api/projects/${id}/resources`,
+  deleteResource: (id: string, rid: string) => http.delete(`/projects/${id}/resources/${rid}`),
 
   getFlow: (id: string) => http.get<any, any>(`/projects/${id}/flow`),
   start: (id: string) => http.post(`/projects/${id}/flow/start`),
