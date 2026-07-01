@@ -1,0 +1,21 @@
+# ===== 仓库根级全局忽略 =====
+# 覆盖 exam_production_studio 之外的目录（如「一课一练工具包」），避免构建/缓存文件混入版本控制。
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 运行时日志
+*.log
+
+# 前端/构建缓存
+node_modules/
+*.tsbuildinfo
+
+# Office / 系统临时文件
+~$*
+Thumbs.db
+.DS_Store
