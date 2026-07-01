@@ -14,9 +14,111 @@ const logs = ref<any[]>([])
 const logBox = ref<HTMLElement>()
 let disconnect: (() => void) | null = null
 
+type FlowStatus = 'ready' | 'running' | 'review' | 'paused' | 'blocked' | 'done' | 'failed'
+
+const FLOW_STATUS_LABEL: Record<string, string> = {
+  ready: '待开始',
+  running: '执行中',
+  review: '等待人工确认',
+  paused: '已暂停',
+  blocked: '已阻塞',
+  done: '已完成',
+  failed: '执行失败',
+}
+
+const FLOW_STATUS_TYPE: Record<string, string> = {
+  ready: 'info',
+  running: 'warning',
+  review: 'warning',
+  paused: 'info',
+  blocked: 'warning',
+  done: 'success',
+  failed: 'danger',
+}
+
+const NODE_LABEL: Record<string, string> = {
+  planning: '生成规划',
+  mapping: '匹配考点',
+  pull: '拉取试题',
+  ai_generate: 'AI 补题',
+  split: '拆分试卷',
+  assemble: '组卷生成',
+  qc: '质量检查',
+  archive: '输出归档',
+  review: '人工确认',
+}
+
+const PAPER_STATUS_LABEL: Record<string, string> = {
+  ready: '待处理',
+  running: '处理中',
+  review: '待确认',
+  done: '已完成',
+  failed: '失败',
+  skipped: '已跳过',
+}
+
+function labelFrom(map: Record<string, string>, value: unknown) {
+  if (typeof value !== 'string' || !value) return '-'
+  return map[value] || value
+}
+
+const rerunNode = ref('')
+
 const activeStep = computed(() => {
   const i = flow.value.flow_nodes.indexOf(flow.value.current_node)
   return i < 0 ? 0 : i
+})
+
+const flowStatus = computed(() => String(flow.value.status || 'ready') as FlowStatus)
+const statusLabel = computed(() => labelFrom(FLOW_STATUS_LABEL, flowStatus.value))
+const statusType = computed(() => FLOW_STATUS_TYPE[flowStatus.value] || 'info')
+const currentNodeLabel = computed(() => labelFrom(NODE_LABEL, flow.value.current_node))
+const isRunning = computed(() => flowStatus.value === 'running')
+const canPause = computed(() => isRunning.value)
+const canResume = computed(() => ['review', 'paused', 'blocked'].includes(flowStatus.value))
+const canRerun = computed(() => !isRunning.value && !!rerunNode.value)
+const pendingReviewText = computed(() => {
+  const count = Number(flow.value.pending_reviews || 0)
+  return count > 0 ? `处理待确认（${count}）` : '待确认'
+})
+
+const workStatusTitle = computed(() => {
+  if (isRunning.value) return `正在执行：${currentNodeLabel.value}`
+  if (flowStatus.value === 'review') return '流程已暂停，等待人工确认'
+  if (flowStatus.value === 'blocked') return '流程已阻塞，需要先处理问题'
+  if (flowStatus.value === 'paused') return '流程已暂停'
+  if (flowStatus.value === 'done') return '流程已完成'
+  if (flowStatus.value === 'failed') return '流程执行失败'
+  return '流程尚未开始'
+})
+
+const workStatusDescription = computed(() => {
+  const progress = Math.round(Number(flow.value.progress || 0))
+  const pending = Number(flow.value.pending_reviews || 0)
+
+  if (isRunning.value) {
+    return `系统正在处理「${currentNodeLabel.value}」，当前进度约 ${progress}%。执行中不能点击继续或回退重跑，请等待状态更新。`
+  }
+  if (flowStatus.value === 'review') {
+    return pending > 0
+      ? `有 ${pending} 项内容需要人工确认。请先进入待确认事项处理，完成后再点击继续。`
+      : '流程正在等待人工确认。确认完成后再点击继续。'
+  }
+  if (flowStatus.value === 'blocked') {
+    return pending > 0
+      ? `流程被待确认事项阻塞，共 ${pending} 项。处理完成后再点击继续。`
+      : '流程被阻塞，请查看日志确认原因，处理后再继续。'
+  }
+  if (flowStatus.value === 'paused') {
+    return '流程已暂停，可以点击继续恢复执行，也可以选择节点回退重跑。'
+  }
+  if (flowStatus.value === 'done') {
+    return '全部流程已完成，可以查看质量摘要或输出归档。'
+  }
+  if (flowStatus.value === 'failed') {
+    return '流程执行失败，请先查看日志中的错误信息，再决定是否回退重跑。'
+  }
+  return '点击开始后，系统会按步骤执行拉题、补题、组卷、质检和归档。'
 })
 
 async function refresh() {
@@ -46,16 +148,11 @@ async function resume() {
   ElMessage.success('已继续')
   setTimeout(refresh, 500)
 }
-const rerunNode = ref('')
 async function doRerun() {
   if (!rerunNode.value) return
   await api.rerun(id, rerunNode.value)
   ElMessage.success('已触发回退重跑')
   setTimeout(refresh, 500)
-}
-
-const STATUS_TYPE: Record<string, string> = {
-  ready: 'info', running: 'warning', review: 'warning', done: 'success', failed: 'danger',
 }
 
 onMounted(async () => {
