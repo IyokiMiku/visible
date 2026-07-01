@@ -67,18 +67,18 @@ REM 0xc0000142 (STATUS_DLL_INIT_FAILED). The desktop heap has been enlarged (Sha
 REM 2nd value 20480 -> 40960) so reload should be stable; if 0xc0000142 ever returns, use mode 2.
 echo.
 echo ============================================
-echo  Select backend mode:
-echo    [1] hot reload  (--reload, auto-restart on code change)
-echo    [2] no reload   (stable; re-run start.bat after editing backend code)
+echo  请选择后端启动模式：
+echo    [1] 热重载  (--reload，修改代码后自动重启)
+echo    [2] 非热重载  (稳定模式；修改后端代码后需重新运行 start.bat)
 echo ============================================
 set "EPS_RELOAD="
 set "MODE="
-set /p "MODE=Enter 1 or 2 (default 2): "
+set /p "MODE=请输入 1 或 2 (默认 2): "
 if "%MODE%"=="1" (
   set "EPS_RELOAD=--reload"
-  echo [mode] hot reload ENABLED
+  echo [模式] 已启用热重载
 ) else (
-  echo [mode] hot reload DISABLED ^(stable mode^)
+  echo [模式] 已禁用热重载 ^(稳定模式^)
 )
 
 echo [run] backend http://127.0.0.1:8000  frontend http://localhost:5173
