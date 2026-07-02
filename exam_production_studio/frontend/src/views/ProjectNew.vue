@@ -580,6 +580,13 @@ async function loadResources() {
   }
 }
 
+// 上传进度条：以 el-upload 文件 uid 为键记录百分比。
+const uploads = ref<Record<string, { name: string; percent: number }>>({})
+const uploadingCount = computed(() => Object.keys(uploads.value).length)
+function onUploadProgress(evt: any, file: any) {
+  uploads.value[String(file.uid)] = { name: file.name, percent: Math.round(evt?.percent || 0) }
+}
+
 // 拖拽/选择上传前校验扩展名（拖拽可绕过 accept，需前端二次拦截）
 function beforeUpload(kind: string, file: UploadRawFile): boolean {
   const name = (file.name || '').toLowerCase()
@@ -589,7 +596,8 @@ function beforeUpload(kind: string, file: UploadRawFile): boolean {
     .filter(Boolean)
   const ok = allowed.some((ext) => name.endsWith(ext))
   if (!ok) {
-    ElMessage.error(`「${kind}」仅支持 ${allowed.join('、')} 格式`)
+    // grouping：批量多选/拖拽时重复的“仅支持…”提示合并为一条，避免刷屏
+    ElMessage({ type: 'error', message: `「${kind}」仅支持 ${allowed.join('、')} 格式`, grouping: true })
     return false
   }
   // 规划表最多一个：已存在时先删除再上传，避免多份并存
@@ -601,13 +609,15 @@ function beforeUpload(kind: string, file: UploadRawFile): boolean {
 }
 
 async function onUploadSuccess(_resp: any, file: any) {
+  if (file?.uid != null) delete uploads.value[String(file.uid)] // 清理进度条
   ElMessage.success(`「${file?.name || '文件'}」上传成功`)
   await loadResources()
   // 上传规划表分支：上传即自动解析出总卷量，无需再点“生成规划表”
   if (form.plan_source === 'upload') await generatePlan()
 }
 
-function onUploadError() {
+function onUploadError(_err?: any, file?: any) {
+  if (file?.uid != null) delete uploads.value[String(file.uid)] // 清理进度条
   ElMessage.error('上传失败，请检查文件格式或重试')
 }
 
@@ -824,6 +834,20 @@ function onManagerClosed() {
   mgrDirty = false
 }
 
+async function validateDraftProject() {
+  // 草稿里恢复出的项目可能已在别处被删除，继续上传/生成会 404；校验不存在则清理草稿、回第一步。
+  if (!projectId.value) return
+  try {
+    await api.getProject(projectId.value)
+    loadResources()
+  } catch {
+    clearDraft()
+    projectId.value = ''
+    currentStep.value = 0
+    ElMessage.warning('上次的草稿项目已不存在（可能已被删除），已重置，请重新开始创建')
+  }
+}
+
 onMounted(async () => {
   // ?draft=<id>：从列表「继续创建」进入，优先按项目 id 载入该草稿（忽略 sessionStorage 临时草稿）
   const draftId = route.query.draft as string | undefined
@@ -838,7 +862,7 @@ onMounted(async () => {
   loadQuestionTypes()
   loadXuekeTree()
   loadFullScore()
-  if (projectId.value) loadResources()
+  validateDraftProject()
 })
 </script>
 
@@ -980,6 +1004,13 @@ onMounted(async () => {
         </el-form-item>
 
         <el-form-item label="上传资料">
+          <div v-if="uploadingCount" class="uploading-box">
+            <div class="uploading-title">上传中（{{ uploadingCount }}）…</div>
+            <div v-for="(u, uid) in uploads" :key="uid" class="uploading-row">
+              <span class="fname" :title="u.name">{{ u.name }}</span>
+              <el-progress :percentage="u.percent" :stroke-width="10" style="flex: 1; min-width: 120px" />
+            </div>
+          </div>
           <div class="upload-row">
             <el-card
               v-for="k in form.plan_source === 'ocr' ? ['考纲', '教材', '真题'] : ['规划表']"
@@ -1008,6 +1039,7 @@ onMounted(async () => {
                 :accept="acceptOf(k)"
                 :multiple="k !== '规划表'"
                 :before-upload="(file: any) => beforeUpload(k, file)"
+                :on-progress="onUploadProgress"
                 :on-success="onUploadSuccess"
                 :on-error="onUploadError"
                 :show-file-list="false"
@@ -1390,5 +1422,32 @@ onMounted(async () => {
   color: var(--el-color-danger);
   font-size: 12px;
   line-height: 1.2;
+}
+
+/* 上传进度条 */
+.uploading-box {
+  margin-bottom: 14px;
+  padding: 12px;
+  border: 1px dashed var(--el-color-primary);
+  border-radius: 6px;
+  background: #f4f8ff;
+}
+.uploading-title {
+  font-size: 13px;
+  color: var(--el-color-primary);
+  margin-bottom: 6px;
+}
+.uploading-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  padding: 3px 0;
+}
+.uploading-row .fname {
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 </style>
