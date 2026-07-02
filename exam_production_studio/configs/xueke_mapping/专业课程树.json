@@ -1,0 +1,468 @@
+{
+  "source": "https://zhijiao.xkw.com/api/v1/basic/profession-course/profession-big-types",
+  "note": "全国中职「专业大类 → 专业 → 课程」目录（含学科网 courseId）。该目录为全国通用静态数据，与省份无关；用 refresh_profession_tree.py 重新抓取覆盖本文件。课程以 courseId 为准（课程名可能与题型定义/*.md 略有出入）。",
+  "categories": [
+    {
+      "id": 666,
+      "name": "装备制造大类",
+      "professions": [
+        {"id": 668, "name": "机械制造技术", "courses": [
+          {"courseId": 10000, "courseName": "机械制图"},
+          {"courseId": 10001, "courseName": "机械基础"},
+          {"courseId": 10008, "courseName": "液压与气压传动"},
+          {"courseId": 10009, "courseName": "极限配合与技术测量"},
+          {"courseId": 10012, "courseName": "金属加工与实训"},
+          {"courseId": 10016, "courseName": "工厂电气控制设备"},
+          {"courseId": 10017, "courseName": "钳工加工技术"}
+        ]},
+        {"id": 669, "name": "机械加工技术", "courses": [
+          {"courseId": 10000, "courseName": "机械制图"},
+          {"courseId": 10001, "courseName": "机械基础"},
+          {"courseId": 10004, "courseName": "电工电子技术与技能"},
+          {"courseId": 10008, "courseName": "液压与气压传动"},
+          {"courseId": 10009, "courseName": "极限配合与技术测量"},
+          {"courseId": 10011, "courseName": "金属加工基础"},
+          {"courseId": 10017, "courseName": "钳工加工技术"},
+          {"courseId": 10053, "courseName": "机械加工技术"}
+        ]},
+        {"id": 958, "name": "数控技术应用", "courses": [
+          {"courseId": 10000, "courseName": "机械制图"},
+          {"courseId": 10001, "courseName": "机械基础"},
+          {"courseId": 10004, "courseName": "电工电子技术与技能"},
+          {"courseId": 10005, "courseName": "数控铣床编程与操作"},
+          {"courseId": 10006, "courseName": "数控车床编程与操作"},
+          {"courseId": 10007, "courseName": "AutoCAD"},
+          {"courseId": 10012, "courseName": "金属加工与实训"},
+          {"courseId": 10017, "courseName": "钳工加工技术"}
+        ]},
+        {"id": 941, "name": "智能设备运行与维护", "courses": [
+          {"courseId": 10000, "courseName": "机械制图"},
+          {"courseId": 10001, "courseName": "机械基础"},
+          {"courseId": 10002, "courseName": "电工技术基础与技能"},
+          {"courseId": 10003, "courseName": "电子技术基础与技能"},
+          {"courseId": 10004, "courseName": "电工电子技术与技能"},
+          {"courseId": 10005, "courseName": "数控铣床编程与操作"},
+          {"courseId": 10006, "courseName": "数控车床编程与操作"},
+          {"courseId": 10008, "courseName": "液压与气压传动"},
+          {"courseId": 10010, "courseName": "焊接方法与工艺"},
+          {"courseId": 10011, "courseName": "金属加工基础"},
+          {"courseId": 10012, "courseName": "金属加工与实训"},
+          {"courseId": 10014, "courseName": "电器及PLC控制技术"},
+          {"courseId": 10015, "courseName": "电气控制线路安装与检修"},
+          {"courseId": 10017, "courseName": "钳工加工技术"},
+          {"courseId": 10067, "courseName": "电机与电气控制技术"},
+          {"courseId": 10089, "courseName": "焊工工艺基础"},
+          {"courseId": 13013, "courseName": "电机与拖动"}
+        ]},
+        {"id": 979, "name": "电机电器制造与维修", "courses": [
+          {"courseId": 10002, "courseName": "电工技术基础与技能"},
+          {"courseId": 10003, "courseName": "电子技术基础与技能"},
+          {"courseId": 10011, "courseName": "金属加工基础"},
+          {"courseId": 10014, "courseName": "电器及PLC控制技术"},
+          {"courseId": 10017, "courseName": "钳工加工技术"}
+        ]},
+        {"id": 982, "name": "新能源装备运行与维护", "courses": [
+          {"courseId": 10001, "courseName": "机械基础"},
+          {"courseId": 10004, "courseName": "电工电子技术与技能"},
+          {"courseId": 10014, "courseName": "电器及PLC控制技术"},
+          {"courseId": 10017, "courseName": "钳工加工技术"}
+        ]},
+        {"id": 992, "name": "机电技术应用", "courses": [
+          {"courseId": 10000, "courseName": "机械制图"},
+          {"courseId": 10003, "courseName": "电子技术基础与技能"},
+          {"courseId": 10004, "courseName": "电工电子技术与技能"},
+          {"courseId": 10007, "courseName": "AutoCAD"},
+          {"courseId": 10008, "courseName": "液压与气压传动"},
+          {"courseId": 10015, "courseName": "电气控制线路安装与检修"},
+          {"courseId": 10067, "courseName": "电机与电气控制技术"},
+          {"courseId": 13013, "courseName": "电机与拖动"}
+        ]},
+        {"id": 995, "name": "电气设备运行与控制", "courses": [
+          {"courseId": 10000, "courseName": "机械制图"},
+          {"courseId": 10001, "courseName": "机械基础"},
+          {"courseId": 10002, "courseName": "电工技术基础与技能"},
+          {"courseId": 10003, "courseName": "电子技术基础与技能"},
+          {"courseId": 10008, "courseName": "液压与气压传动"},
+          {"courseId": 10014, "courseName": "电器及PLC控制技术"},
+          {"courseId": 10020, "courseName": "单片机技术与应用"},
+          {"courseId": 10090, "courseName": "传感器检测技术"},
+          {"courseId": 13013, "courseName": "电机与拖动"},
+          {"courseId": 13105, "courseName": "电气测量技术"},
+          {"courseId": 13106, "courseName": "变压器与电动机"}
+        ]},
+        {"id": 6275, "name": "汽车制造与检测", "courses": [
+          {"courseId": 10068, "courseName": "汽车机械基础"},
+          {"courseId": 10069, "courseName": "汽车电工电子基础"},
+          {"courseId": 12002, "courseName": "汽车发动机构造与维修"},
+          {"courseId": 12003, "courseName": "汽车底盘构造与维修"},
+          {"courseId": 12004, "courseName": "汽车电气设备构造与维修"}
+        ]}
+      ]
+    },
+    {
+      "id": 1039,
+      "name": "电子与信息大类",
+      "professions": [
+        {"id": 1041, "name": "电子信息技术", "courses": [
+          {"courseId": 10002, "courseName": "电工技术基础与技能"},
+          {"courseId": 10003, "courseName": "电子技术基础与技能"},
+          {"courseId": 10020, "courseName": "单片机技术与应用"},
+          {"courseId": 10090, "courseName": "传感器检测技术"},
+          {"courseId": 13010, "courseName": "电子测量技术"}
+        ]},
+        {"id": 1060, "name": "计算机应用", "courses": [
+          {"courseId": 10501, "courseName": "计算机应用基础"},
+          {"courseId": 10502, "courseName": "图形图像处理"},
+          {"courseId": 10504, "courseName": "程序设计基础"},
+          {"courseId": 10505, "courseName": "计算机网络技术基础"},
+          {"courseId": 10506, "courseName": "网页设计与制作"},
+          {"courseId": 10507, "courseName": "C语言程序设计"},
+          {"courseId": 10508, "courseName": "数据库应用基础-Access"},
+          {"courseId": 10509, "courseName": "计算机原理"},
+          {"courseId": 10510, "courseName": "多媒体技术及应用"},
+          {"courseId": 10511, "courseName": "网站数据库应用技术-SQL Server"},
+          {"courseId": 10512, "courseName": "计算机组装与维修"},
+          {"courseId": 13011, "courseName": "MySQL数据库"},
+          {"courseId": 13014, "courseName": "算法与程序设计（C#）"},
+          {"courseId": 13118, "courseName": "实用美术基础"},
+          {"courseId": 13122, "courseName": "数字摄影摄像"}
+        ]},
+        {"id": 6277, "name": "数字媒体", "courses": [
+          {"courseId": 10501, "courseName": "计算机应用基础"},
+          {"courseId": 10502, "courseName": "图形图像处理"},
+          {"courseId": 10504, "courseName": "程序设计基础"},
+          {"courseId": 10505, "courseName": "计算机网络技术基础"},
+          {"courseId": 10506, "courseName": "网页设计与制作"},
+          {"courseId": 10507, "courseName": "C语言程序设计"},
+          {"courseId": 10508, "courseName": "数据库应用基础-Access"},
+          {"courseId": 10509, "courseName": "计算机原理"},
+          {"courseId": 10510, "courseName": "多媒体技术及应用"},
+          {"courseId": 10511, "courseName": "网站数据库应用技术-SQL Server"},
+          {"courseId": 10512, "courseName": "计算机组装与维修"},
+          {"courseId": 13011, "courseName": "MySQL数据库"},
+          {"courseId": 13014, "courseName": "算法与程序设计（C#）"},
+          {"courseId": 13118, "courseName": "实用美术基础"},
+          {"courseId": 13122, "courseName": "数字摄影摄像"}
+        ]},
+        {"id": 6278, "name": "网络技术", "courses": [
+          {"courseId": 10501, "courseName": "计算机应用基础"},
+          {"courseId": 10502, "courseName": "图形图像处理"},
+          {"courseId": 10504, "courseName": "程序设计基础"},
+          {"courseId": 10505, "courseName": "计算机网络技术基础"},
+          {"courseId": 10506, "courseName": "网页设计与制作"},
+          {"courseId": 10507, "courseName": "C语言程序设计"},
+          {"courseId": 10508, "courseName": "数据库应用基础-Access"},
+          {"courseId": 10509, "courseName": "计算机原理"},
+          {"courseId": 10510, "courseName": "多媒体技术及应用"},
+          {"courseId": 10511, "courseName": "网站数据库应用技术-SQL Server"},
+          {"courseId": 10512, "courseName": "计算机组装与维修"},
+          {"courseId": 13011, "courseName": "MySQL数据库"},
+          {"courseId": 13014, "courseName": "算法与程序设计（C#）"},
+          {"courseId": 13118, "courseName": "实用美术基础"}
+        ]}
+      ]
+    },
+    {
+      "id": 1109,
+      "name": "交通运输大类",
+      "professions": [
+        {"id": 1154, "name": "汽车运用与维修", "courses": [
+          {"courseId": 10068, "courseName": "汽车机械基础"},
+          {"courseId": 10069, "courseName": "汽车电工电子基础"},
+          {"courseId": 10070, "courseName": "汽车文化"},
+          {"courseId": 12001, "courseName": "汽车保养与维护"},
+          {"courseId": 12002, "courseName": "汽车发动机构造与维修"},
+          {"courseId": 12003, "courseName": "汽车底盘构造与维修"},
+          {"courseId": 12004, "courseName": "汽车电气设备构造与维修"},
+          {"courseId": 12016, "courseName": "新能源汽车"},
+          {"courseId": 13012, "courseName": "汽车构造与拆装"},
+          {"courseId": 13121, "courseName": "电控发动机维修"}
+        ]},
+        {"id": 1163, "name": "新能源汽车运用与维修", "courses": [
+          {"courseId": 10068, "courseName": "汽车机械基础"},
+          {"courseId": 10069, "courseName": "汽车电工电子基础"},
+          {"courseId": 12005, "courseName": "汽车空调构造与维修"},
+          {"courseId": 12008, "courseName": "汽车底盘控制系统故障诊断与检测"},
+          {"courseId": 12009, "courseName": "自动变速器构造与维修"},
+          {"courseId": 12011, "courseName": "电动汽车高压系统基本原理与维修"},
+          {"courseId": 12015, "courseName": "电动汽车动力电池及管理系统原理与检修"},
+          {"courseId": 12016, "courseName": "新能源汽车"},
+          {"courseId": 12017, "courseName": "电动汽车控制系统故障诊断与检修"}
+        ]}
+      ]
+    },
+    {
+      "id": 1227,
+      "name": "财经商贸大类",
+      "professions": [
+        {"id": 1229, "name": "纳税事务", "courses": [
+          {"courseId": 10022, "courseName": "统计基础知识"},
+          {"courseId": 10024, "courseName": "经济法律法规"},
+          {"courseId": 10030, "courseName": "税收基础"},
+          {"courseId": 11501, "courseName": "基础会计"},
+          {"courseId": 11502, "courseName": "企业财务会计"},
+          {"courseId": 11504, "courseName": "市场营销知识"},
+          {"courseId": 11505, "courseName": "电子商务基础"},
+          {"courseId": 13128, "courseName": "经济学基础"},
+          {"courseId": 13129, "courseName": "管理学基础"}
+        ]},
+        {"id": 1237, "name": "会计事务", "courses": [
+          {"courseId": 10022, "courseName": "统计基础知识"},
+          {"courseId": 10023, "courseName": "财政与金融基础知识"},
+          {"courseId": 10024, "courseName": "经济法律法规"},
+          {"courseId": 10025, "courseName": "会计信息化"},
+          {"courseId": 10029, "courseName": "成本会计"},
+          {"courseId": 10087, "courseName": "财经法规与会计职业道德"},
+          {"courseId": 11501, "courseName": "基础会计"},
+          {"courseId": 11502, "courseName": "企业财务会计"},
+          {"courseId": 11503, "courseName": "财务管理"},
+          {"courseId": 11504, "courseName": "市场营销知识"}
+        ]},
+        {"id": 1245, "name": "国际商务", "courses": [
+          {"courseId": 10026, "courseName": "国际贸易实务"},
+          {"courseId": 10027, "courseName": "商务英语函电"},
+          {"courseId": 11504, "courseName": "市场营销知识"},
+          {"courseId": 11505, "courseName": "电子商务基础"},
+          {"courseId": 11507, "courseName": "国际贸易基础知识"},
+          {"courseId": 11510, "courseName": "外贸制单（国际商务单证）"}
+        ]},
+        {"id": 1255, "name": "市场营销", "courses": [
+          {"courseId": 11501, "courseName": "基础会计"},
+          {"courseId": 11504, "courseName": "市场营销知识"},
+          {"courseId": 11508, "courseName": "商品销售（推销实务）"},
+          {"courseId": 13109, "courseName": "商品知识"},
+          {"courseId": 13110, "courseName": "销售心理学"},
+          {"courseId": 13111, "courseName": "市场调查"},
+          {"courseId": 13112, "courseName": "商务沟通与谈判"},
+          {"courseId": 13113, "courseName": "营销策划实务"},
+          {"courseId": 13125, "courseName": "数字商务信息技术"}
+        ]},
+        {"id": 1262, "name": "电子商务", "courses": [
+          {"courseId": 10028, "courseName": "跨境电商基础"},
+          {"courseId": 10505, "courseName": "计算机网络技术基础"},
+          {"courseId": 11505, "courseName": "电子商务基础"},
+          {"courseId": 11506, "courseName": "网络营销"},
+          {"courseId": 11509, "courseName": "客户服务"},
+          {"courseId": 13114, "courseName": "电子商务物流"},
+          {"courseId": 13115, "courseName": "移动商务基础"},
+          {"courseId": 13116, "courseName": "网店运营"}
+        ]}
+      ]
+    },
+    {
+      "id": 1290,
+      "name": "医药卫生大类",
+      "professions": [
+        {"id": 1292, "name": "护理", "courses": [
+          {"courseId": 10033, "courseName": "药物学基础"},
+          {"courseId": 10036, "courseName": "诊断学基础"},
+          {"courseId": 11001, "courseName": "解剖学基础"},
+          {"courseId": 11002, "courseName": "生理学基础"},
+          {"courseId": 11003, "courseName": "病理学基础"},
+          {"courseId": 11007, "courseName": "基础护理"},
+          {"courseId": 11008, "courseName": "内科护理"},
+          {"courseId": 11009, "courseName": "外科护理"},
+          {"courseId": 11010, "courseName": "妇产科护理"},
+          {"courseId": 11011, "courseName": "儿科护理"},
+          {"courseId": 13130, "courseName": "健康评估"}
+        ]},
+        {"id": 1296, "name": "药剂", "courses": [
+          {"courseId": 10031, "courseName": "天然药物学基础"},
+          {"courseId": 10034, "courseName": "药事法规"},
+          {"courseId": 10035, "courseName": "药剂学基础"},
+          {"courseId": 11001, "courseName": "解剖学基础"},
+          {"courseId": 11002, "courseName": "生理学基础"},
+          {"courseId": 11006, "courseName": "药理学基础"},
+          {"courseId": 11012, "courseName": "药用化学基础"}
+        ]},
+        {"id": 6271, "name": "医学技术", "courses": [
+          {"courseId": 10032, "courseName": "临床疾病概要"},
+          {"courseId": 10033, "courseName": "药物学基础"},
+          {"courseId": 11001, "courseName": "解剖学基础"},
+          {"courseId": 11002, "courseName": "生理学基础"},
+          {"courseId": 11003, "courseName": "病理学基础"},
+          {"courseId": 11006, "courseName": "药理学基础"},
+          {"courseId": 13102, "courseName": "病原生物与免疫学基础"}
+        ]}
+      ]
+    },
+    {
+      "id": 4965,
+      "name": "教育与体育大类",
+      "professions": [
+        {"id": 4967, "name": "幼儿保育", "courses": [
+          {"courseId": 13001, "courseName": "幼儿卫生学"},
+          {"courseId": 13002, "courseName": "幼儿心理学"},
+          {"courseId": 13003, "courseName": "幼儿教育学"},
+          {"courseId": 13004, "courseName": "幼儿园教育活动设计与指导"},
+          {"courseId": 13005, "courseName": "幼儿教育心理学"}
+        ]}
+      ]
+    },
+    {
+      "id": 5199,
+      "name": "旅游大类",
+      "professions": [
+        {"id": 5202, "name": "旅游服务与管理", "courses": [
+          {"courseId": 10037, "courseName": "前厅服务与管理"},
+          {"courseId": 10038, "courseName": "餐饮服务与管理"},
+          {"courseId": 10039, "courseName": "客房服务与管理"},
+          {"courseId": 10040, "courseName": "旅游心理学"},
+          {"courseId": 10041, "courseName": "导游实务"},
+          {"courseId": 10043, "courseName": "旅游概论"},
+          {"courseId": 10044, "courseName": "中国旅游地理"},
+          {"courseId": 10045, "courseName": "旅游服务礼仪"},
+          {"courseId": 10149, "courseName": "导游基础知识"},
+          {"courseId": 13100, "courseName": "旅游政策与法规"},
+          {"courseId": 13129, "courseName": "管理学基础"}
+        ]},
+        {"id": 5205, "name": "导游服务", "courses": [
+          {"courseId": 10041, "courseName": "导游实务"},
+          {"courseId": 10043, "courseName": "旅游概论"},
+          {"courseId": 10044, "courseName": "中国旅游地理"}
+        ]},
+        {"id": 5208, "name": "高星级饭店运营与管理", "courses": [
+          {"courseId": 10037, "courseName": "前厅服务与管理"},
+          {"courseId": 10038, "courseName": "餐饮服务与管理"},
+          {"courseId": 10039, "courseName": "客房服务与管理"},
+          {"courseId": 10040, "courseName": "旅游心理学"},
+          {"courseId": 10043, "courseName": "旅游概论"},
+          {"courseId": 10045, "courseName": "旅游服务礼仪"}
+        ]},
+        {"id": 6054, "name": "中餐烹饪", "courses": [
+          {"courseId": 10060, "courseName": "烹饪原料知识"},
+          {"courseId": 10061, "courseName": "烹饪营养与安全"},
+          {"courseId": 10062, "courseName": "中式烹调技艺"},
+          {"courseId": 10063, "courseName": "中式面点技艺"},
+          {"courseId": 10064, "courseName": "烹饪概论"},
+          {"courseId": 10065, "courseName": "餐饮成本核算"},
+          {"courseId": 10066, "courseName": "西餐热菜制作"}
+        ]}
+      ]
+    },
+    {
+      "id": 5200,
+      "name": "土木建筑大类",
+      "professions": [
+        {"id": 5212, "name": "城镇建设", "courses": [
+          {"courseId": 10046, "courseName": "土木工程识图"},
+          {"courseId": 10047, "courseName": "建筑结构"},
+          {"courseId": 10048, "courseName": "建筑识图与构造"},
+          {"courseId": 10049, "courseName": "建筑材料"},
+          {"courseId": 10050, "courseName": "建筑施工组织与管理"},
+          {"courseId": 10051, "courseName": "建筑工程测量"},
+          {"courseId": 10052, "courseName": "土木工程力学基础"},
+          {"courseId": 10091, "courseName": "建筑施工技术与机械"},
+          {"courseId": 13107, "courseName": "地基与基础工程施工"},
+          {"courseId": 13108, "courseName": "主体结构工程施工"}
+        ]},
+        {"id": 5215, "name": "建筑工程施工", "courses": [
+          {"courseId": 10047, "courseName": "建筑结构"},
+          {"courseId": 10048, "courseName": "建筑识图与构造"},
+          {"courseId": 10049, "courseName": "建筑材料"},
+          {"courseId": 10050, "courseName": "建筑施工组织与管理"},
+          {"courseId": 10054, "courseName": "建筑施工工艺"},
+          {"courseId": 10091, "courseName": "建筑施工技术与机械"},
+          {"courseId": 10092, "courseName": "建筑CAD"}
+        ]},
+        {"id": 5218, "name": "建筑装饰技术", "courses": [
+          {"courseId": 10048, "courseName": "建筑识图与构造"},
+          {"courseId": 10054, "courseName": "建筑施工工艺"}
+        ]}
+      ]
+    },
+    {
+      "id": 5982,
+      "name": "公共管理与服务大类",
+      "professions": [
+        {"id": 5986, "name": "社会工作事务", "courses": [
+          {"courseId": 10055, "courseName": "应用文写作基础"},
+          {"courseId": 10056, "courseName": "公共关系基础"},
+          {"courseId": 10059, "courseName": "文书拟写与档案管理"}
+        ]},
+        {"id": 5995, "name": "行政事务助理", "courses": [
+          {"courseId": 10055, "courseName": "应用文写作基础"},
+          {"courseId": 10056, "courseName": "公共关系基础"},
+          {"courseId": 10057, "courseName": "秘书基础"},
+          {"courseId": 10058, "courseName": "秘书实务"},
+          {"courseId": 10059, "courseName": "文书拟写与档案管理"},
+          {"courseId": 10501, "courseName": "计算机应用基础"}
+        ]}
+      ]
+    },
+    {
+      "id": 6035,
+      "name": "农林牧渔大类",
+      "professions": [
+        {"id": 6037, "name": "畜禽生产技术", "courses": [
+          {"courseId": 10071, "courseName": "畜禽解剖生理"},
+          {"courseId": 10072, "courseName": "畜禽营养与饲料"},
+          {"courseId": 10073, "courseName": "兽医基础"},
+          {"courseId": 10074, "courseName": "畜禽生产"},
+          {"courseId": 10075, "courseName": "畜禽繁殖与改良"},
+          {"courseId": 10093, "courseName": "畜禽疫病防治"}
+        ]},
+        {"id": 6047, "name": "园艺技术", "courses": [
+          {"courseId": 10076, "courseName": "农作物生产"},
+          {"courseId": 10077, "courseName": "植物保护技术"},
+          {"courseId": 10078, "courseName": "果树生产技术"},
+          {"courseId": 10079, "courseName": "种植基础"},
+          {"courseId": 10080, "courseName": "农业生物技术"},
+          {"courseId": 10081, "courseName": "植物生产与环境"},
+          {"courseId": 10094, "courseName": "蔬菜生产技术"},
+          {"courseId": 13117, "courseName": "农业经营与管理"},
+          {"courseId": 13120, "courseName": "植物科学基础"}
+        ]}
+      ]
+    },
+    {
+      "id": 6063,
+      "name": "轻工纺织大类",
+      "professions": [
+        {"id": 6067, "name": "服装设计与工艺", "courses": [
+          {"courseId": 10082, "courseName": "服装结构制图"},
+          {"courseId": 10083, "courseName": "服装设计基础"},
+          {"courseId": 10084, "courseName": "服装缝制工艺"},
+          {"courseId": 10085, "courseName": "服装材料"},
+          {"courseId": 10086, "courseName": "服装设计"},
+          {"courseId": 10088, "courseName": "服装制作工艺"}
+        ]}
+      ]
+    },
+    {
+      "id": 6071,
+      "name": "生物与化工大类",
+      "professions": [
+        {"id": 6073, "name": "分析检验技术", "courses": [
+          {"courseId": 10095, "courseName": "分析化学"},
+          {"courseId": 10096, "courseName": "环境学基础"},
+          {"courseId": 10097, "courseName": "有机化学"},
+          {"courseId": 10098, "courseName": "无机化学"},
+          {"courseId": 10099, "courseName": "化学实验技术"},
+          {"courseId": 13006, "courseName": "化工单元操作"},
+          {"courseId": 13007, "courseName": "化学工艺"}
+        ]},
+        {"id": 6273, "name": "化学工艺", "courses": [
+          {"courseId": 10096, "courseName": "环境学基础"},
+          {"courseId": 10099, "courseName": "化学实验技术"},
+          {"courseId": 13006, "courseName": "化工单元操作"},
+          {"courseId": 13007, "courseName": "化学工艺"}
+        ]},
+        {"id": 6276, "name": "化工机械与设备", "courses": [
+          {"courseId": 10001, "courseName": "机械基础"},
+          {"courseId": 10017, "courseName": "钳工加工技术"},
+          {"courseId": 10089, "courseName": "焊工工艺基础"}
+        ]}
+      ]
+    },
+    {
+      "id": 6279,
+      "name": "文化艺术大类",
+      "professions": [
+        {"id": 6282, "name": "绘画", "courses": [
+          {"courseId": 13124, "courseName": "美术基础"}
+        ]}
+      ]
+    }
+  ]
+}

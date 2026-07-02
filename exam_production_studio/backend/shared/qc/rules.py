@@ -1,7 +1,8 @@
 """质检规则（shared/qc）——对齐考纲百套卷新版规则。
 
 接收 ctx + 题目，产出结构化问题（QCIssue，含稳定 code）与评分。
-字符串 issues 由 QCIssue 派生以向后兼容。公式源码（$...$/{{math:}}）视为合法内容，不做残留清理。
+字符串 issues 由 QCIssue 派生以向后兼容。公式源码（$...$/\\(...\\)/{{math:}}/{math:}）视为合法内容；
+格式残留检测（latex_residue）仅对“公式区域之外”的裸文本生效，不修改内容、只报告，避免误伤合法公式。
 """
 from __future__ import annotations
 
@@ -35,6 +36,15 @@ _IMAGE_REQUIRED_RE = re.compile(
     r"(如图(?:所示)?|下图|图中|图示|根据(?:下)?图|由(?:下)?图|见图|观察(?:下)?图|"
     r"所示(?:电路|结构|波形|曲线|图形)|(?:电路|结构|波形|曲线|图形)如图)"
 )
+
+# 格式残留检测：仅对“公式区域之外”的裸文本生效（合法公式源码先被 _strip_math_regions 抠除）。
+# 裸露的 LaTeX 命令（如未被 $...$ 包裹的 \frac \sqrt \times）。
+_LATEX_CMD_RE = re.compile(r"\\[a-zA-Z]+")
+# 应改用 $...$ LaTeX 的 Unicode 数学字符：上标 U+2070~2079 / 下标 U+2080~2089 / 希腊字母 / 根号 √。
+# 有意排除 × ÷ 等运算符——它们在题干/计算中太常见，纳入会大量误伤。
+_MATH_UNICODE_RE = re.compile(r"[\u2070-\u2079\u2080-\u2089\u221a\u0391-\u03a9\u03b1-\u03c9\u2126]")
+# 数学相关标签残留（学科网 <math latex="...">、OMML、上下标标签）；通用网页残留由 _has_web_residue 负责。
+_MATH_HTML_RE = re.compile(r"(<\s*math\b|<\s*/?\s*su[bp]\b|latex\s*=|<\s*m:)", re.I)
 
 # code → 是否属于“格式类”（用于 format_ok 判定）
 _FORMAT_CODES = {"option_length_imbalance", "invalid_answer_format", "missing_options"}
@@ -109,6 +119,86 @@ def _has_web_residue(q) -> bool:
     haystack = "\n".join([_clean(q.stem), _clean(q.answer), _clean(q.analysis),
                           *[_clean(o) for o in (q.options or [])]]).lower()
     return any(m.lower() in haystack for m in _WEB_RESIDUE_MARKS)
+
+
+def _strip_math_regions(text: str) -> str:
+    """抠除合法公式源码区域，返回“公式之外”的裸文本，供格式残留检测防误伤。
+
+    支持 studio 的四种公式标记：{{math:...}} / {math:...} / \\(...\\) / $...$。
+    {{math:}} 与 {math:} 内部允许成对花括号（如 \\frac{a}{b}），按花括号深度匹配闭合符。
+    """
+    s = text or ""
+    out: list[str] = []
+    pos, n = 0, len(s)
+    while pos < n:
+        double_start = s.find("{{math:", pos)
+        single_start = s.find("{math:", pos)
+        starts = []
+        if double_start != -1:
+            starts.append((double_start, "{{math:", "}}"))
+        if single_start != -1:
+            starts.append((single_start, "{math:", "}"))
+        if not starts:
+            out.append(s[pos:])
+            break
+        start, opener, closer = min(starts, key=lambda x: x[0])
+        out.append(s[pos:start])
+        i = start + len(opener)
+        depth = 0
+        end_marker = -1
+        while i < n:
+            if closer == "}}" and s.startswith("}}", i) and depth == 0:
+                end_marker = i + 2
+                break
+            ch = s[i]
+            if ch == "{":
+                depth += 1
+            elif ch == "}":
+                if closer == "}" and depth == 0:
+                    end_marker = i + 1
+                    break
+                if depth > 0:
+                    depth -= 1
+            i += 1
+        if end_marker == -1:  # 未闭合，剩余原文不当作公式
+            out.append(s[start:])
+            break
+        pos = end_marker
+    s = "".join(out)
+    s = re.sub(r"\\\(.+?\\\)", " ", s)
+    s = re.sub(r"\$[^$]+\$", " ", s)
+    return s
+
+
+def _check_latex_residue(q) -> list[QCIssue]:
+    """检测“公式区域之外”的 LaTeX/格式残留，不修改内容，仅报告（严重级别：警告）。"""
+    qtype = _clean(q.qtype)
+    fields = [("题干", _clean(q.stem)), ("解析", _clean(q.analysis))]
+    for i, opt in enumerate(q.options or []):
+        fields.append((f"{chr(ord('A') + i)}选项", _clean(opt)))
+    # 判断题答案是 √/×，不纳入数学字符检测，避免误伤
+    if qtype != JUDGE_TYPE:
+        fields.append(("答案", _clean(q.answer)))
+
+    hits: list[str] = []
+    for fname, raw in fields:
+        if not raw:
+            continue
+        bare = _strip_math_regions(raw)
+        cmd = _LATEX_CMD_RE.search(bare)
+        if cmd:
+            hits.append(f'{fname}裸露 LaTeX 命令"{cmd.group()}"')
+        uni = _MATH_UNICODE_RE.search(bare)
+        if uni:
+            hits.append(f'{fname}含 Unicode 数学字符"{uni.group()}"')
+        html = _MATH_HTML_RE.search(bare)
+        if html:
+            hits.append(f'{fname}含公式标签残留"{html.group().strip()}"')
+    if hits:
+        return [QCIssue(scope="单题", code="latex_residue", type="格式残留", severity="警告",
+                        question_no=q.number,
+                        detail="公式区域外检测到疑似残留（应改用 $...$/{{math:}} 或清理）：" + "；".join(hits[:4]))]
+    return []
 
 
 def _contains_correct_option_text(stem: str, answer: str, option_map: dict[str, str]) -> bool:
@@ -216,6 +306,9 @@ def _check_question(q) -> list[QCIssue]:
     if _has_web_residue(q):
         issues.append(QCIssue(scope="单题", code="web_residue", type="网页残留",
                               severity="警告", question_no=n, detail="疑似存在网页残留内容"))
+
+    # LaTeX / 格式残留（不误伤合法公式源码 $...$ / {{math:}}）
+    issues.extend(_check_latex_residue(q))
 
     # 缺必要配图
     if stem and _IMAGE_REQUIRED_RE.search(stem) and not has_visual:

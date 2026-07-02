@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { api, type Project } from '../services/api'
+import { PROJECT_STATUS_LABEL, PROJECT_STATUS_TYPE } from '../constants/status'
 
 const router = useRouter()
 // _seq：加载顺序生成的稳定序号，用于「序号」列排序
@@ -15,13 +16,6 @@ const TYPE_LABEL: Record<string, string> = {
   kaogang_100: '考纲百套卷',
   shuangxi: '考点双析卷',
 }
-const STATUS_TYPE: Record<string, string> = {
-  draft: 'info', ready: 'info', running: 'warning', review: 'warning', done: 'success', failed: 'danger',
-}
-const STATUS_LABEL: Record<string, string> = {
-  draft: '草稿', ready: '就绪', running: '生成中', review: '待审核', done: '已完成', failed: '失败',
-}
-
 // 筛选项：从当前项目数据动态生成，去重并过滤空值
 const typeFilters = computed(() =>
   Array.from(new Set(projects.value.map(p => p.paper_type).filter(Boolean)))
@@ -33,7 +27,7 @@ const provinceFilters = computed(() =>
 )
 const statusFilters = computed(() =>
   Array.from(new Set(projects.value.map(p => p.status).filter(Boolean)))
-    .map(v => ({ text: STATUS_LABEL[v] || v, value: v })),
+    .map(v => ({ text: PROJECT_STATUS_LABEL[v] || v, value: v })),
 )
 
 function filterType(value: string, row: Row): boolean {
@@ -154,7 +148,7 @@ onMounted(load)
         :filter-method="filterStatus"
       >
         <template #default="{ row }">
-          <el-tag :type="STATUS_TYPE[row.status] || 'info'">{{ STATUS_LABEL[row.status] || row.status }}</el-tag>
+          <el-tag :type="PROJECT_STATUS_TYPE[row.status] || 'info'">{{ PROJECT_STATUS_LABEL[row.status] || row.status }}</el-tag>
         </template>
       </el-table-column>
       <el-table-column label="操作" width="180">

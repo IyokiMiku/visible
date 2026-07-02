@@ -104,7 +104,10 @@ def pull_for_plan(ctx, plan: dict[str, Any], needed: dict[str, int]) -> PulledRe
         if n <= 0:
             continue
         section = SECTION_BY_NAME.get(qtype)
-        tids = type_ids_map.get(qtype) or kpoint_resolver.resolve_type_ids(getattr(ctx, "course", ""), qtype)
+        # typeId 解析优先级：显式覆盖 → 按 courseId 精确解析（稳定主键）→ 按课程名兜底（旧逻辑）
+        tids = (type_ids_map.get(qtype)
+                or kpoint_resolver.resolve_type_ids_by_course_id(course_id, qtype)
+                or kpoint_resolver.resolve_type_ids(getattr(ctx, "course", ""), qtype))
         if not section:
             notes.append(f"{qtype}: 无 section_type 映射")
             continue

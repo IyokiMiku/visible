@@ -5,6 +5,7 @@ import { ElMessage } from 'element-plus'
 import { api } from '../services/api'
 import { connectFlowWs } from '../services/ws'
 import { refreshSettingsStatus } from '../services/settingsStatus'
+import { PROJECT_STATUS_LABEL, PROJECT_STATUS_TYPE } from '../constants/status'
 
 const route = useRoute()
 const router = useRouter()
@@ -17,38 +18,6 @@ const paperTableMaxHeight = ref(260)
 let disconnect: (() => void) | null = null
 
 type FlowStatus = 'ready' | 'running' | 'review' | 'paused' | 'blocked' | 'done' | 'failed'
-
-const FLOW_STATUS_LABEL: Record<string, string> = {
-  ready: '待开始',
-  running: '执行中',
-  review: '等待人工确认',
-  paused: '已暂停',
-  blocked: '已阻塞',
-  done: '已完成',
-  failed: '执行失败',
-}
-
-const FLOW_STATUS_TYPE: Record<string, string> = {
-  ready: 'info',
-  running: 'warning',
-  review: 'warning',
-  paused: 'info',
-  blocked: 'warning',
-  done: 'success',
-  failed: 'danger',
-}
-
-const NODE_LABEL: Record<string, string> = {
-  planning: '生成规划',
-  mapping: '匹配考点',
-  pull: '拉取试题',
-  ai_generate: 'AI 补题',
-  split: '拆分试卷',
-  assemble: '组卷生成',
-  qc: '质量检查',
-  archive: '输出归档',
-  review: '人工确认',
-}
 
 const PAPER_STATUS_LABEL: Record<string, string> = {
   pending: '待处理',
@@ -76,8 +45,8 @@ const activeStep = computed(() => {
 })
 
 const flowStatus = computed(() => String(flow.value.status || 'ready') as FlowStatus)
-const statusLabel = computed(() => labelFrom(FLOW_STATUS_LABEL, flowStatus.value))
-const statusType = computed(() => FLOW_STATUS_TYPE[flowStatus.value] || 'info')
+const statusLabel = computed(() => labelFrom(PROJECT_STATUS_LABEL, flowStatus.value))
+const statusType = computed(() => PROJECT_STATUS_TYPE[flowStatus.value] || 'info')
 const alertType = computed(() =>
   statusType.value === 'danger'
     ? 'error'
@@ -87,7 +56,11 @@ const alertType = computed(() =>
         ? 'success'
         : 'info',
 )
-const currentNodeLabel = computed(() => labelFrom(NODE_LABEL, flow.value.current_node))
+const currentNodeLabel = computed(() => flow.value.current_node || '-')
+// 回退可选节点：排除「内容审阅」——它是质检不过时的人工暂停点，不是可独立重跑的生产阶段
+const rerunableNodes = computed(() =>
+  (flow.value.flow_nodes as string[]).filter(n => n !== '内容审阅'),
+)
 const isRunning = computed(() => flowStatus.value === 'running')
 const canPause = computed(() => isRunning.value)
 const canResume = computed(() => ['review', 'paused', 'blocked'].includes(flowStatus.value))
@@ -206,7 +179,7 @@ onUnmounted(() => {
     </template>
 
     <el-steps :active="activeStep" align-center finish-status="success" style="margin-bottom: 16px">
-      <el-step v-for="n in flow.flow_nodes" :key="n" :title="labelFrom(NODE_LABEL, n)" />
+      <el-step v-for="n in flow.flow_nodes" :key="n" :title="n" />
     </el-steps>
 
     <el-row :gutter="16">
@@ -224,7 +197,7 @@ onUnmounted(() => {
           <el-button :disabled="!canPause" @click="pause">暂停</el-button>
           <el-button type="success" :disabled="!canResume" @click="resume">继续</el-button>
           <el-select v-model="rerunNode" placeholder="选择回退节点" style="width: 160px" size="default" :disabled="isRunning">
-            <el-option v-for="n in flow.flow_nodes" :key="n" :label="labelFrom(NODE_LABEL, n)" :value="n" />
+            <el-option v-for="n in rerunableNodes" :key="n" :label="n" :value="n" />
           </el-select>
           <el-button :disabled="!canRerun" @click="doRerun">回退重跑</el-button>
           <el-badge :value="flow.pending_reviews" :hidden="!flow.pending_reviews">

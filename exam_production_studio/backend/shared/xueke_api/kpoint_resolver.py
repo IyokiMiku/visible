@@ -17,6 +17,83 @@ import config
 
 MAPPING_DIR = config.BASE_DIR / "configs" / "xueke_mapping"
 KP_DIR = MAPPING_DIR / "knowledge_points"
+# 专业大类 → 专业 → 课程（含 courseId）目录，供创建向导级联下拉与 courseId 精确解析。
+PROFESSION_TREE_PATH = MAPPING_DIR / "专业课程树.json"
+# 课程(courseId) → 顶级题型(typeId, name) 目录，供按 courseId 精确解析拉题 typeId。
+COURSE_TYPES_PATH = MAPPING_DIR / "课程题型.json"
+
+
+@lru_cache(maxsize=1)
+def load_profession_tree() -> dict[str, Any]:
+    """读取 专业课程树.json（大类→专业→课程）。文件缺失/损坏时返回空目录。"""
+    if not PROFESSION_TREE_PATH.exists():
+        return {"categories": []}
+    try:
+        data = json.loads(PROFESSION_TREE_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {"categories": []}
+    return data if isinstance(data, dict) else {"categories": []}
+
+
+def course_name_by_id(course_id: int) -> str:
+    """按 courseId 反查课程名（取目录中首个匹配）。未命中返回空串。"""
+    for cat in load_profession_tree().get("categories") or []:
+        for prof in cat.get("professions") or []:
+            for c in prof.get("courses") or []:
+                if c.get("courseId") == course_id:
+                    return str(c.get("courseName") or "")
+    return ""
+
+
+@lru_cache(maxsize=1)
+def load_course_types() -> dict[int, dict[str, int]]:
+    """读取 课程题型.json，构建 {courseId: {题型名: typeId}}。文件缺失/损坏返回空表。"""
+    if not COURSE_TYPES_PATH.exists():
+        return {}
+    try:
+        data = json.loads(COURSE_TYPES_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    out: dict[int, dict[str, int]] = {}
+    for c in (data.get("courses") if isinstance(data, dict) else None) or []:
+        cid = c.get("courseId")
+        if cid is None:
+            continue
+        types: dict[str, int] = {}
+        for t in c.get("types") or []:
+            name = (t.get("name") or "").strip()
+            tid = t.get("typeId")
+            if name and tid is not None:
+                types[name] = int(tid)
+        out[int(cid)] = types
+    return out
+
+
+def resolve_type_ids_by_course_id(course_id: int | None, our_type_name: str) -> list[int]:
+    """按 courseId 将我方题型名 → 学科网 typeId 列表（读 课程题型.json，同义词匹配）。
+
+    比 resolve_type_ids（按课程名匹配）更精确：courseId 是稳定主键，不受各省课程名差异影响。
+    命中优先级：先精确匹配同义词，再包含匹配；未命中返回 []。
+    """
+    if course_id is None or not our_type_name:
+        return []
+    try:
+        cid = int(course_id)
+    except (TypeError, ValueError):
+        return []
+    types = load_course_types().get(cid)
+    if not types:
+        return []
+    synonyms = TYPE_NAME_SYNONYMS.get(our_type_name, [our_type_name])
+    for syn in synonyms:
+        exact = [tid for tname, tid in types.items() if tname == syn]
+        if exact:
+            return exact
+    for syn in synonyms:
+        partial = [tid for tname, tid in types.items() if syn in tname or tname in syn]
+        if partial:
+            return partial
+    return []
 
 # 我方标准名（最终生成统一命名）→ 学科网题型表中可能出现的名称（按名称匹配，最稳）。
 # 注意：学科网各题型为独立类型（如 分析计算题 / 综合应用题 互不相同），同义词列表不得交叉，
@@ -251,3 +328,44 @@ def resolve(ctx, point_name: str) -> tuple[str, float]:
 
 def resolve_course_id(ctx) -> int | None:
     return resolve_course(getattr(ctx, "course", "") or "", None)
+
+
+def resolve_layered(point_text: str, course_name: str,
+                    nodes: list[dict[str, Any]] | None = None) -> tuple[list[int], str]:
+    """分层匹配考点文本 → kpointId 列表（映射表 D4）。
+
+    优先级：L3 叶子 → L2 父节点；**禁止 L1 根节点**（范围过大会串知识点）。
+    命中返回 (ids, 'AI匹配')；未命中返回 ([], 'AI生成')。
+    - 去层级前缀（了解/理解/掌握 + 序号）后取关键词；
+    - nodes 可注入（测试用），默认取 load_kpoint_tree(course_name)。
+    """
+    if nodes is None:
+        nodes = list(load_kpoint_tree(course_name))
+    if not nodes or not point_text:
+        return [], "AI生成"
+
+    query = re.sub(r"^\s*\d+[.．、]\s*", "", str(point_text)).strip()
+    query = re.sub(r"^(了解|理解|掌握|熟悉|熟练掌握|能|会|认识)", "", query).strip()
+
+    def _match(nodes_subset: list[dict[str, Any]]) -> list[int]:
+        exact = [n["id"] for n in nodes_subset if n["name"] == query]
+        if exact:
+            return exact
+        contains = [n["id"] for n in nodes_subset if n["name"] in query or query in n["name"]]
+        if contains:
+            return contains
+        kws = [k for k in re.split(r"[、，,\s/和与及]+", query) if len(k) >= 2]
+        if kws:
+            return [n["id"] for n in nodes_subset if any(k in n["name"] for k in kws)]
+        return []
+
+    leaves = [n for n in nodes if n["level"] >= 3]
+    ids = _match(leaves)
+    if ids:
+        return ids, "AI匹配"
+    l2 = [n for n in nodes if n["level"] == 2]
+    ids = _match(l2)
+    if ids:
+        return ids, "AI匹配"
+    # L1 禁止匹配：宁缺毋滥
+    return [], "AI生成"

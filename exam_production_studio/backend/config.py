@@ -110,6 +110,20 @@ def get_output_root() -> Path:
     return _default_desktop() / "生成结果"
 
 
+def get_export_root() -> Path:
+    """规划表等「生产规划」产物的导出根目录。
+
+    settings(output.export_dir) > .env(EXPORT_DIR) > 默认 桌面/输出结果。
+    规划表/映射表/细目表导出到 <此根>/生产规划/{产品名}/{省份}_{考类}/。
+    """
+    s = _load_settings()
+    raw = _merge(s, "output.export_dir", "EXPORT_DIR", "").strip()
+    if raw:
+        p = Path(raw)
+        return p if p.is_absolute() else BASE_DIR / p
+    return _default_desktop() / "输出结果"
+
+
 def get_ai_trace_config() -> dict[str, Any]:
     """AI 调用追踪（把每次 LLM 的 prompt/响应落盘，供排查）。
 

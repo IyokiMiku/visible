@@ -56,7 +56,8 @@ CREATE TABLE IF NOT EXISTS papers (
     kpoint_id   TEXT,
     status      TEXT DEFAULT 'pending',
     docx_paths  TEXT,
-    qc_report_path TEXT
+    qc_report_path TEXT,
+    meta        TEXT
 );
 
 CREATE TABLE IF NOT EXISTS runs (
@@ -129,6 +130,8 @@ def get_conn() -> sqlite3.Connection:
 
 _MIGRATIONS = [
     ("papers", "kpoint_id", "ALTER TABLE papers ADD COLUMN kpoint_id TEXT"),
+    # 阶段 B：承载层级（单元/章/节）、级别、考纲标号、原始卷号等，统一存 JSON，避免宽表迁移
+    ("papers", "meta", "ALTER TABLE papers ADD COLUMN meta TEXT"),
 ]
 
 

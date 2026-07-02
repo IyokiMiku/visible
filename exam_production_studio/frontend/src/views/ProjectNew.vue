@@ -2,7 +2,8 @@
 import { computed, nextTick, onMounted, reactive, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import { Delete } from '@element-plus/icons-vue'
+import type { UploadRawFile } from 'element-plus'
+import { Delete, Document, UploadFilled } from '@element-plus/icons-vue'
 import { api } from '../services/api'
 
 const route = useRoute()
@@ -72,6 +73,10 @@ const form = reactive<any>({
   exam_type_name_other: '',
   exam_category: '',
   course: '',
+  // 学科网映射（仅用于拉题课程映射，不参与命名）：大类id / 专业id / 课程courseId
+  xueke_big_id: '' as number | '',
+  xueke_profession_id: '' as number | '',
+  xueke_course_id: '' as number | '',
   textbook: '',
   edition: '',
   exam_minutes: 60,
@@ -167,6 +172,45 @@ async function loadQuestionTypes() {
     customTypes.value = []
     currentEntryId.value = '__global__'
   }
+}
+
+// ===== 学科网「大类 → 专业 → 课程」级联（仅用于拉题课程映射，不参与命名）=====
+interface XkCourse { courseId: number; courseName: string }
+interface XkProfession { id: number; name: string; courses: XkCourse[] }
+interface XkCategory { id: number; name: string; professions: XkProfession[] }
+const xuekeCategories = ref<XkCategory[]>([])
+
+async function loadXuekeTree() {
+  try {
+    const res: any = await api.getXuekeTree()
+    xuekeCategories.value = (res && res.categories) || []
+  } catch {
+    xuekeCategories.value = []
+  }
+}
+
+const xuekeProfessions = computed<XkProfession[]>(() => {
+  const cat = xuekeCategories.value.find((c) => c.id === form.xueke_big_id)
+  return cat ? cat.professions || [] : []
+})
+const xuekeCourses = computed<XkCourse[]>(() => {
+  const prof = xuekeProfessions.value.find((p) => p.id === form.xueke_profession_id)
+  return prof ? prof.courses || [] : []
+})
+
+// 切换大类：清空下级专业/课程选择
+function onXuekeBigChange() {
+  form.xueke_profession_id = ''
+  form.xueke_course_id = ''
+}
+// 切换专业：清空下级课程选择
+function onXuekeProfessionChange() {
+  form.xueke_course_id = ''
+}
+// 选中学科网课程：若「课程名」手填框为空，用学科网课程名兜底预填（各省叫法不同时用户可再改）
+function onXuekeCourseChange(courseId: number) {
+  const c = xuekeCourses.value.find((x) => x.courseId === courseId)
+  if (c && !form.course.trim()) form.course = c.courseName
 }
 
 let qtTimer: ReturnType<typeof setTimeout> | null = null
@@ -392,6 +436,42 @@ async function goToStep2() {
 // ===== 第二步：资料上传 + 规划表生成 =====
 const uploadUrl = computed(() => (projectId.value ? api.uploadResourceUrl(projectId.value) : ''))
 const resources = ref<any[]>([])
+
+// 各资料类型允许的扩展名（与后端 resources.py 白名单保持一致）。
+const ACCEPT_MAP: Record<string, string> = {
+  考纲: '.doc,.docx,.pdf',
+  教材: '.doc,.docx,.pdf',
+  真题: '.doc,.docx,.pdf',
+  规划表: '.xlsx',
+}
+function acceptOf(kind: string): string {
+  return ACCEPT_MAP[kind] || ''
+}
+function extHintOf(kind: string): string {
+  return kind === '规划表' ? 'xlsx' : 'docx / pdf'
+}
+
+// 各卷类在「本地生成(OCR)」下必须上传的资料类型：
+// 一课一练→考纲+教材；考纲百套卷/考点双析卷→考纲；其余（真题等）非必传。
+const REQUIRED_KINDS: Record<string, string[]> = {
+  yikeyilian: ['考纲', '教材'],
+  kaogang_100: ['考纲'],
+  shuangxi: ['考纲'],
+}
+function isRequiredKind(kind: string): boolean {
+  return (REQUIRED_KINDS[form.paper_type] || []).includes(kind)
+}
+
+// 按类型分组当前已上传资料，供各上传框内直接展示
+const resourcesByKind = computed<Record<string, any[]>>(() => {
+  const map: Record<string, any[]> = {}
+  for (const r of resources.value) {
+    const k = r.kind || '其他'
+    ;(map[k] ||= []).push(r)
+  }
+  return map
+})
+
 async function loadResources() {
   if (!projectId.value) return
   try {
@@ -400,17 +480,73 @@ async function loadResources() {
     /* 忽略 */
   }
 }
-async function onUploadSuccess() {
-  ElMessage.success('上传成功')
+
+// 拖拽/选择上传前校验扩展名（拖拽可绕过 accept，需前端二次拦截）
+function beforeUpload(kind: string, file: UploadRawFile): boolean {
+  const name = (file.name || '').toLowerCase()
+  const allowed = acceptOf(kind)
+    .split(',')
+    .map((e) => e.trim())
+    .filter(Boolean)
+  const ok = allowed.some((ext) => name.endsWith(ext))
+  if (!ok) {
+    ElMessage.error(`「${kind}」仅支持 ${allowed.join('、')} 格式`)
+    return false
+  }
+  // 规划表最多一个：已存在时先删除再上传，避免多份并存
+  if (kind === '规划表' && (resourcesByKind.value['规划表'] || []).length) {
+    ElMessage.warning('规划表最多只允许上传一个，请先删除已上传的规划表')
+    return false
+  }
+  return true
+}
+
+async function onUploadSuccess(_resp: any, file: any) {
+  ElMessage.success(`「${file?.name || '文件'}」上传成功`)
   await loadResources()
   // 上传规划表分支：上传即自动解析出总卷量，无需再点“生成规划表”
   if (form.plan_source === 'upload') await generatePlan()
+}
+
+function onUploadError() {
+  ElMessage.error('上传失败，请检查文件格式或重试')
+}
+
+async function deleteResource(r: any) {
+  try {
+    await ElMessageBox.confirm(`确定删除「${r.filename}」吗？`, '删除资料', {
+      type: 'warning',
+      confirmButtonText: '删除',
+      cancelButtonText: '取消',
+    })
+  } catch {
+    return
+  }
+  try {
+    await api.deleteResource(projectId.value, r.id)
+    ElMessage.success('已删除')
+    await loadResources()
+  } catch {
+    /* 拦截器已提示 */
+  }
+}
+
+// 校验必传资料是否齐全（仅本地生成 OCR 分支适用）
+function validateRequiredUploads(): boolean {
+  const required = REQUIRED_KINDS[form.paper_type] || []
+  const missing = required.filter((k) => !(resourcesByKind.value[k] || []).length)
+  if (missing.length) {
+    ElMessage.error(`请先上传：${missing.join('、')}`)
+    return false
+  }
+  return true
 }
 
 const generating = ref(false)
 const planResult = ref<any>(null)
 async function generatePlan() {
   if (!projectId.value) return ElMessage.error('请先完成第一步')
+  if (form.plan_source === 'ocr' && !validateRequiredUploads()) return
   generating.value = true
   try {
     const res: any = await api.generatePlan(projectId.value, form.plan_source)
@@ -475,7 +611,13 @@ async function submit() {
         narrow_point: form.narrow_point,
         exam_minutes: Number(form.exam_minutes) || 60,
       },
-      ai_options: form.ai,
+      // 学科网 courseId 随 ai_options 落库，拉题时 pull_for_plan 优先读取 xueke_course_id
+      ai_options: {
+        ...form.ai,
+        ...(form.xueke_course_id ? { xueke_course_id: Number(form.xueke_course_id) } : {}),
+        ...(form.xueke_big_id ? { xueke_big_id: Number(form.xueke_big_id) } : {}),
+        ...(form.xueke_profession_id ? { xueke_profession_id: Number(form.xueke_profession_id) } : {}),
+      },
     })
     await api.updateProject(projectId.value, body)
     clearDraft()
@@ -555,6 +697,7 @@ onMounted(() => {
   const restored = loadDraft()
   if (!restored && route.query.type) form.paper_type = route.query.type as string
   loadQuestionTypes()
+  loadXuekeTree()
   loadFullScore()
   if (projectId.value) loadResources()
 })
@@ -568,7 +711,7 @@ onMounted(() => {
         <el-button size="small" @click="openManager">管理题型</el-button>
       </div>
     </template>
-    <el-form label-width="120px" style="max-width: 920px">
+    <el-form label-width="120px" style="max-width: 1180px">
       <el-steps :active="currentStep" finish-status="success" align-center class="wizard-steps">
         <el-step title="第一步" description="基础信息" />
         <el-step title="第二步" description="资料与规划表" />
@@ -597,13 +740,13 @@ onMounted(() => {
         </el-form-item>
 
         <el-form-item label="项目名称">
-          <el-input v-model="form.name" placeholder="可留空自动生成" />
+          <el-input v-model="form.name" placeholder="可留空自动生成" style="width: 480px" />
         </el-form-item>
         <el-form-item label="省份（全称）" required>
-          <el-input v-model="form.province" placeholder="如 内蒙古自治区（自治区不简写）" />
+          <el-input v-model="form.province" placeholder="如 内蒙古自治区（自治区不简写）" style="width: 480px" />
         </el-form-item>
         <el-form-item label="考试名称/类型" required>
-          <el-select v-model="form.exam_type_name" filterable default-first-option style="width: 260px">
+          <el-select v-model="form.exam_type_name" filterable default-first-option style="width: 300px">
             <el-option label="高职分类考试" value="高职分类考试" />
             <el-option label="对口招生" value="对口招生" />
             <el-option label="春季高考" value="春季高考" />
@@ -613,20 +756,70 @@ onMounted(() => {
             v-if="form.exam_type_name === '__other__'"
             v-model="form.exam_type_name_other"
             placeholder="请输入考试名称/类型"
-            style="width: 260px; margin-left: 12px"
+            style="width: 300px; margin-left: 12px"
           />
         </el-form-item>
         <el-form-item label="考类/专业类别" required>
-          <el-input v-model="form.exam_category" placeholder="如 机电类/土建类/汽修类" />
+          <el-input v-model="form.exam_category" placeholder="如 机电类/土建类/汽修类" style="width: 480px" />
         </el-form-item>
         <el-form-item label="课程名" required>
-          <el-input v-model="form.course" />
+          <el-input v-model="form.course" placeholder="仅用于文档与输出文件夹命名，不参与拉题" style="width: 480px" />
+          <div style="color: #888; font-size: 12px; margin-top: 4px">
+            此名称只用于命名（文档标题、输出文件夹等），<strong>不决定拉题</strong>；实际拉题按下方选择的学科网课程。
+          </div>
+        </el-form-item>
+        <el-form-item label="学科网课程（拉题依据）">
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center">
+            <el-select
+              v-model="form.xueke_big_id"
+              filterable
+              clearable
+              placeholder="专业大类"
+              style="width: 200px"
+              @change="onXuekeBigChange"
+            >
+              <el-option v-for="c in xuekeCategories" :key="c.id" :label="c.name" :value="c.id" />
+            </el-select>
+            <el-select
+              v-model="form.xueke_profession_id"
+              filterable
+              clearable
+              placeholder="专业"
+              :disabled="!form.xueke_big_id"
+              style="width: 200px"
+              @change="onXuekeProfessionChange"
+            >
+              <el-option v-for="p in xuekeProfessions" :key="p.id" :label="p.name" :value="p.id" />
+            </el-select>
+            <el-select
+              v-model="form.xueke_course_id"
+              filterable
+              clearable
+              placeholder="课程"
+              :disabled="!form.xueke_profession_id"
+              style="width: 240px"
+              @change="onXuekeCourseChange"
+            >
+              <el-option
+                v-for="c in xuekeCourses"
+                :key="c.courseId"
+                :label="c.courseName"
+                :value="c.courseId"
+              />
+            </el-select>
+          </div>
+          <div style="color: #888; font-size: 12px; margin-top: 4px">
+            <strong>这里选择的课程才是实际拉题的依据</strong>（对应学科网 courseId）。各省考类/课程叫法可能与学科网不同，命名请用上面手填的考类与课程名。
+          </div>
+          <div v-if="!form.xueke_course_id" style="color: var(--el-color-warning); font-size: 12px; margin-top: 2px">
+            未选择学科网课程时将无法按题库拉题，只能走 AI 补题。
+          </div>
         </el-form-item>
         <el-form-item label="教材名称" required v-if="form.paper_type === 'yikeyilian'">
-          <el-input v-model="form.textbook" placeholder="如 电工基础" />
+          <el-input v-model="form.textbook" placeholder="如 电工基础" style="width: 480px" />
         </el-form-item>
         <el-form-item label="出版社·版次" required v-if="form.paper_type === 'yikeyilian'">
-          <el-input v-model="form.edition" placeholder="如 高教版·第三版" />
+          <el-input v-model="form.edition" placeholder="如 高教版·第三版" style="width: 480px" />
         </el-form-item>
         <el-form-item label="考试时长（分钟）" v-if="scoreEnabled">
           <el-input-number v-model="form.exam_minutes" :min="1" size="small" style="width: 120px" />
@@ -648,36 +841,58 @@ onMounted(() => {
         </el-form-item>
 
         <el-form-item label="上传资料">
-          <div style="display: flex; gap: 16px; flex-wrap: wrap">
-            <template v-if="form.plan_source === 'ocr'">
-              <el-card v-for="k in ['考纲', '教材', '真题']" :key="k" style="width: 200px" shadow="never">
-                <div style="margin-bottom: 8px"><strong>{{ k }}</strong></div>
-                <el-upload
-                  :action="uploadUrl"
-                  :data="{ kind: k }"
-                  name="file"
-                  :on-success="onUploadSuccess"
-                  :show-file-list="false"
-                >
-                  <el-button size="small">选择文件上传</el-button>
-                </el-upload>
-              </el-card>
-            </template>
-            <template v-else>
-              <el-card style="width: 220px" shadow="never">
-                <div style="margin-bottom: 8px"><strong>规划表（xlsx）</strong></div>
-                <el-upload
-                  :action="uploadUrl"
-                  :data="{ kind: '规划表' }"
-                  name="file"
-                  accept=".xlsx"
-                  :on-success="onUploadSuccess"
-                  :show-file-list="false"
-                >
-                  <el-button size="small" :loading="generating">选择规划表上传</el-button>
-                </el-upload>
-              </el-card>
-            </template>
+          <div class="upload-row">
+            <el-card
+              v-for="k in form.plan_source === 'ocr' ? ['考纲', '教材', '真题'] : ['规划表']"
+              :key="k"
+              class="upload-card"
+              shadow="never"
+            >
+              <div class="upload-card__title">
+                <span class="upload-card__name">
+                  <strong>{{ k }}</strong>
+                  <el-tag
+                    v-if="k !== '规划表'"
+                    :type="isRequiredKind(k) ? 'danger' : 'info'"
+                    size="small"
+                    effect="light"
+                    round
+                  >{{ isRequiredKind(k) ? '必传' : '选传' }}</el-tag>
+                </span>
+                <span class="upload-card__hint">支持 {{ extHintOf(k) }}</span>
+              </div>
+              <el-upload
+                drag
+                :action="uploadUrl"
+                :data="{ kind: k }"
+                name="file"
+                :accept="acceptOf(k)"
+                :multiple="k !== '规划表'"
+                :before-upload="(file: any) => beforeUpload(k, file)"
+                :on-success="onUploadSuccess"
+                :on-error="onUploadError"
+                :show-file-list="false"
+              >
+                <el-icon class="el-icon--upload"><UploadFilled /></el-icon>
+                <div class="el-upload__text">
+                  拖拽文件到此处，或<em>点击上传</em>
+                </div>
+              </el-upload>
+
+              <!-- 已上传文件在框内明确展示，避免误认为无反应 -->
+              <div class="upload-card__files">
+                <template v-if="(resourcesByKind[k] || []).length">
+                  <div v-for="r in resourcesByKind[k]" :key="r.id" class="upload-file">
+                    <el-icon class="upload-file__icon"><Document /></el-icon>
+                    <span class="upload-file__name" :title="r.filename">{{ r.filename }}</span>
+                    <el-icon class="upload-file__del" title="删除" @click="deleteResource(r)">
+                      <Delete />
+                    </el-icon>
+                  </div>
+                </template>
+                <div v-else class="upload-card__empty">尚未上传</div>
+              </div>
+            </el-card>
           </div>
         </el-form-item>
 
@@ -713,13 +928,6 @@ onMounted(() => {
               {{ w }}
             </div>
           </div>
-        </el-form-item>
-
-        <el-form-item v-if="form.plan_source === 'upload' && resources.length" label="已上传资料">
-          <el-table :data="resources" size="small" style="width: 560px">
-            <el-table-column prop="kind" label="类型" width="100" />
-            <el-table-column prop="filename" label="文件名" min-width="240" />
-          </el-table>
         </el-form-item>
 
         <el-form-item>
@@ -912,12 +1120,125 @@ onMounted(() => {
   height: 44px;
   font-size: 20px;
 }
+/* 图标放大到 44px 后，连接线需重新对齐到圆圈垂直中心（22px），线高 2px 故 top=21px */
+.wizard-steps :deep(.el-step__line) {
+  top: 21px;
+}
 .wizard-steps :deep(.el-step__title) {
   font-size: 18px;
   font-weight: 600;
 }
 .wizard-steps :deep(.el-step__description) {
   font-size: 14px;
+}
+
+/* ===== 资料上传卡片 ===== */
+/* 卡片区脱离表单 920px 限制，占满可用宽度，卡片等分排布 */
+.upload-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.upload-card {
+  flex: 1 1 220px;
+  min-width: 200px;
+  max-width: 320px;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: 10px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.upload-card:hover {
+  border-color: var(--el-color-primary-light-5);
+  box-shadow: 0 4px 16px rgba(64, 158, 255, 0.12);
+}
+.upload-card :deep(.el-card__body) {
+  padding: 14px;
+}
+.upload-card__title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.upload-card__name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.upload-card__title strong {
+  font-size: 14px;
+}
+.upload-card__hint {
+  color: var(--el-text-color-placeholder);
+  font-size: 12px;
+}
+.upload-card :deep(.el-upload),
+.upload-card :deep(.el-upload-dragger) {
+  width: 100%;
+}
+.upload-card :deep(.el-upload-dragger) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 8px;
+  border-radius: 8px;
+  border-style: dashed;
+  background: var(--el-fill-color-lighter);
+  transition: background 0.2s, border-color 0.2s;
+}
+.upload-card :deep(.el-upload-dragger:hover) {
+  background: var(--el-color-primary-light-9);
+  border-color: var(--el-color-primary);
+}
+.upload-card :deep(.el-icon--upload) {
+  font-size: 34px;
+  margin-bottom: 8px;
+  color: var(--el-color-primary-light-3);
+}
+.upload-card :deep(.el-upload__text) {
+  font-size: 12px;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.upload-card__files {
+  margin-top: 12px;
+}
+.upload-card__empty {
+  color: var(--el-text-color-placeholder);
+  font-size: 12px;
+  text-align: center;
+}
+.upload-file {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: var(--el-color-success-light-9);
+  border: 1px solid var(--el-color-success-light-7);
+  margin-bottom: 6px;
+}
+.upload-file__icon {
+  color: var(--el-color-success);
+  flex-shrink: 0;
+}
+.upload-file__name {
+  flex: 1;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.upload-file__del {
+  color: var(--el-color-danger);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+}
+.upload-file__del:hover {
+  opacity: 0.6;
 }
 
 /* 失效题型行高亮：兼容 Element Plus 新旧 select 包裹元素 */

@@ -144,15 +144,19 @@ def build_title_lines(
     paper_subtype: str = "考点训练卷",
     suffix: str = "",
     topic: str = "",
+    plan_row: dict[str, Any] | None = None,
 ) -> list[str]:
-    """三行标题，按类型组织。"""
+    """三行标题，按类型组织。
+
+    plan_row：规划表该卷的行数据（含单元/章/节层级），一课一练据此生成权威三行版式；
+    缺层级时自动两级降级。
+    """
     t = ctx.paper_type
     if t == "yikeyilian":
-        return [
-            f"{ctx.province} 一课一练".strip(),
-            f"《{ctx.textbook}》 {ctx.edition}".strip(),
-            f"第{paper_no}练 {topic or paper_name}".strip(),
-        ]
+        from shared.planning.yikeyilian import build_title_lines as _yy_title
+        row = dict(plan_row or {})
+        row.setdefault("topic", topic or paper_name)
+        return _yy_title(ctx, paper_no, row)
     if t == "shuangxi":
         header = str(ctx.exam_type_name or "").strip()
         name = paper_name or topic

@@ -91,7 +91,8 @@ def rerun(project_id: str, node: str, paper_no: int | None = None) -> str:
     ctx = _build_ctx(project_id)
     state = _load_state(ctx)
     node_key = _NODE_KEY.get(node, node)
-    node_label = _RERUN_NODE_LABEL.get(node_key, node)
+    # node 本就是前端从 flow_nodes 选出的真实中文节点名，直接用作展示，避免与 flow_nodes 命名不一致
+    node_label = node
     progress = _RERUN_PROGRESS.get(node_key, 0.0)
 
     if node_key in state["stages"]:
@@ -125,19 +126,7 @@ _NODE_KEY = {
     "读取资料": "load", "解析考纲": "kpoint", "解析目录": "kpoint",
     "生成规划": "planning", "知识点匹配": "mapping", "细目表": "mesh",
     "拉题与补题": "pull", "奇偶分卷": "split", "质检导出": "qc",
-}
-
-_RERUN_NODE_LABEL = {
-    "load": "读取资料",
-    "kpoint": "解析考纲/目录",
-    "planning": "生成规划",
-    "mapping": "知识点匹配",
-    "mesh": "细目表",
-    "naming": "确认命名",
-    "pull": "拉题与补题",
-    "split": "奇偶分卷",
-    "assemble": "组卷生成",
-    "qc": "质检导出",
+    "格式装配": "assemble",
 }
 
 _RERUN_PROGRESS = {

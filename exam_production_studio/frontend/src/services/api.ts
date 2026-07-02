@@ -50,6 +50,8 @@ export const api = {
 
   listResources: (id: string) => http.get<any[], any[]>(`/projects/${id}/resources`),
   uploadResourceUrl: (id: string) => `/api/projects/${id}/resources`,
+  deleteResource: (id: string, resourceId: string) =>
+    http.delete(`/projects/${id}/resources/${resourceId}`),
 
   getPlan: (id: string) => http.get<any, any>(`/projects/${id}/plan`),
   generatePlan: (id: string, plan_source?: string) =>
@@ -83,6 +85,14 @@ export const api = {
   previewXlsx: (id: string, path: string) =>
     http.get<any, any>(`/projects/${id}/artifacts/preview-xlsx`, { params: { path } }),
 
+  // 闸门（F2/F3）：闸门1 结构化目录、闸门2 规划表行 的读写
+  gateGetToc: (id: string) => http.get<any, any>(`/projects/${id}/gate/toc`),
+  gateSaveToc: (id: string, payload: any) =>
+    http.post<any, any>(`/projects/${id}/gate/toc`, payload),
+  gateGetPlanning: (id: string) => http.get<any, any>(`/projects/${id}/gate/planning`),
+  gateSavePlanning: (id: string, rows: any[], force = false) =>
+    http.post<any, any>(`/projects/${id}/gate/planning`, { rows, force }),
+
   getSettings: () => http.get<any, any>('/settings'),
   putSettings: (body: any) => http.put('/settings', body),
   checkSettings: () => http.get<any, any>('/settings/check'),
@@ -105,6 +115,9 @@ export const api = {
     http.post<any, any>(`/projects/${id}/content-review/${no}/question/${num}/confirm`),
   crApprove: (id: string, no: number) =>
     http.post<any, any>(`/projects/${id}/content-review/${no}/approve`),
+
+  // 学科网「大类→专业→课程」目录（本地静态数据，前端做级联下拉）
+  getXuekeTree: () => http.get<any, any>('/xueke/tree'),
 
   getPaperType: (type: string) => http.get<any, any>(`/paper-types/${type}`),
   getQuestionTypes: (type: string, course = '', category = '') =>

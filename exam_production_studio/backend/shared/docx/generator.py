@@ -202,6 +202,7 @@ def generate_docx(
     suffix: str = "",
     topic: str = "",
     out_dir: Path | None = None,
+    plan_row: dict | None = None,
 ) -> Path:
     """生成单份 docx，返回路径。"""
     out_dir = out_dir or ctx.dir("生成结果")
@@ -221,7 +222,7 @@ def generate_docx(
         add_editorial_note_text(doc, note_text)
     _add_title(doc, naming.build_title_lines(
         ctx, qs.paper_no, paper_name=paper_name, paper_subtype=paper_subtype,
-        suffix=suffix, topic=topic,
+        suffix=suffix, topic=topic, plan_row=plan_row,
     ))
     _add_exam_info(doc, ctx)
     doc.add_paragraph()

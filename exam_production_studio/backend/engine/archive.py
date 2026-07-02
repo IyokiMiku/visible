@@ -63,6 +63,34 @@ def dest_dir(ctx) -> Path:
     )
 
 
+def plan_export_dir(ctx) -> Path:
+    """规划表等生产规划产物的导出目录：<导出根>/生产规划/{产品名}/{省份}_{考类}/。"""
+    try:
+        display = registry.get(ctx.paper_type).display_name
+    except Exception:
+        display = ctx.paper_type
+    region = f"{(ctx.province or '').strip()}_{(ctx.exam_category or '').strip()}".strip("_")
+    return (
+        config.get_export_root()
+        / "生产规划"
+        / _safe(display, ctx.paper_type or "未分类")
+        / _safe(region, "未分类")
+    )
+
+
+def export_planning_artifact(ctx, src: Path | None) -> Path | None:
+    """把单个生产规划产物（规划表/映射表/细目表）复制到导出目录。失败不影响主流程。"""
+    try:
+        if not src:
+            return None
+        src = Path(src)
+        if not src.exists():
+            return None
+        return _copy_overwrite_or_v2(src, plan_export_dir(ctx))
+    except Exception:  # noqa: BLE001 - 导出失败不应阻断生成
+        return None
+
+
 def _copy_overwrite_or_v2(src: Path, dst_dir: Path) -> Path:
     """复制到目标目录：默认覆盖同名；目标被占用无法覆盖时改存 _v2/_v3…。"""
     dst_dir.mkdir(parents=True, exist_ok=True)

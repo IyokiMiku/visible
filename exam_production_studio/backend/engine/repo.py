@@ -35,28 +35,73 @@ def update_project_field(project_id: str, field: str, value: Any) -> None:
 
 
 # ---- papers ----
+# 存入 papers.meta(JSON) 的层级/级别/标号字段（阶段 B）。非固定列的这些键统一归入 meta，
+# 读取时回填到行 dict 顶层，兼容“老代码读 topic、新代码读 level/unit_name”两种方式。
+_META_KEYS = (
+    "course", "unit_name", "unit_no", "chapter_name", "chapter_no", "section_no", "section_name",
+    "level", "syllabus_no", "original_paper_no", "difficulty", "paper_subtype",
+    "theme", "kpoint_ids", "map_method", "map_remark",
+)
+
+
+def _pack_meta(r: dict[str, Any]) -> dict[str, Any]:
+    meta: dict[str, Any] = dict(r.get("meta") or {})
+    for k in _META_KEYS:
+        if k in r and r[k] is not None and k not in meta:
+            meta[k] = r[k]
+    return meta
+
+
+def _unpack_meta(row: dict[str, Any]) -> dict[str, Any]:
+    raw = row.get("meta")
+    meta: dict[str, Any] = {}
+    if raw:
+        try:
+            meta = json.loads(raw) if isinstance(raw, str) else dict(raw)
+        except (TypeError, ValueError):
+            meta = {}
+    row["meta"] = meta
+    for k, v in meta.items():
+        row.setdefault(k, v)
+    return row
+
+
 def replace_papers(project_id: str, rows: list[dict[str, Any]]) -> None:
     db.execute("DELETE FROM papers WHERE project_id=?", (project_id,))
     for r in rows:
+        meta = _pack_meta(r)
         db.execute(
-            "INSERT INTO papers (id, project_id, paper_no, paper_type, module, topic, point_name, kpoint_id, status, docx_paths, qc_report_path)"
-            " VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO papers (id, project_id, paper_no, paper_type, module, topic, point_name, kpoint_id, status, docx_paths, qc_report_path, meta)"
+            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
             (new_id("pp_"), project_id, r.get("paper_no"), r.get("paper_subtype", ""),
              r.get("module", ""), r.get("topic", ""), r.get("point_name", ""),
              r.get("kpoint_id", ""), r.get("status", "planned"),
-             _dump(r.get("docx_paths", [])), r.get("qc_report_path", "")),
+             _dump(r.get("docx_paths", [])), r.get("qc_report_path", ""),
+             _dump(meta) if meta else None),
         )
 
 
 def get_papers(project_id: str) -> list[dict[str, Any]]:
-    return db.query("SELECT * FROM papers WHERE project_id=? ORDER BY paper_no", (project_id,))
+    return [_unpack_meta(r) for r in
+            db.query("SELECT * FROM papers WHERE project_id=? ORDER BY paper_no", (project_id,))]
 
 
 def get_paper(project_id: str, paper_no: int) -> dict[str, Any] | None:
-    return db.query_one("SELECT * FROM papers WHERE project_id=? AND paper_no=?", (project_id, paper_no))
+    r = db.query_one("SELECT * FROM papers WHERE project_id=? AND paper_no=?", (project_id, paper_no))
+    return _unpack_meta(r) if r else None
 
 
 def update_paper(project_id: str, paper_no: int, **fields: Any) -> None:
+    if not fields:
+        return
+    # 允许更新 meta 内字段：把 _META_KEYS 命中的键合并进现有 meta 后整体写回
+    meta_updates = {k: fields.pop(k) for k in list(fields) if k in _META_KEYS}
+    if "meta" in fields and isinstance(fields["meta"], dict):
+        meta_updates = {**fields.pop("meta"), **meta_updates}
+    if meta_updates:
+        cur = get_paper(project_id, paper_no) or {}
+        merged = {**(cur.get("meta") or {}), **meta_updates}
+        fields["meta"] = _dump(merged)
     if not fields:
         return
     sets, vals = [], []
