@@ -34,6 +34,7 @@ export interface Project {
   paper_range: string
   plan_source: string
   status: string
+  wizard_step?: number
   created_at?: string
   volume_config?: any
   output_versions?: string[]
@@ -54,8 +55,13 @@ export const api = {
     http.delete(`/projects/${id}/resources/${resourceId}`),
 
   getPlan: (id: string) => http.get<any, any>(`/projects/${id}/plan`),
-  generatePlan: (id: string, plan_source?: string) =>
-    http.post<any, any>(`/projects/${id}/plan/generate`, { plan_source }),
+  // force=true 表示「重新生成」（无视缓存，重跑 OCR/合成）；默认复用已有产物。
+  // plan_only=true（向导默认）：只算规划表卷量，跳过较慢的映射/细目（正式流程再生成），避免超时。
+  generatePlan: (id: string, plan_source?: string, force = false, plan_only = true) =>
+    http.post<any, any>(`/projects/${id}/plan/generate`, { plan_source, force, plan_only }),
+  // 只读探测某来源是否已有可复用的规划表产物及卷量（切换来源时用，不触发生成）。
+  planStatus: (id: string, source: string) =>
+    http.get<any, any>(`/projects/${id}/plan/status`, { params: { source } }),
 
   getFlow: (id: string) => http.get<any, any>(`/projects/${id}/flow`),
   start: (id: string) => http.post(`/projects/${id}/flow/start`),

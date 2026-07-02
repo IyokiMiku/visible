@@ -35,8 +35,14 @@ def save_toc(ctx, textbook: str, payload: dict[str, Any]) -> str:
 
 # ---------------- 闸门2：规划表行 ----------------
 def get_planning(ctx) -> dict[str, Any]:
-    """返回规划表行的简略视图（供闸门2 编辑）。"""
+    """返回规划表行的简略视图（供闸门2 编辑）。
+
+    考纲百套卷：仅返回考点训练卷行供人工编辑；专题卷/综合卷由考点行派生，保存时自动重建。
+    """
     papers = repo.get_papers(ctx.project_id)
+    if ctx.paper_type == "kaogang_100":
+        papers = [p for p in papers
+                  if (p.get("meta") or {}).get("paper_subtype", p.get("paper_type")) == "考点训练卷"]
     rows = []
     for p in papers:
         meta = p.get("meta") or {}
@@ -64,6 +70,7 @@ def _validate_rows(ctx, rows: list[dict[str, Any]]) -> dict[str, Any]:
 def save_planning(ctx, rows: list[dict[str, Any]], *, force: bool = False) -> dict[str, Any]:
     """保存编辑后的规划行：先补卷号→校验（硬拦截可 force=人工确认放行）→重落库 + 重渲染。"""
     # 先补卷号/层级号（校验依赖 paper_no 连续性），再校验
+    kaogang_total = 0
     if ctx.paper_type == "yikeyilian":
         from shared.planning.llm_gen import assign_yikeyilian_numbers
         assign_yikeyilian_numbers(rows)
@@ -71,7 +78,8 @@ def save_planning(ctx, rows: list[dict[str, Any]], *, force: bool = False) -> di
         for i, r in enumerate(rows, 1):
             r["paper_no"] = i  # 内容序号 seq
     elif ctx.paper_type == "kaogang_100":
-        kg.arrange_volume_numbers(rows)
+        summary = kg.arrange_volume_numbers(rows)
+        kaogang_total = summary.get("total_volumes") or len(rows)
 
     vres = _validate_rows(ctx, rows)
     if vres["blocked"] and not force:
@@ -94,19 +102,15 @@ def save_planning(ctx, rows: list[dict[str, Any]], *, force: bool = False) -> di
                                   config_line="题型：见各行 | 难度：80:10:10", out_path=out))
         persist = [dict(r, paper_subtype="考点双析卷", status="planned", original_paper_no=r.get("paper_no")) for r in rows]
     elif ctx.paper_type == "kaogang_100":
+        from engine.steps.planning import build_kaogang_papers
         out = out_dir / f"{ctx.province}_{ctx.exam_category}_考点规划总表.xlsx"
         path = str(kg.render_10col(rows, title=f"《{ctx.province}{ctx.exam_category}》系列卷考点规划总表（百套卷）",
                                    subtitle=f"《{ctx.province}{ctx.exam_category}》系列卷考点规划总表",
                                    out_path=out))
-        persist = []
-        for r in rows:
-            persist.append({"paper_no": r["paper_no"], "topic": r.get("point_name"),
-                            "point_name": r.get("knowledge"), "paper_subtype": "考点训练卷",
-                            "status": "planned", "module": r.get("course"),
-                            "meta": {"course": r.get("course"), "theme": r.get("theme"),
-                                     "point_name": r.get("point_name"), "knowledge": r.get("knowledge"),
-                                     "kp_vol": r.get("kp_vol"), "theme_vol_no": r.get("theme_vol_no"),
-                                     "course_vol_range": r.get("course_vol_range")}})
+        # 由编辑后的考点行重建三类卷（专题/综合派生），并按全局卷号范围筛选
+        diff = (ctx.volume_config or {}).get("difficulty", {"easy": 80, "medium": 10, "hard": 10})
+        selected = set(ctx.selected_papers(kaogang_total) or range(1, kaogang_total + 1))
+        persist = [p for p in build_kaogang_papers(rows, diff) if (p.get("paper_no") or 0) in selected]
     else:
         persist = rows
     repo.replace_papers(ctx.project_id, persist)

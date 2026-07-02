@@ -61,6 +61,9 @@ def _write_mesh_doc(out_dir: Path, kind: str, vol_no: Any, province: str, course
 
 def gen_mesh(ctx, rows: list[dict[str, Any]] | None = None) -> list[Path]:
     rows = rows or repo.get_papers(ctx.project_id)
+    # 仅按考点训练卷分组（专题卷/综合卷为其聚合，不作为细目表分组来源，避免重复计入）
+    rows = [r for r in rows
+            if (r.get("meta") or {}).get("paper_subtype", r.get("paper_type")) in ("考点训练卷", "", None)]
     out_dir = ctx.dir("生产规划")
     out_dir.mkdir(parents=True, exist_ok=True)
     province = ctx.province or ""

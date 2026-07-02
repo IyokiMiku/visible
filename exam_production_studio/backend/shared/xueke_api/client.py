@@ -3,7 +3,7 @@
 凭据：cookie/app_key/sign 来自 config.get_xueke_config()（app_key/sign 缺省走网关默认）。
 课程/题型/知识点映射：
   - course_id：plan['course_id'] 或 ctx.ai_options['xueke_course_id']
-  - kpoint_ids：plan['kpoint_id']
+  - kpoint_ids：plan['kpoint_ids']（聚合卷多值）优先，回退 plan['kpoint_id']（单值）
   - type_ids：ctx.ai_options['xueke_type_ids'] = {题型名: [type_id,...]}
 无 cookie/课程ID/题型映射时返回明确说明，由上层走 AI 补题/待确认。
 """
@@ -92,8 +92,11 @@ def pull_for_plan(ctx, plan: dict[str, Any], needed: dict[str, int]) -> PulledRe
     if not course_id:
         return PulledResult(ok=False, note=f"无法解析学科网课程ID（课程：{getattr(ctx, 'course', '')}）")
 
-    kpoint = plan.get("kpoint_id")
-    kpoint_ids = [kpoint] if kpoint else None
+    # 题源知识点：聚合卷（专题/综合）传多个 kpointId 并集，考点卷传单个；空则按课程+题型宽拉
+    kpoint_ids = [k for k in (plan.get("kpoint_ids") or []) if k]
+    if not kpoint_ids and plan.get("kpoint_id"):
+        kpoint_ids = [plan["kpoint_id"]]
+    kpoint_ids = kpoint_ids or None
     type_ids_map: dict[str, Any] = (ctx.ai_options or {}).get("xueke_type_ids", {})
     app_key = cfg.get("app_key") or None
     sign = cfg.get("sign") or None

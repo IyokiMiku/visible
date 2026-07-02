@@ -21,8 +21,8 @@ class CommonDriver:
     def kpoint_count(self, ctx) -> Path:
         return step_kpoint.kpoint_count(ctx)
 
-    def gen_planning(self, ctx, source: str) -> tuple[Path, list[dict[str, Any]]]:
-        return step_planning.gen_planning(ctx, source)
+    def gen_planning(self, ctx, source: str, force: bool = False) -> tuple[Path, list[dict[str, Any]]]:
+        return step_planning.gen_planning(ctx, source, force)
 
     def gen_mapping(self, ctx) -> tuple[Path, list[dict[str, Any]]]:
         return step_mapping.gen_mapping(ctx)

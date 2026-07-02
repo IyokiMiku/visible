@@ -8,6 +8,7 @@
 """
 from __future__ import annotations
 
+import json
 from pathlib import Path
 from typing import Any
 
@@ -28,6 +29,55 @@ def _find_uploaded_plan(ctx) -> Path | None:
         return None
     xlsxs = [p for p in in_dir.rglob("*.xlsx") if "映射" not in p.name]
     return xlsxs[0] if xlsxs else None
+
+
+# ================= 规划表产物缓存（供创建向导「切换来源」复用，不重跑 OCR）=================
+def _ocr_cache_xlsx(ctx) -> Path:
+    """本地生成(OCR)结果的独立 xlsx 备份。
+
+    最终产物（如 {课程}_规划表.xlsx）是「本地生成 / 上传」两来源共用、会被覆盖的，
+    不能当缓存；这里单独存一份，切回本地生成时用于展示产物名，不受上传源覆盖影响。
+    """
+    return ctx.dir("生产规划") / f".本地生成缓存_{ctx.course or '课程'}.xlsx"
+
+
+def _plan_cache_json(ctx, source: str) -> Path:
+    """按来源缓存 papers 的 JSON（卷量 = len(papers)，对所有卷类都准确）。
+
+    考纲百套卷的卷量是「考点+专题+综合」三类聚合，无法靠重新解析渲染表得到，
+    故这里缓存生成时真实产出的 papers 列表，切换来源时据此秒还原卷量与落库。
+    """
+    tag = "上传" if source == "upload" else "本地生成"
+    return ctx.dir("生产规划") / f".规划缓存_{tag}_{ctx.course or '课程'}.json"
+
+
+def _write_plan_cache(ctx, source: str, plan_path: Path, rows: list[dict[str, Any]]) -> None:
+    """生成成功后写入该来源的 papers 缓存；失败静默（下次照常重跑，不影响主流程）。"""
+    try:
+        data = {"plan_file": Path(plan_path).name, "papers": rows}
+        _plan_cache_json(ctx, source).write_text(
+            json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def plan_status(ctx, source: str) -> tuple[bool, int]:
+    """只读探测某来源是否已有可复用产物及其卷量（不生成、不落库）。
+
+    供创建向导「切换规划表来源」时判断该来源能否直接复用：
+    - 有 papers 缓存 → 直接返回其卷量；
+    - upload 来源即使无缓存，只要已上传 xlsx 也视为「存在」（卷量待生成时确定，返回 0）。
+    """
+    cache = _plan_cache_json(ctx, source)
+    if cache.exists():
+        try:
+            data = json.loads(cache.read_text(encoding="utf-8"))
+            return True, len(data.get("papers") or [])
+        except Exception:  # noqa: BLE001
+            pass
+    if source == "upload" and _find_uploaded_plan(ctx) is not None:
+        return True, 0
+    return False, 0
 
 
 def _subtype(ctx) -> str:
@@ -207,6 +257,92 @@ def _gen_generic(ctx, source: str, diff: dict[str, Any]) -> tuple[Path, list[dic
 
 
 # ================= 考纲百套卷（10 列 A–J）=================
+def _agg_texts(members: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """聚合卷题源自带其成员考点的文本（course/point_name/knowledge），
+    使卷号范围筛选丢掉底层考点卷后，聚合卷仍能在映射阶段独立解析 kpointId。"""
+    return [{"course": m.get("course", ""), "point_name": m.get("point_name", ""),
+             "knowledge": m.get("knowledge", "")} for m in members]
+
+
+def build_kaogang_papers(kp_rows: list[dict[str, Any]], diff: dict[str, Any]) -> list[dict[str, Any]]:
+    """由已编排卷号的考点行（arrange_volume_numbers 后）构造三类卷 papers 行：
+    考点训练卷（逐行）、专题训练卷（每专题聚合其考点）、课程综合卷（每课程区间共享该课程全部考点聚合）。
+
+    卷号沿用全局编号（考点 1..N → 专题 → 综合），不重编号。
+    """
+    papers: list[dict[str, Any]] = []
+    # 1) 考点训练卷（每行一卷）
+    for r in kp_rows:
+        papers.append({
+            "paper_no": r.get("paper_no"),
+            "topic": r.get("point_name"), "point_name": r.get("knowledge"),
+            "paper_subtype": "考点训练卷", "difficulty": diff, "status": "planned",
+            "module": r.get("course"), "theme": r.get("theme"),
+            "original_paper_no": r.get("paper_no"),
+            "meta": {
+                "course": r.get("course"), "theme": r.get("theme"),
+                "point_name": r.get("point_name"), "knowledge": r.get("knowledge"),
+                "kp_vol": r.get("kp_vol"), "theme_vol_no": r.get("theme_vol_no"),
+                "course_vol_range": r.get("course_vol_range"),
+                "paper_subtype": "考点训练卷",
+            },
+        })
+
+    # 2) 专题训练卷（每 (课程, 专题) 一卷；题源＝其下考点聚合）
+    themes: dict[tuple, list[dict[str, Any]]] = {}
+    for r in kp_rows:
+        themes.setdefault((r.get("course"), r.get("theme"), r.get("theme_vol_no")), []).append(r)
+    for (course, theme, tvol), members in themes.items():
+        if not tvol:
+            continue
+        papers.append({
+            "paper_no": tvol,
+            "topic": theme, "point_name": f"{theme}（专题综合）",
+            "paper_subtype": "专题训练卷", "difficulty": diff, "status": "planned",
+            "module": course, "theme": theme,
+            "original_paper_no": tvol,
+            "meta": {
+                "course": course, "theme": theme,
+                "paper_subtype": "专题训练卷", "is_aggregate": True, "agg_kind": "theme",
+                "theme_vol_no": tvol,
+                "agg_texts": _agg_texts(members),
+                "source_paper_nos": [m.get("paper_no") for m in members],
+            },
+        })
+
+    # 3) 课程综合卷（每课程 course_vol_range 连续多卷，均聚合该课程全部考点）
+    courses: dict[str, dict[str, Any]] = {}
+    for r in kp_rows:
+        rng = r.get("course_vol_range")
+        if not rng:
+            continue
+        c = courses.setdefault(r.get("course"), {"range": tuple(rng), "members": []})
+        c["members"].append(r)
+    for course, info in courses.items():
+        lo, hi = info["range"]
+        members = info["members"]
+        span = hi - lo + 1
+        agg = _agg_texts(members)
+        source_nos = [m.get("paper_no") for m in members]
+        for k, pno in enumerate(range(lo, hi + 1), 1):
+            papers.append({
+                "paper_no": pno,
+                "topic": f"{course}综合", "point_name": f"{course}课程综合（{k}/{span}）",
+                "paper_subtype": "课程综合卷", "difficulty": diff, "status": "planned",
+                "module": course, "theme": "课程综合",
+                "original_paper_no": pno,
+                "meta": {
+                    "course": course, "theme": "课程综合",
+                    "paper_subtype": "课程综合卷", "is_aggregate": True, "agg_kind": "course",
+                    "course_vol_range": [lo, hi],
+                    "agg_texts": agg, "source_paper_nos": source_nos,
+                },
+            })
+
+    papers.sort(key=lambda p: (p.get("paper_no") or 0))
+    return papers
+
+
 def _gen_kaogang(ctx, source: str, diff: dict[str, Any]) -> tuple[Path, list[dict[str, Any]]]:
     uploaded = _find_uploaded_plan(ctx)
     if not uploaded:
@@ -214,24 +350,14 @@ def _gen_kaogang(ctx, source: str, diff: dict[str, Any]) -> tuple[Path, list[dic
         return _gen_generic(ctx, source, diff)
 
     kp_rows = kg.parse_10col(uploaded)
-    kg.arrange_volume_numbers(kp_rows)
+    summary = kg.arrange_volume_numbers(kp_rows)
+    total = summary.get("total_volumes") or len(kp_rows)
 
-    # 落库：考点训练卷（paper_no=考点卷号），层级/聚合信息入 meta 供映射/细目消费
-    rows: list[dict[str, Any]] = []
-    for r in kp_rows:
-        rows.append({
-            "paper_no": r["paper_no"],
-            "topic": r["point_name"], "point_name": r["knowledge"],
-            "paper_subtype": "考点训练卷", "difficulty": diff, "status": "planned",
-            "module": r["course"], "theme": r["theme"],
-            "original_paper_no": r["paper_no"],
-            "meta": {
-                "course": r["course"], "theme": r["theme"],
-                "point_name": r["point_name"], "knowledge": r["knowledge"],
-                "kp_vol": r["kp_vol"], "theme_vol_no": r.get("theme_vol_no"),
-                "course_vol_range": r.get("course_vol_range"),
-            },
-        })
+    # 卷数口径＝三类卷全局编号总数（考点＋专题＋综合），卷号范围按此全局编号筛选
+    selected = set(ctx.selected_papers(total) or range(1, total + 1))
+    papers = [p for p in build_kaogang_papers(kp_rows, diff) if (p.get("paper_no") or 0) in selected]
+    # 规划总表仅渲染选中的考点卷行（与生产口径一致；若选区不含考点则回退全量）
+    sel_kp = [r for r in kp_rows if (r.get("paper_no") or 0) in selected] or kp_rows
 
     out_dir = ctx.dir("生产规划")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -240,11 +366,11 @@ def _gen_kaogang(ctx, source: str, diff: dict[str, Any]) -> tuple[Path, list[dic
     except Exception:
         series = "考纲百套卷"
     out_path = out_dir / f"{ctx.province}_{ctx.exam_category}_考点规划总表.xlsx"
-    kg.render_10col(kp_rows, title=f"《{ctx.province}{ctx.exam_category}》系列卷考点规划总表（{series}）",
+    kg.render_10col(sel_kp, title=f"《{ctx.province}{ctx.exam_category}》系列卷考点规划总表（{series}）",
                     subtitle=f"《{ctx.province}{ctx.exam_category}》系列卷考点规划总表",
                     out_path=out_path)
-    repo.replace_papers(ctx.project_id, rows)
-    return out_path, rows
+    repo.replace_papers(ctx.project_id, papers)
+    return out_path, papers
 
 
 # ================= 考点双析卷（扁平 9 列，每行一练，装配时奇偶拆教师/学生）=================
@@ -285,10 +411,24 @@ def _gen_shuangxi(ctx, source: str, diff: dict[str, Any]) -> tuple[Path, list[di
     return out_path, rows
 
 
-def gen_planning(ctx, source: str = "ocr") -> tuple[Path, list[dict[str, Any]]]:
+def gen_planning(ctx, source: str = "ocr", force: bool = False) -> tuple[Path, list[dict[str, Any]]]:
     mode = registry.get(ctx.paper_type)
     diff = (ctx.volume_config or mode.default_volume_config).get(
         "difficulty", {"easy": 80, "medium": 10, "hard": 10})
+
+    # 本地生成：非强制且命中缓存 → 复用缓存的 papers，跳过慢速 OCR 合成。
+    # force=True（「重新生成」按钮）时无视缓存重跑。上传来源始终按已传 xlsx 现算，不走此缓存。
+    if source == "ocr" and not force:
+        cj, cx = _plan_cache_json(ctx, "ocr"), _ocr_cache_xlsx(ctx)
+        if cj.exists() and cx.exists():
+            try:
+                rows = json.loads(cj.read_text(encoding="utf-8")).get("papers") or []
+                if rows:
+                    repo.replace_papers(ctx.project_id, rows)
+                    return cx, rows
+            except Exception:  # noqa: BLE001
+                pass  # 缓存损坏则照常重跑
+
     if ctx.paper_type == "yikeyilian":
         path, rows = _gen_yikeyilian(ctx, source, diff)
     elif ctx.paper_type == "kaogang_100":
@@ -297,6 +437,16 @@ def gen_planning(ctx, source: str = "ocr") -> tuple[Path, list[dict[str, Any]]]:
         path, rows = _gen_shuangxi(ctx, source, diff)
     else:
         path, rows = _gen_generic(ctx, source, diff)
+
+    # 缓存本次产物：papers JSON（供切换来源复用卷量）+ 本地生成额外备份一份 xlsx。
+    _write_plan_cache(ctx, source, path, rows)
+    if source == "ocr":
+        try:
+            import shutil
+            shutil.copyfile(path, _ocr_cache_xlsx(ctx))
+        except Exception:  # noqa: BLE001
+            pass
+
     # 导出规划表到 桌面/输出结果/生产规划/{产品名}/{省份}_{考类}/
     from engine import archive
     archive.export_planning_artifact(ctx, path)

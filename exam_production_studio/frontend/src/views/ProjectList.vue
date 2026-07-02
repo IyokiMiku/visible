@@ -151,13 +151,20 @@ onMounted(load)
           <el-tag :type="PROJECT_STATUS_TYPE[row.status] || 'info'">{{ PROJECT_STATUS_LABEL[row.status] || row.status }}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column label="操作" width="180">
+      <el-table-column label="操作" width="200">
         <template #default="{ row }">
           <div class="op-cell">
-            <el-button size="small" @click="router.push(`/projects/${row.id}/flow`)">流程</el-button>
-            <el-button size="small" @click="router.push(`/projects/${row.id}/artifacts`)">产物</el-button>
-            <el-button size="small" type="primary" plain @click="openFolder(row.id)">打开文件夹</el-button>
-            <el-button size="small" type="danger" @click="remove(row.id)">删除</el-button>
+            <!-- 草稿：向导尚未走完、卷号/题量/规划表未落定，不能进生成流程，只能继续把它建完或删除 -->
+            <template v-if="row.status === 'draft'">
+              <el-button size="small" type="primary" @click="router.push(`/projects/new?draft=${row.id}`)">继续创建</el-button>
+              <el-button size="small" type="danger" @click="remove(row.id)">删除</el-button>
+            </template>
+            <template v-else>
+              <el-button size="small" @click="router.push(`/projects/${row.id}/flow`)">流程</el-button>
+              <el-button size="small" @click="router.push(`/projects/${row.id}/artifacts`)">产物</el-button>
+              <el-button size="small" type="primary" plain @click="openFolder(row.id)">打开文件夹</el-button>
+              <el-button size="small" type="danger" @click="remove(row.id)">删除</el-button>
+            </template>
           </div>
         </template>
       </el-table-column>

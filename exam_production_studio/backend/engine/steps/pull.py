@@ -24,11 +24,18 @@ def build_paper_plan(ctx, paper_no: int) -> dict[str, Any]:
     for t, c in (vc.get("by_type") or {}).items():
         name = kpoint_resolver.normalize_type_name(str(t))
         by_type[name] = by_type.get(name, 0) + int(c.get("count", 0))
+    # 题源知识点：优先 meta.kpoint_ids（聚合卷＝其下考点并集去重），回退单值 kpoint_id
+    meta = paper.get("meta") if isinstance(paper.get("meta"), dict) else {}
+    kpoint_ids = list(meta.get("kpoint_ids") or [])
+    if not kpoint_ids and paper.get("kpoint_id"):
+        kpoint_ids = [paper.get("kpoint_id")]
+    kpoint_ids = [str(k) for k in kpoint_ids if k]
     return {
         "paper_no": paper_no,
         "topic": paper.get("topic") or ctx.course,
         "point_name": paper.get("point_name") or paper.get("topic") or "",
         "kpoint_id": paper.get("kpoint_id", ""),
+        "kpoint_ids": kpoint_ids,
         "difficulty": vc.get("difficulty", {"easy": 80, "medium": 10, "hard": 10}),
         "by_type": by_type,
     }

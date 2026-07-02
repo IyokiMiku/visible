@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS projects (
     output_versions TEXT,
     ai_options      TEXT,
     status          TEXT DEFAULT 'draft',
+    wizard_step     INTEGER DEFAULT 0,
     created_at      TEXT,
     updated_at      TEXT
 );
@@ -132,6 +133,8 @@ _MIGRATIONS = [
     ("papers", "kpoint_id", "ALTER TABLE papers ADD COLUMN kpoint_id TEXT"),
     # 阶段 B：承载层级（单元/章/节）、级别、考纲标号、原始卷号等，统一存 JSON，避免宽表迁移
     ("papers", "meta", "ALTER TABLE papers ADD COLUMN meta TEXT"),
+    # 创建向导草稿：记住上次停在第几步（0/1/2），「继续创建」时回到该步
+    ("projects", "wizard_step", "ALTER TABLE projects ADD COLUMN wizard_step INTEGER DEFAULT 0"),
 ]
 
 

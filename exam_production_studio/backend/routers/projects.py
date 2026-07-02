@@ -77,10 +77,17 @@ class ProjectIn(BaseModel):
     ai_options: dict[str, Any] | None = None
     # 三步创建向导：第一步先建草稿(draft)，第三步保存时置为 ready
     status: str | None = None
+    # 草稿续建定位：向导当前停留步（0/1/2）；None 表示本次不更新该字段
+    wizard_step: int | None = None
 
 
 class PlanGenIn(BaseModel):
     plan_source: str | None = None
+    # force=True 表示「重新生成」（无视缓存，重跑 OCR/合成）；默认 False 时本地生成复用已有产物。
+    force: bool = False
+    # plan_only=True：只产规划表算卷量，跳过较慢的映射表/细目表（留待正式流程 mapping/mesh 阶段生成），
+    # 避免创建向导阶段 LLM 卡顿/超时。
+    plan_only: bool = False
 
 
 def _serialize(row: dict[str, Any]) -> dict[str, Any]:
@@ -117,13 +124,13 @@ def create_project(body: ProjectIn):
     status = body.status or "ready"
     db.execute(
         "INSERT INTO projects (id,name,paper_type,province,exam_category,course,textbook,edition,"
-        "exam_type_name,name_template,volume_config,paper_range,plan_source,output_versions,ai_options,status,created_at,updated_at)"
-        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        "exam_type_name,name_template,volume_config,paper_range,plan_source,output_versions,ai_options,status,wizard_step,created_at,updated_at)"
+        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
         (pid, name, body.paper_type, body.province, body.exam_category, body.course, body.textbook,
          body.edition, body.exam_type_name, mode.name_template,
          json.dumps(vc, ensure_ascii=False), body.paper_range, body.plan_source,
          json.dumps(ov, ensure_ascii=False), json.dumps(ai, ensure_ascii=False),
-         status, repo.now(), repo.now()))
+         status, int(body.wizard_step or 0), repo.now(), repo.now()))
     return ok(_serialize(repo.get_project(pid)))
 
 
@@ -151,6 +158,9 @@ def update_project(project_id: str, body: ProjectIn):
     # status 未显式传入时不覆盖（避免把已有状态置空）
     if fields.get("status") is None:
         fields.pop("status", None)
+    # wizard_step 未显式传入时不覆盖（None 表示本次不更新向导步）
+    if fields.get("wizard_step") is None:
+        fields.pop("wizard_step", None)
     for f in _JSON_FIELDS:
         if fields.get(f) is not None:
             fields[f] = json.dumps(fields[f], ensure_ascii=False)
@@ -197,6 +207,23 @@ def get_plan(project_id: str):
     return ok({"total": total, "generated": total > 0})
 
 
+@router.get("/{project_id}/plan/status")
+def plan_status(project_id: str, source: str = "ocr"):
+    """只读探测某来源是否已有可复用的规划表产物及卷量（不生成、不落库）。
+
+    供创建向导「切换规划表来源」时判断该来源能否直接复用：
+    - 有产物 → 前端可直接复用其卷量，无需重跑生成；
+    - 无产物 → 前端提示去上传 / 生成。
+    """
+    row = repo.get_project(project_id)
+    if not row:
+        return fail("项目不存在", status=404)
+    from engine.steps import planning as step_planning
+    ctx = ProjectContext.from_row(row)
+    exists, total = step_planning.plan_status(ctx, source)
+    return ok({"exists": exists, "total": total})
+
+
 @router.post("/{project_id}/plan/generate")
 def generate_plan(project_id: str, body: PlanGenIn):
     """创建向导第二步：按来源（生成/上传）产出规划表、映射表、（考纲百套卷）细目表，
@@ -224,23 +251,25 @@ def generate_plan(project_id: str, body: PlanGenIn):
 
     warnings: list[str] = []
     try:
-        plan_path, rows = driver.gen_planning(ctx, ctx.plan_source)
+        plan_path, rows = driver.gen_planning(ctx, ctx.plan_source, force=body.force)
     except Exception as e:  # noqa: BLE001
         return fail(f"生成规划表失败：{e}")
 
     mapping_file = None
-    try:
-        map_path, _low = driver.gen_mapping(ctx)
-        mapping_file = map_path.name if map_path else None
-    except Exception as e:  # noqa: BLE001
-        warnings.append(f"映射表生成失败：{e}")
-
     mesh_files: list[str] = []
-    if registry.get(ctx.paper_type).need_mesh:
+    # 向导阶段（plan_only）只需卷量：跳过较慢的映射表/细目表，留待正式流程 mapping/mesh 阶段生成。
+    if not body.plan_only:
         try:
-            mesh_files = [p.name for p in (driver.gen_mesh(ctx) or [])]
+            map_path, _low = driver.gen_mapping(ctx)
+            mapping_file = map_path.name if map_path else None
         except Exception as e:  # noqa: BLE001
-            warnings.append(f"细目表生成失败：{e}")
+            warnings.append(f"映射表生成失败：{e}")
+
+        if registry.get(ctx.paper_type).need_mesh:
+            try:
+                mesh_files = [p.name for p in (driver.gen_mesh(ctx) or [])]
+            except Exception as e:  # noqa: BLE001
+                warnings.append(f"细目表生成失败：{e}")
 
     return ok({
         "total": len(rows),

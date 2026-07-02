@@ -145,6 +145,89 @@ function clearDraft() {
   sessionStorage.removeItem(DRAFT_KEY)
 }
 
+// 解析已存储的卷号范围字符串（如 "1-3,5"）为区间数组；非法/空段忽略。
+function parseRangesFromStr(s: string): { start: number; end: number }[] {
+  const out: { start: number; end: number }[] = []
+  for (const part of (s || '').split(',')) {
+    const t = part.trim()
+    if (!t) continue
+    const seg = t.split('-')
+    const a = Number(seg[0])
+    const b = seg.length > 1 ? Number(seg[1]) : a
+    if (Number.isInteger(a) && Number.isInteger(b) && a >= 1 && b >= a) out.push({ start: a, end: b })
+  }
+  return out
+}
+
+// 「继续创建」：按项目 id 从后端载入草稿，回填表单/卷号范围/总卷量，从第一步开始续建。
+// 与 sessionStorage 草稿不同——这里针对列表里明确选中的某个草稿项目，优先级更高。
+async function loadServerDraft(id: string): Promise<void> {
+  // restoring 期间抑制 paper_type watcher 对 volume 的重置（与 loadDraft 一致）
+  restoring = true
+  try {
+    const p: any = await api.getProject(id)
+    projectId.value = id
+    form.paper_type = p.paper_type || form.paper_type
+    form.name = p.name || ''
+    form.province = p.province || ''
+    form.exam_category = p.exam_category || ''
+    form.course = p.course || ''
+    form.textbook = p.textbook || ''
+    form.edition = p.edition || ''
+    form.plan_source = p.plan_source || 'ocr'
+    // 考试名称：命中固定选项直接选中，否则归入「其他名称」并填入自定义框
+    const known = ['高职分类考试', '对口招生', '春季高考']
+    if (p.exam_type_name && !known.includes(p.exam_type_name)) {
+      form.exam_type_name = '__other__'
+      form.exam_type_name_other = p.exam_type_name
+    } else {
+      form.exam_type_name = p.exam_type_name || '高职分类考试'
+      form.exam_type_name_other = ''
+    }
+    const vc = p.volume_config || {}
+    if (vc.by_type && Object.keys(vc.by_type).length) {
+      form.volume = Object.entries(vc.by_type).map(([type, v]: any) => ({
+        type,
+        count: Number(v?.count) || 0,
+        score_per: Number(v?.score_per) || 0,
+      }))
+    }
+    if (vc.difficulty) form.difficulty = { ...form.difficulty, ...vc.difficulty }
+    if (vc.narrow_point) form.narrow_point = { ...form.narrow_point, ...vc.narrow_point }
+    if (vc.exam_minutes) form.exam_minutes = Number(vc.exam_minutes) || 60
+    if (Array.isArray(p.output_versions) && p.output_versions.length) form.output_versions = p.output_versions
+    const ai = p.ai_options || {}
+    form.ai = {
+      match: ai.match ?? true,
+      summary: ai.summary ?? true,
+      fill: ai.fill ?? true,
+      match_threshold: ai.match_threshold ?? 0.85,
+      max_fix_rounds: ai.max_fix_rounds ?? 2,
+    }
+    if (ai.xueke_big_id) form.xueke_big_id = Number(ai.xueke_big_id)
+    if (ai.xueke_profession_id) form.xueke_profession_id = Number(ai.xueke_profession_id)
+    if (ai.xueke_course_id) form.xueke_course_id = Number(ai.xueke_course_id)
+    // 恢复总卷量（此前已生成/上传过规划表才有值，否则为 0，需回到第二步重新生成）
+    try {
+      const pl: any = await api.getPlan(id)
+      planTotal.value = Number(pl?.total) || 0
+    } catch {
+      planTotal.value = 0
+    }
+    // 卷号范围：非 all 时按存储恢复；否则默认覆盖全部
+    const parsed = p.paper_range && p.paper_range !== 'all' ? parseRangesFromStr(p.paper_range) : []
+    ranges.value = parsed.length ? parsed : [{ start: 1, end: Math.max(1, planTotal.value) }]
+    // 恢复上次停留步；若记为第三步但规划表总卷量已丢失（未生成/被清），退回第二步重新生成
+    let step = Number.isInteger(p.wizard_step) ? Number(p.wizard_step) : 0
+    if (step >= 2 && planTotal.value <= 0) step = 1
+    currentStep.value = Math.min(2, Math.max(0, step))
+  } finally {
+    nextTick(() => {
+      restoring = false
+    })
+  }
+}
+
 watch(
   () => form.paper_type,
   (t) => {
@@ -156,7 +239,12 @@ watch(
 
 // 深度监听表单/步骤/范围，任何改动即写入草稿
 watch(form, saveDraft, { deep: true })
-watch(currentStep, saveDraft)
+// 步骤变化：写本地临时草稿，并在有项目 id 时把「停留步」记到后端（续建定位用）；
+// restoring 期间（载入草稿时）不回写，避免把刚读出的步骤覆盖成 0。
+watch(currentStep, (s) => {
+  saveDraft()
+  if (!restoring && projectId.value) persistStep(s)
+})
 watch(ranges, saveDraft, { deep: true })
 watch(planTotal, saveDraft)
 
@@ -410,11 +498,22 @@ function basicBody(extra: Record<string, any> = {}) {
 }
 
 async function ensureDraft() {
+  // 走到第二步即停留步=1，随草稿一并落库，便于「继续创建」定位
   if (projectId.value) {
-    await api.updateProject(projectId.value, basicBody({ paper_range: 'all', status: 'draft' }))
+    await api.updateProject(projectId.value, basicBody({ paper_range: 'all', status: 'draft', wizard_step: 1 }))
   } else {
-    const p: any = await api.createProject(basicBody({ paper_range: 'all', status: 'draft' }))
+    const p: any = await api.createProject(basicBody({ paper_range: 'all', status: 'draft', wizard_step: 1 }))
     projectId.value = p.id
+  }
+}
+
+// 记住向导「停留步」：写回后端草稿（仅在已有项目 id 时）。失败不阻塞操作。
+async function persistStep(step: number) {
+  if (!projectId.value) return
+  try {
+    await api.updateProject(projectId.value, basicBody({ status: 'draft', wizard_step: step }))
+  } catch {
+    /* 步骤记忆失败不影响创建流程，忽略 */
   }
 }
 
@@ -544,12 +643,13 @@ function validateRequiredUploads(): boolean {
 
 const generating = ref(false)
 const planResult = ref<any>(null)
-async function generatePlan() {
+// force=true 表示「重新生成」（无视缓存重跑 OCR/合成）；默认 false 时本地生成会复用已有产物。
+async function generatePlan(force = false) {
   if (!projectId.value) return ElMessage.error('请先完成第一步')
   if (form.plan_source === 'ocr' && !validateRequiredUploads()) return
   generating.value = true
   try {
-    const res: any = await api.generatePlan(projectId.value, form.plan_source)
+    const res: any = await api.generatePlan(projectId.value, form.plan_source, force)
     planResult.value = res
     planTotal.value = res.total || 0
     // 生成后默认卷号范围覆盖全部
@@ -561,20 +661,52 @@ async function generatePlan() {
   }
 }
 
-async function goToStep3() {
-  // 上传模式：下一步时若尚未解析出总卷量，则先解析已上传的规划表
-  if (form.plan_source === 'upload' && planTotal.value <= 0) {
-    try {
-      await generatePlan()
-    } catch {
-      return
+// 按某来源已有产物物化卷量（绝不重跑 OCR）：上传→解析已传 xlsx；本地生成→命中缓存。
+// 该来源无产物时返回 false（不生成占位），由调用方提示去上传/生成。
+async function materializeSource(src: string): Promise<boolean> {
+  if (!projectId.value) return false
+  const st: any = await api.planStatus(projectId.value, src)
+  if (!st?.exists) return false
+  const res: any = await api.generatePlan(projectId.value, src, false)
+  planResult.value = res
+  planTotal.value = res.total || 0
+  ranges.value = [{ start: 1, end: Math.max(1, planTotal.value) }]
+  return planTotal.value > 0
+}
+
+// 切换规划表来源：只做「只读探测 + 刷新显示」，绝不触发任何生成/落库/OCR。
+// 用户可能只是想切过来看看，因此这里无副作用；真正物化在「生成/上传/下一步」时才发生。
+async function onPlanSourceChange(src: string) {
+  // 先清零，避免残留另一来源的旧卷量造成「到底用哪个」的困惑
+  planResult.value = null
+  planTotal.value = 0
+  ranges.value = [{ start: 1, end: 1 }]
+  if (!projectId.value) return
+  try {
+    const st: any = await api.planStatus(projectId.value, src) // 只读，不生成
+    if (st?.exists) {
+      planTotal.value = st.total || 0
+      ranges.value = [{ start: 1, end: Math.max(1, planTotal.value) }]
     }
+  } catch {
+    /* 忽略：错误已由全局拦截器提示 */
   }
-  if (planTotal.value <= 0) {
+}
+
+async function goToStep3() {
+  // 一律以「当前选择的来源」为准重新物化卷量：上传→重新解析已传 xlsx；本地生成→复用缓存。
+  // 这样即便界面上残留了另一来源的旧卷量，也不会被误用。
+  let ok = false
+  try {
+    ok = await materializeSource(form.plan_source)
+  } catch {
+    return
+  }
+  if (!ok) {
     return ElMessage.error(
       form.plan_source === 'upload'
-        ? '未能从规划表解析出总卷量，请确认已上传规划表 xlsx'
-        : '请先生成规划表以确定总卷量',
+        ? '未识别到有效规划表，请先上传规划表 xlsx'
+        : '请先点击「生成规划表」以确定总卷量',
     )
   }
   currentStep.value = 2
@@ -692,10 +824,17 @@ function onManagerClosed() {
   mgrDirty = false
 }
 
-onMounted(() => {
-  // 有草稿则整体恢复（含 paper_type/步骤/项目 id）；没有草稿再回退到 URL 参数
-  const restored = loadDraft()
-  if (!restored && route.query.type) form.paper_type = route.query.type as string
+onMounted(async () => {
+  // ?draft=<id>：从列表「继续创建」进入，优先按项目 id 载入该草稿（忽略 sessionStorage 临时草稿）
+  const draftId = route.query.draft as string | undefined
+  if (draftId) {
+    clearDraft()
+    await loadServerDraft(draftId)
+  } else {
+    // 有临时草稿则整体恢复（含 paper_type/步骤/项目 id）；没有再回退到 URL type 参数
+    const restored = loadDraft()
+    if (!restored && route.query.type) form.paper_type = route.query.type as string
+  }
   loadQuestionTypes()
   loadXuekeTree()
   loadFullScore()
@@ -834,7 +973,7 @@ onMounted(() => {
       <!-- ============ 第二步：资料上传 + 规划表生成 ============ -->
       <div v-show="currentStep === 1">
         <el-form-item label="规划表来源">
-          <el-radio-group v-model="form.plan_source">
+          <el-radio-group v-model="form.plan_source" @change="onPlanSourceChange">
             <el-radio value="ocr">本地生成（上传考纲/真题/教材，OCR 扫描合成）</el-radio>
             <el-radio value="upload">上传规划表 xlsx</el-radio>
           </el-radio-group>
@@ -898,7 +1037,7 @@ onMounted(() => {
 
         <!-- 本地生成分支才需要手动生成；上传规划表分支上传后自动解析总卷量 -->
         <el-form-item v-if="form.plan_source === 'ocr'" label="生成规划表">
-          <el-button type="primary" :loading="generating" @click="generatePlan">
+          <el-button type="primary" :loading="generating" @click="generatePlan(true)">
             {{ planTotal > 0 ? '重新生成规划表' : '生成规划表' }}
           </el-button>
           <el-tag v-if="planTotal > 0" type="success" style="margin-left: 12px">

@@ -13,32 +13,60 @@ from shared.ai import generate_mapping
 from shared.xueke_api import kpoint_resolver
 
 
-def _gen_mapping_kaogang(ctx, rows: list[dict[str, Any]]) -> tuple[Path, list[dict[str, Any]]]:
-    """考纲百套卷映射表（D4）：考点卷分层匹配 + 专题/综合卷聚合。"""
-    from shared.planning.kaogang_mapping import build_mapping_rows, render_mapping
+def _dedup_ids(ids: list[Any]) -> list[int]:
+    seen: set[int] = set()
+    out: list[int] = []
+    for i in ids:
+        if i not in seen:
+            seen.add(i)
+            out.append(i)
+    return out
 
-    kp_rows = []
+
+def _gen_mapping_kaogang(ctx, rows: list[dict[str, Any]]) -> tuple[Path, list[dict[str, Any]]]:
+    """考纲百套卷映射表（D4）：考点卷分层匹配 + 专题/综合卷聚合。
+
+    逐卷解析 kpointId 并落库 papers（kpoint_id 单值 + meta.kpoint_ids 列表），供拉题按卷取题源；
+    聚合卷（专题/综合）由 meta.agg_texts 独立解析并集去重，不依赖底层考点卷是否在选区内。
+    """
+    from shared.planning.kaogang_mapping import render_mapping
+    from shared.xueke_api.kpoint_resolver import resolve_layered
+
+    map_rows: list[dict[str, Any]] = []
+    low_conf: list[dict[str, Any]] = []
     for r in rows:
         meta = r.get("meta") or {}
-        kp_rows.append({
-            "course": meta.get("course") or r.get("module") or ctx.course,
-            "theme": meta.get("theme") or "",
-            "point_name": meta.get("point_name") or r.get("topic") or "",
-            "knowledge": meta.get("knowledge") or r.get("point_name") or "",
-            "paper_no": r.get("paper_no"),
-            "theme_vol_no": meta.get("theme_vol_no"),
-            "course_vol_range": meta.get("course_vol_range"),
-        })
-    map_rows = build_mapping_rows(kp_rows)
+        pno = r.get("paper_no")
+        course = meta.get("course") or r.get("module") or ctx.course or ""
+        if meta.get("is_aggregate"):
+            all_ids: list[Any] = []
+            for t in meta.get("agg_texts") or []:
+                text = t.get("knowledge") or t.get("point_name") or ""
+                ids, _m = resolve_layered(text, t.get("course") or course)
+                all_ids.extend(ids)
+            ids = _dedup_ids(all_ids)
+            method = "聚合"
+            src = "专题" if meta.get("agg_kind") == "theme" else "课程"
+            remark = f"聚合自{src}「{meta.get('theme') or course}」考点卷" + ("" if ids else "（无匹配）")
+        else:
+            text = meta.get("knowledge") or r.get("point_name") or meta.get("point_name") or r.get("topic") or ""
+            ids, method = resolve_layered(text, course)
+            remark = "" if ids else "知识树无匹配节点"
+        repo.update_paper(ctx.project_id, pno,
+                          kpoint_id=(str(ids[0]) if ids else ""),
+                          kpoint_ids=[str(i) for i in ids])
+        map_rows.append({"vol": f"第{pno}卷", "ids": ids, "method": method,
+                         "remark": remark, "_sort": pno or 0})
+        if method == "AI生成":
+            low_conf.append({"paper_no": pno, "point_name": remark, "confidence": 0.0})
+
+    map_rows.sort(key=lambda x: x["_sort"])
     out_dir = ctx.dir("生产规划")
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{ctx.province}_{ctx.exam_category}_映射表.xlsx"
     render_mapping(map_rows, out_path)
     from engine import archive
     archive.export_planning_artifact(ctx, out_path)
-    # 低信度 = AI生成（未匹配）的考点卷，供人工确认
-    low_conf = [{"paper_no": r["_sort"], "point_name": r.get("remark", ""), "confidence": 0.0}
-                for r in map_rows if r["method"] == "AI生成"]
     return out_path, low_conf
 
 
